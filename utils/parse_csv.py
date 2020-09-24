@@ -2,7 +2,7 @@ import pandas as pd
 import os
 dirname = os.path.dirname(__file__)
 
-from .mass_issue_creation import change_names
+from ullyses_jira.mass_issue_creation import change_names
 
 name_csvs = {"lmc": "LMC_Preferred_Names.csv", 
              "smc": "SMC_Preferred_Names.csv",
