@@ -44,3 +44,8 @@ def parse_target_csv(target_type):
             continue
 
     return csvs, dfs
+
+def parse_aliases():
+    jsonfile = os.path.join(dirname, "inputs", "pd_all_aliases.json")
+    aliases = pd.read_json(jsonfile, orient="split")
+    return aliases
