@@ -1,3 +1,4 @@
+import argparse
 import numpy as np
 import pandas as pd
 import re
@@ -40,7 +41,7 @@ def parse_inputs():
 # Compare two dataframes, and if there is any overlap in any entries, combine
 # all possible aliases for the matching target. If no overlap is found, add a
 # new row for target and all its aliases
-def add_aliases(comparison, all_aliases):
+def add_aliases(comparison, all_aliases, verbose=False):
     comparisoninds = []
     for i in range(len(comparison)):
         already_present = False 
@@ -56,7 +57,8 @@ def add_aliases(comparison, all_aliases):
                 if len(toadd) == 0: # there are no comparison aliases
                     break
 
-                print(f"{len(toadd)} aliases to add to {all_aliases[mask]['ULL_MAST_name']}")
+                if verbose is True:
+                    print(f"{len(toadd)} aliases to add to {all_aliases[mask]['ULL_MAST_name']}")
                 # There could be empty columns to add comparison aliases into. If there
                 # are not, add comparison columns with appropriate names
                 emptycols = all_aliases.columns[all_aliases[mask].isna().any()].tolist()
@@ -76,7 +78,8 @@ def add_aliases(comparison, all_aliases):
                 break
         # If no overlap was found, add a comparison row with all aliases
         if already_present == False:
-            print("Added a new row")
+            if verbose is True:
+                print("Added a new row")
             rowupdate = comparison.iloc[i]
             all_aliasescols = all_aliases.columns.values
             missing = set(all_aliasescols) - set(rowupdate.index.values)
@@ -85,12 +88,17 @@ def add_aliases(comparison, all_aliases):
             all_aliases.loc[len(all_aliases)] = rowupdate
     return all_aliases
 
-def main():
+def main(verbose=False):
     aliases, lmc, smc, tts = parse_inputs()
     for targetlist in [smc, lmc, tts]:
-        aliases = add_aliases(targetlist, aliases)
-    aliases.to_json("pd_all_aliases.json", orient="split")  
-    print("Wrote pd_all_aliases.json")
+        aliases = add_aliases(targetlist, aliases, verbose)
+    aliases.to_json("inputs/pd_all_aliases.json", orient="split")  
+    print("Wrote inputs/pd_all_aliases.json")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--verbose", default=False,
+                        action="store_true",
+                        help="If True, print what aliases were found or added") 
+    args = parser.parse_args()
+    main(args.verbose)
