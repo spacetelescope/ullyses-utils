@@ -42,41 +42,41 @@ def parse_inputs():
 # new row for target and all its aliases
 def add_aliases(comparison, all_aliases):
     comparisoninds = []
-	for i in range(len(comparison)):
+    for i in range(len(comparison)):
         already_present = False 
-	    for col in comparison.columns: 
-	        targ = comparison.iloc[i][col] 
-	        # See if there is any overlap
+        for col in comparison.columns: 
+            targ = comparison.iloc[i][col] 
+            # See if there is any overlap
             mask = all_aliases.apply(lambda row: row.astype(str).str.fullmatch(re.escape(targ)).any(), axis=1) 
             # If there is overlap, see if there are any comparison aliases to append
             if set(mask) != {False}: 
-	            existing = all_aliases[mask].values[0] 
-	            rowupdate = comparison.iloc[i] 
-	            toadd = list(set(rowupdate) - set(existing))
-				if len(toadd) == 0: # there are no comparison aliases
-					break
+                existing = all_aliases[mask].values[0] 
+                rowupdate = comparison.iloc[i] 
+                toadd = list(set(rowupdate) - set(existing))
+                if len(toadd) == 0: # there are no comparison aliases
+                    break
 
                 print(f"{len(toadd)} aliases to add to {all_aliases[mask]['ULL_MAST_name']}")
                 # There could be empty columns to add comparison aliases into. If there
                 # are not, add comparison columns with appropriate names
                 emptycols = all_aliases.columns[all_aliases[mask].isna().any()].tolist()
-	            if len(toadd) > len(emptycols): 
-	                for comparisoncol in range(len(toadd)-len(emptycols)): 
-	                    aliasno = len(all_aliases.columns)-2 
-	                    all_aliases[f"alias{aliasno}"] = np.nan 
-	                emptycols = all_aliases.columns[all_aliases[mask].isna().any()].tolist() 
-	            
+                if len(toadd) > len(emptycols): 
+                    for comparisoncol in range(len(toadd)-len(emptycols)): 
+                        aliasno = len(all_aliases.columns)-2 
+                        all_aliases[f"alias{aliasno}"] = np.nan 
+                    emptycols = all_aliases.columns[all_aliases[mask].isna().any()].tolist() 
+                
                 for i in range(len(toadd)): 
-	                all_aliases.loc[mask,emptycols[i]] = toadd[i] 
+                    all_aliases.loc[mask,emptycols[i]] = toadd[i] 
                 already_present = True
                 # Add the simbad name if it exists for a given target and is
                 # a valid value
                 if "simbad_name" in comparison.columns and comparison.iloc[i]["simbad_name"] != "NOT AVAILABLE IN SIMBAD":
                     all_aliases.loc[mask, "simbad_name"] = comparison.iloc[i]["simbad_name"]
-	            break
+                break
         # If no overlap was found, add a comparison row with all aliases
         if already_present == False:
-            print("Added a comparison row")
+            print("Added a new row")
             rowupdate = comparison.iloc[i]
             all_aliasescols = all_aliases.columns.values
             missing = set(all_aliasescols) - set(rowupdate.index.values)
@@ -90,30 +90,7 @@ def main():
     for targetlist in [smc, lmc, tts]:
         aliases = add_aliases(targetlist, aliases)
     aliases.to_json("pd_all_aliases.json", orient="split")  
+    print("Wrote pd_all_aliases.json")
 
-#################
-#master_list = pd.read_pickle("pd_targetinfo.pkl") 
-#new_ull = [] 
-#new_alias = [] 
-#for i in range(len(master_list)): 
-#    simbad = master_list.iloc[i]["simbad_targname"] 
-#    mast = master_list.iloc[i]["mast_targname"] 
-#    print(simbad, mast) 
-#    print(type(simbad), type(mast)) 
-#    if not isinstance(simbad, str): 
-#        simbad = "" 
-#    if not isinstance(mast, str): 
-#        mast = "" 
-#    mask1 = aliases.apply(lambda row: row.astype(str).str.contains(simbad).any(), axis=1) 
-#    if set(mask1) == {False}: 
-#        mask2 = aliases.apply(lambda row: row.astype(str).str.contains(mast).any(), axis=1
-#)  
-#        if set(mask2) == {False}: 
-#            new_ull.append(mast) 
-#            new_alias.append(simbad) 
-#
-#new = pd.DataFrame({"ULL_name": new_ull, "alias0": new_alias})
-#comb = pd.concat([aliases, new])
-#comb.to_json("pd_all_aliases.json", orient="split")
-
-
+if __name__ == "__main__":
+    main()
