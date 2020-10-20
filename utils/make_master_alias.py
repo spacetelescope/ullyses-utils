@@ -28,21 +28,34 @@ def parse_inputs():
     tts = parse_name_csv("tts", returndf=True)
     
     # Rename the columns to match columns in Julia's alias file. One map for Mag. clouds, one for TTS
-    mcmap = {"Alternate_APT": "ULL_MAST_name", "APT": "ULL_name", "Alternate_PREFERRED": "alias0", "PREFERRED": "alias1", "SIMBAD_SEARCH_NAME": "simbad_name", "ORIGINAL": "alias3"}
-    ttmap = {"Alternate_APT": "ULL_MAST_name", "PREFERRED": "alias0"} 
+    mcmap = {"Alternate_APT": "ULL_MAST_name",
+             "PREFERRED": "ULL_name",
+             "Alternate_PREFERRED": "alias0",
+             "APT": "alias1",
+             "SIMBAD_SEARCH_NAME": "simbad_name",
+             "ORIGINAL": "alias2"}
+    ttmap = {"Alternate_APT": "ULL_MAST_name", "PREFERRED": "ULL_name"} 
     lmc.rename(columns=mcmap, inplace=True)
     smc.rename(columns=mcmap, inplace=True) 
     tts.rename(columns=ttmap, inplace=True) 
-    # What is this for...?
-    tts["ULL_name"] = tts["ULL_MAST_name"]
+#    # What is this for...?
+#    tts["ULL_name"] = tts["ULL_MAST_name"]
     return  aliases, lmc, smc, tts
+
 
 
 # Compare two dataframes, and if there is any overlap in any entries, combine
 # all possible aliases for the matching target. If no overlap is found, add a
 # new row for target and all its aliases
 def add_aliases(comparison, all_aliases, verbose=False):
-    comparisoninds = []
+    """
+    Row by row and column by column, combine two dataframes that both contain
+    alias information. First try to match a target in a comparison df
+    to a ever-growing all_aliases df. If there is a match and if any aliases
+    from comparison are not in all_aliases, add them (adding more columns
+    if necessary). If there is not a match, add the entire row from comparison
+    to all_aliases.
+    """
     for i in range(len(comparison)):
         already_present = False 
         for col in comparison.columns: 
@@ -60,16 +73,17 @@ def add_aliases(comparison, all_aliases, verbose=False):
                 if verbose is True:
                     print(f"{len(toadd)} aliases to add to {all_aliases[mask]['ULL_MAST_name']}")
                 # There could be empty columns to add comparison aliases into. If there
-                # are not, add comparison columns with appropriate names
-                emptycols = all_aliases.columns[all_aliases[mask].isna().any()].tolist()
+                # are not, add new columns with appropriate names
+                emptycols0 = all_aliases.columns[all_aliases[mask].isna().any()].tolist() # could include simbad_targname
+                emptycols = [x for x in emptycols0 if x != "simbad_targname"]
                 if len(toadd) > len(emptycols): 
                     for comparisoncol in range(len(toadd)-len(emptycols)): 
                         aliasno = len(all_aliases.columns)-2 
                         all_aliases[f"alias{aliasno}"] = np.nan 
                     emptycols = all_aliases.columns[all_aliases[mask].isna().any()].tolist() 
                 
-                for i in range(len(toadd)): 
-                    all_aliases.loc[mask,emptycols[i]] = toadd[i] 
+                for j in range(len(toadd)): 
+                    all_aliases.loc[mask,emptycols[j]] = toadd[j] 
                 already_present = True
                 # Add the simbad name if it exists for a given target and is
                 # a valid value
