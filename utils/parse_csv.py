@@ -14,13 +14,16 @@ target_csvs = {"lmc":  ["LMC_sample_for_website_clean_newcoord_all_columns_order
                "tts" : ["Cha I_sample_for_website.csv", "CrA_sample_for_website.csv", "Lupus_sample_for_website.csv", "Ori OB1_sample_for_website.csv", "Sigma Ori_sample_for_website.csv", "TWA_sample_for_website.csv", "eps Cha_sample_for_website.csv", "eta Cha_sample_for_website.csv"],
                "all": []}
 
-def parse_name_csv(target_type):
+def parse_name_csv(target_type, returndf=False):
     target_type = target_type.lower()
     assert target_type in name_csvs, "Target type not recognized; acceptable values are 'lmc', 'smc', or 'tts'"
     csvfile = os.path.join(dirname, "inputs", name_csvs[target_type])
-    names_dict = change_names(csvfile)
+    if returndf == True:
+        out = pd.read_csv(csvfile)
+    else:
+        out = change_names(csvfile)
 
-    return names_dict
+    return out
 
 def parse_target_csv(target_type):
     target_type = target_type.lower()
@@ -44,3 +47,8 @@ def parse_target_csv(target_type):
             continue
 
     return csvs, dfs
+
+def parse_aliases():
+    jsonfile = os.path.join(dirname, "inputs", "pd_all_aliases.json")
+    aliases = pd.read_json(jsonfile, orient="split")
+    return aliases
