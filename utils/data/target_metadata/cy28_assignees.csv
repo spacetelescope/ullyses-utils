@@ -51,7 +51,7 @@ PID,group,target,stis_assignee,cos_assignee,prim_assignee,sec_assignee,prim_ins,
 16375,40,AV445,proffitt,proffitt,proffitt,,COS,STIS
 16375,40,SK179,proffitt,proffitt,proffitt,,COS,STIS
 16113,,CVSO-146,proffitt,proffitt,proffitt,,COS,STIS
-16113,,TX-ORI,proffitt,proffitt,proffitt,,COS,STIS
+16113,,V-TX-ORI,proffitt,proffitt,proffitt,,COS,STIS
 16113,,V505-ORI,proffitt,proffitt,proffitt,,COS,STIS
 16113,,V510-ORI,proffitt,proffitt,proffitt,,COS,STIS
 16114,,CVSO-107,proffitt,proffitt,proffitt,,COS,STIS
@@ -64,3 +64,9 @@ PID,group,target,stis_assignee,cos_assignee,prim_assignee,sec_assignee,prim_ins,
 16115,,CVSO-176,proffitt,proffitt,proffitt,,COS,STIS
 16115,,CVSO-36,proffitt,proffitt,proffitt,,COS,STIS
 16109,,V-TW-HYA,proffitt,proffitt,proffitt,,COS,STIS
+16104,,NGC-3109-V01,,,,,WFC3,
+16104,,NGC-3109-V02,,,,,WFC3,
+16104,,SEXTANS-A,,,,,WFC3,
+16110,,V-RU-LUP,,,,,COS,
+,,,,,,,,
+,,,,,,,,
