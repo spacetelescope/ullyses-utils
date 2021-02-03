@@ -11,7 +11,7 @@ from ullyses_jira.parse_csv import parse_name_csv
 
 JULIAFILE = "inputs/julia_alias_file.csv"
 FUSEFILE1 = "inputs/fuse_aliases1.json"
-FUSEFILE1 = "inputs/fuse_aliases2.json"
+FUSEFILE2 = "inputs/fuse_aliases2.json"
 
 
 def parse_inputs():
@@ -216,16 +216,15 @@ def create_fuse_alias(infile="inputs/manual_insert.json"):
 
 
     df = df.apply(lambda x: x.astype(str).str.upper())
-    out = os.path.join("inputs", FUSEFILE)
-    df.to_json(out, orient="split")
-    print(f"Wrote {out}") 
+    df.to_json(FUSEFILE1, orient="split")
+    print(f"Wrote {FUSEFILE1}") 
 
 
 def main(verbose=False):
     aliases, lmc, smc, tts = parse_inputs()
-    fuse_alias1 = pd.read_json(FUSEFILE, orient="split")
-    fuse_alias2 = pd.read_json(FUSEFILE, orient="split")
-    for targetlist in [smc, lmc, tts, fuse_alias]:
+    fuse_alias1 = pd.read_json(FUSEFILE1, orient="split")
+    fuse_alias2 = pd.read_json(FUSEFILE2, orient="split")
+    for targetlist in [smc, lmc, tts, fuse_alias1, fuse_alias2]:
         aliases = add_aliases(targetlist, aliases, verbose)
     aliases = fix_pipes(aliases)
     aliases = aliases.apply(lambda x: x.astype(str).str.upper())
