@@ -1,3 +1,4 @@
+from collections import defaultdict
 from astropy.io import fits
 import glob
 import os
@@ -9,7 +10,8 @@ import re
 from ullyses_jira.parse_csv import parse_name_csv
 
 JULIAFILE = "inputs/julia_alias_file.csv"
-FUSEFILE = "inputs/fuse_aliases.json"
+FUSEFILE1 = "inputs/fuse_aliases1.json"
+FUSEFILE1 = "inputs/fuse_aliases2.json"
 
 
 def parse_inputs():
@@ -140,33 +142,67 @@ def fix_pipes(all_aliases):
             
     return all_aliases
 
+# NOT IN USE
+def create_fuse_alias2():
+# NOT IN USE
+    fuse_targs0 = glob.glob("/astro/ullyses/ullyses_target/data/SMC/FUSE/*") + \
+                  glob.glob("/astro/ullyses/ullyses_target/data/LMC/FUSE/*") + \
+                  glob.glob("/astro/ullyses/ullyses_target/data/SMC_FUSE/FUSE/*") + \
+                  glob.glob("/astro/ullyses/ullyses_target/data/LMC_FUSE/FUSE/*")
+    fuse_targs = [os.path.basename(x) for x in fuse_targs0]
+    fuse_targs_upper = [x.upper() for x in fuse_targs]
 
+    fuse_dicts = []
+    for i in range(len(fuse_targs0)):
+        fuse_d = {}
+        fuse_d["dirname"] = fuse_targs_upper[i]
+        
+        partial_d = fuse_targs0[i]
+        partial_d = partial_d.replace("[", "LEFTBRACKET")
+        partial_d = partial_d.replace("]", "RIGHTBRACKET")
+        partial_d = partial_d.replace("LEFTBRACKET", "[[]")
+        partial_d = partial_d.replace("RIGHTBRACKET", "[]]")
+        files = glob.glob(os.path.join(partial_d, "*", "*.fit*"))
+        targnames0 = [fits.getval(x, "targname") for x in files]
+        targnames = list(set(targnames0))
+        for j in range(len(targnames)):
+            fuse_d[f"targname{j}"] = targnames[j]
+        fuse_dicts.append(fuse_d)
+
+    df = pd.DataFrame(fuse_dicts)
+    df = df.apply(lambda x: x.astype(str).str.upper())
+    df.to_json("inputs/fuse_target_aliases.json", orient="split")
+    print("Wrote inputs/fuse_target_aliases.json") 
+
+
+# manual_insert.json includes manually matched FUSE names to ULLYSES names.
+# This only needs to be run once and never again. 
 def create_fuse_alias(infile="inputs/manual_insert.json"):
     fuse_targs0 = glob.glob("/astro/ullyses/ullyses_target/data/SMC/FUSE/*") + \
                   glob.glob("/astro/ullyses/ullyses_target/data/LMC/FUSE/*") + \
                   glob.glob("/astro/ullyses/ullyses_target/data/SMC_FUSE/FUSE/*") + \
                   glob.glob("/astro/ullyses/ullyses_target/data/LMC_FUSE/FUSE/*")
-    fuse_targs = [os.path(basename(x) for x in fuse_targs0]
+    fuse_targs = [os.path.basename(x) for x in fuse_targs0]
     fuse_targs_upper = [x.upper() for x in fuse_targs]
-
-#    fuse_data1 = [os.path.basename(x) for x in fuse_data0]
-#    fuse_data = list(set(fuse_data1))
-#    fuse_data_upper = [x.upper() for x in fuse_data]
 
     df = pd.read_json(infile, orient="split")
     for i in range(len(df)):
         fuse_targ = df.loc[i, "alias0"]
         fuse_targ = fuse_targ.upper()
-#        matches = [x for x in fuse_targs_upper if x==fuse_targ]
-#        idx = fuse_data_upper.index(fuse_targ)
-#        d = fuse_data0[idx]
-        d = d.replace("[", "LEFTBRACKET")
-        d = d.replace("]", "RIGHTBRACKET")
-        d = d.replace("LEFTBRACKET", "[[]")
-        d = d.replace("RIGHTBRACKET", "[]]")
-        files = glob.glob(os.path.join(d, "*", "*.fit*")) + glob.glob(os.path.join(d, "*.fit*"))
-        toadd0 = [fits.getval(x, "targname") for x in files]
-        toadd = list(set(toadd0))
+
+        inds = [j for j in range(len(fuse_targs_upper)) if fuse_targs_upper[j] == fuse_targ]
+        toadd = []
+        for ind in inds:
+            d = fuse_targs0[ind]
+            d = d.replace("[", "LEFTBRACKET")
+            d = d.replace("]", "RIGHTBRACKET")
+            d = d.replace("LEFTBRACKET", "[[]")
+            d = d.replace("RIGHTBRACKET", "[]]")
+            files = glob.glob(os.path.join(d, "*", "*.fit*"))
+            toadd0 = [fits.getval(x, "targname") for x in files]
+            toadd += list(set(toadd0))
+
+        toadd = list(set(toadd))
 
         emptycols = df.columns[df.iloc[i].isna()].tolist() 
         if len(toadd) > len(emptycols): 
@@ -176,17 +212,19 @@ def create_fuse_alias(infile="inputs/manual_insert.json"):
             emptycols = df.columns[df.iloc[i].isna()].tolist()
         for j in range(len(toadd)): 
             df.loc[i,emptycols[j]] = toadd[j]
-        if i == 22:
-            import pdb; pdb.set_trace()
+
+
 
     df = df.apply(lambda x: x.astype(str).str.upper())
-    df.to_json("inputs/fuse_aliases.json", orient="split")
-    print("Wrote inputs/fuse_aliases.json") 
+    out = os.path.join("inputs", FUSEFILE)
+    df.to_json(out, orient="split")
+    print(f"Wrote {out}") 
 
 
 def main(verbose=False):
     aliases, lmc, smc, tts = parse_inputs()
-    fuse_alias = pd.read_json(FUSEFILE, orient="split")
+    fuse_alias1 = pd.read_json(FUSEFILE, orient="split")
+    fuse_alias2 = pd.read_json(FUSEFILE, orient="split")
     for targetlist in [smc, lmc, tts, fuse_alias]:
         aliases = add_aliases(targetlist, aliases, verbose)
     aliases = fix_pipes(aliases)
