@@ -69,7 +69,7 @@ def add_aliases(comparison, all_aliases, verbose=False):
     for i in range(len(comparison)):
         already_present = False 
         for col in comparison.columns: 
-            targ = comparison.iloc[i][col] 
+            targ = comparison.iloc[i][col]
             # See if there is any overlap
             mask = all_aliases.apply(lambda row: row.astype(str).str.fullmatch(re.escape(targ)).any(), axis=1) 
             # If there is overlap, see if there are any comparison aliases to append
@@ -78,6 +78,7 @@ def add_aliases(comparison, all_aliases, verbose=False):
                 rowupdate = comparison.iloc[i] 
                 toadd = list(set(rowupdate) - set(existing))
                 if len(toadd) == 0: # there are no comparison aliases
+                    already_present = True
                     break
 
                 if verbose is True:
