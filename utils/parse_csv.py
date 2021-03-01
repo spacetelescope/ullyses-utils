@@ -4,9 +4,10 @@ dirname = os.path.dirname(__file__)
 
 from ullyses_jira.mass_issue_creation import change_names
 
-name_csvs = {"lmc": "LMC_Preferred_Names.csv", 
+name_csvs = {"lmc": "LMC_Preferred_Names.csv",
              "smc": "SMC_Preferred_Names.csv",
-             "tts": "lowmass_preferred_names.csv"}
+             "tts": "lowmass_preferred_names.csv",
+             "lowz": "lowz_preferred_names.csv"}
 target_csvs = {"lmc":  ["LMC_sample_for_website_clean_newcoord_all_columns_order.csv"],
                "smc" : ["SMC_sample_for_website_clean_newcoord_and_names_all_columns.csv"],
                "lowz": ["low-metallicity-galaxy-targets.csv"],
@@ -40,6 +41,11 @@ def parse_target_csv(target_type):
         csvfile = os.path.join(dirname, "inputs", csvfile0)
         try:
             df = pd.read_csv(csvfile)
+            if 'metallicity' in csvfile:
+                # Removing WFC3 rows
+                remove_rows = df[(df['COS'] == 0) & (df['STIS'] == 0)]
+                df = df.drop(df.index[remove_rows.index])
+                print(f'Not including: {remove_rows}')
             dfs.append(df)
         except:
             print("ERROR! Could not read file, skipping {}".format(csvfile))
