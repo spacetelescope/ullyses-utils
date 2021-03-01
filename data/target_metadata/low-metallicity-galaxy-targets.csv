@@ -1,4 +1,4 @@
-Galaxy,star,RA(J2000),DEC(J2000),SpT,V,E(B-V),catalog,Target,COS ,STIS,WFC3
+Galaxy,star,RA(J2000),DEC(J2000),SpT,V,E(B-V),catalog,Target,COS,STIS,WFC3
 Sextans A,s2,10h10m58.59s,-04d43m28.9s,O3-5Vz,20.8,0.22,2019MNRAS.484..422G,Sextans A GHF s2,1,0,0
 Sextans A,s4,10h10m57.89s,-04d43m10.2s,O6z,20.9,0.05,2019MNRAS.484..422G,Sextans A GHF s4,1,0,0
 Sextans A,s8,10h11m05.69s,-04d42m13.6s,B0 I,19.7,0.05,"Garcia, priv. comm.",Sextans A GHF s8,1,0,0
