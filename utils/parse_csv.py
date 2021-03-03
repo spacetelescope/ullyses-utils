@@ -17,7 +17,7 @@ target_csvs = {"lmc":  ["LMC_sample_for_website_clean_newcoord_all_columns_order
 
 def parse_name_csv(target_type, returndf=False):
     target_type = target_type.lower()
-    assert target_type in name_csvs, "Target type not recognized; acceptable values are 'lmc', 'smc', or 'tts'"
+    assert target_type in name_csvs, f"Target type {target_type} not recognized; acceptable values are 'lmc', 'smc', 'tts', or 'lowz'"
     csvfile = os.path.join(dirname, "inputs", name_csvs[target_type])
     if returndf == True:
         out = pd.read_csv(csvfile)
