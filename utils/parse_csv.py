@@ -12,7 +12,7 @@ target_csvs = {"lmc":  ["LMC_sample_for_website_clean_newcoord_all_columns_order
                "smc" : ["SMC_sample_for_website_clean_newcoord_and_names_all_columns.csv"],
                "lowz": ["low-metallicity-galaxy-targets.csv"],
                "ctts": ["classical-t-tauri-star-monitoring-targets.csv"],
-               "tts" : ["Cha I_sample_for_website.csv", "CrA_sample_for_website.csv", "Lupus_sample_for_website.csv", "Ori OB1_sample_for_website.csv", "Sigma Ori_sample_for_website.csv", "TWA_sample_for_website.csv", "eps Cha_sample_for_website.csv", "eta Cha_sample_for_website.csv"],
+               "tts" : ["Cha I_sample_for_website.csv", "CrA_sample_for_website.csv", "Lupus_sample_for_website.csv", "Ori OB1_sample_for_website.csv", "Sigma Ori_sample_for_website.csv", "eps Cha_sample_for_website.csv", "eta Cha_sample_for_website.csv"],
                "all": []}
 
 def parse_name_csv(target_type, returndf=False):
