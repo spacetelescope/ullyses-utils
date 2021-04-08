@@ -31,8 +31,8 @@ PID,target,stis_assignee,cos_assignee,prim_assignee,sec_assignee,prim_ins,sec_in
 16098,AV332,tsohn,,tsohn,,STIS,,,proffitt,,debes
 16098,NGC346-MPG-355,tsohn,,tsohn,,STIS,,,proffitt,,debes
 16098,NGC346-MPG-435,tsohn,,tsohn,,STIS,,,proffitt,,debes
-16099,AV235,tsohn,,tsohn,,STIS,,,,,jcarlberg
-16099,AV266,tsohn,,tsohn,,STIS,,,,,jcarlberg
+16099,AV235,tsohn,,tsohn,,STIS,,,proffitt,,jcarlberg
+16099,AV266,tsohn,,tsohn,,STIS,,,proffitt,,jcarlberg
 16099,AV372,tsohn,,tsohn,,STIS,,,proffitt,,jcarlberg
 16099,AV488,tsohn,,tsohn,,STIS,,,proffitt,,jcarlberg
 16099,AV70,tsohn,,tsohn,,STIS,,,proffitt,,jcarlberg
