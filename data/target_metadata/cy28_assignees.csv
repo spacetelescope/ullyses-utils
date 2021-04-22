@@ -90,4 +90,7 @@ PID,group,target,stis_assignee,cos_assignee,prim_assignee,sec_assignee,prim_ins,
 16482,,V-TW-CHA,wfischer,wfischer,wfischer,,COS,STIS,proffitt,proffitt,,drs
 16482,,V-SZ-CHA,wfischer,wfischer,wfischer,,COS,STIS,proffitt,proffitt,,drs
 16482,,Sz45,wfischer,wfischer,wfischer,,COS,STIS,proffitt,proffitt,,drs
-16107,,V-BP-TAU,sahnow,sahnow,sahnow,,COS,STIS,,,,
+16107,,V-BP-TAU,sahnow,sahnow,sahnow,,COS,STIS,fuller,,,
+16511,,NGC-3109-EBU-7,,duval,duval,,COS,,fuller,,,
+16511,,NGC-3109-EBU-20,,duval,duval,,COS,,fuller,,,
+16511,,NGC-3109-EBU-34,,duval,duval,,COS,,fuller,,,
