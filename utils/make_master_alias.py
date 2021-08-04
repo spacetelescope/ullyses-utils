@@ -50,10 +50,20 @@ def parse_inputs():
     lowz.rename(columns=ttmap, inplace=True)
 #    # What is this for...?
 #    tts["ULL_name"] = tts["ULL_MAST_name"]
-    for df in [aliases, lmc, smc, tts, lowz]:
-        df = df.apply(lambda x: x.astype(str).str.upper())
+    aliases = clean_df(aliases)
+    lmc = clean_df(lmc)
+    smc = clean_df(smc)
+    tts = clean_df(tts)
+    lowz = clean_df(lowz)
     return  aliases, lmc, smc, tts, lowz
 
+
+def clean_df(df):
+    df = df.fillna('TEMPORARYNANISTEMPORARY').apply(lambda x :x.str.upper()).replace('TEMPORARYNANISTEMPORARY', np.nan)
+    df = df.replace("NaN", np.nan)
+    df = df.replace("NAN", np.nan)
+    df = df.replace("nan", np.nan)
+    return df
 
 
 # Compare two dataframes, and if there is any overlap in any entries, combine
@@ -173,7 +183,7 @@ def create_fuse_alias2():
         fuse_dicts.append(fuse_d)
 
     df = pd.DataFrame(fuse_dicts)
-    df = df.apply(lambda x: x.astype(str).str.upper())
+    df = clean_df(df)
     df.to_json("inputs/fuse_target_aliases.json", orient="split")
     print("Wrote inputs/fuse_target_aliases.json")
 
@@ -218,7 +228,7 @@ def create_fuse_alias(infile="inputs/manual_insert.json"):
 
 
 
-    df = df.apply(lambda x: x.astype(str).str.upper())
+    df = clean_df(df)
     df.to_json(FUSEFILE1, orient="split")
     print(f"Wrote {FUSEFILE1}")
 
@@ -230,7 +240,7 @@ def main(verbose=False):
     for targetlist in [smc, lmc, tts, lowz, fuse_alias1, fuse_alias2]:
         aliases = add_aliases(targetlist, aliases, verbose)
     aliases = fix_pipes(aliases)
-    aliases = aliases.apply(lambda x: x.astype(str).str.upper())
+    aliases = clean_df(aliases)
     aliases = aliases.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     aliases.to_json("inputs/pd_all_aliases.json", orient="split")
     aliases.to_csv("inputs/pd_all_aliases.csv")
