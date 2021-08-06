@@ -132,6 +132,7 @@ def fix_pipes(all_aliases):
         match = s.str.contains("|", regex=False, na=False)
         if True in match.values:
             a = s[match].values[0]
+            ind = s[match].index[0]
             targs = a.split("|")
             exists = []
             for j in range(len(targs)):
@@ -242,8 +243,13 @@ def main(verbose=False):
     aliases = fix_pipes(aliases)
     aliases = clean_df(aliases)
     aliases = aliases.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    cols = ["ULL_name", "ULL_MAST_name", "simbad_name"]
+    cols0 = aliases.columns.tolist()
+    cols1 = [x for x in cols0 if x not in cols]
+    cols += cols1
+    aliases = aliases[cols]
     aliases.to_json("inputs/pd_all_aliases.json", orient="split")
-    aliases.to_csv("inputs/pd_all_aliases.csv")
+    aliases.to_csv("inputs/pd_all_aliases.csv", index=False)
     print("Wrote inputs/pd_all_aliases.json and pd_all_aliases.csv")
 
 if __name__ == "__main__":
