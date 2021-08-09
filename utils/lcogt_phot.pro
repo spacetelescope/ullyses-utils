@@ -172,8 +172,12 @@ pro lcogt_phot,imagedir,target
   endif
 
   ;;Location of the APASS tables
-  catalogdir='~/lcogt_phot/catalogs/'
-
+  catalogdir='./catalogs/'
+  if ~file_test(catalogdir) then begin
+     print,'% Catalog directory '+catalogdir+' not found.'
+     print,'% Edit the code to point elsewhere if need be.'
+  endif
+  
   ;;Get coordinates of target from SIMBAD
   querysimbad,target,targ_ra,targ_dec,FOUND=found
   if ~found then begin
