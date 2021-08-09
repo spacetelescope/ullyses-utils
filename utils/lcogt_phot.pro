@@ -1,5 +1,29 @@
-;;the main program, lcogt_phot, is at the bottom
-;;it calls photometry, which in turn calls get_counts, fit_counts, and get_mag
+;;The main program, lcogt_phot, is at the bottom. It calls photometry,
+;;which then calls get_counts, fit_counts, and get_mag. Another
+;;program, find_mjd, determines the starting MJD of the observation.
+
+function find_mjd,date_obs
+
+  ;;We want to record the starting and ending MJD of the observation
+  ;;to enough precision such that subtracting the start from the end
+  ;;gives the correct exposure time to the nearest millisecond, as
+  ;;reported in the header. The header keyword MJD-OBS is not precise
+  ;;enough for this, but we can use DATE-OBS.
+
+  ;;DATE-OBS is a string, so extract year, month, day, etc 
+  yr=strmid(date_obs,0,4)
+  mo=strmid(date_obs,5,2)
+  dy=strmid(date_obs,8,2)
+  hr=strmid(date_obs,11,2)
+  mn=strmid(date_obs,14,2)
+  sc=strmid(date_obs,17)
+  
+  ;;convert this into an mjd
+  mjd=julday(mo,dy,yr,hr,mn,sc)-2400000.5
+
+  return,mjd
+
+end
 
 function get_counts,image
 
@@ -163,34 +187,40 @@ pro lcogt_phot,imagedir,target
   targname=strlowcase(repstr(repstr(target,'*','-'),' '))
   photfile=targname+'_phot.txt'
 
-  ;;Get target, filter, date for all images
+  ;;Get target, filter, MJD (start and stop) for all images
   all_files=file_search(imagedir+'*.fits*',count=n_all)
   print,'% Found '+strtrim(n_all,2)+' images in '+imagedir
   if n_all eq 0 then return
   all_targets=!null
   all_filters=!null
-  all_dates=!null
+  all_start=!null
+  all_end=!null
   for i=0,n_all-1 do begin
      h=headfits(all_files[i],exten=1)
      object=repchr(strtrim(sxpar(h,'OBJECT'),2),' ','-')
      filter=strtrim(sxpar(h,'FILTER1'),2)
-     mjd=sxpar(h,'MJD-OBS')
+     mjd=find_mjd(sxpar(h,'DATE-OBS'))
+     exptime=sxpar(h,'EXPTIME')
      all_targets=[all_targets,object]
      all_filters=[all_filters,filter]
-     all_dates=[all_dates,mjd]
+     all_start=[all_start,mjd]
+     ;;ending MJD is the starting one plus the exp time in days
+     all_end=[all_end,mjd+exptime/3600/24]
   endfor
 
   ;;Sort all images by MJD
-  chron=sort(all_dates)
+  chron=sort(all_start)
   all_files=all_files[chron]
   all_targets=all_targets[chron]
   all_filters=all_filters[chron]
-  all_dates=all_dates[chron]
+  all_start=all_start[chron]
+  all_end=all_end[chron]
 
   ;;Do all V band in MJD order, then all ip band in MJD order
   filters=['V','ip']
   openw,1,photfile
-  printf,1,';File (Wave in A; Flux in erg/s/cm2/A)','MJD','Wave','Flux','Unc',format='(a-39,"  ",a-10,"  ",a-4,2("  ",a-10))'
+  printf,1,';File (Wave in A; Flux in erg/s/cm2/A)','MJD_start','MJD_end','Wave','Flux','Unc',$
+         format='(a-39,2("  ",a-15),"  ",a-4,2("  ",a-10))'
   for i=0,1 do begin
 
      print,'% Doing photometry at '+filters[i]
@@ -218,16 +248,18 @@ pro lcogt_phot,imagedir,target
      ;;Get started on the photometry
      dophot=where(all_filters eq filters[i],nphot)
      if nphot eq 0 then continue
-     mjds=make_array(nphot,/double)
+     mjd1=make_array(nphot,/double)
+     mjd2=make_array(nphot,/double)
      fluxes=make_array(2,nphot,/double)
      for j=0,nphot-1 do begin
-        mjds[j]=all_dates[dophot[j]]
+        mjd1[j]=all_start[dophot[j]]
+        mjd2[j]=all_end[dophot[j]]
         fluxes[*,j]=photometry(all_files[dophot[j]],catfile,filters[i],targ_ra,targ_dec,f0)
         ;;remove path from filename
         filename=strmid(all_files[dophot[j]],strpos(all_files[dophot[j]],'/',/reverse_search)+1)
         ;;Only print if a valid flux was measured
         if fluxes[0,j] ne 99 then $
-           printf,1,filename,mjds[j],wave,fluxes[*,j],format='(a-39,d12.4,i6,2e12.4)'
+           printf,1,filename,mjd1[j],mjd2[j],wave,fluxes[*,j],format='(a-39,2d17.9,i6,2e12.4)'
      endfor
 
   endfor
