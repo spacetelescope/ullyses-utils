@@ -10,14 +10,14 @@ function find_mjd,date_obs
   ;;reported in the header. The header keyword MJD-OBS is not precise
   ;;enough for this, but we can use DATE-OBS.
 
-  ;;DATE-OBS is a string, so extract year, month, day, etc 
+  ;;DATE-OBS is a string, so extract year, month, day, etc
   yr=strmid(date_obs,0,4)
   mo=strmid(date_obs,5,2)
   dy=strmid(date_obs,8,2)
   hr=strmid(date_obs,11,2)
   mn=strmid(date_obs,14,2)
   sc=strmid(date_obs,17)
-  
+
   ;;convert this into an mjd
   mjd=julday(mo,dy,yr,hr,mn,sc)-2400000.5
 
@@ -28,7 +28,7 @@ end
 function get_counts,image
 
   ;;return RA, Dec, counts of calibration targets
-  
+
   print,image
   im=mrdfits(image,0,hdr,/si)
 
@@ -37,10 +37,10 @@ function get_counts,image
      print,'% Bad WCS'
      return,99
   endif
-  
+
   ;;get a list of detections from the 1st extension
   tab=mrdfits(image,1,htab,/si)
-  
+
   ;;do aperture photometry on those detections
   aper,im,tab.x,tab.y,/flux,counts,err,sky,skyerr,1,5,[10,20],[0,0],/si
 
@@ -54,13 +54,13 @@ function get_counts,image
 
 end
 
-function fit_counts,image,sources,catfile,filter
+function fit_counts,image,sources,catfile,filter,PLOT=plot
 
   ;;match found sources to catalog sources and fit counts vs mags
 
   ;;exit if an error happened earlier
   if sources[0] eq 99 then return,99
-  
+
   ra=sources[0,*]
   dec=sources[1,*]
   counts=sources[2,*]
@@ -71,7 +71,7 @@ function fit_counts,image,sources,catfile,filter
   readcol,catfile,format='(d,x,d,x,f,x,x,x,x,x,x,x,x,x,x,x,x,x,x,f,x,x)',delim=', ',$
           ra_cat,dec_cat,v_cat,i_cat,/si,count=ctmag
   if filter eq 'V' then mag_cat=v_cat else mag_cat=i_cat
-  
+
   fit_counts=!null
   fit_mag=!null
   fit_ra=!null
@@ -95,30 +95,32 @@ function fit_counts,image,sources,catfile,filter
   ;;remove 3-sigma outliers; newx and newy are retained
   sig=3
   coeff=goodpoly(x,y,1,sig,yfit,newx,newy)
-  
-  xrange=[max(mag_cat)+0.5,min(mag_cat)-0.5]
-  plot,x,y,psym=1,/iso,$
-       xrange=xrange,yrange=xrange*1.15+coeff[0],$
-       title=strmid(catfile,strpos(catfile,'/',/reverse_search)+1)+' '+$
-       strmid(image,strpos(image,'/',/reverse_search)+1),$
-       xtitle='Magnitude',ytitle='-2.5 log (counts)'
 
-  oplot,newx,newy,psym=1,color=255
-  oplot,!x.crange,!x.crange*coeff[1]+coeff[0]
+  if keyword_set(plot) then begin
+     xrange=[max(mag_cat)+0.5,min(mag_cat)-0.5]
+     plot,x,y,psym=1,/iso,$
+          xrange=xrange,yrange=xrange*1.15+coeff[0],$
+          title=strmid(catfile,strpos(catfile,'/',/reverse_search)+1)+' '+$
+          strmid(image,strpos(image,'/',/reverse_search)+1),$
+          xtitle='Magnitude',ytitle='-2.5 log (counts)'
+
+     oplot,newx,newy,psym=1,color=255
+     oplot,!x.crange,!x.crange*coeff[1]+coeff[0]
+  endif
 
   print,coeff,format='(2f14.7)'
 
   return,coeff
-  
+
 end
 
-function get_mag,image,coeff,targ_ra,targ_dec,f0
+function get_mag,image,coeff,targ_ra,targ_dec,f0,PLOT=plot
 
   ;;get flux and uncertainty of target from fit in previous step
-  
+
   ;;exit if an error happened earlier
   if coeff[0] eq 99 then return,99
-  
+
   im=mrdfits(image,0,hdr,/si)
 
   ;;convert targ RA and Dec to x and y
@@ -136,9 +138,11 @@ function get_mag,image,coeff,targ_ra,targ_dec,f0
   flux=f0*10^(-0.4*mag)
   ;;uncertainty (assumes uncertainty in the flux of the target dominates)
   unc=cerr/counts*flux/coeff[1]
-  
-  oplot,!x.crange,[1,1]*(-2.5*alog10(counts)),linestyle=1
-  oplot,[1,1]*mag,!y.crange,linestyle=1
+
+  if keyword_set(plot) then begin
+     oplot,!x.crange,[1,1]*(-2.5*alog10(counts)),linestyle=1
+     oplot,[1,1]*mag,!y.crange,linestyle=1
+  endif
 
   ;;print,counts,cerr,mag,format='(3f14.5)'
 
@@ -146,26 +150,26 @@ function get_mag,image,coeff,targ_ra,targ_dec,f0
 
 end
 
-function photometry,image,catfile,filter,targ_ra,targ_dec,f0
+function photometry,image,catfile,filter,targ_ra,targ_dec,f0,PLOT=plot
 
   ;;return RA, Dec, counts of calibration targets
   sources=get_counts(image)
 
   ;;match found sources to catalog sources and fit counts vs mags
-  coeff=fit_counts(image,sources,catfile,filter)
+  coeff=fit_counts(image,sources,catfile,filter,PLOT=plot)
 
   ;;get flux and uncertainty of target from fit in previous step
-  flux=get_mag(image,coeff,targ_ra,targ_dec,f0)
+  flux=get_mag(image,coeff,targ_ra,targ_dec,f0,PLOT=plot)
 
   return,flux
 
 end
 
-pro lcogt_phot,imagedir,target
+pro lcogt_phot,imagedir,target,PLOT=plot
 
   ;;uncomment when debugging to close any output files
   ;;close,/all
-  
+
   if n_params() ne 2 then begin
      print,'% lcogt_phot, imagedir, target'
      return
@@ -177,7 +181,7 @@ pro lcogt_phot,imagedir,target
      print,'% Catalog directory '+catalogdir+' not found.'
      print,'% Edit the code to point elsewhere if need be.'
   endif
-  
+
   ;;Get coordinates of target from SIMBAD
   querysimbad,target,targ_ra,targ_dec,FOUND=found
   if ~found then begin
@@ -239,7 +243,7 @@ pro lcogt_phot,imagedir,target
         wave=7670
         f0=1.852e-9 ;;erg/s/cm2/A, AB system
      endif
-        
+
      ;;Identify calibration catalog file
      catfile=catalogdir+targname+'_apass.txt'
 
@@ -258,7 +262,7 @@ pro lcogt_phot,imagedir,target
      for j=0,nphot-1 do begin
         mjd1[j]=all_start[dophot[j]]
         mjd2[j]=all_end[dophot[j]]
-        fluxes[*,j]=photometry(all_files[dophot[j]],catfile,filters[i],targ_ra,targ_dec,f0)
+        fluxes[*,j]=photometry(all_files[dophot[j]],catfile,filters[i],targ_ra,targ_dec,f0,PLOT=plot)
         ;;remove path from filename
         filename=strmid(all_files[dophot[j]],strpos(all_files[dophot[j]],'/',/reverse_search)+1)
         ;;Only print if a valid flux was measured
