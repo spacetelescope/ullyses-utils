@@ -8,8 +8,8 @@ outdir = '/astro/ullyses/twhydra_cal/'
 ;vigndata = 'le9d1cdeq_x1d' ;vignetted dataset
 
 
-readcol,'/Users/tfischer/functional/ullyses/tw_hydra/filenames_crop.txt',bad,good,format = 'A,A',/SILENT ; this reads in the bad/good filenames
-;readcol,datadir+'filenames.txt',bad,good,format = 'A,A' ; this reads in the bad/good filenames
+;readcol,'/Users/tfischer/functional/ullyses/tw_hydra/filenames_crop.txt',bad,good,format = 'A,A',/SILENT ; this reads in the bad/good filenames
+readcol,'/astro/ullyses/tfischer/raw_twhydra/filenames.txt',bad,good,format = 'A,A',/SILENT ; this reads in the bad/good filenames
 
 s = size(bad)
 
