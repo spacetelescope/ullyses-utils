@@ -265,8 +265,8 @@ pro lcogt_phot,imagedir,target,PLOT=plot
         fluxes[*,j]=photometry(all_files[dophot[j]],catfile,filters[i],targ_ra,targ_dec,f0,PLOT=plot)
         ;;remove path from filename
         filename=strmid(all_files[dophot[j]],strpos(all_files[dophot[j]],'/',/reverse_search)+1)
-        ;;Only print if a valid flux was measured
-        if fluxes[0,j] ne 99 then $
+        ;;Only print if a valid flux was measured and S/N > 5
+        if fluxes[0,j] ne 99 and fluxes[0,j]/fluxes[1,j] gt 5 then $
            printf,1,filename,mjd1[j],mjd2[j],wave,fluxes[*,j],format='(a-39,2d17.9,i6,2e12.4)'
      endfor
 
