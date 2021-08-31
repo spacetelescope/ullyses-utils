@@ -15,9 +15,8 @@ s = size(bad)
 
 for i = 0,s(3)-1 do begin
   ;print,i
-  baddat = mrdfits(datadir+bad(i)+'_x1d.fits',1,h1,/SILENT) 
   gooddat = mrdfits(datadir+good(i)+'_x1d.fits',1,h1,/SILENT)
-    
+  baddat = mrdfits(datadir+bad(i)+'_x1d.fits',1,h2,/SILENT)    
   ;baddat = mrdfits(datadir+bad(i)+'_x1d.fits',1,h2)  
 
 ;let's take everything out and look at it
