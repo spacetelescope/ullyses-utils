@@ -234,6 +234,14 @@ def create_fuse_alias(infile="inputs/manual_insert.json"):
     print(f"Wrote {FUSEFILE1}")
 
 
+def remove_withdrawn(df):
+    # Sometimes rows with target=WITHDRAWN get in the aliases DF. Remove them.
+    bad = df['ULL_name'].str.contains('WITHDRAWN')
+    cleaned = df[~bad]
+
+    return cleaned
+
+
 def main(verbose=False):
     aliases, lmc, smc, tts, lowz = parse_inputs()
     fuse_alias1 = pd.read_json(FUSEFILE1, orient="split")
@@ -248,6 +256,7 @@ def main(verbose=False):
     cols1 = [x for x in cols0 if x not in cols]
     cols += cols1
     aliases = aliases[cols]
+    aliases = remove_withdrawn(aliases)
     aliases.to_json("inputs/pd_all_aliases.json", orient="split")
     aliases.to_csv("inputs/pd_all_aliases.csv", index=False)
     print("Wrote inputs/pd_all_aliases.json and pd_all_aliases.csv")
