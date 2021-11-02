@@ -190,9 +190,11 @@ pro lcogt_phot,imagedir,target,PLOT=plot
      return
   endif
 
-  ;;Make an output filename based on the MAST name
-  ;;turn * and whitespace into hyphens and capitalize
-  targname=strupcase(repchr(strcompress(repchr(target,'*')),' ','-'))
+  ;;Make an output filename from the MAST name embedded in the
+  ;;directory name
+  tn1=strmid(imagedir,0,strpos(dirname,'/',/reverse_search))
+  targname=strmid(tn1,strpos(tn1,'/',/reverse_search)+1)
+  
   photfile=targname+'_phot.txt'
 
   ;;Get target, filter, MJD (start and stop) for all images
