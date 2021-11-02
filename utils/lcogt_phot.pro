@@ -192,7 +192,7 @@ pro lcogt_phot,imagedir,target,PLOT=plot
 
   ;;Make an output filename from the MAST name embedded in the
   ;;directory name
-  tn1=strmid(imagedir,0,strpos(dirname,'/',/reverse_search))
+  tn1=strmid(imagedir,0,strpos(imagedir,'/',/reverse_search))
   targname=strmid(tn1,strpos(tn1,'/',/reverse_search)+1)
   
   photfile=targname+'_phot.txt'
