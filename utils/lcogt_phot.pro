@@ -38,6 +38,14 @@ function get_counts,image
      return,99
   endif
 
+  ;;A small number of images have MJD-OBS = 'UNKNOWN' in their
+  ;;headers. We don't actually do anything with this field, but
+  ;;xyad.pro crashes on these images, so fix it.
+  if sxpar(hdr,'MJD-OBS') eq 'UNKNOWN ' then begin
+     correct_mjd=find_mjd(sxpar(hdr,'DATE-OBS'))
+     sxaddpar,hdr,'MJD-OBS',correct_mjd
+  endif
+  
   ;;get a list of detections from the 1st extension
   tab=mrdfits(image,1,htab,/si)
 
