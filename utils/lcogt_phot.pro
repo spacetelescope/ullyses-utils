@@ -38,6 +38,15 @@ function get_counts,image
      return,99
   endif
 
+  ;;A small number of images have MJD-OBS = 'UNKNOWN' in their
+  ;;headers. We don't actually do anything with this field, but
+  ;;xyad.pro crashes on these images, so fix it. The check of whether
+  ;;type = 7 catches the case where it's a string, not a double.
+  if size(sxpar(hdr,'MJD-OBS'),/type) eq 7 then begin
+     correct_mjd=find_mjd(sxpar(hdr,'DATE-OBS'))
+     sxaddpar,hdr,'MJD-OBS',correct_mjd
+  endif
+  
   ;;get a list of detections from the 1st extension
   tab=mrdfits(image,1,htab,/si)
 
@@ -123,6 +132,15 @@ function get_mag,image,coeff,targ_ra,targ_dec,f0,PLOT=plot
 
   im=mrdfits(image,0,hdr,/si)
 
+  ;;A small number of images have MJD-OBS = 'UNKNOWN' in their
+  ;;headers. We don't actually do anything with this field, but
+  ;;xyad.pro crashes on these images, so fix it. The check of whether
+  ;;type = 7 catches the case where it's a string, not a double.
+  if size(sxpar(hdr,'MJD-OBS'),/type) eq 7 then begin
+     correct_mjd=find_mjd(sxpar(hdr,'DATE-OBS'))
+     sxaddpar,hdr,'MJD-OBS',correct_mjd
+  endif
+  
   ;;convert targ RA and Dec to x and y
   adxy,hdr,targ_ra,targ_dec,x,y
 
@@ -190,9 +208,11 @@ pro lcogt_phot,imagedir,target,PLOT=plot
      return
   endif
 
-  ;;Make an output filename based on the MAST name
-  ;;turn * and whitespace into hyphens and capitalize
-  targname=strupcase(repchr(strcompress(repchr(target,'*')),' ','-'))
+  ;;Make an output filename from the MAST name embedded in the
+  ;;directory name
+  tn1=strmid(imagedir,0,strpos(imagedir,'/',/reverse_search))
+  targname=strmid(tn1,strpos(tn1,'/',/reverse_search)+1)
+  
   photfile=targname+'_phot.txt'
 
   ;;Get target, filter, MJD (start and stop) for all images
