@@ -1,0 +1,13 @@
+force_dq16: False
+infile: oe9j3s010_flt.fits
+targets:
+  CVSO-58:
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 9
+      maxsrch: null
+      xoffset: null
+      yloc: null

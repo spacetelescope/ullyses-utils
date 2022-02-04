@@ -1,0 +1,14 @@
+force_dq16: true
+infile: oe9j4s030_crj.fits
+targets:
+  CVSO-90:
+    do_defringe: false
+    x1d:
+      b_bkg1: 470
+      b_bkg2: 550
+      b_hgt1: 7
+      b_hgt2: 7
+      height: 7
+      maxsrch: 10
+      xoffset: null
+      yloc: 510

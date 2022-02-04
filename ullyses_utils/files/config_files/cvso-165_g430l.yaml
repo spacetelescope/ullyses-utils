@@ -1,0 +1,49 @@
+force_dq16: true
+infile: oe9j2s020_crj.fits
+targets:
+  CVSO-165:
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 21
+      maxsrch: 0
+      xoffset: null
+      yloc: 512
+  CVSO-165B:
+    coords:
+      ra: 84.760675
+      dec: -1.34227778
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 3
+      maxsrch: 3
+      xoffset: -0.45
+      yloc: 517
+  GAIA-DR3-3217473697810165504:
+    coords:
+      ra: 84.75978669326
+      dec: -1.34115742897
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 7
+      maxsrch: 5
+      xoffset: null
+      yloc: 618
+  CVSO-165A:
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 3
+      maxsrch: 3
+      xoffset: null
+      yloc: 511

@@ -1,0 +1,26 @@
+force_dq16: true
+infile: oe9k2s020_crj.fits
+targets:
+  CVSO-109B:
+    coords:
+        ra: 83.13599552466
+        dec: -1.22957460015
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 5
+      maxsrch: 0
+      xoffset: 10.75
+      yloc: 517
+  CVSO-109A:
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: null
+      maxsrch: 0
+      xoffset: null
+      yloc: 510

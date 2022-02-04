@@ -1,0 +1,13 @@
+force_dq16: true
+infile: oe9i1s020_crj.fits
+targets:
+  CVSO-146:
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: null
+      maxsrch: null
+      xoffset: null
+      yloc: null

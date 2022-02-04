@@ -1,0 +1,13 @@
+force_dq16: true
+infile: oe9i2s020_crj.fits
+targets:
+  V-TX-ORI:
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: null
+      maxsrch: 5
+      xoffset: null
+      yloc: 509

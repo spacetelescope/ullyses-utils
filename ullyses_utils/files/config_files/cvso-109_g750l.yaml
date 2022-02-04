@@ -1,0 +1,56 @@
+infile: oe9k2s030_crj.fits
+force_dq16: true
+targets: 
+  CVSO-109A:
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: null
+      maxsrch: 0
+      xoffset: null
+      yloc: 510.375
+    do_defringe: True
+    defringe:
+      fringeflat: oe9k2s040_raw.fits
+      beg_scale: 0.1
+      beg_shift: -0.5
+      do_scale: true
+      do_shift: true
+      end_scale: 1.2
+      end_shift: 0.5
+      extrloc: 510
+      extrsize: 7
+      scale_step: 0.04
+      shift_step: 0.1
+      opti_spreg: null
+      rms_region: null
+  CVSO-109B:
+    coords:
+      ra: 83.13599552466
+      dec: -1.22957460015 
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 5
+      maxsrch: 0
+      xoffset: 10.75
+      yloc: 517
+    do_defringe: True
+    defringe:
+      fringeflat: oe9k1s050_raw.fits
+      beg_scale: 0.1
+      beg_shift: -7
+      do_scale: true
+      do_shift: true
+      end_scale: 1.2
+      end_shift: 0.5
+      extrloc: 517
+      extrsize: 5
+      scale_step: 0.04
+      shift_step: 0.1
+      opti_spreg: null
+      rms_region: null

@@ -1,0 +1,28 @@
+infile: oe9k2s010_flt.fits
+
+force_dq16: False 
+
+targets:
+    CVSO-109A:
+        x1d:
+            yloc: 502
+            height: null
+            maxsrch: 0
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
+    CVSO-109B:
+        coords:
+            ra: 83.13599552466
+            dec: -1.22957460015
+        x1d:
+            yloc: 516.3 
+            height: 7
+            maxsrch: 0
+            xoffset: 22.0115
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
