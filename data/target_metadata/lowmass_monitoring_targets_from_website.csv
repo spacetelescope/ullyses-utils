@@ -1,0 +1,5 @@
+Target,RA(J2000),DEC(J2000),Mass (M_sun),Radius (R_sun)),Mass Accretion rate (M_sun/yr),Rotational period (days),A_V (mag),COS,STIS
+BP Tau,04h19m15.86s,+29d06m27.2s,0.7,2,2.90E-08,8.19,0.51,1,0
+GM Aur,04h55m10.98s,+30d21m59.1s,1.36,1.75,5.00E-09,6.1,0.6,1,0
+TW Hya,11h01m51.95s,-34d42m17.7s,0.7,1,2.00E-09,3.57,0,1,0
+RU Lup,15h56m42.31s,-37d49m15.47s,0.7,1.64,5.00E-08,3.71,0.07,1,0
