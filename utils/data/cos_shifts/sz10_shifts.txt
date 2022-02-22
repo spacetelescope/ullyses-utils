@@ -1,0 +1,6 @@
+leilacjaq  any  any  FUVA  202.21972561022935
+leilacjaq  any  any  FUVB  202.35378844177677
+leil2dinq  any  any  FUVA  -552.6167608773137
+leil2dinq  any  any  FUVB  -549.8675664761744
+leiladiuq  any  any  FUVA  -280.8450861229239
+leiladiuq  any  any  FUVB  -280.40536989735267

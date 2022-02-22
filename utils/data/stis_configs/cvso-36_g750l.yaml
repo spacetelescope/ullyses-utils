@@ -1,0 +1,56 @@
+force_dq16: true
+infile: oe9k5s030_crj.fits
+targets:
+  CVSO-36B:
+    coords:
+      ra: 81.45900692210
+      dec: 1.82725967070
+    defringe:
+      beg_scale: 0.8
+      beg_shift: -0.5
+      do_scale: true
+      do_shift: true
+      end_scale: 1.2
+      end_shift: 0.5
+      extrloc: null
+      extrsize: null
+      fringeflat: oe9k5s040_raw.fits
+      opti_spreg: null
+      rms_region: null
+      scale_step: 0.04
+      shift_step: 0.1
+    do_defringe: true
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 3
+      maxsrch: 0
+      xoffset: 0
+      yloc: 575
+  CVSO-36:
+    defringe:
+      beg_scale: 0.5
+      beg_shift: -0.5
+      do_scale: true
+      do_shift: true
+      end_scale: 2.5
+      end_shift: 0.5
+      extrloc: null
+      extrsize: null
+      fringeflat: oe9k5s040_raw.fits
+      opti_spreg: null
+      rms_region: null
+      scale_step: 0.04
+      shift_step: 0.1
+    do_defringe: true
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 5
+      maxsrch: null
+      xoffset: null
+      yloc: 510

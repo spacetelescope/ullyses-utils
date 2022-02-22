@@ -1,0 +1,28 @@
+force_dq16: true
+infile: oe9k3s030_crj.fits
+targets:
+  CVSO-17:
+    defringe:
+      beg_scale: 0.5
+      beg_shift: -0.5
+      do_scale: true
+      do_shift: true
+      end_scale: 1.5
+      end_shift: 0.5
+      extrloc: null
+      extrsize: null
+      fringeflat: oe9k3s040_raw.fits
+      opti_spreg: null
+      rms_region: null
+      scale_step: 0.04
+      shift_step: 0.1
+    do_defringe: true
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: null
+      maxsrch: null
+      xoffset: null
+      yloc: null

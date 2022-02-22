@@ -1,0 +1,13 @@
+le9d1cdeq  any  any  NUVA     7.9759
+le9d1cdeq  any  any  NUVB     7.9759
+le9d1cdgq  any  any  NUVA  -129.0368
+le9d1cdgq  any  any  NUVB  -128.8730
+le9d1cdiq  any  any  FUVA   -42.4650
+le9d1cdiq  any  any  FUVB   -42.7859
+le9d1cdkq  any  any  FUVA   253.1908
+le9d1cdkq  any  any  FUVB   251.8650
+le9d1cdmq  any  any  FUVA  -520.5918
+le9d1cdmq  any  any  FUVB  -521.5001
+le9d1cdoq  any  any  FUVA  -219.5404
+le9d1cdoq  any  any  FUVB  -219.9914
+le9d1gw7q  any  any  NUVA  -132.4881

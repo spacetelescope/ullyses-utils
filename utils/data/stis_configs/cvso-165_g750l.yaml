@@ -1,0 +1,109 @@
+force_dq16: true
+infile: oe9j2s030_crj.fits
+targets:
+  CVSO-165:
+    defringe:
+      beg_scale: 0.8
+      beg_shift: -0.5
+      do_scale: true
+      do_shift: true
+      end_scale: 1.4
+      end_shift: 2.0
+      extrloc: null
+      extrsize: null
+      fringeflat: oe9j2s040_raw.fits
+      opti_spreg: null
+      rms_region: null
+      scale_step: 0.04
+      shift_step: 0.1
+    do_defringe: true
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 21
+      maxsrch: 0
+      xoffset: null
+      yloc: 512
+  CVSO-165B:
+    coords:
+      ra: 84.760675
+      dec: -1.34227778
+    defringe:
+      beg_scale: 0.8
+      beg_shift: 0.0
+      do_scale: true
+      do_shift: true
+      end_scale: 1.4
+      end_shift: 2.0
+      extrloc: null
+      extrsize: null
+      fringeflat: oe9j2s040_raw.fits
+      opti_spreg: null
+      rms_region: null
+      scale_step: 0.04
+      shift_step: 0.1
+    do_defringe: true
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 3
+      maxsrch: 3
+      xoffset: -0.45
+      yloc: 517
+  GAIA-DR3-3217473697810165504:
+    coords:
+      ra: 84.75978669326
+      dec: -1.34115742897
+    defringe:
+      beg_scale: 0.8
+      beg_shift: 0.0
+      do_scale: true
+      do_shift: true
+      end_scale: 1.4
+      end_shift: 2.0
+      extrloc: null
+      extrsize: null
+      fringeflat: oe9j2s040_raw.fits
+      opti_spreg: null
+      rms_region: null
+      scale_step: 0.04
+      shift_step: 0.1
+    do_defringe: true
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 7
+      maxsrch: 5
+      xoffset: null
+      yloc: 618
+  CVSO-165A:
+    defringe:
+      beg_scale: 0.8
+      beg_shift: -0.5
+      do_scale: true
+      do_shift: true
+      end_scale: 1.4
+      end_shift: 1.0
+      extrloc: null
+      extrsize: null
+      fringeflat: oe9j2s050_raw.fits
+      opti_spreg: null
+      rms_region: null
+      scale_step: 0.04
+      shift_step: 0.1
+    do_defringe: true
+    x1d:
+      b_bkg1: null
+      b_bkg2: null
+      b_hgt1: null
+      b_hgt2: null
+      height: 3
+      maxsrch: 3
+      xoffset: null
+      yloc: 511
