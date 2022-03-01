@@ -20,5 +20,5 @@ For example, if you wish to reference the ULLYSES target alias file, you would d
 import os
 import ullyses_utils
 local_dir = ullyses_utils.__path__[0]
-alias_file = os.path.join(local_dir, "data/target_metadata/pd_all_aliases.json"
+alias_file = os.path.join(local_dir, "data/target_metadata/pd_all_aliases.json")
 ```
