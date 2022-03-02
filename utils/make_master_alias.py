@@ -7,11 +7,11 @@ import numpy as np
 import pandas as pd
 import re
 
-from ullyses_jira.parse_csv import parse_name_csv
+from parse_csv import parse_name_csv
 
-JULIAFILE = "inputs/julia_alias_file.csv"
-FUSEFILE1 = "inputs/fuse_aliases1.json"
-FUSEFILE2 = "inputs/fuse_aliases2.json"
+JULIAFILE = "data/target_metadata/julia_alias_file.csv"
+FUSEFILE1 = "data/target_metadata/fuse_aliases1.json"
+FUSEFILE2 = "data/target_metadata/fuse_aliases2.json"
 
 
 def parse_inputs():
@@ -185,13 +185,13 @@ def create_fuse_alias2():
 
     df = pd.DataFrame(fuse_dicts)
     df = clean_df(df)
-    df.to_json("inputs/fuse_target_aliases.json", orient="split")
-    print("Wrote inputs/fuse_target_aliases.json")
+    df.to_json("data/target_metadata/fuse_target_aliases.json", orient="split")
+    print("Wrote data/target_metadata/fuse_target_aliases.json")
 
 
 # manual_insert.json includes manually matched FUSE names to ULLYSES names.
 # This only needs to be run once and never again.
-def create_fuse_alias(infile="inputs/manual_insert.json"):
+def create_fuse_alias(infile="data/target_metadata/manual_insert.json"):
     fuse_targs0 = glob.glob("/astro/ullyses/ullyses_target/data/SMC/FUSE/*") + \
                   glob.glob("/astro/ullyses/ullyses_target/data/LMC/FUSE/*") + \
                   glob.glob("/astro/ullyses/ullyses_target/data/SMC_FUSE/FUSE/*") + \
@@ -257,9 +257,9 @@ def main(verbose=False):
     cols += cols1
     aliases = aliases[cols]
     aliases = remove_withdrawn(aliases)
-    aliases.to_json("inputs/pd_all_aliases.json", orient="split")
-    aliases.to_csv("inputs/pd_all_aliases.csv", index=False)
-    print("Wrote inputs/pd_all_aliases.json and pd_all_aliases.csv")
+    aliases.to_json("data/target_metadata/pd_all_aliases.json", orient="split")
+    aliases.to_csv("data/target_metadata/pd_all_aliases.csv", index=False)
+    print("Wrote data/target_metadata/pd_all_aliases.json and pd_all_aliases.csv")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

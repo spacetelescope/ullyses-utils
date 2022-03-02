@@ -1,8 +1,7 @@
+from astropy.table import Table
 import pandas as pd
 import os
 dirname = os.path.dirname(__file__)
-
-from ullyses_jira.mass_issue_creation import change_names
 
 name_csvs = {"lmc": "LMC_Preferred_Names.csv",
              "smc": "SMC_Preferred_Names.csv",
@@ -18,7 +17,7 @@ target_csvs = {"lmc":  ["LMC_sample_for_website_clean_newcoord_all_columns_order
 def parse_name_csv(target_type, returndf=False):
     target_type = target_type.lower()
     assert target_type in name_csvs, f"Target type {target_type} not recognized; acceptable values are 'lmc', 'smc', 'tts', or 'lowz'"
-    csvfile = os.path.join(dirname, "inputs", name_csvs[target_type])
+    csvfile = os.path.join(dirname, "data/target_metadata", name_csvs[target_type])
     if returndf == True:
         out = pd.read_csv(csvfile)
     else:
@@ -38,7 +37,7 @@ def parse_target_csv(target_type):
         csvs = target_csvs[target_type]
 
     for csvfile0 in csvs:
-        csvfile = os.path.join(dirname, "inputs", csvfile0)
+        csvfile = os.path.join(dirname, "data/target_metadata", csvfile0)
         try:
             df = pd.read_csv(csvfile)
             if 'metallicity' in csvfile:
@@ -55,6 +54,29 @@ def parse_target_csv(target_type):
     return csvs, dfs
 
 def parse_aliases():
-    jsonfile = os.path.join(dirname, "inputs", "pd_all_aliases.json")
+    jsonfile = os.path.join(dirname, "data/target_metadata", "pd_all_aliases.json")
     aliases = pd.read_json(jsonfile, orient="split")
     return aliases
+
+def change_names(name_change_file):
+    '''
+    WRITTEN BY RACHEL PLESHA: https://github.com/spacetelescope/ullyses_tech/blob/master/jira_connection/mass_issue_creation.py#L200
+       The final files that were given in the website are different than those
+       in the APT files. Since the box_to_jira.py script assumes that the names
+       are the same, we need to change the names on the JIRA tickets to match.
+       name_change_file : str
+          The name of the file that contains a column 'Alternate_PREFERRED',
+          which matches what is on the website, and 'Alternate_APT' which matches
+          what is in the APT files.
+    '''
+
+    t = Table.read(name_change_file)
+    names_dict = {}
+    for website_name, apt_name in zip(t['PREFERRED'], t['Alternate_APT']):
+        if website_name not in names_dict.keys():
+            names_dict[website_name.strip()] = apt_name.strip()
+        else:
+            print(f'{website_name} repeated; not including {apt_name}')
+
+    return names_dict
+
