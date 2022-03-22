@@ -31,8 +31,9 @@ def parse_inputs():
     # Now read the preferred names files from the tech repo
     smc = parse_name_csv("smc", returndf=True)
     lmc = parse_name_csv("lmc", returndf=True)
-    # The LMC file has a weird column that should be deleted
-    lmc.drop(["Unnamed: 6"], axis=1, inplace=True)
+    # The LMC file can have a weird column that should be deleted
+    if "Unnamed: 6" in lmc:
+        lmc.drop(["Unnamed: 6"], axis=1, inplace=True)
     tts = parse_name_csv("tts", returndf=True)
     lowz = parse_name_csv("lowz", returndf=True)
 
