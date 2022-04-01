@@ -1,0 +1,14 @@
+force_dq16: False 
+infile: 
+  'oeq51s010_flt.fits':
+    targets:
+      RECX-5:
+        x1d:
+          yloc: 381 # null values mean to use the default parameters
+          height: 5
+          maxsrch: 5
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
