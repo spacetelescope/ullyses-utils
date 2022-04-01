@@ -1,0 +1,38 @@
+force_dq16: False 
+infile: 
+  'oeqj1t030_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'oeqj1s010_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'oeqj1u030_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
