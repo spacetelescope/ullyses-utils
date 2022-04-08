@@ -40,11 +40,11 @@ def parse_target_csv(target_type):
         csvfile = os.path.join(dirname, "data/target_metadata", csvfile0)
         try:
             df = pd.read_csv(csvfile)
-            if 'metallicity' in csvfile:
-                # Removing WFC3 rows
-                remove_rows = df[(df['COS'] == 0) & (df['STIS'] == 0)]
-                df = df.drop(df.index[remove_rows.index])
-                print(f'Not including: {remove_rows}')
+            # if 'metallicity' in csvfile:
+            #     # Removing WFC3 rows
+            #     remove_rows = df[(df['COS'] == 0) & (df['STIS'] == 0)]
+            #     df = df.drop(df.index[remove_rows.index])
+            #     print(f'Not including: {remove_rows}')
             dfs.append(df)
         except:
             print("ERROR! Could not read file, skipping {}".format(csvfile))
@@ -79,4 +79,3 @@ def change_names(name_change_file):
             print(f'{website_name} repeated; not including {apt_name}')
 
     return names_dict
-
