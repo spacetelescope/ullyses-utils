@@ -1,3 +1,6 @@
+# Below are FUSE targets that require custom flagging
+# DQ=1 (Worm)
+# DQ=2 (Poor photometric quality)
 AV232:
   minwl:
   - 1141

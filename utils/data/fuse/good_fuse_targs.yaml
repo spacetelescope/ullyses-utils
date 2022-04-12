@@ -1,4 +1,17 @@
+# List of all FUSE targets by DR. Commented lines are targets that had serious
+# data quality issues and were not included in the DR.
 DR2:
+#- 'AV83',
+#- 'PGMW3120',
+#- 'LH114-7',
+#- 'AV235',
+#- 'AV476',
+#- 'NGC346-MPG-368',
+#- 'AV388',
+#- 'AV267',
+#- 'AV22',
+#- 'NGC346-MPG-355',
+#- 'BAT99-105',
 - AV207
 - SK-71D19
 - AV393
@@ -80,6 +93,14 @@ DR2:
 - AV327
 - AV18
 DR3:
+#- 'AV287',
+#- 'SK-69D220',
+#- 'NGC346-MPG-342',
+#- 'MOA-J010321.3-720538',
+#- 'NGC2004-ELS-26',
+#- 'BI272',
+#- 'NGC346-MPG-435',
+#- 'SK-68D16',
 - AV490
 - SK-67D166
 - SK-66D51
@@ -114,4 +135,6 @@ DR4:
 - AV85
 - SK-67D266
 - SK-68D41
-DR5: []
+DR5:
+- SK-66D171
+- SK-70D32
