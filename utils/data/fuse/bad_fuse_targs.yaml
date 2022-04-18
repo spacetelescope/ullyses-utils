@@ -1,0 +1,22 @@
+# For completeness, this is a list of all ULLYSES targets that
+# have FUSE data, but data were not used due to data quality issues.
+# It may be possible to address these issues in the future.
+- AV83
+- PGMW3120
+- LH114-7
+- AV235
+- AV476
+- NGC346-MPG-368
+- AV388
+- AV267
+- AV22
+- NGC346-MPG-355
+- BAT99-105
+- AV287
+- SK-69D220
+- NGC346-MPG-342
+- MOA-J010321.3-720538
+- NGC2004-ELS-26
+- BI272
+- NGC346-MPG-435
+- SK-68D16
