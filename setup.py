@@ -26,7 +26,8 @@ setup(
 								      "data/ref_files/*",
 								      "data/stis_configs/*",
 								      "data/target_metadata/*",
-								      "data/vignette_scaling/*"
+								      "data/vignette_scaling/*",
+								      "data/fuse/*"
 									]},
     install_requires = ["setuptools",
                         "numpy",
