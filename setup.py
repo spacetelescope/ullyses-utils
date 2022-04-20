@@ -27,7 +27,8 @@ setup(
 								      "data/stis_configs/*",
 								      "data/target_metadata/*",
 								      "data/vignette_scaling/*",
-								      "data/fuse/*"
+								      "data/fuse/*",
+								      "data/timeseries/*"
 									]},
     install_requires = ["setuptools",
                         "numpy",

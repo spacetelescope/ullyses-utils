@@ -1,0 +1,29 @@
+# Should sub-exposure timeseries be created?
+sub_exp_tss: True
+# Should exposure timeseries be created?
+exp_tss: True
+
+# The time and wavelength binning, if subexposure TSS are being created
+# Separated by IPPP identifiers so different bins can be used for different
+# epochs
+bins:
+    leit:
+        g160m:
+            time: 30 # exptime is 220s
+            wave: 6
+            min_exptime: 20
+        g230l:
+            time: 10 # exptime is 30s
+            wave: 1
+            min_exptime: 8
+
+# List of bad IPPPSS identifiers, if any, so that they are not included in TSS
+bad_ipppss:
+    - leit1d
+    - leitad
+    - leit1l
+
+
+# List of IPPPSS identifiers, if any, that require wavelength offset correction,
+# and the accompanying wavelength shift file locations
+wavelength_shift: null
