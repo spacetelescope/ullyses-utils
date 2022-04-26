@@ -194,7 +194,7 @@ pro lcogt_phot,imagedir,target,PLOT=plot
   endif
 
   ;;Location of the APASS tables
-  catalogdir='./catalogs/'
+  catalogdir='data/lcogt_catalogs/'
   if ~file_test(catalogdir) then begin
      print,'% Catalog directory '+catalogdir+' not found.'
      print,'% Edit the code to point elsewhere if need be.'
