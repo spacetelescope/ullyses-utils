@@ -20,6 +20,7 @@ bins:
 # List of bad IPPPSS identifiers, if any, so that they are not included in TSS
 bad_ipppss:
     - lek71f
+    - lek7ak
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations
