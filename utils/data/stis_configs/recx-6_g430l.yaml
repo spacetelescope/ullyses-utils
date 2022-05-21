@@ -1,0 +1,14 @@
+force_dq16: True 
+infile: 'oeqj1s040_crj.fits'
+
+targets:
+    RECX-6:            
+        x1d:
+            yloc: null 
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null

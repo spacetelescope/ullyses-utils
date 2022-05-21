@@ -1,0 +1,14 @@
+force_dq16: False 
+infile: 
+  'oeqm2s010_flt.fits':
+    targets:
+      V-VZ-CHA:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
