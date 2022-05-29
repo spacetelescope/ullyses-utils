@@ -17,9 +17,10 @@ bins:
             wave: 1
             min_exptime: 8
 
-# List of bad IPPPSS identifiers, if any, so that they are not included in TSS
-bad_ipppss:
+# List of bad IPPPSS or IPPPSSOOT identifiers, if any
+bad_files:
     - lek71f
+    - lek7ak
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations

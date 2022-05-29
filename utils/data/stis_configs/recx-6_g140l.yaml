@@ -1,0 +1,74 @@
+force_dq16: False 
+infile: 
+  'oeqj1t010_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: 7
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'oeqj1t020_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: 7
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'oeqj1u020_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: 7
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'oeqj1s030_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: 7
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'oeqj1s020_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: 7
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'oeqj1u010_flt.fits':
+    targets:
+      RECX-6:
+        x1d:
+          yloc: null # null values mean to use the default parameters
+          height: 7
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
