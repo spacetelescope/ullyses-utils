@@ -37,5 +37,5 @@ bad_files:
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations
 wavelength_shift:
-    le9d1c: "$UTILS_DIR/data/cos_shifts/twhya_shifts.txt" 
-    le9d1g: "$UTILS_DIR/data/cos_shifts/twhya_shifts.txt" 
+    le9d1c: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
+    le9d1g: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
