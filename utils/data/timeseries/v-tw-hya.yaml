@@ -30,9 +30,10 @@ bins:
 bad_files:
     - le9d1k
     - lepc1d
-    - lepc1g
+    - lepc1g # exptime=0
     - lepc1h
     - lepcad
+    - lepcah # exptime=0
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations
