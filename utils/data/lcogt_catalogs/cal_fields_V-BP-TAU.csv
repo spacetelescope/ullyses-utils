@@ -20,7 +20,7 @@
 59444.1583,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210817-0537-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210817-0540-e91.fits.fz
 59445.1575,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210818-0213-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210818-0216-e91.fits.fz
 59446.578,/astro/ullyses/lcogt_data/V-BP-TAU/ogg0m406-kb27-20210819-0208-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/ogg0m406-kb27-20210819-0211-e91.fits.fz
-59447.3921,/astro/ullyses/lcogt_data/V-BP-TAU/elp0m411-kb92-20210820-0109-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/elp0m411-kb92-20210820-0112-e91.fits.fz
+59447.3921,/astro/ullyses/lcogt_data/V-BP-TAU/elp0m411-kb92-20210820-0109-e91.fits.fz,
 59448.2007,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210821-0185-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210821-0188-e91.fits.fz
 59449.1436,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210822-0175-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210822-0178-e91.fits.fz
 59450.141,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210823-0440-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210823-0443-e91.fits.fz
@@ -53,10 +53,10 @@
 59467.1288,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210909-0191-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210909-0194-e91.fits.fz
 59467.6201,/astro/ullyses/lcogt_data/V-BP-TAU/ogg0m406-kb27-20210909-0213-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/ogg0m406-kb27-20210909-0216-e91.fits.fz
 59468.4842,/astro/ullyses/lcogt_data/V-BP-TAU/ogg0m406-kb27-20210910-0157-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/ogg0m406-kb27-20210910-0160-e91.fits.fz
-59469.1182,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0224-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0223-e91.fits.fz
-59469.1286,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0227-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0223-e91.fits.fz
-59469.1391,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0230-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0223-e91.fits.fz
-59469.1494,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0233-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0223-e91.fits.fz
+59469.1182,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0224-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0278-e91.fits.fz
+59469.1286,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0227-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0278-e91.fits.fz
+59469.1391,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0230-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0278-e91.fits.fz
+59469.1494,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0233-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0278-e91.fits.fz
 59469.2292,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210911-0275-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210911-0278-e91.fits.fz
 59470.0952,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210912-0202-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210912-0205-e91.fits.fz
 59471.0836,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210913-0159-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210913-0162-e91.fits.fz
@@ -68,7 +68,7 @@
 59477.1016,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210919-0172-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210919-0175-e91.fits.fz
 59478.0872,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210920-0314-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210920-0317-e91.fits.fz
 59479.0954,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210921-0382-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210921-0385-e91.fits.fz
-59480.0913,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210922-0155-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/tfn0m410-kb98-20210922-0158-e91.fits.fz
+59480.0913,/astro/ullyses/lcogt_data/V-BP-TAU/tfn0m410-kb98-20210922-0155-e91.fits.fz,
 59543.2818,/astro/ullyses/lcogt_data/V-BP-TAU/ogg0m404-kb82-20211124-0116-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/ogg0m404-kb82-20211124-0119-e91.fits.fz
 59544.2818,/astro/ullyses/lcogt_data/V-BP-TAU/ogg0m404-kb82-20211125-0154-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/ogg0m404-kb82-20211125-0157-e91.fits.fz
 59545.2819,/astro/ullyses/lcogt_data/V-BP-TAU/ogg0m404-kb82-20211126-0138-e91.fits.fz,/astro/ullyses/lcogt_data/V-BP-TAU-CAL/ogg0m404-kb82-20211126-0141-e91.fits.fz
