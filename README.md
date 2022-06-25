@@ -1,5 +1,9 @@
 # ullyses-utils
 
+## About
+
+This repository contains utility scripts and data files for use in the ULLYSES program.
+
 ## Installation
 
 To use the utility scripts and files in this repository, simply install like so:
