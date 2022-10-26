@@ -269,6 +269,17 @@ def remove_withdrawn(df):
     return cleaned
 
 
+def alphabetize(df):
+    df = df.replace(np.nan, "zzzzzzNaN")
+    colsstatic = ["ULL_name", "ULL_MAST_name", "simbad_name"]
+    allcols = aliases.columns.tolist()
+    colschange = [x for x in allcols if x not in colsstsic]
+    for i in range(len(df)):
+        vals = df.loc[i, colschange].values
+        vals.sort()
+        df.loc[i, colschange] = vals
+    df = df.replace("zzzzzzNaN", np.nan)
+
 def main(verbose=False):
     aliases, lmc, smc, tts, lowz = parse_inputs()
     fuse_alias1 = pd.read_json(FUSEFILE1, orient="split")
