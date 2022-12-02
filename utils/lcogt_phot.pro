@@ -198,6 +198,7 @@ pro lcogt_phot,imagedir,target,PLOT=plot
   if ~file_test(catalogdir) then begin
      print,'% Catalog directory '+catalogdir+' not found.'
      print,'% Edit the code to point elsewhere if need be.'
+     return
   endif
 
   ;;Get coordinates of target from SIMBAD

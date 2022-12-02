@@ -181,11 +181,13 @@ function fit_counts,image,sources,catfile,filter,PLOT=plot
           title=strmid(catfile,strpos(catfile,'/',/reverse_search)+1)+' '+$
           strmid(image,strpos(image,'/',/reverse_search)+1),$
           xtitle='Magnitude',ytitle='-2.5 log (counts)'
+
      oplot,newx,newy,psym=1,color=255
      oplot,!x.crange,!x.crange*coeff[1]+coeff[0]
   endif
 
   print,coeff,format='(2f14.7)'
+
   return,coeff
 
 end
@@ -209,8 +211,6 @@ function get_mag,image,coeff,targ_ra,targ_dec,f0,exptime_cal,airmass_cal,PLOT=pl
   ;;corrections in magnitudes
   exptime_corr=-2.5*alog10(exptime_cal/exptime_sci)
   airmass_corr=ku*(airmass_cal-airmass_sci)
-  
-  ;;print,exptime_corr,airmass_sci,airmass_cal,airmass_corr
   
   ;;A small number of images have MJD-OBS = 'UNKNOWN' in their
   ;;headers. We don't actually do anything with this field, but
@@ -288,10 +288,10 @@ end
 pro lcogt_uphot,imagedir,target,PLOT=plot
 
   ;;uncomment when debugging to close any output files
-  close,/all
+  ;;close,/all
 
   if n_params() ne 2 then begin
-     print,'% lcogt_phot, imagedir, target'
+     print,'% lcogt_uphot, imagedir, target'
      return
   endif
 
@@ -301,6 +301,7 @@ pro lcogt_uphot,imagedir,target,PLOT=plot
   if ~file_test(catalogdir) then begin
      print,'% Catalog directory '+catalogdir+' not found.'
      print,'% Edit the code to point elsewhere if need be.'
+     return
   endif
   
   ;;Get coordinates of target from SIMBAD
@@ -398,7 +399,7 @@ pro lcogt_uphot,imagedir,target,PLOT=plot
         filename=strmid(all_files[dophot[j]],strpos(all_files[dophot[j]],'/',/reverse_search)+1)
         ;;Only print if a valid flux was measured and S/N > 5
         if fluxes[0,j] ne 99 and fluxes[0,j]/fluxes[1,j] gt 5 then $
-        printf,1,filename,mjd1[j],mjd2[j],wave,fluxes[*,j],format='(a-39,2d17.9,i6,2e12.4)'
+           printf,1,filename,mjd1[j],mjd2[j],wave,fluxes[*,j],format='(a-39,2d17.9,i6,2e12.4)'
      endfor
 
   endfor
