@@ -46,7 +46,7 @@ function get_counts,image
      correct_mjd=find_mjd(sxpar(hdr,'DATE-OBS'))
      sxaddpar,hdr,'MJD-OBS',correct_mjd
   endif
-  
+
   ;;get a list of detections from the 1st extension
   tab=mrdfits(image,1,htab,/si)
 
@@ -112,7 +112,6 @@ function fit_counts,image,sources,catfile,filter,PLOT=plot
           title=strmid(catfile,strpos(catfile,'/',/reverse_search)+1)+' '+$
           strmid(image,strpos(image,'/',/reverse_search)+1),$
           xtitle='Magnitude',ytitle='-2.5 log (counts)'
-
      oplot,newx,newy,psym=1,color=255
      oplot,!x.crange,!x.crange*coeff[1]+coeff[0]
   endif
@@ -140,7 +139,7 @@ function get_mag,image,coeff,targ_ra,targ_dec,f0,PLOT=plot
      correct_mjd=find_mjd(sxpar(hdr,'DATE-OBS'))
      sxaddpar,hdr,'MJD-OBS',correct_mjd
   endif
-  
+
   ;;convert targ RA and Dec to x and y
   adxy,hdr,targ_ra,targ_dec,x,y
 
@@ -161,8 +160,6 @@ function get_mag,image,coeff,targ_ra,targ_dec,f0,PLOT=plot
      oplot,!x.crange,[1,1]*(-2.5*alog10(counts)),linestyle=1
      oplot,[1,1]*mag,!y.crange,linestyle=1
   endif
-
-  ;;print,counts,cerr,mag,format='(3f14.5)'
 
   return,[flux,unc]
 
@@ -213,8 +210,16 @@ pro lcogt_phot,imagedir,target,PLOT=plot
   ;;directory name
   tn1=strmid(imagedir,0,strpos(imagedir,'/',/reverse_search))
   targname=strmid(tn1,strpos(tn1,'/',/reverse_search)+1)
-  
+
   photfile=targname+'_phot.txt'
+
+  ;;Identify calibration catalog file
+  catfile=catalogdir+targname+'_apass.txt'
+  if ~file_test(catfile) then begin
+     print,'% Calibration catalog file '+catfile+' not found'
+     close,/all
+     return
+  endif
 
   ;;Get target, filter, MJD (start and stop) for all images
   all_files=file_search(imagedir+'*.fits*',count=n_all)
@@ -250,7 +255,7 @@ pro lcogt_phot,imagedir,target,PLOT=plot
   openw,1,photfile
   printf,1,';File (Wave in A; Flux in erg/s/cm2/A)','MJD_start','MJD_end','Wave','Flux','Unc',$
          format='(a-39,2("  ",a-15),"  ",a-4,2("  ",a-10))'
-  for i=0,1 do begin
+  for i=0,n_elements(filters)-1 do begin
 
      print,'% Doing photometry at '+filters[i]
 
@@ -263,15 +268,6 @@ pro lcogt_phot,imagedir,target,PLOT=plot
      if filters[i] eq 'ip' then begin
         wave=7670
         f0=1.852e-9 ;;erg/s/cm2/A, AB system
-     endif
-
-     ;;Identify calibration catalog file
-     catfile=catalogdir+targname+'_apass.txt'
-
-     if ~file_test(catfile) then begin
-        print,'% Calibration catalog file '+catfile+' not found'
-        close,/all
-        return
      endif
 
      ;;Get started on the photometry
