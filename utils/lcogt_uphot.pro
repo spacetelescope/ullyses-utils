@@ -89,7 +89,7 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
 
   ;;in some calibration images, the location of the brightest star is
   ;;very different from that in the reference image
-  tn1=strmid(catfile,0,strpos(catfile,'/',/reverse_search))
+  tn1=strmid(catfile,strpos(catfile,'/',/reverse_search))
   star=strmid(tn1,strpos(tn1,'/',/reverse_search)+1,8)
   if star eq 'V-BP-TAU' and strmid(sxpar(h,'DATE-OBS'),0,7) eq '2021-07' then begin
      xref=xref-600
@@ -164,7 +164,7 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
   if keyword_set(plot) then begin
      xrange=[max(uref[z])+0.5,min(uref[z])-0.5]
      plot,x,y,psym=1,/iso,$
-          xrange=xrange,yrange=xrange*1.15+coeff[0],$
+          xrange=xrange,yrange=xrange*coeff[1]+coeff[0],$
           title=strmid(catfile,strpos(catfile,'/',/reverse_search)+1)+' '+$
           strmid(calimage,strpos(calimage,'/',/reverse_search)+1),$
           xtitle='Magnitude',ytitle='-2.5 log (counts)'
@@ -178,12 +178,12 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
 
 end
 
-function get_mag,counts,caldata,f0,exptime,airmass
+function get_mag,counts,caldata,f0,exptime,airmass,PLOT=plot
 
   ;;get flux and uncertainty of target from fit in previous step
 
   ;;exit if an error happened earlier
-  if counts[0] eq 99 then return,99
+  if caldata[0] eq 99 then return,99
 
   ;;magnitudes per airmass at u band; see Table 3 of Fukugita et al. (1996, AJ, 111, 1748)
   ku=0.582
@@ -205,7 +205,7 @@ function get_mag,counts,caldata,f0,exptime,airmass
 
   if keyword_set(plot) then begin
      oplot,!x.crange,[1,1]*(-2.5*alog10(counts[0])),linestyle=1
-     oplot,[1,1]*mag_corr,!y.crange,linestyle=1
+     oplot,[1,1]*mag,!y.crange,linestyle=1
   endif
 
   return,[flux,unc]

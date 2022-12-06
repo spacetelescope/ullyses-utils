@@ -108,7 +108,7 @@ function fit_counts,image,sources,catfile,filter,PLOT=plot
   if keyword_set(plot) then begin
      xrange=[max(mag_cat)+0.5,min(mag_cat)-0.5]
      plot,x,y,psym=1,/iso,$
-          xrange=xrange,yrange=xrange*1.15+coeff[0],$
+          xrange=xrange,yrange=xrange*coeff[1]+coeff[0],$
           title=strmid(catfile,strpos(catfile,'/',/reverse_search)+1)+' '+$
           strmid(image,strpos(image,'/',/reverse_search)+1),$
           xtitle='Magnitude',ytitle='-2.5 log (counts)'
