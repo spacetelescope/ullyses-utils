@@ -31,6 +31,7 @@ function get_counts,image,targ_ra,targ_dec
 
   print,image
   im=mrdfits(image,0,hdr,/si)
+  tel=sxpar(hdr,'TELID')
 
   ;;get astrometry from the next image, which is V band
   startpos=strpos(image,'/',/reverse_search)+1
@@ -49,7 +50,8 @@ function get_counts,image,targ_ra,targ_dec
      adxy,hdr,targ_ra,targ_dec,x,y
 
      ;;do aperture photometry (centroid first)
-     cntrd,im,x,y,xcen,ycen,7,/silent
+     if strmid(tel,0,2) eq '1m' then fwhm=9 else fwhm=7
+     cntrd,im,x,y,xcen,ycen,fwhm,/silent
      if xcen eq -1 or ycen eq -1 then return,99 ;;source not found for whatever reason
      aper,im,xcen,ycen,/flux,mags,err,sky,skyerr,1,5,[10,20],[0,0],/si
      counts=mags[0]
@@ -73,16 +75,19 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
   ;;exit if an error happened earlier
   if counts[0] eq 99 then return,99
 
-  ;;need calibration exposure time and airmass
+  ;;need calibration exposure time, airmass, and telescope
   im=mrdfits(calimage,0,h,/si)
   calexptime=sxpar(h,'EXPTIME')
   calairmass=sxpar(h,'AIRMASS')
+  caltel=sxpar(h,'TELID')
 
   ;;several steps are necessary to accomodate images where the LCOGT
   ;;automated WCS assignment fails
 
   ;;get tabulated x, y from reference image
+  if strmid(caltel,0,2) eq '1m' then catfile=repstr(catfile,'.csv','-1m.csv')
   readcol,catfile,format='(x,x,f,f,f)',uref,xref,yref,/si,delim=',',count=nbest
+  catfile=repstr(catfile,'-1m.csv','.csv')
   umin=min(uref,bright)
   xref0=xref[bright]
   yref0=yref[bright]
