@@ -291,7 +291,7 @@ pro lcogt_uphot,imagedir,target,PLOT=plot
   for i=0,n_all-1 do begin
      h=headfits(all_files[i],exten=1)
      object=repchr(strtrim(sxpar(h,'OBJECT'),2),' ','-')
-     filter=strtrim(sxpar(h,'FILTER1'),2)
+     filter=strtrim(sxpar(h,'FILTER'),2)
      mjd=find_mjd(sxpar(h,'DATE-OBS'))
      exptime=sxpar(h,'EXPTIME')
      airmass=sxpar(h,'AIRMASS')
