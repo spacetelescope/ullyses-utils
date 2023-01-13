@@ -1,0 +1,91 @@
+# First define all detector-wide corrections
+# Set force_dq16 to True if you want to manually calculate DQ=16 even when 
+# less than 6% of detector is flagged as so
+# This can be True for CCD, but should be False for MAMA
+
+# Then the input filename. For CCD this will be a CRJ, for MAMA, an FLT.
+
+# Then define all target-specific corrections and parameters.
+# First the science target- replace 'ullyses_name' with the target name.
+# YOU MUST USE THE OFFICIAL ULLYSES NAME BELOW.
+
+force_dq16: False
+infile: 
+  'ocy806050_flt.fits':
+    targets:
+      V-VW-CHA:      
+        # Extraction parameters. For default values, leave as null
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
+    
+  'ocy807050_flt.fits':
+    targets:
+      V-VW-CHA:      
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
+    
+  'ocy808050_flt.fits':
+    targets:
+      V-VW-CHA:      
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
+    
+  'ocy809050_flt.fits':
+    targets:
+      V-VW-CHA:      
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
+    
+  'ocy810050_flt.fits':
+    targets:
+      V-VW-CHAA:      
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
+      V-VW-CHAB:      
+        coords:
+            ra: 167.006250
+            dec: -77.708128
+        x1d:
+            yloc: 389.0
+            height: 7
+            maxsrch: 0
+            xoffset: 16.5
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
