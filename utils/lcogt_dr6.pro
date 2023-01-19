@@ -35,7 +35,7 @@ pro lcogt_dr6
   lcogt_phot,'/astro/ullyses/lcogt_data/SZ98/','Sz 98'
   lcogt_phot,'/astro/ullyses/lcogt_data/SZ99/','Sz 99'
   lcogt_phot,'/astro/ullyses/lcogt_data/SZ82/','Sz 82'
-  lcogt_phot,'/astro/ullyses/lcogt_data/V-RU-LUP','V* RU Lup'
+  lcogt_phot,'/astro/ullyses/lcogt_data/V-RU-LUP/','V* RU Lup'
   lcogt_phot,'/astro/ullyses/lcogt_data/RXJ1852.3-3700/','RX J1852.3-3700'
 
   lcogt_uphot,'/astro/ullyses/lcogt_data/V-TW-HYA/','V* TW Hya'
