@@ -1,4 +1,4 @@
-VERSION = "dr5"
+VERSION = "dr5b"
 CAL_VER = "2.0"
 
 # Some targets have periods in their name and these can break MAST ingest
@@ -11,9 +11,13 @@ RENAME = {
           "pgz2001-j161031.9-191305": "pgz2001-j161031-191305",
           "pz99-j161019.1-250230": "pz99-j161019-250230",
           "rxj0438.6+1546": "rxj0438+1546",
+          "rxj1852.3-3700": "rxj1852-3700",
+          "rxj1556.1-3655": "rxj1556-3655",
+          "rxj1842.9-3532": "rxj1842-3532",
           "sstc2dj160000.6-422158": "sstc2dj160000-422158",
           "sstc2dj160830.7-382827": "sstc2dj160830-382827",
           "sstc2dj161243.8-381503": "sstc2dj161243-381503",
           "sstc2dj161344.1-373646": "sstc2dj161344-373646",
+          "sstc2dj161243.8-381503": "sstc2dj161243-381503"
           }
 

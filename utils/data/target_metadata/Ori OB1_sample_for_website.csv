@@ -1,15 +1,15 @@
-Target,2MASS,Other Name,RA,DEC,Region,Distance (pc),SpT,M*,log(dm/dt),A_V,U,V,DO,OLD COS orbs,OLD STIS orbs,OLD ORB,COS orbs estimated,STIS orbs estimated,COS orbs,STIS orbs,ORBS,PID,AR MODES,DR,Reference
-CVSO-109,J05323265-0113461,V462 Ori,5h32m32.66s,-1d13m46.1s,Ori OB1b,440,M0,0.56,-7.6,0,13.62,13.97,1,1,1,2,1.71,0.29,2,1,2,16115,COS/G160M,2,
-CVSO-90,J05312062-0049197,,5h31m20.63s,-0d49m19.8s,Ori OB1b,440,K7,0.79,-7.75,0,13.64,14.61,1,2,1,3,2.14,0.32,2,1,3,16114,,2,
-CVSO-146,J05354600-0057522,V499 Ori,5h35m46.01s,-0d57m52.2s,Ori OB1b,440,K6,0.92,-8.06,0.1,13.7,14.01,1,3,1,4,4.61,0.47,5,1,4,16113,,2,
-CVSO-104,J05320638-0111000,,5h32m06.49s,-1d11m00.8s,Ori OB1b,440,K7,0.77,-8.12,0,14.14,14.22,1,3,1,4,4,0.45,4,1,4,16115,,2,
-CVSO-36,J05255035+0149370,,5h25m50.37s,1d49m37.3s,Ori OB1a,330,M3,0.34,-8.44,0,15.95,16.07,1,3,1,4,4.29,0.44,5,1,4,16115,,2,
-CVSO-107,J05322578-0036533,,5h32m25.79s,-0d36m53.4s,Ori OB1b,440,K7,0.77,-7.96,0.32,14.4,14.78,1,4,1,5,6.41,0.51,7,1,5,16115,,2,
-CVSO-165,J05390257-0120323,,5h39m02.57s,-1d20m32.3s,Ori OB1b,440,K6,0.91,-8.43,0,14.13,13.68,1,4,1,5,7.15,0.64,7,1,5,16114,,2,
-CVSO-176,J05402414-0031213,V609 Ori,5h40m24.15s,-0d31m21.3s,Ori OB1b,440,M3,0.35,-8.37,0,15.3,15.65,1,4,1,5,6.37,0.59,7,1,5,16115,,2,
-CVSO-58,J05292326-0125153,,5h29m23.26s,-1d25m15.5s,Ori OB1b,440,K7,0.78,-8.35,0.12,14.63,14.93,1,5,1,6,8.01,0.65,8,1,6,16114,COS/G160M,2,
-CVSO-17,J05230470+0137148,,5h23m04.72s,1d37m15.3s,Ori OB1a,330,M3,0.33,-9.22,0,16.52,16.16,1,6,1,7,8.46,0.57,9,1,7,16115,,2,
-CVSO 35,J05254589+0145500,OB1A 1192,05h25m45.914s,+01d45m50.11s,Ori OB1a,450,K7,0.77,-8.77,0.85,,13.36,2,0,0,0,0,0,0,0,0,13363,COS/G160M,5,France+2017
-KISO-A-0903 134,J05265537+0140224,OB1A 1630,05h26m55.37s,+01d40m22.40s,Ori OB1a,450,,0.4,-9.1,0,,15.56,2,0,0,0,0,0,0,0,0,13363,COS/G160M,5,France+2017
-CVSO 206,J05244103+0154386,Kiso A-0903 109,05h24m41.04s,+01d54m38.53s,Ori OB1a,450,,0.8,-8.13,0.6,,14.93,2,0,0,0,0,0,0,0,0,13363,COS/G160M,5,France+2017
-HK Ori,J05312805+1209102,HBC 94,05h31m28.05s,+12d09m10.15s,Ori OB1,460,A4,3,-5.24,1.15,11.82,12.06,2,0,2,0,0,0,0,0,0,12996|15070,COS/G130M-COS/G160M-COS/G230L-STIS/E230M,5,Mendigutia+2011|Donehew+2011
+Target,2MASS,Other Name,RA,DEC,Region,Distance (pc),SpT,M*,log(dm/dt),A_V,U,V,DO,OLD COS orbs,OLD STIS orbs,OLD ORB,COS orbs estimated,STIS orbs estimated,COS orbs,STIS orbs,ORBS,PID,AR MODES,DR,Reference,Target_LINK
+CVSO-109,J05323265-0113461,V462 Ori,5h32m32.66s,-1d13m46.1s,Ori OB1b,440,M0,0.56,-7.6,0,13.62,13.97,1,1,1,2,1.71,0.29,2,1,2,16115,COS/G160M,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Haro+5-66"" target=""_blank"">CVSO 109</a>"
+CVSO-90,J05312062-0049197,,5h31m20.63s,-0d49m19.8s,Ori OB1b,440,K7,0.79,-7.75,0,13.64,14.61,1,2,1,3,2.14,0.32,2,1,3,16114,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Kiso+A-0904+1"" target=""_blank"">CVSO 90</a>"
+CVSO-146,J05354600-0057522,V499 Ori,5h35m46.01s,-0d57m52.2s,Ori OB1b,440,K6,0.92,-8.06,0.1,13.7,14.01,1,3,1,4,4.61,0.47,5,1,4,16113,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Haro+5-73"" target=""_blank"">CVSO 146</a>"
+CVSO-104,J05320638-0111000,,5h32m06.49s,-1d11m00.8s,Ori OB1b,440,K7,0.77,-8.12,0,14.14,14.22,1,3,1,4,4,0.45,4,1,4,16115,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Haro+5-64"" target=""_blank"">CVSO 104</a>"
+CVSO-36,J05255035+0149370,,5h25m50.37s,1d49m37.3s,Ori OB1a,330,M3,0.34,-8.44,0,15.95,16.07,1,3,1,4,4.29,0.44,5,1,4,16115,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=CVSO+36"" target=""_blank"">CVSO 36</a>"
+CVSO-107,J05322578-0036533,,5h32m25.79s,-0d36m53.4s,Ori OB1b,440,K7,0.77,-7.96,0.32,14.4,14.78,1,4,1,5,6.41,0.51,7,1,5,16115,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Kiso+A-0904+4"" target=""_blank"">CVSO 107</a>"
+CVSO-165,J05390257-0120323,,5h39m02.57s,-1d20m32.3s,Ori OB1b,440,K6,0.91,-8.43,0,14.13,13.68,1,4,1,5,7.15,0.64,7,1,5,16114,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Kiso+A-0904+76"" target=""_blank"">CVSO 165</a>"
+CVSO-176,J05402414-0031213,V609 Ori,5h40m24.15s,-0d31m21.3s,Ori OB1b,440,M3,0.35,-8.37,0,15.3,15.65,1,4,1,5,6.37,0.59,7,1,5,16115,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Haro+5-91"" target=""_blank"">CVSO 176</a>"
+CVSO-58,J05292326-0125153,,5h29m23.26s,-1d25m15.5s,Ori OB1b,440,K7,0.78,-8.35,0.12,14.63,14.93,1,5,1,6,8.01,0.65,8,1,6,16114,COS/G160M,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Kiso+A-0903+176"" target=""_blank"">CVSO 58</a>"
+CVSO-17,J05230470+0137148,,5h23m04.72s,1d37m15.3s,Ori OB1a,330,M3,0.33,-9.22,0,16.52,16.16,1,6,1,7,8.46,0.57,9,1,7,16115,,2,,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=CVSO+17"" target=""_blank"">CVSO 17</a>"
+CVSO 35,J05254589+0145500,OB1A 1192,05h25m45.914s,+01d45m50.11s,Ori OB1a,450,K7,0.77,-8.77,0.85,,13.36,2,0,0,0,0,0,0,0,0,13363,COS/G160M,5,France+2017,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=CVSO+35"" target=""_blank"">CVSO 35</a>"
+KISO-A-0903 134,J05265537+0140224,OB1A 1630,05h26m55.37s,+01d40m22.40s,Ori OB1a,450,,0.4,-9.1,0,,15.56,2,0,0,0,0,0,0,0,0,13363,COS/G160M,5,France+2017,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Kiso+A-0903+134"" target=""_blank"">KISO A-0903 134</a>"
+CVSO 206,J05244103+0154386,Kiso A-0903 109,05h24m41.04s,+01d54m38.53s,Ori OB1a,450,,0.8,-8.13,0.6,,14.93,2,0,0,0,0,0,0,0,0,13363,COS/G160M,5,France+2017,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Kiso+A-0903+109"" target=""_blank"">CVSO 206</a>"
+HK Ori,J05312805+1209102,HBC 94,05h31m28.05s,+12d09m10.15s,Ori OB1,460,A4,3,-5.24,1.15,11.82,12.06,2,0,2,0,0,0,0,0,0,12996|15070,COS/G130M-COS/G160M-COS/G230L-STIS/E230M,5,Mendigutia+2011|Donehew+2011,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=V*+HK+Ori"" target=""_blank"">HK Ori</a>"
