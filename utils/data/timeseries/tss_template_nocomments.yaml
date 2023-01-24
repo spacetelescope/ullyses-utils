@@ -1,0 +1,53 @@
+sub_exp_tss: False
+exp_tss: True
+
+observatory: hst # This is a single value
+instrument: stis # This is a single value
+gratings: # This is a list
+    - g140l
+    - g230l
+
+bins:
+    le9d:
+        g160m:
+            time: 30 # exptime is 300s
+            wave: 3
+            min_exptime: 20
+        g230l:
+            time: 10 # exptime is 30s
+            wave: 1
+            min_exptime: 8
+    lepc:
+        g160m:
+            time: 30 # exptime is 300s
+            wave: 3
+            min_exptime: 20
+        g230l:
+            time: 10 # exptime is 30s
+            wave: 1
+            min_exptime: 8
+
+good_files:
+    - oeqj1s010
+    - oeqj1s020
+    - oeqj1s030
+    - oeqj1s040
+    - oeqj1s050
+    - oeqj1t010
+    - oeqj1t020
+    - oeqj1t030
+    - oeqj1u010
+    - oeqj1u020
+    - oeqj1u030
+
+bad_files:
+    - le9d1k
+    - lepc1d
+    - lepc1g # exptime=0
+    - lepc1h
+    - lepcad
+    - lepcah # exptime=0
+
+wavelength_shift:
+    le9d1c: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
+    le9d1g: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
