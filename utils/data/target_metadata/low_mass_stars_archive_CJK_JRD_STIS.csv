@@ -1,4 +1,4 @@
-Dataset,Target Name,RA (J2000),Dec (J2000),Ref,Start Time,Stop Time,Exp Time,Instrument,Apertures,Filters/Gratings,Central Wavelength,Proposal ID,Release Date,Preview Name,
+Dataset,Target Name,RA (J2000),Dec (J2000),Ref,Start Time,Stop Time,Exp Time,Instrument,Apertures,Filters/Gratings,Central Wavelength,Proposal ID,Release Date,Preview Name,DONE?
 OCLV01030,V-CS-CHA,165.6038,-77.5599222,3,4/23/15 1:30,4/23/15 1:36,303,STIS,52X2,G430L,4300,13775,4/23/16 12:12,OCLV01030,do
 OCLV01040,V-CS-CHA,165.6038,-77.5599222,3,4/23/15 1:41,4/23/15 2:01,1178,STIS,52X2,G230L,2376,13775,4/23/16 12:14,OCLV01040,do
 OCLV01050,V-CS-CHA,165.6038,-77.5599222,3,4/23/15 2:38,4/23/15 3:34,3315,STIS,52X2,G140L,1425,13775,4/23/16 12:16,OCLV01050,do
