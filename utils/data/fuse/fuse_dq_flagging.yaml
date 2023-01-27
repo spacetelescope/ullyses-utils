@@ -39,13 +39,6 @@ AV18:
   - -1
   dq:
   - 1
-LMCX-4:
-  minwl:
-  - 1179.9
-  maxwl:
-  - -1
-  dq:
-  - 1
 N11-ELS-013:
   minwl:
   - 0
@@ -211,23 +204,6 @@ NGC346-ELS-26:
   dq:
   - 2
   - 2
-SK-67D106:
-  minwl:
-  - 0
-  - 1079.5
-  maxwl:
-  - 998.5
-  - 1090.5
-  dq:
-  - 2
-  - 2
-SK-67D168:
-  minwl:
-  - 1089.5
-  maxwl:
-  - 1094.5
-  dq:
-  - 2
 SK-67D107:
   minwl:
   - 0
@@ -272,20 +248,6 @@ SK-69D279:
   dq:
   - 2
   - 1
-2DFS-999:
-  minwl:
-  - 0
-  maxwl:
-  - 1000
-  dq:
-  - 2
-AV26:
-  minwl:
-  - 1150
-  maxwl:
-  - -1
-  dq:
-  - 1
 AV96:
   minwl:
   - 1147
@@ -317,13 +279,181 @@ AV14:
   - -1
   dq:
   - 1
-AV39A:
+N11-ELS-032:
   minwl:
-  - 1082
-  - 1150
+  - 1090
   maxwl:
-  - 1094
-  - -1
+  - 1095
   dq:
   - 2
-  - 1
+SK-70D13:
+  minwl:
+  - 1079
+  - 0
+  maxwl:
+  - 1095
+  - 990
+  dq:
+  - 2
+  - 2
+NGC346-MPG-342:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+AV267:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+BAT99-105:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+MOA-J010321.3-720538:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+AV26:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+AV235:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+LMCX-4:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+SK-68D16:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+NGC2004-ELS-26:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+SK-67D104:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+NGC346-MPG-355:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+SK-65D55:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+PGMW-3070:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+AV476:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+NGC346-MPG-435:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+SK-67D106:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+SK-67D168:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+AV39A:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+2DFS-999:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+AV388:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+LH114-7:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+AV83:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
+BI272:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 3
