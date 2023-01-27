@@ -1,6 +1,7 @@
 # For completeness, this is a list of all ULLYSES targets that
 # have FUSE data, but data were not used due to data quality issues.
 # It may be possible to address these issues in the future.
+# This list is not used in any way, just kept for informational purposes.
 - AV83
 - PGMW3120
 - LH114-7
