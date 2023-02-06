@@ -16,12 +16,23 @@ bins:
             time: 10 # exptime is 30s
             wave: 1
             min_exptime: 8
+    leph:
+        g160m:
+            time: 30 # exptime is 220s
+            wave: 6
+            min_exptime: 20
+        g230l:
+            time: 10 # exptime is 30s
+            wave: 1
+            min_exptime: 8
 
 # List of bad IPPPSS or IPPPSSOOT identifiers, if any
 bad_files:
     - leit1d
     - leitad
     - leit1l
+    - leph1d
+    - leph1e
 
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,

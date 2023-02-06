@@ -16,9 +16,19 @@ bins:
             time: 10 # exptime is 196s
             wave: 1
             min_exptime: 8
+    lepd:
+        g160m:
+            time: 30 # exptime is 128s
+            wave: 6
+            min_exptime: 20
+        g230l:
+            time: 10 # exptime is 196s
+            wave: 1
+            min_exptime: 8
 
 # List of bad IPPPSS or IPPPSSOOT identifiers, if any
-bad_files: null
+bad_files: 
+    - lepd1g
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations
