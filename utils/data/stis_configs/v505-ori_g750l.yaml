@@ -19,6 +19,7 @@ infile:
           shift_step: 0.1
         do_defringe: true
         x1d:
+          yloc: null
           b_bkg1: null
           b_bkg2: null
           b_hgt1: null
