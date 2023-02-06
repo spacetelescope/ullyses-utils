@@ -1,0 +1,62 @@
+force_dq16: True 
+infile: 
+  'odkd01010_crj.fits':
+    targets:
+      V-GM-AUR:            
+        x1d:
+          yloc: null 
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'odkd02010_crj.fits': 
+    targets: 
+      V-GM-AUR:             
+        x1d: 
+          yloc: null 
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'ocsn02010_crj.fits': 
+    targets: 
+      V-GM-AUR:             
+        x1d: 
+          yloc: null 
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'odkd03010_crj.fits': 
+    targets: 
+      V-GM-AUR:             
+        x1d: 
+          yloc: null 
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+  'ocsn01010_crj.fits': 
+    targets: 
+      V-GM-AUR:             
+        x1d: 
+          yloc: null 
+          height: null
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
