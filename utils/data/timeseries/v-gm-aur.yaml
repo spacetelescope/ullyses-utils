@@ -2,7 +2,7 @@
 # E.g. for TW Hydra the file name should be v-tw-hya.yaml
 
 # True if sub-exposure timeseries be created
-sub_exp_tss: False
+sub_exp_tss: True
 # True if exposure timeseries be created
 exp_tss: True
 
