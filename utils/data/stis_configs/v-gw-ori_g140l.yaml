@@ -17,7 +17,7 @@ infile:
         # Extraction parameters. For default values, leave as null
         x1d:
             yloc: null # null values mean to use the default parameters
-            height: null
+            height: 15  
             maxsrch: null
             xoffset: null
             b_bkg1: null
@@ -30,7 +30,7 @@ infile:
       V-GW-ORI:      
         x1d:
             yloc: null # null values mean to use the default parameters
-            height: null
+            height: 15  
             maxsrch: null
             xoffset: null
             b_bkg1: null
