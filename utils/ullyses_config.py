@@ -1,5 +1,5 @@
-VERSION = "dr5b"
-CAL_VER = "2.0"
+VERSION = "dr6"
+CAL_VER = "3.0"
 
 # Some targets have periods in their name and these can break MAST ingest
 # Rename them to remove periods and strip any trailing numbers after periods
@@ -13,6 +13,7 @@ RENAME = {
           "rxj0438.6+1546": "rxj0438+1546",
           "rxj1852.3-3700": "rxj1852-3700",
           "rxj1556.1-3655": "rxj1556-3655",
+          "rxj1608.9-3905": "rxj1608-3905",
           "rxj1842.9-3532": "rxj1842-3532",
           "sstc2dj160000.6-422158": "sstc2dj160000-422158",
           "sstc2dj160830.7-382827": "sstc2dj160830-382827",
