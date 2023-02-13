@@ -1,8 +1,10 @@
-;;This is a wrapper that calls lcogt_phot.pro 13 times, once for each
-;;Orion target
+;;This wrapper calls lcogt_phot.pro once for each DR3 target.
 
-pro lcogt_orion
- 
+;;The directory names are the MAST names. The second argument needs to
+;;be a name recognizable by SIMBAD.
+
+pro lcogt_dr3
+
   lcogt_phot,'/astro/ullyses/lcogt_data/CVSO-17/','CVSO 17'
   lcogt_phot,'/astro/ullyses/lcogt_data/CVSO-36/','CVSO 36'
   lcogt_phot,'/astro/ullyses/lcogt_data/CVSO-58/','CVSO 58'

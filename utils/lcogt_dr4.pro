@@ -1,11 +1,10 @@
-;;This is a wrapper that calls lcogt_phot.pro 20 times, once for each
-;;DR4 target
+;;This wrapper calls lcogt_phot.pro once for each DR4 target.
 
 ;;The directory names are the MAST names. The second argument needs to
 ;;be a name recognizable by SIMBAD.
 
 pro lcogt_dr4
- 
+
   lcogt_phot,'/astro/ullyses/lcogt_data/2MASSJ11432669-7804454/','2MASS J11432669-7804454'
   lcogt_phot,'/astro/ullyses/lcogt_data/CHX18N/','CHX 18N'
   lcogt_phot,'/astro/ullyses/lcogt_data/ECHA-J0844.2-7833/','ECHA J0844.2-7833'
