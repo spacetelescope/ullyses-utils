@@ -1,7 +1,17 @@
+# The name of this file should be the *ULLYSES DP TARGET NAME IN LOWERCASE*!!!
+# E.g. for TW Hydra the file name should be v-tw-hya.yaml
+
 # Should sub-exposure timeseries be created?
 sub_exp_tss: True
 # Should exposure timeseries be created?
 exp_tss: True
+
+observatory: hst # This is a single value
+instrument: cos # This is a single value
+gratings: # This is a list
+    - g160m
+    - g230l
+
 
 # The time and wavelength binning, if subexposure TSS are being created
 # Separated by IPPP identifiers so different bins can be used for different
@@ -25,6 +35,8 @@ bins:
             time: 10 # exptime is 30s
             wave: 1
             min_exptime: 8
+
+good_files: null
 
 # List of bad IPPPSS or IPPPSSOOT identifiers, if any
 bad_files:
