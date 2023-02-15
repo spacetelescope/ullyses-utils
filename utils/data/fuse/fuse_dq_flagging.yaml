@@ -1,6 +1,7 @@
 # Below are FUSE targets that require custom flagging
 # DQ=1 (Worm)
 # DQ=2 (Poor photometric quality)
+# DQ=4 (Rescaled flux)
 AV232:
   minwl:
   - 1141
@@ -302,158 +303,158 @@ NGC346-MPG-342:
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 AV267:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 BAT99-105:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 MOA-J010321.3-720538:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 AV26:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 AV235:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 LMCX-4:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 SK-68D16:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 NGC2004-ELS-26:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 SK-67D104:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 NGC346-MPG-355:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 SK-65D55:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 PGMW-3070:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 AV476:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 NGC346-MPG-435:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 SK-67D106:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 SK-67D168:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 AV39A:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 2DFS-999:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 AV388:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 LH114-7:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 AV83:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
 BI272:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
-  - 3
+  - 4
