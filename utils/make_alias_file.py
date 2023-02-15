@@ -21,7 +21,7 @@ def parse_inputs():
     aliases = aliases.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     aliases.columns = aliases.columns.str.strip()
     # All data should have a simbad_name entry, even if it is nan
-    aliases["simbad_name"] = np.nan
+    aliases = aliases.rename(columns={"SIMBAD_name": "simbad_name"})
     # Add missing TTS if not present
     mask = aliases.apply(lambda row: row.astype(str).str.fullmatch(re.escape("TX-ORI")).any(), axis=1)
     if set(mask) == {False}:
@@ -64,14 +64,14 @@ def clean_df(df):
     df = df.replace("NaN", np.nan)
     df = df.replace("NAN", np.nan)
     df = df.replace("nan", np.nan)
-    
+
     return df
 
-def move_empty_cols(df): 
+def move_empty_cols(df):
     # The first 3 columns of the alias dataframe are for ULL_name,
     # ULL_MAST_name, and simbad_name. The rest are all aliases, and sometimes
     # there are empty entries in the first alias spots while latter ones are
-    # are filled. The below function, from stackoverflow moves early empty 
+    # are filled. The below function, from stackoverflow moves early empty
     # entries to the right.
     # https://stackoverflow.com/questions/32062157/move-non-empty-cells-to-the-left-in-pandas-dataframe
     def squeeze_nan(x):
@@ -85,7 +85,7 @@ def move_empty_cols(df):
     # columns that we do not want to move around, and all alias columns in
     # the other dataframe. Then we rearrange the nan's in the alias dataframe.
     colnames = df.columns.values
-    anchor_df = df[[x for x in colnames if "alias" not in x]] 
+    anchor_df = df[[x for x in colnames if "alias" not in x]]
     alias_df = df[[x for x in colnames if "alias" in x]]
     alias_df = alias_df.apply(squeeze_nan, axis=1)
     df = pd.concat([anchor_df, alias_df], axis=1)
@@ -137,8 +137,8 @@ def add_aliases(comparison, all_aliases, verbose=False):
                 already_present = True
                 # Add the simbad name if it exists for a given target and is
                 # a valid value
-                if "simbad_name" in comparison.columns and comparison.iloc[i]["simbad_name"] != "NOT AVAILABLE IN SIMBAD":
-                    all_aliases.loc[mask, "simbad_name"] = comparison.iloc[i]["simbad_name"]
+                #if "simbad_name" in comparison.columns and comparison.iloc[i]["simbad_name"] != "NOT AVAILABLE IN SIMBAD":
+                #    all_aliases.loc[mask, "simbad_name"] = comparison.iloc[i]["simbad_name"]
                 break
         # If no overlap was found, add a comparison row with all aliases
         if already_present == False:
@@ -284,7 +284,7 @@ def main(verbose=False):
     cols += cols1
     aliases = aliases[cols]
     aliases = remove_withdrawn(aliases)
-    aliases = move_empty_cols(aliases) 
+    aliases = move_empty_cols(aliases)
     aliases.to_json("data/target_metadata/pd_all_aliases.json", orient="split")
     aliases.to_csv("data/target_metadata/pd_all_aliases.csv", index=False)
     print("Wrote data/target_metadata/pd_all_aliases.json and pd_all_aliases.csv")
