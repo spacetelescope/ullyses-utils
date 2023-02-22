@@ -124,18 +124,15 @@ DR5:
 - AV14
 - AV469
 DR6:
-- N11-ELS-032
 - PGMW-3070
 - SK-67D78
 - SK-69D52
 - SK-70D50
 - SK-71D45
-- BI13
 - SK-66D18
 - SK-66D100
 - SK-67D216
 - SK-70D13
-- NGC346-MPG-435
 - AV435
 - SK-70D69
 - NGC346-MPG-342
@@ -159,3 +156,8 @@ DR6:
 - LH114-7
 - AV83
 - BI272
+# The FUSE data for the targets below was ready for DR6, but HST data was not acquired.
+#DR7:
+#- NGC346-MPG-435
+#- N11-ELS-032
+#- BI13

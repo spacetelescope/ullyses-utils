@@ -62,6 +62,7 @@ good_files: null
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 bad_files:
     - lepd1g
+    - lepd1hzsq
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.
