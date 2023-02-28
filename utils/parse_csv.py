@@ -17,7 +17,7 @@ target_csvs = {"lmc":  ["LMC_sample_for_website_clean_newcoord_all_columns_order
                "all": []}
 database_csvs = {"lmc":  ["all_massive_star_metadata.csv"],
                  "smc" : ["all_massive_star_metadata.csv"],
-                 "lowz": ["all_massive_star_metadata.csv"],
+                 "lowz": ["all_massive_star_metadata.csv", "lowz_db_metadata.csv"],
                  "ctts": ["full_sample_CTTS_for_DB.csv"],
                  "tts" : ["full_sample_CTTS_for_DB.csv"],
                  "all": []}
