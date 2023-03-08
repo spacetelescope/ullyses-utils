@@ -39,7 +39,7 @@ packages = [
 include-package-data = false
 
 [tool.setuptools.package-dir]
-ullyses-utils = "utils"
+ullyses_utils = "utils"
 
 [tool.setuptools.package-data]
 ullyses_utils = [
