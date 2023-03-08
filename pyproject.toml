@@ -1,6 +1,5 @@
 [project]
 name = "ullyses_utils"
-version = "0.0.1"
 description = "ULLYSES utility files and scripts"
 authors = [
     { name = "ULLYSES STScI Team" },
@@ -24,6 +23,7 @@ dependencies = [
     "numpy",
     "astropy",
 ]
+dynamic = ["version"]
 
 [build-system]
 requires = [
@@ -52,3 +52,5 @@ ullyses_utils = [
     "data/fuse/*",
     "data/timeseries/*",
 ]
+
+[tool.setuptools_scm]
