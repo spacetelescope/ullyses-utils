@@ -334,7 +334,7 @@ pro lcogt_uphot,imagedir,target,PLOT=plot
      ;;data from Table 2A of Fukugita et al. (1996, AJ, 111, 1748)
      if filters[i] eq 'up' then begin
         wave=3560
-        f0=1.852e-9 ;;erg/s/cm2/A, AB system
+        f0=8.595e-9 ;;erg/s/cm2/A, AB system
      endif
 
      ;;Get started on the photometry
