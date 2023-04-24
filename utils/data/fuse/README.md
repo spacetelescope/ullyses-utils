@@ -19,7 +19,7 @@ All archival FUSE data used in the ULLYSES sample are examined and vetted by the
 
 The following strategy was used to repair these data:
 1. Begin by examining the NVO file, which was initially created by splicing together pieces of the extracted spectra from the eight FUSE detector segments.
-  - If the NVO file does not meet data quality needs (e.g., depressed flux or mismatching flux at channel transition points), a new NVO file is created by using the eight individual extracted spectra in the “ALL” files. These eight spectra are shifted to a common wavelength zero point and rescaled to create a new NVO file.
+    - If the NVO file does not meet data quality needs (e.g., depressed flux or mismatching flux at channel transition points), a new NVO file is created by using the eight individual extracted spectra in the “ALL” files. These eight spectra are shifted to a common wavelength zero point and rescaled to create a new NVO file.
 2. The guide channel is identified (LiF1A for the first half of the mission, and LiF2A for the second) and its spectrum adopted as a reference.
 3. If the spectra from other channels are less than 50% brighter than the reference, then they are rescaled to match the reference in the region of overlap.
 4. If they are more than 50% brighter than the reference, they are assumed to be contaminated by nearby stars and not included in the final spectrum.
