@@ -18,11 +18,11 @@ The following configuration files are used in the ULLYSES HLSP pipeline:
 All archival FUSE data used in the ULLYSES sample are examined and vetted by the ULLYSES team. Some targets exhibit various issues in their spectra, such as spectral channel drifting. In DR6, the ULLYSES team has begun to deliver improved spectra for such targets. Using the strategy outlined below, FUSE data for 23 targets previously excluded from the sample were able to be rectified and included in products. The notebooks included in this repository follow the procedure below. Needed in the directory where the notebook is run is the corresponding "all" file for the dataset rootname listed at the beginning of the notebook. Each notebook also includes notes specific to each target, as they each require slightly different modifications.
 
 The following strategy was used to repair these data:
-  1. Begin by examining the NVO file, which was initially created by splicing together pieces of the extracted spectra from the eight FUSE detector segments.
-    - If the NVO file does not meet data quality needs (e.g., depressed flux or mismatching flux at channel transition points), a new NVO file is created by using the eight individual extracted spectra in the “ALL” files. These eight spectra are shifted to a common wavelength zero point and rescaled to create a new NVO file.
-  2. The guide channel is identified (LiF1A for the first half of the mission, and LiF2A for the second) and its spectrum adopted as a reference.
-  3. If the spectra from other channels are less than 50% brighter than the reference, then they are rescaled to match the reference in the region of overlap.
-  4. If they are more than 50% brighter than the reference, they are assumed to be contaminated by nearby stars and not included in the final spectrum.
+1. Begin by examining the NVO file, which was initially created by splicing together pieces of the extracted spectra from the eight FUSE detector segments.
+  - If the NVO file does not meet data quality needs (e.g., depressed flux or mismatching flux at channel transition points), a new NVO file is created by using the eight individual extracted spectra in the “ALL” files. These eight spectra are shifted to a common wavelength zero point and rescaled to create a new NVO file.
+2. The guide channel is identified (LiF1A for the first half of the mission, and LiF2A for the second) and its spectrum adopted as a reference.
+3. If the spectra from other channels are less than 50% brighter than the reference, then they are rescaled to match the reference in the region of overlap.
+4. If they are more than 50% brighter than the reference, they are assumed to be contaminated by nearby stars and not included in the final spectrum.
 
 Even with these corrections, some flux mismatches still remain at the transition point between FUSE and HST data- these are not corrected by the ULLYSES team. If smooth transitions are required, one of the contributing spectra may be manually scaled to the other.
 
