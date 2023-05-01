@@ -1,6 +1,6 @@
 # FUSE Inputs
 
-We use these data products in conjunction with the ULLYSES pipeline to get the final FUSE high level science product.
+We use these files in conjunction with the ULLYSES pipeline to get the final FUSE high level science products.
 
 ## YAML files
 The following configuration files are used in the ULLYSES HLSP pipeline:
