@@ -59,8 +59,25 @@ function get_counts,image,targ_ra,targ_dec
 
   endif else begin
 
-     print,'% No V image for astrometry'
-     return,99
+     if sxpar(hdr,'WCSERR') eq 0 then begin
+
+        ;;convert targ RA and Dec to x and y
+        adxy,hdr,targ_ra,targ_dec,x,y
+
+        ;;do aperture photometry (centroid first)
+        if strmid(tel,0,2) eq '1m' then fwhm=9 else fwhm=7
+        cntrd,im,x,y,xcen,ycen,fwhm,/silent
+        if xcen eq -1 or ycen eq -1 then return,99 ;;source not found for whatever reason
+        aper,im,xcen,ycen,/flux,mags,err,sky,skyerr,1,5,[10,20],[0,0],/si
+        counts=mags[0]
+        cerr=err[0]
+
+     endif else begin
+
+        print,'% No V image for astrometry'
+        return,99
+
+     endelse
 
   endelse
 
@@ -77,6 +94,7 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
 
   ;;need calibration exposure time, airmass, and telescope
   im=mrdfits(calimage,0,h,/si)
+  s=size(im)
   calexptime=sxpar(h,'EXPTIME')
   calairmass=sxpar(h,'AIRMASS')
   caltel=sxpar(h,'TELID')
@@ -86,7 +104,25 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
 
   ;;get tabulated x, y from reference image
   if strmid(caltel,0,2) eq '1m' then catfile=repstr(catfile,'.csv','-1m.csv')
-  readcol,catfile,format='(x,x,f,f,f)',uref,xref,yref,/si,delim=',',count=nbest
+  readcol,catfile,format='(x,d,f,f,f)',decref,uref,xref,yref,/si,delim=',',count=nbest
+  ;;If there are two cal fields, ignore entries from the wrong one
+  tn1=strmid(catfile,strpos(catfile,'/',/reverse_search))
+  star=strmid(tn1,strpos(tn1,'/',/reverse_search)+1,8)
+  if (star eq 'V-BP-TAU' or star eq 'V-GM-AUR') then begin
+     north=where(decref gt 30,ctnorth,comp=south,ncomp=ctsouth)
+     if sxpar(h,'MJD-OBS') gt 59700 then begin
+        uref=uref[north]
+        xref=xref[north]
+        yref=yref[north]
+        nbest=ctnorth
+     endif else begin
+        uref=uref[south]
+        xref=xref[south]
+        yref=yref[south]
+        nbest=ctsouth
+     endelse
+  endif
+
   catfile=repstr(catfile,'-1m.csv','.csv')
   umin=min(uref,bright)
   xref0=xref[bright]
@@ -94,8 +130,6 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
 
   ;;in some calibration images, the location of the brightest star is
   ;;very different from that in the reference image
-  tn1=strmid(catfile,strpos(catfile,'/',/reverse_search))
-  star=strmid(tn1,strpos(tn1,'/',/reverse_search)+1,8)
   if star eq 'V-BP-TAU' and strmid(sxpar(h,'DATE-OBS'),0,7) eq '2021-07' then begin
      xref=xref-600
      yref=yref+200
@@ -111,7 +145,7 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
 
   ;;find the brightest star in a box around its expected location
   bsize=250
-  sub=im[xref0-bsize:xref0+bsize,yref0-bsize:yref0+bsize]
+  sub=im[xref0-bsize>0:xref0+bsize<s[1]-1,yref0-bsize>0:yref0+bsize<s[2]-1]
   find,sub,x,y,flux,sharp,round,1.2*stddev(sub),7,[-0.8,0.8],[0.1,0.9],/silent
   aper,sub,x,y,flux,err,sky,skyerr,1,5,[10,20],[0,0],/flux,/silent
   fmax=max(flux,q)
@@ -130,8 +164,6 @@ function get_caldata,counts,catfile,calimage,PLOT=plot
   ys=-1
   fmax=make_array(nbest)
   for j=0,nbest-1 do begin
-
-     s=size(im)
 
      if xlook[j] lt 0 or xlook[j] gt s[1] or $
         ylook[j] lt 0 or ylook[j] gt s[2] then continue
