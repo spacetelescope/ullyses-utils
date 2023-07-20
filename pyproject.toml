@@ -26,5 +26,9 @@ dependencies = [
     "astropy",
 ]
 
+[tool.setuptools]
+packages = ["utils"]
+include-package-data = true
+
 [tool.setuptools.package-data]
-mypkg = ["*.txt", "*.yaml", "*.json", "*.csv", "*.xlsx", "*.fits"]
+"*" = ["**/**/*.txt", "**/**/*.yaml", "**/**/*.json", "**/**/*.csv", "**/**/*.fits"]
