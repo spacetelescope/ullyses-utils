@@ -51,7 +51,29 @@ bins:
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
-good_files: null
+good_files:
+    - lek71c
+    - lek71d
+    - lek71e
+    - lek71f
+    - lek71g
+    - lek71h
+    - lek71i
+    - lek7aj
+    - lek7al
+    - lek7am
+    - lek7an
+    - lepg1c
+    - lepg1d
+    - lepg1e
+    - lepg1f
+    - lepg1g
+    - lepg1h
+    - lepg1i
+    - lepg1j
+    - lepg1k
+    - lepg1l
+    - lepg1m
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
