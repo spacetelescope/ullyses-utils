@@ -67,7 +67,6 @@ function get_counts,star,calimage,catfile,exptime_cal,airmass_cal
   if sxpar(hdr,'WCSERR') ne 0 then begin
 
      ;;borrow an image with good WCS
-     datadir='/astro/ullyses/lcogt_data/'
      case star of
         'V* BP Tau': good=datadir+'V-BP-TAU-CAL/ogg0m406-kb27-20210909-0216-e91.fits.fz'
         'V* GM Aur': good=datadir+'V-GM-AUR-CAL/ogg0m404-kb82-20211010-0250-e91.fits.fz'
@@ -285,7 +284,7 @@ function photometry,target,image,calimage,catfile,filter,targ_ra,targ_dec,f0,PLO
 
 end
 
-pro lcogt_uphot,imagedir,target,PLOT=plot
+pro lcogt_uphot,imagedir,target,PLOT=plot,datadir
 
   ;;uncomment when debugging to close any output files
   close,/all
