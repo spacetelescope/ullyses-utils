@@ -79,12 +79,12 @@ bins:
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.bad_files:
-    - le9d1k
-    - lepc1d
-    - lepc1g # exptime=0
-    - lepc1h
-    - lepcad
-    - lepcah # exptime=0
+    - le9d1k  # Failed TA, target well outside aperture. Failed visit
+    - lepc1d  # Bad TA, shutter open, bad data
+    - lepc1g  # Bad TA, shutter closed, no data
+    - lepc1h  # Bad TA, shutter closed, no data
+    - lepcad  # Bad TA, shutter closed, no data
+    - lepcah  # Bad TA, shutter closed, no data
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.

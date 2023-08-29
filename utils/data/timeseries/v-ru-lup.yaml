@@ -82,11 +82,11 @@ good_files:
 # You may specify either IPPPSS or IPPPSSOOT identifiers.      
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 bad_files:
-    - leit1d
-    - leitad
-    - leit1l
-    - leph1d
-    - leph1e
+    - leit1d  # Failed ACQ, shutter open for observation, but data bad
+    - leitad  # Failed ACQ, shutter closed for observations, no data
+    - leit1l  # Failed ACQ, shutter closed for observations, no data
+    - leph1d  # Failed TA, target off-centered, bad data
+    - leph1e  # Failed TA, shutter closed for observations, no data
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.

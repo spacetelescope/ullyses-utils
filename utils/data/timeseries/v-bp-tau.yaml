@@ -89,8 +89,8 @@ good_files:
 # You may specify either IPPPSS or IPPPSSOOT identifiers.      
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 bad_files:
-    - lepd1g
-    - lepd1hzsq
+    - lepd1g     # Failed TA, no data
+    - lepd1hzsq  # Failed TA, but observations appear successful; this exp has a large wavelength shift so excluding
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.
