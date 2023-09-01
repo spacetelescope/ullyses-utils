@@ -5,7 +5,7 @@ import re
 RED = "\033[1;31m" 
 RESET = "\033[0;0m"
 
-def match_aliases(targname, return_name="ULL_MAST_name"):
+def match_aliases(targname, return_name="target_name_hlsp"):
     """
     Given a target name, match it to any aliases in the ULLYSES alias file.
 
@@ -17,8 +17,8 @@ def match_aliases(targname, return_name="ULL_MAST_name"):
         ull_targname (str): Matched alias.
     """
 
-    aliases_file = ullyses_utils.__path__[0] + '/data/target_metadata/pd_all_aliases.json'
-    aliases = pd.read_json(aliases_file, orient="split")
+    aliases_file = ullyses_utils.__path__[0] + '/data/target_metadata/ullyses_aliases.csv'
+    aliases = pd.read_csv(aliases_file)
     # In case we can't find a match
     ull_targname = targname
     
