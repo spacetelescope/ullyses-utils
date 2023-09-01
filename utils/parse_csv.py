@@ -88,7 +88,7 @@ def parse_database_csv(target_type):
     return csvs, dfs
 
 def parse_aliases():
-    aliasfile = os.path.join(dirname, "data/target_metadata", "ullyses_aliases.json")
+    aliasfile = os.path.join(dirname, "data/target_metadata", "ullyses_aliases.csv")
     aliases = pd.read_csv(alias_file)
     return aliases
 
