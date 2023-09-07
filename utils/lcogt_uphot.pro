@@ -313,6 +313,8 @@ pro lcogt_uphot,imagedir,target,PLOT=plot
      return
   endif
   readcol,cal_list,format='(d,a,a)',mjd,sciimages,calimages,/si,delim=',',count=ncal
+  sciimages=imagedir+sciimages
+  calimages=strmid(imagedir,0,strlen(imagedir)-1)+'-CAL/'+calimages
 
   ;;Get target, filter, MJD (start and stop), cal image (if available) for all images
   all_files=file_search(imagedir+'*.fits*',count=n_all)
