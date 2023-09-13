@@ -5,15 +5,11 @@ import numpy as np
 
 dirname = os.path.dirname(__file__)
 
-name_csvs = {"lmc": "LMC_Preferred_Names.csv",
-             "smc": "SMC_Preferred_Names.csv",
-             "tts": "lowmass_preferred_names.csv",
-             "lowz": "lowz_preferred_names.csv"}
-database_csvs = {"lmc":  ["all_massive_star_metadata.csv"],
-                 "smc" : ["all_massive_star_metadata.csv"],
-                 "lowz": ["all_massive_star_metadata.csv", "lowz_db_metadata.csv"],
-                 "ctts": ["full_sample_CTTS_for_DB.csv"],
-                 "tts" : ["full_sample_CTTS_for_DB.csv"],
+database_csvs = {"lmc":  ["highmass_star_db_metadata.csv"],
+                 "smc" : ["highmass_star_db_metadata.csv"],
+                 "lowz": ["highmass_star_db_metadata.csv", "lowz_galaxy_db_metadata.csv"],
+                 "ctts": ["lowmass_star_db_metadata.csv"],
+                 "tts" : ["lowmass_star_db_metadata.csv"],
                  "all": []}
 
 def parse_name_csv(target_type, returndf=False):
@@ -55,28 +51,6 @@ def parse_database_csv(target_type):
     return csvs, dfs
 
 def parse_aliases():
-    aliasfile = os.path.join(dirname, "data/target_metadata", "ullyses_aliases.csv")
+    alias_file = os.path.join(dirname, "data/target_metadata", "ullyses_aliases.csv")
     aliases = pd.read_csv(alias_file)
     return aliases
-
-def change_names(name_change_file):
-    '''
-    WRITTEN BY RACHEL PLESHA: https://github.com/spacetelescope/ullyses_tech/blob/master/jira_connection/mass_issue_creation.py#L200
-       The final files that were given in the website are different than those
-       in the APT files. Since the box_to_jira.py script assumes that the names
-       are the same, we need to change the names on the JIRA tickets to match.
-       name_change_file : str
-          The name of the file that contains a column 'Alternate_PREFERRED',
-          which matches what is on the website, and 'Alternate_APT' which matches
-          what is in the APT files.
-    '''
-
-    t = Table.read(name_change_file)
-    names_dict = {}
-    for website_name, apt_name in zip(t['PREFERRED'], t['Alternate_APT']):
-        if website_name not in names_dict.keys():
-            names_dict[website_name.strip()] = apt_name.strip()
-        else:
-            print(f'{website_name} repeated; not including {apt_name}')
-
-    return names_dict
