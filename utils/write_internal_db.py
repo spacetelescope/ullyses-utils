@@ -13,9 +13,9 @@ from ullyses_utils.select_pids import select_all_pids
 
 #-------------------------------------------------------------------------------
 
-def check_yaml(ull_targname):
+def check_yaml(hlsp_targname):
 
-    yaml_file = f'data/timeseries/{ull_targname.lower()}.yaml'
+    yaml_file = f'data/timeseries/{hlsp_targname.lower()}.yaml'
     if os.path.exists(yaml_file):
         data = read_config(yaml_file)
         return data['exp_tss'], data['sub_exp_tss']
@@ -24,17 +24,17 @@ def check_yaml(ull_targname):
 
 #-------------------------------------------------------------------------------
 
-def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs):
+def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, missing_metadata):
 
     with fits.open(filename) as hdu:
         targname = hdu[0].header["TARGNAME"]
 
         if 'ACQ' in hdu[0].header['OBSMODE']:
             # we will get the ACQs if we glob on all raw files
-            return info
+            return info, missing_metadata
         elif "CCD" in targname or "WAVE" in targname or targname in off_targs:
             # we don't want to store the calibration files in this or offset targs
-            return info
+            return info, missing_metadata
 
         ## fill in all of the easy header value keys
         for df_name, kw in kw_dict.items():
@@ -50,17 +50,18 @@ def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs):
         info['obs_date_isot'].append(Time(hdu[1].header['EXPSTART'], format='mjd').isot)
 
         # targname
-        ull_targ = match_aliases(targname)
-        info['hlsp_targname'].append(ull_targ)
+        hlsp_targ = match_aliases(targname)
+        info['hlsp_targname'].append(hlsp_targ)
         try:
-            info['star_region'].append(galaxy_dict[ull_targ])
+            info['star_region'].append(galaxy_dict[hlsp_targ])
         except KeyError:
-            print(f'{ull_targ} is not in a database file yet. Make sure it gets in there!')
+            #print(f'{match_aliases(targname, return_name="target_name_ullyses")} / {hlsp_targ} is not in a database file yet. Make sure it gets in there!')
+            missing_metadata.append(hlsp_targ)
             info['star_region'].append('TBD')
 
         # type of files
         #info['coadd'].append(" ")
-        exp_tss, sub_exp_tss = check_yaml(ull_targ)
+        exp_tss, sub_exp_tss = check_yaml(hlsp_targ)
         info['exp_timeseries'].append(exp_tss) # does a timeseries yaml file exist for this target?
         info['subexp_timeseries'].append(sub_exp_tss) # might have to open the yaml file to see this one
         #info['level0'].append() # I forget what we wanted with this column
@@ -82,7 +83,7 @@ def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs):
             info['ullyses_obs'].append(False)
             info['archival_obs'].append(False)
 
-    return info
+    return info, missing_metadata
 
 #-------------------------------------------------------------------------------
 def main(data_dir):
@@ -132,23 +133,40 @@ def main(data_dir):
     csvs, csv_dfs = parse_database_csv(target_type='all')
     galaxy_dict = {}
     for df in csv_dfs:
-        for galaxy, cluster, target in zip(df['host_galaxy_name'], df['host_cluster_name'], df['target_name_std']):
-            ull_targ = match_aliases(target)
+        for galaxy, cluster, target in zip(df['host_galaxy_name'], df['host_cluster_name'], df['target_name_ullyses']):
+            hlsp_targ = match_aliases(target)
             if galaxy == 'MW':
                 # use the cluster as the region name instead
-                galaxy_dict[ull_targ] = cluster
+                galaxy_dict[hlsp_targ] = cluster
             else:
-                galaxy_dict[ull_targ] = galaxy
+                galaxy_dict[hlsp_targ] = galaxy
 
     ## offset targets
     offset_df = pd.read_csv('data/target_metadata/ullyses_offset_targets.csv')
 
-    # fill in the dictionary for each file
+    ## read in the rejected datasets and do not include in the final df
+    rejected_df = pd.read_csv('data/ullyses_rejected_data.csv')
+    rejected_roots = list(rejected_df['rootname'])
+
+    skipped = []
+    missing_meta = []
+    ## fill in the dictionary for each file
     for targ_dir in np.sort(glob.glob(os.path.join(data_dir, '*'))):
         print(targ_dir)
-        for f in np.sort(glob.glob(os.path.join(targ_dir, '*raw*.fits'))):
-            info = fill_in(info, kw_dict, f, galaxy_dict, pids_dict['ARCHIVAL'],
-                           pids_dict['ULLYSES'], np.array(offset_df['offset_targ']))
+        for rawf in np.sort(glob.glob(os.path.join(targ_dir, '*raw*.fits'))):
+            # skip the file if it's been deiced it should not be in the sample
+            if os.path.basename(rawf).split('_')[0].lower() in rejected_roots:
+                skipped.append(os.path.basename(rawf).split('_')[0].lower())
+                continue
+            # otherwise, fill in all of the columns!
+            info, missing_meta = fill_in(info, kw_dict, rawf, galaxy_dict,
+                                         pids_dict['ARCHIVAL'], pids_dict['ULLYSES'],
+                                         np.array(offset_df['offset_targ']),
+                                         missing_meta)
+
+    print('# Skipped b/c rejected:', len(np.unique(skipped)))
+    for missing in np.unique(missing_meta):
+        print(f'{match_aliases(missing, return_name="target_name_ullyses")} / {missing} is not in a database file yet. Make sure it gets in there!')
 
     internal_df = pd.DataFrame.from_dict(info)
     internal_df.to_csv('data/internal_database.csv', index=False)
