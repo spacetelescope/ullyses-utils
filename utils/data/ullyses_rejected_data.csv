@@ -124,12 +124,6 @@ ocax01010,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not 
 ocax01020,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 od3g01010,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 od3g01020,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
-leip1cb5q,HN5,HN-5,tech team spreadsheet,SNR is zero
-leip1cbbq,HN5,HN-5,tech team spreadsheet,SNR is zero
-leip1cc3q,HN5,HN-5,tech team spreadsheet,SNR is zero
-leip1cc6q,HN5,HN-5,tech team spreadsheet,SNR is zero
-leip1ccxq,HN5,HN-5,tech team spreadsheet,SNR is zero
-leip1cd0q,HN5,HN-5,tech team spreadsheet,SNR is zero
 le9r1cwkq,HV5622,HV-5622,tech team spreadsheet,Orbit 2 failed
 le9r1cwnq,HV5622,HV-5622,tech team spreadsheet,Orbit 2 failed
 le9r1cwtq,HV5622,HV-5622,tech team spreadsheet,Orbit 2 failed
@@ -337,14 +331,6 @@ lepg1no1q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no3q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no5q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no7q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
-leip2ca4q,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
-leip2ca8q,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
-leip2caqq,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
-leip2catq,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
-leip2daxq,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
-leip2dazq,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
-leip2db1q,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
-leip2db3q,V-IN-CHA,V-IN-CHA,tech team spreadsheet,SNR is zero
 lbgj02050,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
 lbgj02060,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
 lbgj02070,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
