@@ -154,8 +154,15 @@ def main(data_dir):
     for targ_dir in np.sort(glob.glob(os.path.join(data_dir, '*'))):
         print(targ_dir)
         for rawf in np.sort(glob.glob(os.path.join(targ_dir, '*raw*.fits'))):
+            root = os.path.basename(rawf).split('_')[0].lower()
+
+            # skip the file if the rootname has already been recorded
+            #   (COS will have two raw files)
+            if root in info['dataset_name']:
+                continue
+                
             # skip the file if it's been deiced it should not be in the sample
-            if os.path.basename(rawf).split('_')[0].lower() in rejected_roots:
+            if root in rejected_roots:
                 skipped.append(os.path.basename(rawf).split('_')[0].lower())
                 continue
             # otherwise, fill in all of the columns!
