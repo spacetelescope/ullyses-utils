@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ullyses_utils"
-version = "2.1.0"
+version = "2.1.2"
 description = "ULLYSES utility files and scripts"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -26,9 +26,5 @@ dependencies = [
     "astropy",
 ]
 
-[tool.setuptools]
-packages = ["utils"]
-include-package-data = true
-
 [tool.setuptools.package-data]
-"*" = ["**/**/*.txt", "**/**/*.yaml", "**/**/*.json", "**/**/*.csv", "**/**/*.fits"]
+"*" = ["**/**/data/**/*.txt", "**/**/data/**/*.yaml", "**/**/data/**/*.json", "**/**/data/**/*.csv", "**/**/data/**/*.fits"]
