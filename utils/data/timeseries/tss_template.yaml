@@ -1,5 +1,6 @@
 # The name of this file should be the *ULLYSES DP TARGET NAME IN LOWERCASE*!!!
-# E.g. for TW Hydra the file name should be v-tw-hya.yaml
+# plus the instrument used for this data *also in lowercase*!
+# E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
 
 # True if sub-exposure timeseries be created
 sub_exp_tss: False
