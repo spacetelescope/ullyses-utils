@@ -1,0 +1,15 @@
+force_dq16: false
+infile:
+  o8e003010_flt.fits:
+    targets:
+      v-dm-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null 
+          yloc: null

@@ -1,0 +1,83 @@
+force_dq16: true
+infile:
+  ob3r01020_crj.fits:
+    targets:
+      v-dm-tau:
+        defringe:
+          beg_scale: 0.8
+          beg_shift: -0.5
+          do_scale: true
+          do_shift: true
+          end_scale: 1.2
+          end_shift: 0.5
+          extrloc: null
+          extrsize: null
+          fringeflat: ob3r01030_raw.fits
+          opti_spreg: null
+          rms_region: null
+          scale_step: 0.04
+          shift_step: 0.1
+        do_defringe: true 
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  ob3r02020_crj.fits:
+    targets:
+      v-dm-tau:
+        defringe:
+          beg_scale: 0.8
+          beg_shift: -0.5
+          do_scale: true
+          do_shift: true
+          end_scale: 1.2
+          end_shift: 0.5
+          extrloc: null
+          extrsize: null
+          fringeflat: ob3r02030_raw.fits
+          opti_spreg: null
+          rms_region: null
+          scale_step: 0.04
+          shift_step: 0.1
+        do_defringe: true 
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  ob3r03020_crj.fits:
+    targets:
+      v-dm-tau:
+        defringe:
+          beg_scale: 0.8
+          beg_shift: -0.5
+          do_scale: true
+          do_shift: true
+          end_scale: 1.2
+          end_shift: 0.5
+          extrloc: null
+          extrsize: null
+          fringeflat: ob3r03030_raw.fits
+          opti_spreg: null
+          rms_region: null
+          scale_step: 0.04
+          shift_step: 0.1
+        do_defringe: true
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
