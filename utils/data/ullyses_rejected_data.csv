@@ -429,3 +429,140 @@ ody211010,VFTS244,VFTS-244,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and n
 ody213010,VFTS586,VFTS-586,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 ody217010,VFTS96,VFTS-96,in ARCHIVAL_DATA_HIGH_MASS/DR3/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr3,
 ob6bd9010,SZ-102,SZ-102,stis tts tickets,Failed ACQ
+oec501020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec501040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec504020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec505020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec506020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec54b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec55b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec56b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec508050,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509050,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec507030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec506010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec56b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec55b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec505010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec54b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec504010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec501010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec501030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec507010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+o57z04010,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
+o57z04ymq,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
+o57z04ynq,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
+o62n05010,HD152404,V-AK-SCO,check for missing data from archive,Only G230M at this epoch
+oee568010,CE-ANT,V-CE-ANT,check for missing data from archive,Only E230H at this epoch
+o62n01010,DE-TAU,V-DE-TAU,check for missing data from archive,only G230M in this program/MJD
+o59z03020,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z03030,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z08020,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
+ocd844010,HD283654,V-DF-TAU,check for missing data from archive,Only E230H at this epcoh
+o6md02030,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
+o6md02030,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
+o6md02040,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
+o6md02010,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
+lbz403040,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
+lbz403050,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
+lbz403020,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
+lbz403030,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
+lbz403010,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
+lb6b10010,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
+lb6b10020,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
+lb6b10030,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
+lb6b10040,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
+lb6b10050,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
+o6bt01030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
+o6bt04010,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
+o6bt03030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
+ld7i06020,HD139614,HD-139614,check for missing data from archive,only G160M at this epoch
+ld7i06010,HD139614,HD-139614,check for missing data from archive,only G160M at this epoch
+ob4590010,HD141569,HD-141569,check for missing data from archive,only E230H at epoch
+o57z03010,HD-163296,HD-163296,check for missing data from archive,only G140M at epoch
+o5fo02010,HD-163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
+o5fo02fnq,HD-163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
+o5fo22b4q,HD163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
+o5fo22010,HD163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
+o59z05020,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z05030,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z10020,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z10030,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+ob2l05010,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
+ob2l05020,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
+ob2l05030,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
+o62n04010,HD142560,V-RU-LUP,check for missing data from archive,
+lbgj02050,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj02060,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj02070,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj02080,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj02090,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj020a0,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj020b0,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj02toq,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+lbgj02tpq,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
+ocd860010,HD240764,V-RW-AUR,check for missing data from archive,only E230H at epoch
+o62n03010,HD240764,V-RW-AUR,check for missing data from archive,only G230M in this program/MJD
+ob2l01010,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01020,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01030,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02010,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02020,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02030,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01040,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01050,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02040,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+o62n07010,HD283571,V-RY-TAU,check for missing data from archive,only G230M in this program/MJD
+ocwf01010,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
+ocwf01020,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
+ocwf01030,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
+lb6b19010,SZ-102,SZ-102,check for missing data from archive,bad data
+lb6b19020,SZ-102,SZ-102,check for missing data from archive,bad data
+lb6b19030,SZ-102,SZ-102,check for missing data from archive,bad data
+lb6b19040,SZ-102,SZ-102,check for missing data from archive,bad data
+lb6b19050,SZ-102,SZ-102,check for missing data from archive,bad data
+lb6b19060,SZ-102,SZ-102,check for missing data from archive,bad data
+ldgx9u010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgx9u020,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxd9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxd9020,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxt8010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxz8010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+odgxc9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+odgxt9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgx10010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
+ldgx12010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
+odgx11010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
+o62n02010,HD284419,V-T-TAU,check for missing data from archive,only G230M in this program/MJD
+o4gm01010,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
+o4gm01020,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
+o4gm01040,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
+ocd857010,CD-34D7151,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o64w57030,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o64w57040,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o64w57050,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o64w57060,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o64w57070,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o64w57080,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01020,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+obi101010,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+obi101020,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+obi102010,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+obi102020,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01010,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01030,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01bdq,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01040,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01050,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
