@@ -36,6 +36,9 @@ bins: null
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
+    - oe9i4s010
+    - oe9i4s020
+    - oe9i4s030
     - oe9ids010
     - oe9ids020
     - oe9ids030
@@ -46,10 +49,8 @@ good_files:
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
-bad_files:
-    - oe9i4s010   # Ok but reobserved due to COS observation failures
-    - oe9i4s020
-    - oe9i4s030
+bad_files: null
+
 
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
