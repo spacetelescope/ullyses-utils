@@ -51,7 +51,8 @@ bins:
 # good_files: null
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
-# You MUST use a dash+space, which tells yaml the value is actually part of a list.good_files:
+# You MUST use a dash+space, which tells yaml the value is actually part of a list.
+good_files:
     - le9d1c
     - le9d1d
     - le9d1e
@@ -79,7 +80,8 @@ bins:
 # bad_files: null
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
-# You MUST use a dash+space, which tells yaml the value is actually part of a list.bad_files:
+# You MUST use a dash+space, which tells yaml the value is actually part of a list.
+bad_files:
     - le9d1k  # Failed TA, target well outside aperture. Failed visit
     - lepc1d  # Bad TA, shutter open, bad data
     - lepc1g  # Bad TA, shutter closed, no data
