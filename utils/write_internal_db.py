@@ -13,14 +13,52 @@ from ullyses_utils.select_pids import select_all_pids
 
 #-------------------------------------------------------------------------------
 
-def check_yaml(hlsp_targname):
+def check_timeseries_yaml(hlsp_targname):
 
     yaml_file = f'data/timeseries/{hlsp_targname.lower()}.yaml'
     if os.path.exists(yaml_file):
         data = read_config(yaml_file)
+        # There are rows in the file indicating True/False for timeseries & sub exposure
         return data['exp_tss'], data['sub_exp_tss']
     else:
         return False, False
+
+#-------------------------------------------------------------------------------
+
+def populate_custom_cal(hlsp_targ, grating, rootname):
+    # check the different types of custom calibration possibilities, all of
+    #   which have some sort of custom calibration files in them
+
+    ## STIS, WAVE, FUSE, or None
+    stis_yaml = f'data/stis_configs/{hlsp_targ.lower()}_{grating.lower()}.yaml'
+    wave_txt = f'data/cos_shifts/{hlsp_targ.lower()}_shifts.txt'
+    fuse_nb = f'data/fuse/{hlsp_targ.lower()}_{rootname[:-3]}.ipynb' # rootname is stripped of last 000
+
+    if os.path.exists(stis_yaml): # check for stis, first
+        data = read_config(stis_yaml)
+        try:
+            stis_roots = [data['infile'].split('_')[0]]
+        except AttributeError:
+            # this means that there's more than one data file in the yaml file
+            stis_roots = [s.split('_')[0] for s in data['infile'].keys()]
+        for stis_root in stis_roots:
+            if stis_root == rootname:
+                # return a custom calibration of 'STIS' if the rootname matches
+                return 'STIS'
+
+    # this should be a separate if b/c there could be a stis_yaml file that matches
+    #   for a COS rootname still
+    if os.path.exists(wave_txt): # check for the COS wavelength shifts next
+        wave_df = pd.read_csv(wave_txt,
+                              names=['root', 'col2', 'col3', 'segment', 'shift'],
+                              delim_whitespace=' ')
+        if rootname in list(wave_df['root']):
+            return 'WAVE'
+    elif os.path.exists(fuse_nb):
+        # the FUSE targets that are custom calibrated will have a delivered notebook
+        return 'FUSE'
+    else:
+        return None
 
 #-------------------------------------------------------------------------------
 
@@ -28,8 +66,10 @@ def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, 
 
     with fits.open(filename) as hdu:
         targname = hdu[0].header["TARGNAME"]
+        rootname = hdu[0].header['ROOTNAME']
 
-        if 'ACQ' in hdu[0].header['OBSMODE']:
+        if (rootname.startswith('o') and 'ACQ' in hdu[0].header['OBSMODE']) or \
+           (rootname.startswith('l') and 'ACQ' in hdu[0].header['EXPTYPE']):
             # we will get the ACQs if we glob on all raw files
             return info, missing_metadata
         elif "CCD" in targname or "WAVE" in targname or targname in off_targs:
@@ -61,14 +101,15 @@ def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, 
 
         # type of files
         #info['coadd'].append(" ")
-        exp_tss, sub_exp_tss = check_yaml(hlsp_targ)
+        exp_tss, sub_exp_tss = check_timeseries_yaml(hlsp_targ)
         info['exp_timeseries'].append(exp_tss) # does a timeseries yaml file exist for this target?
         info['subexp_timeseries'].append(sub_exp_tss) # might have to open the yaml file to see this one
-        #info['level0'].append() # I forget what we wanted with this column
 
         # data manipulation
         #info['drizzled'].append()
-        #info['custom_cal'].append("") # TBD
+
+        custom = populate_custom_cal(hlsp_targ, hdu[0].header['OPT_ELEM'], rootname)
+        info['custom_cal'].append(custom) # STIS, WAVE, FUSE, or None
 
         # Info unique to ULLYSES project
         file_pid = str(hdu[0].header['PROPOSID'])
@@ -94,7 +135,7 @@ def main(data_dir):
             'proposid' : [], # hdu[0].header['PROPOSID']
             'detector' : [], # hdu[0].header['DETECTOR']
             'grating' : [], # hdu[0].header['OPT_ELEM']
-            'filter' : [], ##
+            'filter' : [], ## hdu[0].header['FILTER']; WFC3 & STIS
             'cenwave' : [], # hdu[0].header['CENWAVE']
             'aperture' : [], # hdu[0].header['APERTURE']
             'lifetime_pos' : [], # hdu[0].header['LIFE_ADJ']
@@ -105,9 +146,8 @@ def main(data_dir):
             #'coadd' : [],
             'exp_timeseries' : [], # does a timeseries yaml file exist for this target?
             'subexp_timeseries' : [], # might have to open the yaml file to see this one
-            #'level0' : [], # I forget what we wanted with this column
             #'drizzled' : [],
-            #'custom_cal' : [], # TBD
+            'custom_cal' : [], # STIS, WAVE, FUSE, or None
             'star_region' : [], # look for in the other CSVs?
             'ullyses_obs' : [], # from a fixed list of ULLYSES PIDs
             'archival_obs' : [], # from a fixed list of archival PIDs
@@ -160,7 +200,7 @@ def main(data_dir):
             #   (COS will have two raw files)
             if root in info['dataset_name']:
                 continue
-                
+
             # skip the file if it's been deiced it should not be in the sample
             if root in rejected_roots:
                 skipped.append(os.path.basename(rawf).split('_')[0].lower())
