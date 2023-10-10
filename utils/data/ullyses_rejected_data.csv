@@ -566,3 +566,31 @@ ob6n01030,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete cove
 ob6n01bdq,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 ob6n01040,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 ob6n01050,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+oec631020,2DFS-163,2DFS-163,SNAP data quality check,GSFAIL
+oec643020,AV6,AV-6,SNAP data quality check,GSFAIL
+oec63d020,HV5622,HV-5622,SNAP data quality check,GSFAIL
+oec62h020,LMCX-4,LMCX-4,SNAP data quality check,EXPSHORT; LOCKLOST; TDF-DOWN
+oec62c020,VFTS-190,VFTS-190,SNAP data quality check,GSFAIL
+oec62v020,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
+oec631010,2DFS-163,2DFS-163,SNAP data quality check,GSFAIL
+oec643010,AV6,AV-6,SNAP data quality check,GSFAIL
+oec693010,AV22,AV-22,SNAP data quality check,GSFAIL
+oec693020,AV22,AV-22,SNAP data quality check,GSFAIL
+oec689010,AV362,AV-362,SNAP data quality check,GSFAIL
+oec689020,AV362,AV-362,SNAP data quality check,GSFAIL
+oec60p010,N11-ELS-060,N11-ELS-060,SNAP data quality check,GSFAIL
+oec63d010,HV5622,HV-5622,SNAP data quality check,GSFAIL
+oec62j010,BI184,BI-184,SNAP data quality check,GSFAIL
+oec62h010,LMCX-4,LMCX-4,SNAP data quality check,EXPSHORT; LOCKLOST; TDF-DOWN
+oec62v010,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
+oec61j010,PGMW3120,PGMW-3120,SNAP data quality check,Contaminating star in the slit
+oec61j020,PGMW3120,PGMW-3120,SNAP data quality check,Contaminating star in the slit
+oec62s020,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
+oec62s010,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
+oec655020,AV104,AV-104,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oec670020,AV210,AV-210,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oec654020,AV215,AV-215,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oec63r020,SK-68D8,SK-68D8,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oec63v020,SK-66D50,SK-66D50,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oec62g020,SK-67D101,SK-67D101,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oec63w020,SK-67D207,SK-67D207,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
