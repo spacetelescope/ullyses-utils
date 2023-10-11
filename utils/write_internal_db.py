@@ -25,7 +25,7 @@ def check_timeseries_yaml(hlsp_targname):
 
 #-------------------------------------------------------------------------------
 
-def populate_custom_cal(hlsp_targ, grating, rootname):
+def check_custom_cal(hlsp_targ, grating, rootname):
     # check the different types of custom calibration possibilities, all of
     #   which have some sort of custom calibration files in them
 
@@ -62,15 +62,15 @@ def populate_custom_cal(hlsp_targ, grating, rootname):
 
 #-------------------------------------------------------------------------------
 
-def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, missing_metadata):
+def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, missing_metadata):
 
     with fits.open(filename) as hdu:
-        targname = hdu[0].header["TARGNAME"]
+        targname = hdu[0].header['TARGNAME']
         rootname = hdu[0].header['ROOTNAME']
 
         if (rootname.startswith('o') and 'ACQ' in hdu[0].header['OBSMODE']) or \
            (rootname.startswith('l') and 'ACQ' in hdu[0].header['EXPTYPE']):
-            # we will get the ACQs if we glob on all raw files
+            # we will get the ACQs if we glob on all raw files, exclude them
             return info, missing_metadata
         elif "CCD" in targname or "WAVE" in targname or targname in off_targs:
             # we don't want to store the calibration files in this or offset targs
@@ -85,9 +85,6 @@ def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, 
                 info[df_name].append('N/A')
 
         ## leftover values that need some sort of calculation
-        # time
-        info['obs_date_mjd'].append(hdu[1].header['EXPSTART'])
-        info['obs_date_isot'].append(Time(hdu[1].header['EXPSTART'], format='mjd').isot)
 
         # targname
         hlsp_targ = match_aliases(targname)
@@ -99,19 +96,34 @@ def fill_in(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, 
             missing_metadata.append(hlsp_targ)
             info['star_region'].append('TBD')
 
-        # type of files
+        ## type of files
         #info['coadd'].append(" ")
         exp_tss, sub_exp_tss = check_timeseries_yaml(hlsp_targ)
         info['exp_timeseries'].append(exp_tss) # does a timeseries yaml file exist for this target?
         info['subexp_timeseries'].append(sub_exp_tss) # might have to open the yaml file to see this one
 
-        # data manipulation
-        #info['drizzled'].append()
+        ## manually set the drizzle parameters to True for WFC3 images
+        #  also grab some header info that is in a different place
+        if hdu[0].header['INSTRUME'] == 'WFC3':
+            info['drizzled'].append(True)
+            expstart = hdu[0].header['EXPSTART'] # WFC3 has the expstart in thet primary extension
+            grating = '' # no grating for WFC3
+        else:
+            # COS, STIS, & FUSE
+            info['drizzled'].append(False)
+            expstart = hdu[1].header['EXPSTART']
+            grating = hdu[0].header['OPT_ELEM']
 
-        custom = populate_custom_cal(hlsp_targ, hdu[0].header['OPT_ELEM'], rootname)
+        ## time
+        info['obs_date_mjd'].append(expstart)
+        info['obs_date_isot'].append(Time(expstart, format='mjd').isot)
+
+        ## populate the custom calibration column based on files already
+        #    existing in the data directory of the repo
+        custom = check_custom_cal(hlsp_targ, grating, rootname)
         info['custom_cal'].append(custom) # STIS, WAVE, FUSE, or None
 
-        # Info unique to ULLYSES project
+        ## Info unique to ULLYSES project
         file_pid = str(hdu[0].header['PROPOSID'])
         if file_pid in ar_pids:
             info['ullyses_obs'].append(False)
@@ -146,13 +158,15 @@ def main(data_dir):
             #'coadd' : [],
             'exp_timeseries' : [], # does a timeseries yaml file exist for this target?
             'subexp_timeseries' : [], # might have to open the yaml file to see this one
-            #'drizzled' : [],
+            'drizzled' : [], # drizzled products are the WFC3 imaging only; True/False
             'custom_cal' : [], # STIS, WAVE, FUSE, or None
-            'star_region' : [], # look for in the other CSVs?
+            'star_region' : [], # look for in the other CSVs
             'ullyses_obs' : [], # from a fixed list of ULLYSES PIDs
             'archival_obs' : [], # from a fixed list of archival PIDs
+            #'qual_comm' : [], # quality comment about the data from a fixed list
             }
 
+    # mapping the column name with the associated keyword in the file header
     kw_dict = {'dataset_name' : 'ROOTNAME',
                'observatory' : 'TELESCOP',
                'instrument' : 'INSTRUME',
@@ -167,18 +181,21 @@ def main(data_dir):
                }
 
     ## find all of the pids for archival & ULLYSES observed data
-    pids_dict = select_all_pids(return_all=False)
+    pids_dict = select_all_pids(single_list=False)
 
     ## associate target names with regions
     csvs, csv_dfs = parse_database_csv(target_type='all')
     galaxy_dict = {}
     for df in csv_dfs:
+        # loop through each of the dataframes returned for the different star mass types
         for galaxy, cluster, target in zip(df['host_galaxy_name'], df['host_cluster_name'], df['target_name_ullyses']):
+            # get the ULLYSES hlsp name to properly map
             hlsp_targ = match_aliases(target)
             if galaxy == 'MW':
-                # use the cluster as the region name instead
+                # use the cluster as the region name instead (low mass stars)
                 galaxy_dict[hlsp_targ] = cluster
             else:
+                # high mass stars
                 galaxy_dict[hlsp_targ] = galaxy
 
     ## offset targets
@@ -206,15 +223,16 @@ def main(data_dir):
                 skipped.append(os.path.basename(rawf).split('_')[0].lower())
                 continue
             # otherwise, fill in all of the columns!
-            info, missing_meta = fill_in(info, kw_dict, rawf, galaxy_dict,
-                                         pids_dict['ARCHIVAL'], pids_dict['ULLYSES'],
-                                         np.array(offset_df['offset_targ']),
-                                         missing_meta)
+            info, missing_meta = populate_info(info, kw_dict, rawf, galaxy_dict,
+                                               pids_dict['ARCHIVAL'], pids_dict['ULLYSES'],
+                                               np.array(offset_df['offset_targ']),
+                                               missing_meta)
 
     print('# Skipped b/c rejected:', len(np.unique(skipped)))
     for missing in np.unique(missing_meta):
         print(f'{match_aliases(missing, return_name="target_name_ullyses")} / {missing} is not in a database file yet. Make sure it gets in there!')
 
+    ## save out the information
     internal_df = pd.DataFrame.from_dict(info)
     internal_df.to_csv('data/internal_database.csv', index=False)
     print(internal_df)
