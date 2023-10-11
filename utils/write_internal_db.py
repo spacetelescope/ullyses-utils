@@ -113,8 +113,12 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
             info['drizzled'].append(True)
             expstart = hdu[0].header['EXPSTART'] # WFC3 has the expstart in thet primary extension
             grating = '' # no grating for WFC3
+        elif ins == 'FUV': # FUSE
+            info['drizzled'].append(False)
+            expstart = hdu[0].header['OBSSTART']
+            grating = '' # not something to select on FUSE
         else:
-            # COS, STIS, & FUSE
+            # COS & STIS
             info['drizzled'].append(False)
             expstart = hdu[1].header['EXPSTART']
             grating = hdu[0].header['OPT_ELEM']
@@ -129,17 +133,23 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
         info['custom_cal'].append(custom) # STIS, WAVE, FUSE, or None
 
         ## Info unique to ULLYSES project
-        file_pid = str(hdu[0].header['PROPOSID'])
-        if file_pid in ar_pids:
+        if ins == 'FUV':
+            # FUSE data is all archival
             info['ullyses_obs'].append(False)
             info['archival_obs'].append(True)
-        elif file_pid in ull_pids:
-            info['ullyses_obs'].append(True)
-            info['archival_obs'].append(False)
         else:
-            print(f"unrecognized PID! {file_pid}")
-            info['ullyses_obs'].append(False)
-            info['archival_obs'].append(False)
+            # search the proposal ids for if they are archival or ullyses observed
+            file_pid = str(hdu[0].header['PROPOSID'])
+            if file_pid in ar_pids:
+                info['ullyses_obs'].append(False)
+                info['archival_obs'].append(True)
+            elif file_pid in ull_pids:
+                info['ullyses_obs'].append(True)
+                info['archival_obs'].append(False)
+            else:
+                print(f"unrecognized PID! {file_pid}")
+                info['ullyses_obs'].append(False)
+                info['archival_obs'].append(False)
 
     return info, missing_metadata
 
@@ -224,7 +234,7 @@ def main(data_dir):
     ## fill in the dictionary for each file
     for targ_dir in np.sort(glob.glob(os.path.join(data_dir, '*'))):
         print(targ_dir)
-        for rawf in np.sort(glob.glob(os.path.join(targ_dir, '*raw*.fits'))):
+        for rawf in np.sort(glob.glob(os.path.join(targ_dir, '*raw*.fits'))+ glob.glob(os.path.join(targ_dir, '*_vo.fits'))):
             root = os.path.basename(rawf).split('_')[0].lower()
 
             # skip the file if the rootname has already been recorded
