@@ -1,6 +1,6 @@
 import numpy as np
 
-def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, return_all=True):
+def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, single_list=True):
     '''Use this function if you want to select more than one region's PIDs at once.
     The logic behind writing this is:
     1) if you want massive stars (LMC, SMC, lowz), specify massive=True. If you
@@ -20,9 +20,9 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, retur
     *and* the TTS without the monitoring (or some combination), you can specify
     a combination of the above keywords. For example:
       -> pids = select_all_pids(massive=True, tts=True, extra=False)
-    There is an additional keyword "return_all" that is set to True by default,
+    There is an additional keyword "single_list" that is set to True by default,
     which means you get a list of PIDs for both ULLYSES observed and archival
-    datasets. If you would like those separated out, specify return_all=False,
+    datasets. If you would like those separated out, specify single_list=False,
     and the function will return a dictionary with the two lists separated out
     with the keys "ULLYSES" and "ARCHIVAL".
 
@@ -37,14 +37,14 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, retur
         originally included in the core ULLYSES sample.
     monitoring : Boolean (default=True)
         should be used exclusively with "tts". Use to get the monitoring stars.
-    return_all : Boolean (default=True)
+    single_list : Boolean (default=True)
         By default, return both ULLYSES observed and archival samples together.
         If False, this will return a dictionary instead with the two lists of
         PIDs separated out under the keys "ULLYSES" and "ARCHIVAL"
 
     Outputs
     -------
-    all_pids : list (return_all=True) or dict (return_all=False)
+    all_pids : list (single_list=True) or dict (single_list=False)
     '''
 
     all_regions = ["smc-extra", "smc", "lmc-extra", "lmc", "lowz-extra", "lowz-image",
@@ -78,7 +78,7 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, retur
                 search_regions.extend(["monitoring_tts"])
 
     ## return ULLYSES vs. archival PIDs or combined PIDs (default)
-    if return_all:
+    if single_list:
         all_pids = []
         for region in search_regions:
             all_pids.extend(select_pids(region))
@@ -87,7 +87,7 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, retur
         ull_pids = []
         ar_pids = []
         for region in search_regions:
-            ull, ar = select_pids(region, return_all=False)
+            ull, ar = select_pids(region, single_list=False)
             ull_pids.extend(ull)
             ar_pids.extend(ar)
 
@@ -98,7 +98,7 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, retur
 
 #-------------------------------------------------------------------------------
 
-def select_pids(selected_region, return_all=True):
+def select_pids(selected_region, single_list=True):
     '''This function returns pids given a region. "Extra" regions are separated
     out as these include datasets that were not originally in the ULLYSES sample.
     The TTS regions are separated by their host cluster. Low metallicity stars
@@ -113,7 +113,7 @@ def select_pids(selected_region, return_all=True):
             "monitoring_tts",
             "cha i", "cra", "eps cha", "eta cha", "lupus", "ori ob", "sigma ori",
               "taurus", "twa", "lower centaurus", "upper scorpius", "other"
-    return_all : Boolean
+    single_list : Boolean
       True by default. If true, a list of pids for the specified region is returned.
       If false, two lists of pids are returned; one is only the ULLYSES observed
       PIDs (those the team made Phase 2s for from 2020-2023), and then other is
@@ -121,11 +121,11 @@ def select_pids(selected_region, return_all=True):
 
     Outputs
     -------
-    if return_all = True --
+    if single_list = True --
         ull_pids + ar_pids : list
           combined ULLYSES observed PIDs and archival data. ULLYSES observed
           PIDs are first.
-    if return_all == False --
+    if single_list == False --
         ull_pids : list
           ULLYSES observed PIDs (those the team made Phase 2s for from 2020-2023)
         ar_pids : list
@@ -169,8 +169,8 @@ def select_pids(selected_region, return_all=True):
         ull_pids = ['16511', '16930'] # ULLYSES
     elif "monitoring_tts" in selected_region:
         ar_pids = [] # archival
-        ull_pids = ['16107', '16108', '16109', '16110', '16589', '16590', '16591',
-                    '16592'] # ULLYSES
+        ull_pids = ['16107', '16108', '16109', '16110', '16478', '16481', '16482',
+                    '16589', '16590', '16591', '16592',  '16597', '16598'] # ULLYSES
     # '9374', '9435', '9790', '14698', # Include data that has not yet been delivered,
                                        # but could potentially be in the future
                                        # (e.g., STIS CCD, lower resolution MAMA etc.)
@@ -219,7 +219,7 @@ def select_pids(selected_region, return_all=True):
         ar_pids = [] # archival
         ull_pids = [] # ULLYSES
 
-    if return_all is True:
+    if single_list is True:
         return ull_pids + ar_pids
     else:
         return ull_pids, ar_pids
