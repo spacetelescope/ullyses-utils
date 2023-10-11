@@ -67,6 +67,7 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
     with fits.open(filename) as hdu:
         targname = hdu[0].header['TARGNAME']
         rootname = hdu[0].header['ROOTNAME']
+        ins = hdu[0].header['INSTRUME']
 
         if (rootname.startswith('o') and 'ACQ' in hdu[0].header['OBSMODE']) or \
            (rootname.startswith('l') and 'ACQ' in hdu[0].header['EXPTYPE']):
@@ -88,6 +89,10 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
 
         # targname
         hlsp_targ = match_aliases(targname)
+        if ins == 'WFC3' and targname == 'SEXTANS-A':
+            # there is an alias for a star named 'SEXTANS-A'
+            hlsp_targ = 'SEXTANS-A'
+
         info['hlsp_targname'].append(hlsp_targ)
         try:
             info['star_region'].append(galaxy_dict[hlsp_targ])
@@ -104,7 +109,7 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
 
         ## manually set the drizzle parameters to True for WFC3 images
         #  also grab some header info that is in a different place
-        if hdu[0].header['INSTRUME'] == 'WFC3':
+        if ins == 'WFC3':
             info['drizzled'].append(True)
             expstart = hdu[0].header['EXPSTART'] # WFC3 has the expstart in thet primary extension
             grating = '' # no grating for WFC3
@@ -189,14 +194,23 @@ def main(data_dir):
     for df in csv_dfs:
         # loop through each of the dataframes returned for the different star mass types
         for galaxy, cluster, target in zip(df['host_galaxy_name'], df['host_cluster_name'], df['target_name_ullyses']):
-            # get the ULLYSES hlsp name to properly map
-            hlsp_targ = match_aliases(target)
+            # get the ULLYSES hlsp name to properly map]
+            if target == 'Sextans-A':
+                # there is an alias for a star named 'SEXTANS-A'
+                hlsp_targ = 'SEXTANS-A'
+            else:
+                hlsp_targ = match_aliases(target)
             if galaxy == 'MW':
                 # use the cluster as the region name instead (low mass stars)
                 galaxy_dict[hlsp_targ] = cluster
             else:
-                # high mass stars
-                galaxy_dict[hlsp_targ] = galaxy
+                if target == 'NGC3109':
+                    # manually add in these because they had to be separated in the HLSPs
+                    galaxy_dict['NGC-3109-V01'] = galaxy
+                    galaxy_dict['NGC-3109-V02'] = galaxy
+                else:
+                    # high mass stars
+                    galaxy_dict[hlsp_targ] = galaxy
 
     ## offset targets
     offset_df = pd.read_csv('data/target_metadata/ullyses_offset_targets.csv')
