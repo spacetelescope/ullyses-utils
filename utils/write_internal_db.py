@@ -66,7 +66,7 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
 
     with fits.open(filename) as hdu:
         targname = hdu[0].header['TARGNAME']
-        rootname = hdu[0].header['ROOTNAME']
+        rootname = hdu[0].header['ROOTNAME'].lower()
         ins = hdu[0].header['INSTRUME']
 
         if (rootname.startswith('o') and 'ACQ' in hdu[0].header['OBSMODE']) or \
@@ -80,7 +80,10 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
         ## fill in all of the easy header value keys
         for df_name, kw in kw_dict.items():
             try:
-                info[df_name].append(hdu[0].header[kw])
+                if kw == 'ROOTNAME':
+                    info[df_name].append(hdu[0].header[kw].lower())
+                else:
+                    info[df_name].append(hdu[0].header[kw])
             except KeyError:
                 # does not exist for this type of file
                 info[df_name].append('N/A')
@@ -102,10 +105,27 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
             info['star_region'].append('TBD')
 
         ## type of files
-        #info['coadd'].append(" ")
         exp_tss, sub_exp_tss = check_timeseries_yaml(hlsp_targ)
         info['exp_timeseries'].append(exp_tss) # does a timeseries yaml file exist for this target?
         info['subexp_timeseries'].append(sub_exp_tss) # might have to open the yaml file to see this one
+
+        # indication of if the file is coadded or not. All COS & STIS is coadded
+        #   unless the file is made into a timeseries instead. Certain files
+        #   will still have a coadd spectrum, however.
+        # if exp_tss:
+        #     # check the list of special products that get coadds
+        #     ## still need to make this list
+        #     if targ in list:
+        #         coadd = True
+        #     else:
+        #         coadd = False
+        # elif ins == 'FUV': # FUSE
+        #     coadd = False
+        #     #elif mirrorVis:
+        #     #    False
+        # else:
+        #     coadd = True
+        #info['coadd'].append(" ")
 
         ## manually set the drizzle parameters to True for WFC3 images
         #  also grab some header info that is in a different place
