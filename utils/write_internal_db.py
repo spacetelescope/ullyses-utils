@@ -253,7 +253,7 @@ def main(data_dir):
 
     ## read in the custom coadd datasets
     coadd_df = pd.read_csv('data/custom_coadd.csv')
-    coadd_list = coadd_df['dataset']
+    coadd_list = list(coadd_df['dataset'])
 
     skipped = []
     missing_meta = []
