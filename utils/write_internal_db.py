@@ -62,7 +62,7 @@ def check_custom_cal(hlsp_targ, grating, rootname):
 
 #-------------------------------------------------------------------------------
 
-def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, missing_metadata):
+def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, missing_metadata, coadd_list):
 
     with fits.open(filename) as hdu:
         targname = hdu[0].header['TARGNAME']
@@ -109,24 +109,6 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
         info['exp_timeseries'].append(exp_tss) # does a timeseries yaml file exist for this target?
         info['subexp_timeseries'].append(sub_exp_tss) # might have to open the yaml file to see this one
 
-        # indication of if the file is coadded or not. All COS & STIS is coadded
-        #   unless the file is made into a timeseries instead. Certain files
-        #   will still have a coadd spectrum, however.
-        # if exp_tss:
-        #     # check the list of special products that get coadds
-        #     ## still need to make this list
-        #     if targ in list:
-        #         coadd = True
-        #     else:
-        #         coadd = False
-        # elif ins == 'FUV': # FUSE
-        #     coadd = False
-        #     #elif mirrorVis:
-        #     #    False
-        # else:
-        #     coadd = True
-        #info['coadd'].append(" ")
-
         ## manually set the drizzle parameters to True for WFC3 images
         #  also grab some header info that is in a different place
         if ins == 'WFC3':
@@ -142,6 +124,26 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
             info['drizzled'].append(False)
             expstart = hdu[1].header['EXPSTART']
             grating = hdu[0].header['OPT_ELEM']
+
+        # indication of if the file is coadded or not. All COS & STIS is coadded
+        #   unless the file is made into a timeseries instead. Certain files
+        #   will still have a coadd spectrum, however.
+        if exp_tss:
+            # check the list of special products that get coadds
+            if rootname in coadd_list:
+                coadd = True
+            else:
+                # if it is not in that list, it won't be coadded
+                coadd = False
+        elif ins == 'FUV': # FUSE
+            coadd = False
+        elif grating == 'MIRVIS':
+            # there's a special case where we took one confirmation image
+           coadd = False
+        else:
+            # Otherwise, it should be coadded
+            coadd = True
+        info['coadd'].append(coadd)
 
         ## time
         info['obs_date_mjd'].append(expstart)
@@ -190,7 +192,7 @@ def main(data_dir):
             'obs_date_isot' : [], # time.date(hdu[1].header['EXPSTART'])
             'obs_targname' : [], # hdu[0].header['TARGNAME']
             'hlsp_targname' : [], # match_aliases(hdu[0].header['TARGNAME'],
-            #'coadd' : [],
+            'coadd' : [],
             'exp_timeseries' : [], # does a timeseries yaml file exist for this target?
             'subexp_timeseries' : [], # might have to open the yaml file to see this one
             'drizzled' : [], # drizzled products are the WFC3 imaging only; True/False
@@ -249,6 +251,10 @@ def main(data_dir):
     rejected_df = pd.read_csv('data/ullyses_rejected_data.csv')
     rejected_roots = list(rejected_df['rootname'])
 
+    ## read in the custom coadd datasets
+    coadd_df = pd.read_csv('data/custom_coadd.csv')
+    coadd_list = coadd_df['dataset']
+
     skipped = []
     missing_meta = []
     ## fill in the dictionary for each file
@@ -270,7 +276,7 @@ def main(data_dir):
             info, missing_meta = populate_info(info, kw_dict, rawf, galaxy_dict,
                                                pids_dict['ARCHIVAL'], pids_dict['ULLYSES'],
                                                np.array(offset_df['offset_targ']),
-                                               missing_meta)
+                                               missing_meta, coadd_list)
 
     print('# Skipped b/c rejected:', len(np.unique(skipped)))
     for missing in np.unique(missing_meta):
