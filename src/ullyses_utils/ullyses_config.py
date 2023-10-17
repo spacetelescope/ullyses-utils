@@ -1,5 +1,5 @@
-VERSION = "dr5b"
-CAL_VER = "2.0"
+VERSION = "dr6"
+CAL_VER = "2.1.2"
 
 # Some targets have periods in their name and these can break MAST ingest
 # Rename them to remove periods and strip any trailing numbers after periods
