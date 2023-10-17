@@ -1093,3 +1093,33 @@ e511060100000,[M2002]_50178,AV-261,Initial FUSE data search,Unvetted extra FUSE 
 p221010100000,[2dFS]_5002,AV-6,Initial FUSE data search,Unvetted extra FUSE data
 p217040100000,[M2002]_45521,AV-220,Initial FUSE data search,Unvetted extra FUSE data
 e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
+ob6ba3030,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,Bad ACQ
+ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,Bad ACQ
+ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc2zqq,RECX-1,RECX-1,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc4ymq,RECX-11,RECX-11,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb9pwq,SZ-102,SZ-102,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b22cwq,TWA-3A,TWA-3A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b22d6q,TWA-3A,TWA-3A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba7z8q,V-AA-TAU,V-AA-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb0toq,V-CE-ANT,V-CE-ANT,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb6r0q,V-CS-CHA,V-CS-CHA,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba8buq,V-DE-TAU,V-DE-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb2y9q,V-DK-TAU,V-DK-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba2ndq,V-DM-TAU,V-DM-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba4ihq,V-DN-TAU,V-DN-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb4g8q,V-DR-TAU,V-DR-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba0r4q,V-FM-TAU,V-FM-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba1w8q,V-GM-AUR,V-GM-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba9qpq,V-HN-TAU,V-HN-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba5e9q,V-IP-TAU,V-IP-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b23b6q,V-MP-MUS,V-MP-MUS,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb5xrq,V-RW-AUR,V-RW-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb1z8q,V-SU-AUR,V-SU-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc6wgq,V-V397-AUR,V-V397-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba6laq,V-V836-TAU,V-V836-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
