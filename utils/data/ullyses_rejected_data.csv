@@ -50,7 +50,7 @@ lek61dlfq,AV186,AV-186,tech team spreadsheet,
 lek61dliq,AV186,AV-186,tech team spreadsheet,
 lek6adnoq,AV186,AV-186,tech team spreadsheet,
 lek6adnqq,AV186,AV-186,tech team spreadsheet,Shutter closed
-D1620701000,AV22,AV-22,Failed FUSE data check,do not know the pointing well enough to recover
+d1620701000,AV22,AV-22,Failed FUSE data check,do not know the pointing well enough to recover
 of2c1s020,AV238,AV-238,tech team spreadsheet,flux ~20% low (target off-center?)
 of2c1s030,AV238,AV-238,tech team spreadsheet,essentially no flux
 lehg4cr5q,AV251,AV-251,tech team spreadsheet,Shutter closed
@@ -68,7 +68,7 @@ lehgdcctq,AV251,AV-251,tech team spreadsheet,Shutter closed
 lehgdccwq,AV251,AV-251,tech team spreadsheet,Shutter closed
 oejv2s020,AV264,AV-264,tech team spreadsheet,acq failed; no stellar signal
 oejv2s030,AV264,AV-264,tech team spreadsheet,acq failed; spectrum present but possible velocity offset
-B0900701000,AV287,AV-287,Failed FUSE data check,failed observation
+b0900701000,Sk101,AV-287,Failed FUSE data check,failed observation
 lemu2cf2q,AV314,AV-314,tech team spreadsheet,The NUV exposured failed due to HST safing: repeat of NUV exposures scheduled under HOPR-92123
 lemu2cf4q,AV314,AV-314,tech team spreadsheet,The NUV exposured failed due to HST safing: repeat of NUV exposures scheduled under HOPR-92123
 lemu2cf6q,AV314,AV-314,tech team spreadsheet,The NUV exposured failed due to HST safing: repeat of NUV exposures scheduled under HOPR-92123
@@ -97,11 +97,11 @@ lf2f1cfeq,BI265,BI-265,tech team spreadsheet,TA failed; source off-center; flux 
 lf2f1cfhq,BI265,BI-265,tech team spreadsheet,TA failed; source off-center; flux and wavelength calibration bad
 o59z01040,CCDFLAT,CCDFLAT,stis tts tickets,Fringe flats associated with slitless aperture (V-CW-TAU)
 o59z06040,CCDFLAT,CCDFLAT,stis tts tickets,Fringe flats associated with slitless aperture (V-CW-TAU)
-lbz403010,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,
-lbz403020,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,
-lbz403030,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,
-lbz403040,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,
-lbz403050,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,
+lbz403010,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbz403020,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbz403030,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbz403040,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbz403050,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 leir1cxpq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 leir1cy7q,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 leir1cyfq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
@@ -199,7 +199,7 @@ letjccy2q,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 letjccy4q,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 letjccyeq,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 od7m06010,SK-69D212,SK-69D212,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
-Z9050701000,SK-69D220,SK-69D220,Failed FUSE data check,multiple stars in the aperture
+z9050701000,SK-69D220,SK-69D220,Failed FUSE data check,multiple stars in the aperture
 oejf5s010,SK-70D32,SK-70D32,tech team spreadsheet,"GS acq failure, TA failure, observations failure. Repeated as ES under HOPR-92162"
 oejf5s020,SK-70D32,SK-70D32,tech team spreadsheet,"GS acq failure, TA failure, observations failure. Repeated as ES under HOPR-92162"
 oejf5s030,SK-70D32,SK-70D32,tech team spreadsheet,"GS acq failure, TA failure, observations failure. Repeated as ES under HOPR-92162"
@@ -218,12 +218,12 @@ let61dbrq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered
 let61cd0q,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 let61cd2q,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 let61cd4q,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
-lb6b19010,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b19020,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b19030,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b19040,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b19050,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b19060,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,
+lb6b19010,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b19020,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b19030,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b19040,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b19050,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b19060,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 o6md07020,THA15-28,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 o6md07010,THA15-28,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke56020,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
@@ -314,11 +314,11 @@ o5cf02030,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o5cf02040,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o63l04010,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o63l04020,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
-lb6b10010,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b10020,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b10030,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b10040,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,
-lb6b10050,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,
+lb6b10010,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b10020,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b10030,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b10040,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lb6b10050,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lek7akqrq,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"Repeat of failed (due to safing) 1K under HOPR 9999. Failed ACQ, shutter closed for observations, no data."
 lek7akqtq,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"Repeat of failed (due to safing) 1K under HOPR 9999. Failed ACQ, shutter closed for observations, no data."
 lek7akqwq,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"Repeat of failed (due to safing) 1K under HOPR 9999. Failed ACQ, shutter closed for observations, no data."
@@ -331,15 +331,15 @@ lepg1no1q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no3q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no5q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no7q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
-lbgj02050,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj02060,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj02070,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj02080,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj02090,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj020a0,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj020b0,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj02tOq,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
-lbgj02tpq,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,
+lbgj02050,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj02060,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj02070,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj02080,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj02090,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj020a0,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj020b0,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj02toq,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj02tpq,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 leit1do5q,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed ACQ, shutter open for observation but data bad. Visit to be repeated under HOPR 92062"
 leit1do7q,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed ACQ, shutter open for observation but data bad. Visit to be repeated under HOPR 92062"
 leit1do9q,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed ACQ, shutter open for observation but data bad. Visit to be repeated under HOPR 92062"
@@ -472,19 +472,8 @@ o59z03030,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this
 o59z08020,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
 ocd844010,HD283654,V-DF-TAU,check for missing data from archive,Only E230H at this epcoh
 o6md02030,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
-o6md02030,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
 o6md02040,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
 o6md02010,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
-lbz403040,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
-lbz403050,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
-lbz403020,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
-lbz403030,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
-lbz403010,V-ET-CHA,ECHA-J0843M7915,check for missing data from archive,bad data
-lb6b10010,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
-lb6b10020,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
-lb6b10030,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
-lb6b10040,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
-lb6b10050,V-FM-TAU,V-FM-TAU,check for missing data from archive,bad data
 o6bt01030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
 o6bt04010,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
 o6bt03030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
@@ -504,15 +493,6 @@ ob2l05010,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at th
 ob2l05020,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
 ob2l05030,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
 o62n04010,HD142560,V-RU-LUP,check for missing data from archive,
-lbgj02050,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj02060,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj02070,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj02080,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj02090,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj020a0,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj020b0,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj02toq,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
-lbgj02tpq,V-RU-LUPI,V-RU-LUP,check for missing data from archive,bad data
 ocd860010,HD240764,V-RW-AUR,check for missing data from archive,only E230H at epoch
 o62n03010,HD240764,V-RW-AUR,check for missing data from archive,only G230M in this program/MJD
 ob2l01010,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
@@ -528,12 +508,6 @@ o62n07010,HD283571,V-RY-TAU,check for missing data from archive,only G230M in th
 ocwf01010,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
 ocwf01020,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
 ocwf01030,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
-lb6b19010,SZ-102,SZ-102,check for missing data from archive,bad data
-lb6b19020,SZ-102,SZ-102,check for missing data from archive,bad data
-lb6b19030,SZ-102,SZ-102,check for missing data from archive,bad data
-lb6b19040,SZ-102,SZ-102,check for missing data from archive,bad data
-lb6b19050,SZ-102,SZ-102,check for missing data from archive,bad data
-lb6b19060,SZ-102,SZ-102,check for missing data from archive,bad data
 ldgx9u010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
 ldgx9u020,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
 ldgxd9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
@@ -594,10 +568,7 @@ oec63r020,SK-68D8,SK-68D8,SNAP data quality check,Ok data. We are not using the 
 oec63v020,SK-66D50,SK-66D50,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
 oec62g020,SK-67D101,SK-67D101,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
 oec63w020,SK-67D207,SK-67D207,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-d0300302000,PGMW3120,PGMW-3120,FUSE data quality check,FUSE had multiple stars in the aperture
-d1620701000,AV22,AV-22,FUSE data quality check,Bad pointing
-b0900701000,AV287,AV-287,FUSE data quality check,Failed observation
-z9050701000,SK-69D220,SK-69D220,FUSE data quality check,FUSE had multiple stars in the aperture
+d0300302000,PGMW3120,PGMW-3120,FUSE data quality check,This is actually the star PGMW-3102
 p117220100000,Sk_-66172,SK-66D172,Initial FUSE data search,Unvetted extra FUSE data
 e511070100000,[M2002]_50825,AV-267,Initial FUSE data search,Unvetted extra FUSE data
 b010010100000,N11_18,N11-ELS-018,Initial FUSE data search,Unvetted extra FUSE data
@@ -712,21 +683,11 @@ m114230700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE d
 s405300300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
 m114240100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p103060400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027700000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027900000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123026400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p103060200000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027800000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027300000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026900000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027600000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123026500000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123026600000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027500000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123026800000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123028100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p103060300000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p103060100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123026700000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
@@ -736,7 +697,7 @@ a123027200000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p203030100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
 p117520100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
 p117570100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
-p203040100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
+p203040100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,This is not the correct target. It is actually NGC346-MPG-342/NGC346 W4
 p117550100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
 i811040300000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
 i811042100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
@@ -793,29 +754,16 @@ f321010400000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extr
 f321010100000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
 f321010300000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
 f321010200000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
-a123026400000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027000000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027700000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027400000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123028100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026500000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027600000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123026900000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060300000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026600000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027500000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027300000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026800000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027200000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060200000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027800000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 a123027900000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-m114240100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060400000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026300000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026700000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 s405390200000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
 m717220100000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
 p117420100000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
@@ -823,12 +771,9 @@ p117420200000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE dat
 p117420300000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
 s405390300000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
 s405390100000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
-b010030100000,[PGMW]_3102,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
-d030030200000,[PGMW]_3102,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
 d098170100000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
 p117180200000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
 p117180400000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
-p117180300000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
 p117620100000,[M2002]_17927,AV-83,Initial FUSE data search,Unvetted extra FUSE data
 b128010100000,Sk_-6635,SK-66D35,Initial FUSE data search,Unvetted extra FUSE data
 b086030100000,Sk_-6635,SK-66D35,Initial FUSE data search,Unvetted extra FUSE data
@@ -838,7 +783,6 @@ d153010100000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE d
 d153010600000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
 d153010400000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
 d153010200000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-p217020100000,BI_128,BI-128,Initial FUSE data search,Unvetted extra FUSE data
 e511190100000,[M2002]_15830,BI-13,Initial FUSE data search,Unvetted extra FUSE data
 m727660100000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
 p117190100000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
@@ -848,18 +792,13 @@ b010020100000,[PGMW]_3090,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE
 d030020100000,[PGMW]_3090,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
 s701130100000,[PGMW]_3090,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
 p117490100000,Br_10,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
-e511210100000,Br_10,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
 d162060100000,[M2002]_43844,AV-210,Initial FUSE data search,Unvetted extra FUSE data
-b010030100000,[PGMW]_3120,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
-d030030200000,[PGMW]_3120,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
 d175020100000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
 d175010200000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
 d175010100000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
 e511420100000,[M2002]_170808,SK-68D137,Initial FUSE data search,Unvetted extra FUSE data
 p117440100000,[M2002]_25077,SK-67D20,Initial FUSE data search,Unvetted extra FUSE data
 p117440200000,[M2002]_25077,SK-67D20,Initial FUSE data search,Unvetted extra FUSE data
-b010030100000,[PGMW]_3115,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
-d030030200000,[PGMW]_3115,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
 c002010100000,[M2002]_38024,AV-177,Initial FUSE data search,Unvetted extra FUSE data
 c002010200000,[M2002]_38024,AV-177,Initial FUSE data search,Unvetted extra FUSE data
 p117670100000,[M2002]_66415,AV-423,Initial FUSE data search,Unvetted extra FUSE data
@@ -897,19 +836,8 @@ a049140200000,Sk_-718,SK-71D8,Initial FUSE data search,Unvetted extra FUSE data
 a049140100000,Sk_-718,SK-71D8,Initial FUSE data search,Unvetted extra FUSE data
 e511170100000,[M2002]_17457,AV-80,Initial FUSE data search,Unvetted extra FUSE data
 e511100100000,[M2002]_69555,AV-446,Initial FUSE data search,Unvetted extra FUSE data
-d030020100000,[PGMW]_3073,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-s701130100000,[PGMW]_3073,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-b010020100000,[PGMW]_3073,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-p203050100000,NGC346_7,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
 p203050200000,NGC346_7,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-p117560100000,NGC346_7,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
 c160020100000,AV_374,AV-374,Initial FUSE data search,Unvetted extra FUSE data
-d153010500000,Sk_-67105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010100000,Sk_-67105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010300000,Sk_-67105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010400000,Sk_-67105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010600000,Sk_-67105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010200000,Sk_-67105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
 b086090100000,Sk_-67168,SK-67D168,Initial FUSE data search,Unvetted extra FUSE data
 e511300100000,Sk_-7119,SK-71D19,Initial FUSE data search,Unvetted extra FUSE data
 b086050100000,[M2002]_165542,SK-68D129,Initial FUSE data search,Unvetted extra FUSE data
@@ -918,7 +846,6 @@ p203020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 x020020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 p103020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 i812090100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-p117550100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 i801080100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 i812050100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 c002070100000,Sk_-6547,SK-65D47,Initial FUSE data search,Unvetted extra FUSE data
@@ -927,11 +854,7 @@ c103030100000,MACHO79_4779,HV-5622,Initial FUSE data search,Unvetted extra FUSE 
 p103040100000,AV_332,AV-332,Initial FUSE data search,Unvetted extra FUSE data
 x015010200000,AV_332,AV-332,Initial FUSE data search,Unvetted extra FUSE data
 b134020200000,NGC346-12,NGC346-ELS-026,Initial FUSE data search,Unvetted extra FUSE data
-p117570100000,[MPG]_355,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
 p117560100000,[MPG]_355,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-p203030100000,[MPG]_355,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-p203040100000,[MPG]_355,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-p117520100000,[MPG]_355,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
 p217030100000,BI_184,BI-184,Initial FUSE data search,Unvetted extra FUSE data
 z912130100000,Sk_-652,SK-65D2,Initial FUSE data search,Unvetted extra FUSE data
 z912120100000,Sk_-67216,SK-67D216,Initial FUSE data search,Unvetted extra FUSE data
@@ -942,13 +865,8 @@ p117260100000,Sk_-70115,SK-70D115,Initial FUSE data search,Unvetted extra FUSE d
 p117690100000,AV_242,AV-242,Initial FUSE data search,Unvetted extra FUSE data
 p215020100000,HD38029,HD-38029,Initial FUSE data search,Unvetted extra FUSE data
 p215020200000,HD38029,HD-38029,Initial FUSE data search,Unvetted extra FUSE data
-c160020100000,AV374,AV-374,Initial FUSE data search,Unvetted extra FUSE data
 d138010100000,NGC346_43,NGC346-ELS-043,Initial FUSE data search,Unvetted extra FUSE data
 e511200100000,[M2002]_33053,SK-69D50,Initial FUSE data search,Unvetted extra FUSE data
-d030020100000,[PGMW]_3058,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-s701130100000,[PGMW]_3058,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-b010020100000,[PGMW]_3058,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-d138010100000,NGC346-11,NGC346-ELS-043,Initial FUSE data search,Unvetted extra FUSE data
 e511330100000,[M2002]_135697,SK-67D108,Initial FUSE data search,Unvetted extra FUSE data
 e511330200000,[M2002]_135697,SK-67D108,Initial FUSE data search,Unvetted extra FUSE data
 d098100100000,[M2002]_19062,SK-70D13,Initial FUSE data search,Unvetted extra FUSE data
@@ -983,41 +901,27 @@ p117310100000,Sk_-67191,SK-67D191,Initial FUSE data search,Unvetted extra FUSE d
 g927050100000,Brey24,SK-65D55,Initial FUSE data search,Unvetted extra FUSE data
 a049120100000,Sk_-7150,SK-71D50,Initial FUSE data search,Unvetted extra FUSE data
 e511120100000,AV480,AV-480,Initial FUSE data search,Unvetted extra FUSE data
-s701130100000,[PGMW]_3070,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-d030020100000,[PGMW]_3070,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-b010020100000,[PGMW]_3070,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
 p117510100000,Br_50,SK-69D191,Initial FUSE data search,Unvetted extra FUSE data
 p117410100000,Sk_-6841,SK-68D41,Initial FUSE data search,Unvetted extra FUSE data
 p117410200000,Sk_-6841,SK-68D41,Initial FUSE data search,Unvetted extra FUSE data
 a111020100000,Sk-67_107,SK-67D107,Initial FUSE data search,Unvetted extra FUSE data
-p117440200000,HD_32109,SK-67D20,Initial FUSE data search,Unvetted extra FUSE data
-p117440100000,HD_32109,SK-67D20,Initial FUSE data search,Unvetted extra FUSE data
 d098060100000,[N206-FS]_214,SK-71D46,Initial FUSE data search,Unvetted extra FUSE data
-d098060100000,Sk-71_46,SK-71D46,Initial FUSE data search,Unvetted extra FUSE data
 p117600100000,[M2002]_9337,AV-26,Initial FUSE data search,Unvetted extra FUSE data
 p103180200000,Sk_-69246,SK-69D246,Initial FUSE data search,Unvetted extra FUSE data
 d162050100000,[M2002]_44984,AV-216,Initial FUSE data search,Unvetted extra FUSE data
-p203050200000,[MPG]_324,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
 p203050100000,[MPG]_324,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-p117560100000,[MPG]_324,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-p117570100000,[MPG]_324,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
 e511210100000,[M2002]_33780,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
-p117490100000,[M2002]_33780,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
 c160080100000,SK-70_50,SK-70D50,Initial FUSE data search,Unvetted extra FUSE data
 b090030100000,[M2002]_69992,SK-70D79,Initial FUSE data search,Unvetted extra FUSE data
 d162040100000,[M2002]_44828,AV-215,Initial FUSE data search,Unvetted extra FUSE data
 i801010200000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
 p117390100000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
 i801010100000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
-b090070100000,Sk101,AV-287,Initial FUSE data search,Unvetted extra FUSE data
 z912200100000,[M2002]_37732,AV-175,Initial FUSE data search,Unvetted extra FUSE data
 e511010100000,R_4,AV-16,Initial FUSE data search,Unvetted extra FUSE data
 d098050100000,Sk_-7141,SK-71D41,Initial FUSE data search,Unvetted extra FUSE data
-c002060100000,[M2002]_168644,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
-c002060200000,[M2002]_168644,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
 p115060600000,[M2002]_54958,AV-321,Initial FUSE data search,Unvetted extra FUSE data
-b010060100000,N11_48,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
-d030040200000,N11_48,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
+d030040200000,LH103204,N11-ELS-048,Initial FUSE data search,unreliaunreliable due to contamination
 b010070100000,N11_13,N11-ELS-013,Initial FUSE data search,Unvetted extra FUSE data
 p115050500000,[M2002]_19650,AV-95,Initial FUSE data search,Unvetted extra FUSE data
 e054010100000,[M2002]_19650,AV-95,Initial FUSE data search,Unvetted extra FUSE data
@@ -1028,7 +932,6 @@ f907040100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
 f907020100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
 f907030200000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
 f907010100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
-e511410200000,Sk-66_171,SK-66D171,Initial FUSE data search,Unvetted extra FUSE data
 b128060100000,HD_268809,SK-69D43,Initial FUSE data search,Unvetted extra FUSE data
 p117590100000,[M2002]_43724,AV-207,Initial FUSE data search,Unvetted extra FUSE data
 e511090100000,[M2002]_68756,AV-440,Initial FUSE data search,Unvetted extra FUSE data
@@ -1040,10 +943,7 @@ p117320100000,[M2002]_137610,BI-173,Initial FUSE data search,Unvetted extra FUSE
 p117320200000,[M2002]_137610,BI-173,Initial FUSE data search,Unvetted extra FUSE data
 p117530100000,AV_14,AV-14,Initial FUSE data search,Unvetted extra FUSE data
 e511250100000,[M2002]_46268,SK-70D32,Initial FUSE data search,Unvetted extra FUSE data
-e511210100000,LH12_16,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
-p117490100000,LH12_16,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
 p115020200000,[M2002]_11925,AV-47,Initial FUSE data search,Unvetted extra FUSE data
-z912240100000,[M2002]_80545,AV-506,Initial FUSE data search,Unvetted extra FUSE data
 b134040100000,AV393,AV-393,Initial FUSE data search,Unvetted extra FUSE data
 d162010100000,[M2002]_20656,AV-104,Initial FUSE data search,Unvetted extra FUSE data
 a111010100000,Sk-67_106,SK-67D106,Initial FUSE data search,Unvetted extra FUSE data
@@ -1059,44 +959,31 @@ c002060200000,VFTS_72,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
 c002060100000,VFTS_72,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
 g039030100000,[M2002]_11046,AV-39A,Initial FUSE data search,Unvetted extra FUSE data
 c160010100000,[M2002]_19728,AV-96,Initial FUSE data search,Unvetted extra FUSE data
-d030030200000,[PGMW]_3103,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
 e511020100000,[M2002]_15271,AV-61,Initial FUSE data search,Unvetted extra FUSE data
-b134020200000,NGC346_26,NGC346-ELS-026,Initial FUSE data search,Unvetted extra FUSE data
 p117580200000,[M2002]_48019,AV-243,Initial FUSE data search,Unvetted extra FUSE data
 p103100200000,Sk_-6522,SK-65D22,Initial FUSE data search,Unvetted extra FUSE data
 p117210100000,[M2002]_65981,SK-70D69,Initial FUSE data search,Unvetted extra FUSE data
 p117640100000,[M2002]_55537,AV-327,Initial FUSE data search,Unvetted extra FUSE data
 p117540100000,[M2002]_62400,AV-388,Initial FUSE data search,Unvetted extra FUSE data
-b010030100000,[PGMW]_3128,PGMW-3120,Initial FUSE data search,Unvetted extra FUSE data
-e511010100000,AV16,AV-16,Initial FUSE data search,Unvetted extra FUSE data
 p103030100000,Sk_82,AV-235,Initial FUSE data search,Unvetted extra FUSE data
 p117240100000,Sk_-69104,SK-69D104,Initial FUSE data search,Unvetted extra FUSE data
 c158020100000,AV_304,AV-304,Initial FUSE data search,Unvetted extra FUSE data
-b010070100000,[PGMW]_3223,N11-ELS-013,Initial FUSE data search,Unvetted extra FUSE data
-p103180200000,BAT99_118,SK-69D246,Initial FUSE data search,Unvetted extra FUSE data
 p115010100000,[M2002]_7437,AV-15,Initial FUSE data search,Unvetted extra FUSE data
 c160040100000,AV_187,AV-187,Initial FUSE data search,Unvetted extra FUSE data
-d098110100000,LMC_675,LH-114-7,Initial FUSE data search,Unvetted extra FUSE data
 a118010100000,AV18,AV-18,Initial FUSE data search,Unvetted extra FUSE data
 p117400100000,Sk_-6852,SK-68D52,Initial FUSE data search,Unvetted extra FUSE data
 d138030100000,NGC2004_26,NGC2004-ELS-026,Initial FUSE data search,Unvetted extra FUSE data
 p117700100000,AV_264,AV-264,Initial FUSE data search,Unvetted extra FUSE data
-d162070100000,AV22,AV-22,Initial FUSE data search,Unvetted extra FUSE data
-b086060100000,VFTS_696,SK-68D140,Initial FUSE data search,Unvetted extra FUSE data
 p117200100000,[M2002]_64006,SK-70D60,Initial FUSE data search,Unvetted extra FUSE data
 c002040100000,BAT99_12,SK-67D22,Initial FUSE data search,Unvetted extra FUSE data
 b027010100000,HD269445,SK-68D73,Initial FUSE data search,Unvetted extra FUSE data
 c160050100000,AV362,AV-362,Initial FUSE data search,Unvetted extra FUSE data
-d162070100000,[2dFS]_5015,AV-22,Initial FUSE data search,Unvetted extra FUSE data
-c160030100000,AV472,AV-472,Initial FUSE data search,Unvetted extra FUSE data
 e511060100000,[M2002]_50178,AV-261,Initial FUSE data search,Unvetted extra FUSE data
 p221010100000,[2dFS]_5002,AV-6,Initial FUSE data search,Unvetted extra FUSE data
 p217040100000,[M2002]_45521,AV-220,Initial FUSE data search,Unvetted extra FUSE data
-e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
 ob6ba3030,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,Bad ACQ
 ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,Bad ACQ
 ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 ob6bc2zqq,RECX-1,RECX-1,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
@@ -1123,3 +1010,19 @@ ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,Internal Database vetting,"Does not have an asso
 ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 ob6bc6wgq,V-V397-AUR,V-V397-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 ob6ba6laq,V-V836-TAU,V-V836-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+p217020100000,BI128,BI-128,Initial FUSE data search,target was removed from the ULLYSES sample in Cycle 28
+c151010900000,HD36521,HD36521,Initial FUSE data search,Unvetted extra FUSE data
+p103140200000,SK-68D80,SK-68D80,Initial FUSE data search,Unvetted extra FUSE data
+c151010600000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010200000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151011000000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010800000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010400000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010100000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010300000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010500000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+p103140300000,SK-68D80,SK-68D80,Initial FUSE data search,Unvetted extra FUSE data
+p117180300000,MK42,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
+e511310200000,SK-71D26,SK-71D26,Initial FUSE data search,Unvetted extra FUSE data
+b010060100000,PGMW-3209,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
+e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
