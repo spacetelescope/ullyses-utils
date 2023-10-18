@@ -96,11 +96,11 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
             # there is an alias for a star named 'SEXTANS-A'
             hlsp_targ = 'SEXTANS-A'
 
-        info['hlsp_targname'].append(hlsp_targ)
+        info['target_name_hlsp'].append(hlsp_targ)
         try:
             info['star_region'].append(galaxy_dict[hlsp_targ])
         except KeyError:
-            #print(f'{match_aliases(targname, return_name="target_name_ullyses")} / {hlsp_targ} is not in a database file yet. Make sure it gets in there!')
+            print(f'{match_aliases(targname, return_name="target_name_ullyses")} / {hlsp_targ} is not in a database file yet. Make sure it gets in there!')
             missing_metadata.append(hlsp_targ)
             info['star_region'].append('TBD')
 
@@ -190,8 +190,8 @@ def main(data_dir):
             'lifetime_pos' : [], # hdu[0].header['LIFE_ADJ']
             'obs_date_mjd' : [], # hdu[1].header['EXPSTART']
             'obs_date_isot' : [], # time.date(hdu[1].header['EXPSTART'])
-            'obs_targname' : [], # hdu[0].header['TARGNAME']
-            'hlsp_targname' : [], # match_aliases(hdu[0].header['TARGNAME'],
+            'target_name' : [], # hdu[0].header['TARGNAME']
+            'target_name_hlsp' : [], # match_aliases(hdu[0].header['TARGNAME'],
             'coadd' : [],
             'exp_timeseries' : [], # does a timeseries yaml file exist for this target?
             'subexp_timeseries' : [], # might have to open the yaml file to see this one
@@ -214,7 +214,7 @@ def main(data_dir):
                'cenwave' : 'CENWAVE',
                'aperture' : 'APERTURE',
                'lifetime_pos' : 'LIFE_ADJ',
-               'obs_targname' : 'TARGNAME',
+               'target_name' : 'TARGNAME',
                }
 
     ## find all of the pids for archival & ULLYSES observed data
@@ -249,11 +249,11 @@ def main(data_dir):
 
     ## read in the rejected datasets and do not include in the final df
     rejected_df = pd.read_csv('data/ullyses_rejected_data.csv')
-    rejected_roots = list(rejected_df['rootname'])
+    rejected_roots = list(rejected_df['dataset_name'])
 
     ## read in the custom coadd datasets
     coadd_df = pd.read_csv('data/custom_coadd.csv')
-    coadd_list = list(coadd_df['dataset'])
+    coadd_list = list(coadd_df['dataset_name'])
 
     skipped = []
     missing_meta = []

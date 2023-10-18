@@ -1,4 +1,4 @@
-dataset_name,observatory,instrument,proposid,detector,grating,filter,cenwave,aperture,lifetime_pos,obs_date_mjd,obs_date_isot,obs_targname,hlsp_targname,coadd,exp_timeseries,subexp_timeseries,drizzled,custom_cal,star_region,ullyses_obs,archival_obs
+dataset_name,observatory,instrument,proposid,detector,grating,filter,cenwave,aperture,lifetime_pos,obs_date_mjd,obs_date_isot,target_name,target_name_hlsp,coadd,exp_timeseries,subexp_timeseries,drizzled,custom_cal,star_region,ullyses_obs,archival_obs
 lea2acdbq,HST,COS,16100,FUV,G130M,N/A,1291,PSA,4,59131.21593544,2020-10-09T05:10:56.822,2DFS-163,2DFS-163,True,False,False,False,,SMC,True,False
 lea2acdfq,HST,COS,16100,FUV,G130M,N/A,1291,PSA,4,59131.23505581,2020-10-09T05:38:28.822,2DFS-163,2DFS-163,True,False,False,False,,SMC,True,False
 lea2acdhq,HST,COS,16100,FUV,G160M,N/A,1611,PSA,4,59131.24977803,2020-10-09T05:59:40.822,2DFS-163,2DFS-163,True,False,False,False,,SMC,True,False
