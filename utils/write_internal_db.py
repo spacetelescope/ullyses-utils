@@ -62,7 +62,24 @@ def check_custom_cal(hlsp_targ, grating, rootname):
 
 #-------------------------------------------------------------------------------
 
-def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_targs, missing_metadata, coadd_list):
+def check_quality_comm(qual_df, rootname):
+
+    # check to see if the rootname is in the quality comment file
+    qual_comm = qual_df['qual_comm'][qual_df['dataset_name'] == rootname]
+
+    if len(qual_comm) >= 1:
+        if len(qual_comm) > 1:
+            print(f'{rootname} repeated rootname')
+        # if it is, return the comment
+        return qual_comm.iloc[0]
+    else:
+        # otherwise, just return a blank string
+        return ''
+
+#-------------------------------------------------------------------------------
+
+def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids,
+                  off_targs, missing_metadata, coadd_list, qual_df):
 
     with fits.open(filename) as hdu:
         targname = hdu[0].header['TARGNAME']
@@ -154,6 +171,10 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids, off_t
         custom = check_custom_cal(hlsp_targ, grating, rootname)
         info['custom_cal'].append(custom) # STIS, WAVE, FUSE, or None
 
+        # check if there is anything special to add as a quality comment to the header
+        qual_comm = check_quality_comm(qual_df, rootname)
+        info['qual_comm'].append(qual_comm)
+
         ## Info unique to ULLYSES project
         if ins == 'FUV':
             # FUSE data is all archival
@@ -200,7 +221,7 @@ def main(data_dir):
             'star_region' : [], # look for in the other CSVs
             'ullyses_obs' : [], # from a fixed list of ULLYSES PIDs
             'archival_obs' : [], # from a fixed list of archival PIDs
-            #'qual_comm' : [], # quality comment about the data from a fixed list
+            'qual_comm' : [], # quality comment about the data from a fixed list
             }
 
     # mapping the column name with the associated keyword in the file header
@@ -255,6 +276,9 @@ def main(data_dir):
     coadd_df = pd.read_csv('data/custom_coadd.csv')
     coadd_list = list(coadd_df['dataset_name'])
 
+    ## read in the quality comments to add to the database for certain datasets
+    qual_df = pd.read_csv('data/ullyses_quality_comments.csv')
+
     skipped = []
     missing_meta = []
     ## fill in the dictionary for each file
@@ -280,7 +304,7 @@ def main(data_dir):
             info, missing_meta = populate_info(info, kw_dict, rawf, galaxy_dict,
                                                pids_dict['ARCHIVAL'], pids_dict['ULLYSES'],
                                                np.array(offset_df['offset_targ']),
-                                               missing_meta, coadd_list)
+                                               missing_meta, coadd_list, qual_df)
 
     print('# Skipped b/c rejected:', len(np.unique(skipped)))
     for missing in np.unique(missing_meta):
