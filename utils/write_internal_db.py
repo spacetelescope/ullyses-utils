@@ -261,12 +261,16 @@ def main(data_dir):
     for targ_dir in np.sort(glob.glob(os.path.join(data_dir, '*'))):
         print(targ_dir)
         for rawf in np.sort(glob.glob(os.path.join(targ_dir, '*raw*.fits'))+ glob.glob(os.path.join(targ_dir, '*_vo.fits'))):
-            root = os.path.basename(rawf).split('_')[0].lower()
+            root = os.path.basename(rawf).split('_')[0].split('nvo')[0].lower()
 
             # skip the file if the rootname has already been recorded
             #   (COS will have two raw files)
             if root in info['dataset_name']:
                 continue
+
+            if len(root) == 11:
+                # FUSE roots are weird. They have the extra 0s in the rejected roots file
+                root = root + '00'
 
             # skip the file if it's been deiced it should not be in the sample
             if root in rejected_roots:
