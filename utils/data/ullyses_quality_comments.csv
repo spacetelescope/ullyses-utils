@@ -1,136 +1,157 @@
-﻿dataset_name,target_name_hlsp,qual_comm
-o4yn01010,SK-67D101,[o4yn01010] Flux discrepancy 
-o4yn01020,SK-67D101,[o4yn01020] Flux discrepancy
-g039050100000,2DFS-999,[g0390501000] Flux rescaled
-p103030100000,AV-235,[p1030301000] Flux rescaled
-e511070100000,AV-267,[e5110701000] Flux rescaled
-p117600100000,AV-26,[p1176001000] Flux rescaled
-p117540100000,AV-388,[p1175401000] Flux rescaled
-g039030100000,AV-39A,[g0390301000] Flux rescaled
-c002030100000,AV-476,[c0020301000] Flux rescaled
-p117620100000,AV-83,[p1176201000] Flux rescaled
-d098170100000,BAT99-105,[d0981701000] Flux rescaled
-p117290200000,BI-272,[p1172902000] Flux rescaled
-d098110100000,LH-114-7,[d0981101000] Flux rescaled
-a044010200000,LMCX-4,[a0440102000] Flux rescaled
-f321010200000,MOA-J010321.3-720538,[f3210102000] Flux rescaled
-d138030100000,NGC2004-ELS-026,[d1380301000] Flux rescaled
-p203040100000,NGC346-MPG-342,[p2030401000] Flux rescaled
-p203030100000,NGC346-MPG-355,[p2030301000] Flux rescaled
-b010020100000,PGMW-3070,[b0100201000] Flux rescaled
-g927050100000,SK-65D55,[g9270501000] Flux rescaled
-p103130200000,SK-67D104,[p1031302000] Flux rescaled
-a111010100000,SK-67D106,[a1110101000] Flux rescaled
-b086090100000,SK-67D168,[b0860901000] Flux rescaled
-e511220100000,SK-68D16,[e5112201000] Flux rescaled
-d098100100000,SK-70D13,[d0981001000] Flux rescaled
-p203020100000,NGC346-MPG-435,[p2030201000] Flux rescaled
-leilacjaq ,SZ-10,[leilacjaq] Manual wavelength shift
-leil2dinq,SZ-10,[leil2dinq] Manual wavelength shift
-leiladiuq,SZ-10,[leiladiuq] Manual wavelength shift
-lek71fhuq,V-GM-AUR,[lek71fhuq] Manual wavelength shift
-lek71fhyq,V-GM-AUR,[lek71fhyq] Manual wavelength shift
-lek71fhsq,V-GM-AUR,[lek71fhsq] Manual wavelength shift
-lek71fhwq,V-GM-AUR,[lek71fhwq] Manual wavelength shift
-lek71fhoq,V-GM-AUR,[lek71fhoq] Manual wavelength shift
-lek71fhqq,V-GM-AUR,[lek71fhqq] Manual wavelength shift
-le9d1cdeq,V-TW-HYA,[le9d1cdeq] Manual wavelength shift
-le9d1cdgq,V-TW-HYA,[le9d1cdgq] Manual wavelength shift
-le9d1cdiq,V-TW-HYA,[le9d1cdgq] Manual wavelength shift
-le9d1cdkq,V-TW-HYA,[le9d1cdkq] Manual wavelength shift
-le9d1cdmq,V-TW-HYA,[le9d1cdmq] Manual wavelength shift
-le9d1cdoq,V-TW-HYA,[le9d1cdoq] Manual wavelength shift
-le9d1gw7q,V-TW-HYA,[le9d1gw7q] Manual wavelength shift
-leit1kldq,V-RU-LUP,[leit1kldq] NUV flux rescaled for vignetting
-lek71gmlq,V-GM-AUR,[lek71gmlq] NUV flux rescaled for vignetting
-leph1hoiq,V-RU-LUP,[leph1hoiq] NUV flux rescaled for vignetting
-lejp1nkbq,V-BP-TAU,[lejp1nkbq] NUV flux rescaled for vignetting
-lepg1dd7q,V-GM-AUR,[lepg1dd7q] NUV flux rescaled for vignetting
-lepd1nonq,V-BP-TAU,[lepd1nonq] NUV flux rescaled for vignetting
-lepg1igfq,V-GM-AUR,[lepg1igfq] NUV flux rescaled for vignetting
-leph1konq,V-RU-LUP,[leph1konq] NUV flux rescaled for vignetting
-leph1gkzq,V-RU-LUP,[leph1gkzq] NUV flux rescaled for vignetting
-lek7alh6q,V-GM-AUR,[lek7alh6q] NUV flux rescaled for vignetting
-le9d1lioq,V-TW-HYA,[le9d1lioq] NUV flux rescaled for vignetting
-lepd1jkhq,V-BP-TAU,[lepd1jkhq] NUV flux rescaled for vignetting
-lek71ecnq,V-GM-AUR,[lek71ecnq] NUV flux rescaled for vignetting
-le9d1ifeq,V-TW-HYA,[le9d1ifeq] NUV flux rescaled for vignetting
-lepg1gf1q,V-GM-AUR,[lepg1gf1q] NUV flux rescaled for vignetting
-lejp1llrq,V-BP-TAU,[lejp1llrq] NUV flux rescaled for vignetting
-lepd1cjcq,V-BP-TAU,[lepd1cjcq] NUV flux rescaled for vignetting
-leit1mujq,V-RU-LUP,[leit1mujq] NUV flux rescaled for vignetting
-leph1ndoq,V-RU-LUP,[leph1ndoq] NUV flux rescaled for vignetting
-le9d1dhkq,V-TW-HYA,[le9d1dhkq] NUV flux rescaled for vignetting
-lek7ampxq,V-GM-AUR,[lek7ampxq] NUV flux rescaled for vignetting
-lejp1iqwq,V-BP-TAU,[lejp1iqwq] NUV flux rescaled for vignetting
-lepc1fm9q,V-TW-HYA,[lepc1fm9q] NUV flux rescaled for vignetting
-lek71fhoq,V-GM-AUR,[lek71fhoq] NUV flux rescaled for vignetting
-leph1faqq,V-RU-LUP,[leph1faqq] NUV flux rescaled for vignetting
-lepc1kowq,V-TW-HYA,[lepc1kowq] NUV flux rescaled for vignetting
-lepc1cxiq,V-TW-HYA,[lepc1cxiq] NUV flux rescaled for vignetting
-leit1icaq,V-RU-LUP,[leit1icaq] NUV flux rescaled for vignetting
-lejp1eguq,V-BP-TAU,[lejp1eguq] NUV flux rescaled for vignetting
-lepc1idwq,V-TW-HYA,[lepc1idwq] NUV flux rescaled for vignetting
-lejp1kk7q,V-BP-TAU,[lejp1kk7q] NUV flux rescaled for vignetting
-lejp1chiq,V-BP-TAU,[lejp1chiq] NUV flux rescaled for vignetting
-le9d1cdeq,V-TW-HYA,[le9d1cdeq] NUV flux rescaled for vignetting
-lek71ianq,V-GM-AUR,[lek71ianq] NUV flux rescaled for vignetting
-leph1ideq,V-RU-LUP,[leph1ideq] NUV flux rescaled for vignetting
-lek71dx4q,V-GM-AUR,[lek71dx4q] NUV flux rescaled for vignetting
-lepg1jlrq,V-GM-AUR,[lepg1jlrq] NUV flux rescaled for vignetting
-lepdagy6q,V-BP-TAU,[lepdagy6q] NUV flux rescaled for vignetting
-leph1jk0q,V-RU-LUP,[leph1jk0q] NUV flux rescaled for vignetting
-leph1lucq,V-RU-LUP,[leph1lucq] NUV flux rescaled for vignetting
-le9d1hzoq,V-TW-HYA,[le9d1hzoq] NUV flux rescaled for vignetting
-lepd1fe2q,V-BP-TAU,[lepd1fe2q] NUV flux rescaled for vignetting
-leph1cn5q,V-RU-LUP,[leph1cn5q] NUV flux rescaled for vignetting
-lepd1kugq,V-BP-TAU,[lepd1kugq] NUV flux rescaled for vignetting
-leit1eu5q,V-RU-LUP,[leit1eu5q] NUV flux rescaled for vignetting
-lepd1lhbq,V-BP-TAU,[lepd1lhbq] NUV flux rescaled for vignetting
-lek7ajcgq,V-GM-AUR,[lek7ajcgq] NUV flux rescaled for vignetting
-leit1jh5q,V-RU-LUP,[leit1jh5q] NUV flux rescaled for vignetting
-lephaemeq,V-RU-LUP,[lephaemeq] NUV flux rescaled for vignetting
-lepg1kw2q,V-GM-AUR,[lepg1kw2q] NUV flux rescaled for vignetting
-lejp1mydq,V-BP-TAU,[lejp1mydq] NUV flux rescaled for vignetting
-leit1gc7q,V-RU-LUP,[leit1gc7q] NUV flux rescaled for vignetting
-lephadhmq,V-RU-LUP,[lephadhmq] NUV flux rescaled for vignetting
-lepd1dymq,V-BP-TAU,[lepd1dymq] NUV flux rescaled for vignetting
-lepd1mdsq,V-BP-TAU,[lepd1mdsq] NUV flux rescaled for vignetting
-lepg1hopq,V-GM-AUR,[lepg1hopq] NUV flux rescaled for vignetting
-le9d1gw5q,V-TW-HYA,[le9d1gw5q] NUV flux rescaled for vignetting
-lepc1lt6q,V-TW-HYA,[lepc1lt6q] NUV flux rescaled for vignetting
-lepc1mdvq,V-TW-HYA,[lepc1mdvq] NUV flux rescaled for vignetting
-le9d1jarq,V-TW-HYA,[le9d1jarq] NUV flux rescaled for vignetting
-lepg1cntq,V-GM-AUR,[lepg1cntq] NUV flux rescaled for vignetting
-le9d1ekwq,V-TW-HYA,[le9d1ekwq] NUV flux rescaled for vignetting
-leit1hh5q,V-RU-LUP,[leit1hh5q] NUV flux rescaled for vignetting
-leit1njgq,V-RU-LUP,[leit1njgq] NUV flux rescaled for vignetting
-lepd1hzqq,V-BP-TAU,[lepd1hzqq] NUV flux rescaled for vignetting
-lek71cn5q,V-GM-AUR,[lek71cn5q] NUV flux rescaled for vignetting
-lepd1ijzq,V-BP-TAU,[lepd1ijzq] NUV flux rescaled for vignetting
-le9d1fqrq,V-TW-HYA,[le9d1fqrq] NUV flux rescaled for vignetting
-lepg1mbnq,V-GM-AUR,[lepg1mbnq] NUV flux rescaled for vignetting
-lejp1hibq,V-BP-TAU,[lejp1hibq] NUV flux rescaled for vignetting
-lepc1ehuq,V-TW-HYA,[lepc1ehuq] NUV flux rescaled for vignetting
-lejp1foeq,V-BP-TAU,[lejp1foeq] NUV flux rescaled for vignetting
-le9d1mnqq,V-TW-HYA,[le9d1mnqq] NUV flux rescaled for vignetting
-leit1fxiq,V-RU-LUP,[leit1fxiq] NUV flux rescaled for vignetting
-leph1mziq,V-RU-LUP,[leph1mziq] NUV flux rescaled for vignetting
-lepd1eniq,V-BP-TAU,[lepd1eniq] NUV flux rescaled for vignetting
-leit1ciqq,V-RU-LUP,[leit1ciqq] NUV flux rescaled for vignetting
-lepc1jieq,V-TW-HYA,[lepc1jieq] NUV flux rescaled for vignetting
-lejp1dsrq,V-BP-TAU,[lejp1dsrq] NUV flux rescaled for vignetting
-lek71hshq,V-GM-AUR,[lek71hshq] NUV flux rescaled for vignetting
-lepcagh8q,V-TW-HYA,[lepcagh8q] NUV flux rescaled for vignetting
-lejp1gagq,V-BP-TAU,[lejp1gagq] NUV flux rescaled for vignetting
-lepg1ld0q,V-GM-AUR,[lepg1ld0q] NUV flux rescaled for vignetting
-lepg1eleq,V-GM-AUR,[lepg1eleq] NUV flux rescaled for vignetting
-lepc1nikq,V-TW-HYA,[lepc1nikq] NUV flux rescaled for vignetting
-lek7anyuq,V-GM-AUR,[lek7anyuq] NUV flux rescaled for vignetting
-lepg1fvtq,V-GM-AUR,[lepg1fvtq] NUV flux rescaled for vignetting
-le9d1nsbq,V-TW-HYA,[le9d1nsbq] NUV flux rescaled for vignetting
-lejp1ja6q,V-BP-TAU,[lejp1ja6q] NUV flux rescaled for vignetting
-ob6bc2010,RECX-1,[ob6bc2010] Possible companion star in slit
-o5e308030,V-V410-TAU,[o5e308030] Possible companion star in slit
-o8ns01010,V-V1098-TAU,[o8ns01010] Possible companion star in slit
-o8ns01020,V-V1098-TAU,[o8ns01020] Possible companion star in slit
+﻿dataset_name,target_name_hlsp,qual_comm,
+o4yn01010,SK-67D101,[o4yn01010] Flux discrepancy ,
+o4yn01020,SK-67D101,[o4yn01020] Flux discrepancy,
+g039050100000,2DFS-999,[g0390501000] Flux rescaled,
+p103030100000,AV-235,[p1030301000] Flux rescaled,
+e511070100000,AV-267,[e5110701000] Flux rescaled,
+p117600100000,AV-26,[p1176001000] Flux rescaled,
+p117540100000,AV-388,[p1175401000] Flux rescaled,
+g039030100000,AV-39A,[g0390301000] Flux rescaled,
+c002030100000,AV-476,[c0020301000] Flux rescaled,
+p117620100000,AV-83,[p1176201000] Flux rescaled,
+d098170100000,BAT99-105,[d0981701000] Flux rescaled,
+p117290200000,BI-272,[p1172902000] Flux rescaled,
+d098110100000,LH-114-7,[d0981101000] Flux rescaled,
+a044010200000,LMCX-4,[a0440102000] Flux rescaled,
+f321010200000,MOA-J010321.3-720538,[f3210102000] Flux rescaled,
+d138030100000,NGC2004-ELS-026,[d1380301000] Flux rescaled,
+p203040100000,NGC346-MPG-342,[p2030401000] Flux rescaled,
+p203030100000,NGC346-MPG-355,[p2030301000] Flux rescaled,
+b010020100000,PGMW-3070,[b0100201000] Flux rescaled,
+g927050100000,SK-65D55,[g9270501000] Flux rescaled,
+p103130200000,SK-67D104,[p1031302000] Flux rescaled,
+a111010100000,SK-67D106,[a1110101000] Flux rescaled,
+b086090100000,SK-67D168,[b0860901000] Flux rescaled,
+e511220100000,SK-68D16,[e5112201000] Flux rescaled,
+d098100100000,SK-70D13,[d0981001000] Flux rescaled,
+p203020100000,NGC346-MPG-435,[p2030201000] Flux rescaled,
+leilacjaq ,SZ-10,[leilacjaq] Manual wavelength shift,
+leil2dinq,SZ-10,[leil2dinq] Manual wavelength shift,
+leiladiuq,SZ-10,[leiladiuq] Manual wavelength shift,
+lek71fhuq,V-GM-AUR,[lek71fhuq] Manual wavelength shift,
+lek71fhyq,V-GM-AUR,[lek71fhyq] Manual wavelength shift,
+lek71fhsq,V-GM-AUR,[lek71fhsq] Manual wavelength shift,
+lek71fhwq,V-GM-AUR,[lek71fhwq] Manual wavelength shift,
+lek71fhoq,V-GM-AUR,[lek71fhoq] Manual wavelength shift,
+lek71fhqq,V-GM-AUR,[lek71fhqq] Manual wavelength shift,
+le9d1cdeq,V-TW-HYA,[le9d1cdeq] Manual wavelength shift,
+le9d1cdgq,V-TW-HYA,[le9d1cdgq] Manual wavelength shift,
+le9d1cdiq,V-TW-HYA,[le9d1cdgq] Manual wavelength shift,
+le9d1cdkq,V-TW-HYA,[le9d1cdkq] Manual wavelength shift,
+le9d1cdmq,V-TW-HYA,[le9d1cdmq] Manual wavelength shift,
+le9d1cdoq,V-TW-HYA,[le9d1cdoq] Manual wavelength shift,
+le9d1gw7q,V-TW-HYA,[le9d1gw7q] Manual wavelength shift,
+leit1kldq,V-RU-LUP,[leit1kldq] NUVB flux rescaled for vignetting,
+lek71gmlq,V-GM-AUR,[lek71gmlq] NUVB flux rescaled for vignetting,
+leph1hoiq,V-RU-LUP,[leph1hoiq] NUVB flux rescaled for vignetting,
+lejp1nkbq,V-BP-TAU,[lejp1nkbq] NUVB flux rescaled for vignetting,
+lepg1dd7q,V-GM-AUR,[lepg1dd7q] NUVB flux rescaled for vignetting,
+lepd1nonq,V-BP-TAU,[lepd1nonq] NUVB flux rescaled for vignetting,
+lepg1igfq,V-GM-AUR,[lepg1igfq] NUVB flux rescaled for vignetting,
+leph1konq,V-RU-LUP,[leph1konq] NUVB flux rescaled for vignetting,
+leph1gkzq,V-RU-LUP,[leph1gkzq] NUVB flux rescaled for vignetting,
+lek7alh6q,V-GM-AUR,[lek7alh6q] NUVB flux rescaled for vignetting,
+le9d1lioq,V-TW-HYA,[le9d1lioq] NUVB flux rescaled for vignetting,
+lepd1jkhq,V-BP-TAU,[lepd1jkhq] NUVB flux rescaled for vignetting,
+lek71ecnq,V-GM-AUR,[lek71ecnq] NUVB flux rescaled for vignetting,
+le9d1ifeq,V-TW-HYA,[le9d1ifeq] NUVB flux rescaled for vignetting,
+lepg1gf1q,V-GM-AUR,[lepg1gf1q] NUVB flux rescaled for vignetting,
+lejp1llrq,V-BP-TAU,[lejp1llrq] NUVB flux rescaled for vignetting,
+lepd1cjcq,V-BP-TAU,[lepd1cjcq] NUVB flux rescaled for vignetting,
+leit1mujq,V-RU-LUP,[leit1mujq] NUVB flux rescaled for vignetting,
+leph1ndoq,V-RU-LUP,[leph1ndoq] NUVB flux rescaled for vignetting,
+le9d1dhkq,V-TW-HYA,[le9d1dhkq] NUVB flux rescaled for vignetting,
+lek7ampxq,V-GM-AUR,[lek7ampxq] NUVB flux rescaled for vignetting,
+lejp1iqwq,V-BP-TAU,[lejp1iqwq] NUVB flux rescaled for vignetting,
+lepc1fm9q,V-TW-HYA,[lepc1fm9q] NUVB flux rescaled for vignetting,
+lek71fhoq,V-GM-AUR,[lek71fhoq] NUVB flux rescaled for vignetting,
+leph1faqq,V-RU-LUP,[leph1faqq] NUVB flux rescaled for vignetting,
+lepc1kowq,V-TW-HYA,[lepc1kowq] NUVB flux rescaled for vignetting,
+lepc1cxiq,V-TW-HYA,[lepc1cxiq] NUVB flux rescaled for vignetting,
+leit1icaq,V-RU-LUP,[leit1icaq] NUVB flux rescaled for vignetting,
+lejp1eguq,V-BP-TAU,[lejp1eguq] NUVB flux rescaled for vignetting,
+lepc1idwq,V-TW-HYA,[lepc1idwq] NUVB flux rescaled for vignetting,
+lejp1kk7q,V-BP-TAU,[lejp1kk7q] NUVB flux rescaled for vignetting,
+lejp1chiq,V-BP-TAU,[lejp1chiq] NUVB flux rescaled for vignetting,
+le9d1cdeq,V-TW-HYA,[le9d1cdeq] NUVB flux rescaled for vignetting,
+lek71ianq,V-GM-AUR,[lek71ianq] NUVB flux rescaled for vignetting,
+leph1ideq,V-RU-LUP,[leph1ideq] NUVB flux rescaled for vignetting,
+lek71dx4q,V-GM-AUR,[lek71dx4q] NUVB flux rescaled for vignetting,
+lepg1jlrq,V-GM-AUR,[lepg1jlrq] NUVB flux rescaled for vignetting,
+lepdagy6q,V-BP-TAU,[lepdagy6q] NUVB flux rescaled for vignetting,
+leph1jk0q,V-RU-LUP,[leph1jk0q] NUVB flux rescaled for vignetting,
+leph1lucq,V-RU-LUP,[leph1lucq] NUVB flux rescaled for vignetting,
+le9d1hzoq,V-TW-HYA,[le9d1hzoq] NUVB flux rescaled for vignetting,
+lepd1fe2q,V-BP-TAU,[lepd1fe2q] NUVB flux rescaled for vignetting,
+leph1cn5q,V-RU-LUP,[leph1cn5q] NUVB flux rescaled for vignetting,
+lepd1kugq,V-BP-TAU,[lepd1kugq] NUVB flux rescaled for vignetting,
+leit1eu5q,V-RU-LUP,[leit1eu5q] NUVB flux rescaled for vignetting,
+lepd1lhbq,V-BP-TAU,[lepd1lhbq] NUVB flux rescaled for vignetting,
+lek7ajcgq,V-GM-AUR,[lek7ajcgq] NUVB flux rescaled for vignetting,
+leit1jh5q,V-RU-LUP,[leit1jh5q] NUVB flux rescaled for vignetting,
+lephaemeq,V-RU-LUP,[lephaemeq] NUVB flux rescaled for vignetting,
+lepg1kw2q,V-GM-AUR,[lepg1kw2q] NUVB flux rescaled for vignetting,
+lejp1mydq,V-BP-TAU,[lejp1mydq] NUVB flux rescaled for vignetting,
+leit1gc7q,V-RU-LUP,[leit1gc7q] NUVB flux rescaled for vignetting,
+lephadhmq,V-RU-LUP,[lephadhmq] NUVB flux rescaled for vignetting,
+lepd1dymq,V-BP-TAU,[lepd1dymq] NUVB flux rescaled for vignetting,
+lepd1mdsq,V-BP-TAU,[lepd1mdsq] NUVB flux rescaled for vignetting,
+lepg1hopq,V-GM-AUR,[lepg1hopq] NUVB flux rescaled for vignetting,
+le9d1gw5q,V-TW-HYA,[le9d1gw5q] NUVB flux rescaled for vignetting,
+lepc1lt6q,V-TW-HYA,[lepc1lt6q] NUVB flux rescaled for vignetting,
+lepc1mdvq,V-TW-HYA,[lepc1mdvq] NUVB flux rescaled for vignetting,
+le9d1jarq,V-TW-HYA,[le9d1jarq] NUVB flux rescaled for vignetting,
+lepg1cntq,V-GM-AUR,[lepg1cntq] NUVB flux rescaled for vignetting,
+le9d1ekwq,V-TW-HYA,[le9d1ekwq] NUVB flux rescaled for vignetting,
+leit1hh5q,V-RU-LUP,[leit1hh5q] NUVB flux rescaled for vignetting,
+leit1njgq,V-RU-LUP,[leit1njgq] NUVB flux rescaled for vignetting,
+lepd1hzqq,V-BP-TAU,[lepd1hzqq] NUVB flux rescaled for vignetting,
+lek71cn5q,V-GM-AUR,[lek71cn5q] NUVB flux rescaled for vignetting,
+lepd1ijzq,V-BP-TAU,[lepd1ijzq] NUVB flux rescaled for vignetting,
+le9d1fqrq,V-TW-HYA,[le9d1fqrq] NUVB flux rescaled for vignetting,
+lepg1mbnq,V-GM-AUR,[lepg1mbnq] NUVB flux rescaled for vignetting,
+lejp1hibq,V-BP-TAU,[lejp1hibq] NUVB flux rescaled for vignetting,
+lepc1ehuq,V-TW-HYA,[lepc1ehuq] NUVB flux rescaled for vignetting,
+lejp1foeq,V-BP-TAU,[lejp1foeq] NUVB flux rescaled for vignetting,
+le9d1mnqq,V-TW-HYA,[le9d1mnqq] NUVB flux rescaled for vignetting,
+leit1fxiq,V-RU-LUP,[leit1fxiq] NUVB flux rescaled for vignetting,
+leph1mziq,V-RU-LUP,[leph1mziq] NUVB flux rescaled for vignetting,
+lepd1eniq,V-BP-TAU,[lepd1eniq] NUVB flux rescaled for vignetting,
+leit1ciqq,V-RU-LUP,[leit1ciqq] NUVB flux rescaled for vignetting,
+lepc1jieq,V-TW-HYA,[lepc1jieq] NUVB flux rescaled for vignetting,
+lejp1dsrq,V-BP-TAU,[lejp1dsrq] NUVB flux rescaled for vignetting,
+lek71hshq,V-GM-AUR,[lek71hshq] NUVB flux rescaled for vignetting,
+lepcagh8q,V-TW-HYA,[lepcagh8q] NUVB flux rescaled for vignetting,
+lejp1gagq,V-BP-TAU,[lejp1gagq] NUVB flux rescaled for vignetting,
+lepg1ld0q,V-GM-AUR,[lepg1ld0q] NUVB flux rescaled for vignetting,
+lepg1eleq,V-GM-AUR,[lepg1eleq] NUVB flux rescaled for vignetting,
+lepc1nikq,V-TW-HYA,[lepc1nikq] NUVB flux rescaled for vignetting,
+lek7anyuq,V-GM-AUR,[lek7anyuq] NUVB flux rescaled for vignetting,
+lepg1fvtq,V-GM-AUR,[lepg1fvtq] NUVB flux rescaled for vignetting,
+le9d1nsbq,V-TW-HYA,[le9d1nsbq] NUVB flux rescaled for vignetting,
+lejp1ja6q,V-BP-TAU,[lejp1ja6q] NUVB flux rescaled for vignetting,
+ob6bc2010,RECX-1,[ob6bc2010] Possible companion in slit,
+o5e308030,V-V410-TAU,[o5e308030] Possible companion in slit. ,
+o5e306030,V-DF-TAU,[o5e306030] extracted spectrum is of 2 blended sources,
+o5kc01010,V-DF-TAU,[o5kc01010] extracted spectrum is of 2 blended sources,
+o6cv01010,V-DF-TAU,[o6cv01010] extracted spectrum is of 2 blended sources,
+ocy810010,V-VW-CHA,[ocy810010] Nearby companion. Separate spectrum available,
+ocy810020,V-VW-CHA,[ocy810020] Nearby companion. Separate spectrum available,
+ocy810030,V-VW-CHA,[ocy810030] Nearby companion. Separate spectrum available,
+ocy810050,V-VW-CHA,[ocy810050] Nearby companion. Separate spectrum available,
+oe9j2s010,CVSO-165,[oe9j2s010] Nearby companion. Separate spectrum available,
+oe9j2s020,CVSO-165,[oe9j2s020] Nearby companion. Separate spectrum available,
+oe9j2s030,CVSO-165,[oe9j2s030] Nearby companion. Separate spectrum available,
+oe9k1s020,CVSO-104,[oe9k1s020] Nearby companion. Separate spectrum available,
+oe9k1s030,CVSO-104,[oe9k1s030] Nearby companion. Separate spectrum available,
+oe9k1s040,CVSO-104,[oe9k1s040] Nearby companion. Separate spectrum available,
+oe9k2s010,CVSO-109,[oe9k2s010] Nearby companion. Separate spectrum available,
+oe9k2s020,CVSO-109,[oe9k2s020] Nearby companion. Separate spectrum available,
+oe9k2s030,CVSO-109,[oe9k2s030] Nearby companion. Separate spectrum available,
+oe9k5s020,CVSO-36,[oe9k5s020] Nearby companion. Separate spectrum available,
+oe9k5s030,CVSO-36,[oe9k5s030] Nearby companion. Separate spectrum available,
+oeil1s020,2MASS-J11432669M7804454,[oeil1s020] Nearby companion. Separate spectrum available,
+oeil1s030,2MASS-J11432669M7804454,[oeil1s030] Nearby companion. Separate spectrum available,
+oepk1s010,RX-J0438P1546,[oepk1s010] Nearby companion. Separate spectrum available,
+oepk1s020,RX-J0438P1546,[oepk1s020] Nearby companion. Separate spectrum available,
+oepk1s030,RX-J0438P1546,[oepk1s030] Nearby companion. Separate spectrum available,
