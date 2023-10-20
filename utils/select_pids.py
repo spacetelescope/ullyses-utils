@@ -133,7 +133,8 @@ def select_pids(selected_region, single_list=True):
     '''
 
     if "smc-extra" in selected_region:
-        ar_pids = ['7437', '9116', '11625', '12978', '13778', '15629', '15837'] # archival
+        ar_pids = ['7437', '9116', '9412', '11625', '12978', '13778', '15629',
+                   '15837'] # archival
         ull_pids = [] # ULLYSES
     elif "smc" in selected_region:
         ar_pids = ['7437', '7480', '8145', '8566', '9094', '9116', '9383', '9434',
@@ -146,8 +147,8 @@ def select_pids(selected_region, single_list=True):
                     '16370', '16371', '16372', '16373', '16375', '16802', '16803',
                     '16805', '16806', '16807', '16808', '16809', '17295'] # ULLYSES
     elif "lmc-extra" in selected_region:
-        ar_pids = ['7299', '9434', '11692', '12581', '13806', '14081', '14675',
-                   '14683', '15629'] # archival
+        ar_pids = ['7299', '9434', '11692', '12581', '13806', '13780', '13781',
+                   '14081', '14675', '14683', '15629', '16272', '17074'] # archival
         ull_pids = [] # ULLYSES
     elif "lmc" in selected_region:
         ar_pids = ['7299', '7392', '8320', '8662', '9434', '9757', '12218', '12581',
@@ -158,8 +159,8 @@ def select_pids(selected_region, single_list=True):
                     '16817', '16818', '16819', '16820', '16821', '16822', '16823',
                     '16824', '16825', '16826', '17296'] # ULLYSES
     elif "lowz-extra" in selected_region:
-        ar_pids = ['8662', '12587', '12867', '14245', '15156', '15880', '15967',
-                   '16767', '16920'] # archival
+        ar_pids = ['8662', '12587', '12867', '14245', '15156', '15880', '15921',
+                   '15967', '16717', '16767', '16920'] # archival
         ull_pids = [] # ULLYSES
     elif "lowz-image" in selected_region:
         ar_pids = [] # archival
@@ -172,9 +173,6 @@ def select_pids(selected_region, single_list=True):
                    '16010'] # archival
         ull_pids = ['16107', '16108', '16109', '16110', '16478', '16589',
                     '16590', '16591', '16592'] # ULLYSES
-    # '9374', '9435', '9790', '14698', # Include data that has not yet been delivered,
-                                       # but could potentially be in the future
-                                       # (e.g., STIS CCD, lower resolution MAMA etc.)
     elif selected_region == 'cha i':
         ar_pids = ['11616', '16478', '13775', '14193'] # archival
         ull_pids = ['16481', '16482', '16597', '16598'] # ULLYSES
@@ -188,8 +186,8 @@ def select_pids(selected_region, single_list=True):
         ar_pids = ['11616', '12876'] # archival
         ull_pids = ['16480', '16595', '16596'] # ULLYSES
     elif selected_region == 'lupus':
-        ar_pids = ['8205', '9807', '11616', '13032', '14177', '14469', '14604',
-                   '14703', '15070', '15210'] # archival
+        ar_pids = ['8205', '9807', '11616', '12036', '13032', '14177', '14469',
+                   '14604', '14703', '15070', '15210'] # archival
         ull_pids = ['16476', '16477', '16479', '16853', '16854',
                     '16855', '16856', '16857', '16858'] # ULLYSES
     elif selected_region == 'ori ob':
@@ -199,12 +197,12 @@ def select_pids(selected_region, single_list=True):
         ar_pids = [] # archival
         ull_pids = ['16113', '16594'] # ULLYSES
     elif selected_region == 'taurus':
-        ar_pids = ['7718', '8206', '8157', '8238', '8627', '9093', '9374', '9435',
-                   '9790', '11533', '11608', '11616', '11660', '12161', '12876',
-                   '15070'] # archival
+        ar_pids = ['7718', '8206', '8157', '8238', '8627', '9081', '9093', '9374',
+                   '9435', '9790', '11533', '11608', '11616', '11660', '12036',
+                   '12161', '12199', '12876', '12907', '13714', '13766', '15070'] # archival
         ull_pids = ['16593'] # ULLYSES
     elif selected_region == 'twa':
-        ar_pids = ['8041', '9093', '9841', '11608', '11531', '11616'] # archival
+        ar_pids = ['8041', '9093', '9841', '11608', '11531', '11616', '15204'] # archival
         ull_pids = [] # ULLYSES
     elif selected_region == 'lower centaurus':
         ar_pids = ['11616'] # archival
