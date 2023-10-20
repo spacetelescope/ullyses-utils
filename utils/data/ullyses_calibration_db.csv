@@ -4253,7 +4253,7 @@ lek71ecrq,HST,COS,16108,FUV,G160M,N/A,1589,PSA,4,59503.6915304,2021-10-16T16:35:
 lek71ectq,HST,COS,16108,FUV,G160M,N/A,1589,PSA,4,59503.69489855,2021-10-16T16:40:39.235,V-GM-AUR,V-GM-AUR,False,True,True,False,,Taurus-Auriga,True,False,
 lek71ecvq,HST,COS,16108,FUV,G160M,N/A,1623,PSA,4,59503.69918077,2021-10-16T16:46:49.219,V-GM-AUR,V-GM-AUR,False,True,True,False,,Taurus-Auriga,True,False,
 lek71ecxq,HST,COS,16108,FUV,G160M,N/A,1623,PSA,4,59503.70254892,2021-10-16T16:51:40.227,V-GM-AUR,V-GM-AUR,False,True,True,False,,Taurus-Auriga,True,False,
-lek71fhoq,HST,COS,16108,NUV,G230L,N/A,2950,PSA,1,59504.87503411,2021-10-17T21:00:02.947,V-GM-AUR,V-GM-AUR,False,True,True,False,WAVE,Taurus-Auriga,True,False,[lek71fhoq] Manual wavelength shift
+lek71fhoq,HST,COS,16108,NUV,G230L,N/A,2950,PSA,1,59504.87503411,2021-10-17T21:00:02.947,V-GM-AUR,V-GM-AUR,False,True,True,False,WAVE,Taurus-Auriga,True,False,[lek71fhoq] Manual wavelength shift & NUVB flux rescaled for vignetting
 lek71fhqq,HST,COS,16108,NUV,G230L,N/A,2635,PSA,1,59504.87911966,2021-10-17T21:05:55.939,V-GM-AUR,V-GM-AUR,False,True,True,False,WAVE,Taurus-Auriga,True,False,[lek71fhqq] Manual wavelength shift
 lek71fhsq,HST,COS,16108,FUV,G160M,N/A,1589,PSA,4,59504.88459744,2021-10-17T21:13:49.219,V-GM-AUR,V-GM-AUR,False,True,True,False,WAVE,Taurus-Auriga,True,False,[lek71fhsq] Manual wavelength shift
 lek71fhuq,HST,COS,16108,FUV,G160M,N/A,1589,PSA,4,59504.88796559,2021-10-17T21:18:40.227,V-GM-AUR,V-GM-AUR,False,True,True,False,WAVE,Taurus-Auriga,True,False,[lek71fhuq] Manual wavelength shift
