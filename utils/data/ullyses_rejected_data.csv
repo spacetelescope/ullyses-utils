@@ -839,35 +839,6 @@ p117680200000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
 p117320100000,[M2002]_137610,BI-173,Initial FUSE data search,Unvetted extra FUSE data
 p117660100000,[M2002]_47540,AV-238,Initial FUSE data search,Unvetted extra FUSE data
 c002060200000,VFTS_72,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
-ob6ba3030,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,Bad ACQ
-ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,Internal Database vetting,Bad ACQ
-ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc2zqq,RECX-1,RECX-1,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc4ymq,RECX-11,RECX-11,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb9pwq,SZ-102,SZ-102,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b22cwq,TWA-3A,TWA-3A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b22d6q,TWA-3A,TWA-3A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba7z8q,V-AA-TAU,V-AA-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb0toq,V-CE-ANT,V-CE-ANT,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb6r0q,V-CS-CHA,V-CS-CHA,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba8buq,V-DE-TAU,V-DE-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb2y9q,V-DK-TAU,V-DK-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba2ndq,V-DM-TAU,V-DM-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba4ihq,V-DN-TAU,V-DN-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb4g8q,V-DR-TAU,V-DR-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba0r4q,V-FM-TAU,V-FM-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba1w8q,V-GM-AUR,V-GM-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba9qpq,V-HN-TAU,V-HN-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba5e9q,V-IP-TAU,V-IP-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b23b6q,V-MP-MUS,V-MP-MUS,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb5xrq,V-RW-AUR,V-RW-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb1z8q,V-SU-AUR,V-SU-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc6wgq,V-V397-AUR,V-V397-AUR,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba6laq,V-V836-TAU,V-V836-TAU,Internal Database vetting,"Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 p217020100000,BI128,BI-128,Initial FUSE data search,target was removed from the ULLYSES sample in Cycle 28
 c151010900000,HD36521,HD36521,Initial FUSE data search,Unvetted extra FUSE data
 p103140200000,SK-68D80,SK-68D80,Initial FUSE data search,Unvetted extra FUSE data
@@ -885,200 +856,33 @@ e511310200000,SK-71D26,SK-71D26,Initial FUSE data search,Unvetted extra FUSE dat
 b010060100000,PGMW-3209,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
 e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
 a0440102000,4U0532-664,LMCX-4,Initial FUSE data search,Unvetted extra FUSE data
-ldmp30u2q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,comparison to vetted data directories,
-ldmp30u9q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,comparison to vetted data directories,
-ldmp08kaq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,comparison to vetted data directories,
-ldmp08khq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,comparison to vetted data directories,
-ldmp21e3q,2MASS-J16004277M2127380,2MASS-J16004277M2127380,comparison to vetted data directories,
-ldmp21eaq,2MASS-J16004277M2127380,2MASS-J16004277M2127380,comparison to vetted data directories,
-ldmp22ciq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,comparison to vetted data directories,
-ldmp22cpq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,comparison to vetted data directories,
-ldmp25ngq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,comparison to vetted data directories,
-ldmp25nnq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,comparison to vetted data directories,
-ldmp26paq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,comparison to vetted data directories,
-ldmp26pqq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,comparison to vetted data directories,
-ldmp02lvq,2MASS-J16025243M2402226,2MASS-J16025243M2402226,comparison to vetted data directories,
-ldmp02m2q,2MASS-J16025243M2402226,2MASS-J16025243M2402226,comparison to vetted data directories,
-ldmp17dpq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,comparison to vetted data directories,
-ldmp17dwq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,comparison to vetted data directories,
-ldmp20p6q,2MASS-J16061254M2036472,2MASS-J16061254M2036472,comparison to vetted data directories,
-ldmp20pdq,2MASS-J16061254M2036472,2MASS-J16061254M2036472,comparison to vetted data directories,
-ldmp09dyq,2MASS-J16081474M1908327,2MASS-J16081474M1908327,comparison to vetted data directories,
-ldmp09e5q,2MASS-J16081474M1908327,2MASS-J16081474M1908327,comparison to vetted data directories,
-ldmp18irq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,comparison to vetted data directories,
-ldmp18iyq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,comparison to vetted data directories,
-ldmp15z8q,2MASS-J16130271M2257446,2MASS-J16130271M2257446,comparison to vetted data directories,
-ldmp15zfq,2MASS-J16130271M2257446,2MASS-J16130271M2257446,comparison to vetted data directories,
-ldmp10n5q,2MASS-J16132929M2311075,2MASS-J16132929M2311075,comparison to vetted data directories,
-ldmp10ndq,2MASS-J16132929M2311075,2MASS-J16132929M2311075,comparison to vetted data directories,
-ldmp13kmq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,comparison to vetted data directories,
-ldmp13ktq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,comparison to vetted data directories,
-ldmp29brq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,comparison to vetted data directories,
-ldmp29byq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,comparison to vetted data directories,
-lcyia3a5q,AV-304,AV-304,comparison to vetted data directories,
-lcyia3a8q,AV-304,AV-304,comparison to vetted data directories,
-lcyia3aaq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3adq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3afq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3aiq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3akq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3anq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3apq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3asq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3auq,AV-304,AV-304,comparison to vetted data directories,
-lcyia3axq,AV-304,AV-304,comparison to vetted data directories,
-ldmp23slq,BD-18-4244,BD-18-4244,comparison to vetted data directories,
-ldmp23stq,BD-18-4244,BD-18-4244,comparison to vetted data directories,
-ldmp06g7q,BD-21-4301,BD-21-4301,comparison to vetted data directories,
-ldmp06gfq,BD-21-4301,BD-21-4301,comparison to vetted data directories,
-ldmp04dmq,CD-22-11315,CD-22-11315,comparison to vetted data directories,
-ldmp04dtq,CD-22-11315,CD-22-11315,comparison to vetted data directories,
-ldmp01hzq,CD-25-11113,CD-25-11113,comparison to vetted data directories,
-ldmp01i1q,CD-25-11113,CD-25-11113,comparison to vetted data directories,
-ldmp19j3q,GSC-06208-00834,GSC-06208-00834,comparison to vetted data directories,
-ldmp19jaq,GSC-06208-00834,GSC-06208-00834,comparison to vetted data directories,
-oc2h05020,HD-139614,HD-139614,comparison to vetted data directories,
-oc2h05030,HD-139614,HD-139614,comparison to vetted data directories,
-ldhf1aycq,IC1613-BUG-C10,IC1613-BUG-C10,comparison to vetted data directories,
-ldhf1bdpq,IC1613-BUG-C10,IC1613-BUG-C10,comparison to vetted data directories,
-le4s04dbq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,comparison to vetted data directories,
-le4s04dqq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,comparison to vetted data directories,
-le4s04dsq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,comparison to vetted data directories,
-le4s11eaq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,comparison to vetted data directories,
-le4s11ecq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,comparison to vetted data directories,
-le4s11eeq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,comparison to vetted data directories,
-le2701q0q,LMC79-1,LMC79-1,comparison to vetted data directories,
-le2701q2q,LMC79-1,LMC79-1,comparison to vetted data directories,
-le2701q4q,LMC79-1,LMC79-1,comparison to vetted data directories,
-le2701q6q,LMC79-1,LMC79-1,comparison to vetted data directories,
-le2708zcq,LMCE169-1,LMCE169-1,comparison to vetted data directories,
-le2708zeq,LMCE169-1,LMCE169-1,comparison to vetted data directories,
-le2708zkq,LMCE169-1,LMCE169-1,comparison to vetted data directories,
-le2708zmq,LMCE169-1,LMCE169-1,comparison to vetted data directories,
-ody238010,NGC346-MPG-435,NGC346-MPG-435,comparison to vetted data directories,
-oeqj1t010,RECX-6,RECX-6,comparison to vetted data directories,
-oeqj1t020,RECX-6,RECX-6,comparison to vetted data directories,
-le4s12raq,SEXTANS-A-LGN-S022,SEXTANS-A-LGN-S022,comparison to vetted data directories,
-le4s18h4q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,comparison to vetted data directories,
-le4s18h8q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,comparison to vetted data directories,
-leil2cj6q,SZ-10,SZ-10,comparison to vetted data directories,
-odke01020,SZ-102,SZ-102,comparison to vetted data directories,
-odke01030,SZ-102,SZ-102,comparison to vetted data directories,
-ocy801050,SZ-45,SZ-45,comparison to vetted data directories,
-ocy802050,SZ-45,SZ-45,comparison to vetted data directories,
-ocy803050,SZ-45,SZ-45,comparison to vetted data directories,
-ocy804050,SZ-45,SZ-45,comparison to vetted data directories,
-ocy805050,SZ-45,SZ-45,comparison to vetted data directories,
-ob6bc9030,TWA-2,TWA-2,comparison to vetted data directories,
-lb4p01rtq,TWA-27,TWA-27,comparison to vetted data directories,
-lb4p01rvq,TWA-27,TWA-27,comparison to vetted data directories,
-lb4p01rxq,TWA-27,TWA-27,comparison to vetted data directories,
-lb4p01s1q,TWA-27,TWA-27,comparison to vetted data directories,
-oc0m01010,V-AB-AUR,V-AB-AUR,not complete coverage,
-o5kc01030,V-DF-TAU,V-DF-TAU,comparison to vetted data directories,
-o5e307010,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o5e307020,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o5e307040,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o5e307050,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o5e307060,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o63l03010,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o63l03020,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o63l03030,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o63l03040,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o8nz11010,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-o8nz11020,V-DG-TAU,V-DG-TAU,comparison to vetted data directories,
-ob6bb4030,V-DR-TAU,V-DR-TAU,comparison to vetted data directories,
-lb6b01vfq,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-lb6b01vmq,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-lb6b01vrq,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-lb6b01vtq,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-lb6b01vyq,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-lb6b01w1q,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-lb6b01w3q,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-ob3r04050,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-ob3r05050,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-ob3r06050,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-ob6ba1030,V-GM-AUR,V-GM-AUR,comparison to vetted data directories,
-o5e305010,V-RU-LUP,V-RU-LUP,comparison to vetted data directories,
-o5e305020,V-RU-LUP,V-RU-LUP,comparison to vetted data directories,
-o5e305040,V-RU-LUP,V-RU-LUP,comparison to vetted data directories,
-o5e305050,V-RU-LUP,V-RU-LUP,comparison to vetted data directories,
-o5e305060,V-RU-LUP,V-RU-LUP,comparison to vetted data directories,
-lb6b15x8q,V-RW-AUR,V-RW-AUR,comparison to vetted data directories,
-o5b403020,V-T-CHA,V-T-CHA,comparison to vetted data directories,
-o5b403030,V-T-CHA,V-T-CHA,comparison to vetted data directories,
-o5b403050,V-T-CHA,V-T-CHA,comparison to vetted data directories,
-ldgx08j2q,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgx08j4q,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgx08j6q,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgx08j8q,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgxa9jkq,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgxa9jmq,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgxa9joq,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgxa9jqq,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgxa9jsq,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-ldgxa9juq,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-odgx09010,V-T-CRA,V-T-CRA,comparison to vetted data directories,
-lc2h09t5q,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-lc2h09t7q,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-lc2h09t9q,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-lc2h09tbq,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-lc2h09tdq,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-lc2h09tfq,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-lc2h09thq,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-lc2h09tjq,V-T-ORI,V-T-ORI,comparison to vetted data directories,
-o6cv03020,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-o6cv03030,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-ob3r07050,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-ob3r07060,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-ob3r08050,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-ob3r08060,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-ob3r09050,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-ob3r09060,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-oclv03050,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-oclv03060,V-TW-HYA,V-TW-HYA,comparison to vetted data directories,
-lb6b13qwq,V-UX-TAU-A,V-UX-TAU-A,comparison to vetted data directories,
-lb6b53sdq,V-UX-TAU-A,V-UX-TAU-A,comparison to vetted data directories,
-lc2h10ncq,V-V-SER,V-V-SER,comparison to vetted data directories,
-lc2h10neq,V-V-SER,V-V-SER,comparison to vetted data directories,
-lc2h10ngq,V-V-SER,V-V-SER,comparison to vetted data directories,
-lc2h10niq,V-V-SER,V-V-SER,comparison to vetted data directories,
-lc2h10nmq,V-V-SER,V-V-SER,comparison to vetted data directories,
-lc2h10npq,V-V-SER,V-V-SER,comparison to vetted data directories,
-lc2h10nrq,V-V-SER,V-V-SER,comparison to vetted data directories,
-lc2h10ntq,V-V-SER,V-V-SER,comparison to vetted data directories,
-ldmp14xkq,V-V1000-SCO,V-V1000-SCO,comparison to vetted data directories,
-ldmp14xrq,V-V1000-SCO,V-V1000-SCO,comparison to vetted data directories,
-ldmp11xpq,V-V1152-SCO,V-V1152-SCO,comparison to vetted data directories,
-ldmp11xwq,V-V1152-SCO,V-V1152-SCO,comparison to vetted data directories,
-ldmp12ifq,V-V1156-SCO,V-V1156-SCO,comparison to vetted data directories,
-ldmp12imq,V-V1156-SCO,V-V1156-SCO,comparison to vetted data directories,
-ob6b20030,V-V2129-OPH,V-V2129-OPH,comparison to vetted data directories,
-ob6b20040,V-V2129-OPH,V-V2129-OPH,comparison to vetted data directories,
-ob6b20050,V-V2129-OPH,V-V2129-OPH,comparison to vetted data directories,
-ldmp16cuq,V-V2505-OPH,V-V2505-OPH,comparison to vetted data directories,
-ldmp16d1q,V-V2505-OPH,V-V2505-OPH,comparison to vetted data directories,
-lb3q01k0q,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-lb3q01k2q,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-lb3q01k5q,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-lb3q01k7q,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-lb3q01kbq,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-lb3q01laq,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-lb3q01mbq,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-lb3q01meq,V-V4046-SGR,V-V4046-SGR,comparison to vetted data directories,
-o5cf04010,V-V819-TAU,V-V819-TAU,comparison to vetted data directories,
-o5cf04020,V-V819-TAU,V-V819-TAU,comparison to vetted data directories,
-o5e309010,V-V819-TAU,V-V819-TAU,comparison to vetted data directories,
-o5e309020,V-V819-TAU,V-V819-TAU,comparison to vetted data directories,
-o5e309040,V-V819-TAU,V-V819-TAU,comparison to vetted data directories,
-o5e309050,V-V819-TAU,V-V819-TAU,comparison to vetted data directories,
-lepm2co2q,V-WZ-CHA,V-WZ-CHA,comparison to vetted data directories,
-lepm2co4q,V-WZ-CHA,V-WZ-CHA,comparison to vetted data directories,
-lepm2co6q,V-WZ-CHA,V-WZ-CHA,comparison to vetted data directories,
-lepm2co8q,V-WZ-CHA,V-WZ-CHA,comparison to vetted data directories,
-lepm2dp5q,V-WZ-CHA,V-WZ-CHA,comparison to vetted data directories,
-lepm2dpxq,V-WZ-CHA,V-WZ-CHA,comparison to vetted data directories,
-lepm2dq5q,V-WZ-CHA,V-WZ-CHA,comparison to vetted data directories,
-oc2h01020,V-XY-PER,V-XY-PER,comparison to vetted data directories,
-oc2h01030,V-XY-PER,V-XY-PER,comparison to vetted data directories,
 p203040100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,This is not the correct target. It is actually NGC346-MPG-342/NGC346 W4
+ob6ba3030,EM-LKCA-15,EM-LKCA-15,"Internal Database vetting for STIS exposures ending in ""Q""",Bad ACQ
+ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,"Internal Database vetting for STIS exposures ending in ""Q""",Bad ACQ
+ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc2zqq,RECX-1,RECX-1,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc4ymq,RECX-11,RECX-11,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb9pwq,SZ-102,SZ-102,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b22cwq,TWA-3A,TWA-3A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b22d6q,TWA-3A,TWA-3A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba7z8q,V-AA-TAU,V-AA-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb0toq,V-CE-ANT,V-CE-ANT,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb6r0q,V-CS-CHA,V-CS-CHA,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba8buq,V-DE-TAU,V-DE-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb2y9q,V-DK-TAU,V-DK-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba2ndq,V-DM-TAU,V-DM-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba4ihq,V-DN-TAU,V-DN-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb4g8q,V-DR-TAU,V-DR-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba0r4q,V-FM-TAU,V-FM-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba1w8q,V-GM-AUR,V-GM-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba9qpq,V-HN-TAU,V-HN-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba5e9q,V-IP-TAU,V-IP-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b23b6q,V-MP-MUS,V-MP-MUS,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb5xrq,V-RW-AUR,V-RW-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb1z8q,V-SU-AUR,V-SU-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc6wgq,V-V397-AUR,V-V397-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba6laq,V-V836-TAU,V-V836-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
