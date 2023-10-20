@@ -312,7 +312,7 @@ def main(data_dir):
 
     ## save out the information
     internal_df = pd.DataFrame.from_dict(info)
-    internal_df.to_csv('data/internal_database.csv', index=False)
+    internal_df.to_csv('data/ullyses_calibration_db.csv', index=False)
     print(internal_df)
 
 #-------------------------------------------------------------------------------
