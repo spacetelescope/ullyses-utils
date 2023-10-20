@@ -170,15 +170,14 @@ def select_pids(selected_region, single_list=True):
     elif "monitoring_tts" in selected_region:
         ar_pids = ['8157', '9374', '11608', '11616', '13775', '14048', '15165',
                    '16010'] # archival
-        ull_pids = ['16107', '16108', '16109', '16110', '16478', '16481', '16482',
-                    '16589', '16590', '16591', '16592',  '16597', '16598'] # ULLYSES
+        ull_pids = ['16107', '16108', '16109', '16110', '16478', '16589',
+                    '16590', '16591', '16592'] # ULLYSES
     # '9374', '9435', '9790', '14698', # Include data that has not yet been delivered,
                                        # but could potentially be in the future
                                        # (e.g., STIS CCD, lower resolution MAMA etc.)
     elif selected_region == 'cha i':
-        ar_pids = ['11616', '16478', '16481', '16482', '16596',  '16597', '16598',
-                   '13775', '14193'] # archival
-        ull_pids = [] # ULLYSES
+        ar_pids = ['11616', '16478', '13775', '14193'] # archival
+        ull_pids = ['16481', '16482', '16597', '16598'] # ULLYSES
     elif selected_region == 'cra':
         ar_pids = [] # archival
         ull_pids = ['16859'] # ULLYSES
