@@ -1,8 +1,8 @@
 force_dq16: False 
-infile: 
+infile:
   'oesu2s010_flt.fits':
     targets:
-      SZ110:
+      SZ-110:
         x1d:
           yloc: null # null values mean to use the default parameters
           height: null

@@ -1,5 +1,5 @@
-force_dq16: False 
-infile: 
+force_dq16: False
+infile:
 #  'oet61s010_flt.fits':
 #    targets:
 #      SZ100:
@@ -14,7 +14,7 @@ infile:
 #          b_hgt2: null
   'oet6as010_flt.fits':
     targets:
-      SZ100:
+      SZ-100:
         x1d:
           yloc: null # null values mean to use the default parameters
           height: 7

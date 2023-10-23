@@ -1,14 +1,14 @@
 # First define all detector-wide corrections
-# Set force_dq16 to True if you want to manually calculate DQ=16 even when 
+# Set force_dq16 to True if you want to manually calculate DQ=16 even when
 # less than 6% of detector is flagged as so
 # This can be True for CCD, but should be False for MAMA
-force_dq16: False 
+force_dq16: False
 
 # The input filename. For CCD this will be a CRJ, for MAMA, an FLT.
-infile: 
+infile:
     'ocy801010_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 509  # null values mean to use the default parameters
@@ -22,7 +22,7 @@ infile:
 
     'ocy802010_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 509  # null values mean to use the default parameters
@@ -36,7 +36,7 @@ infile:
 
     'ocy803010_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 510  # null values mean to use the default parameters
@@ -50,7 +50,7 @@ infile:
 
     'ocy804010_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 513  # null values mean to use the default parameters
@@ -64,7 +64,7 @@ infile:
 
     'ocy805010_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 510  # null values mean to use the default parameters

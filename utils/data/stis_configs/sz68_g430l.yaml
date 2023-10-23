@@ -1,10 +1,10 @@
-force_dq16: True 
-infile: 
+force_dq16: True
+infile:
   'od7g02010_crj.fits':
     targets:
-      SZ68:            
+      SZ-68:            
         x1d:
-          yloc: null 
+          yloc: null
           height: null
           maxsrch: null
           xoffset: null

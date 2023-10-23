@@ -1,14 +1,14 @@
 # First define all detector-wide corrections
-# Set force_dq16 to True if you want to manually calculate DQ=16 even when 
+# Set force_dq16 to True if you want to manually calculate DQ=16 even when
 # less than 6% of detector is flagged as so
 # This can be True for CCD, but should be False for MAMA
-force_dq16: False 
+force_dq16: False
 
 # The input filename. For CCD this will be a CRJ, for MAMA, an FLT.
-infile: 
+infile:
     'ocy801020_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 510  # null values mean to use the default parameters
@@ -19,7 +19,7 @@ infile:
                     b_bkg2: null
                     b_hgt1: null
                     b_hgt2: null
-                # Defringe parameters. If you do not want to defringe, set do_defringe to 
+                # Defringe parameters. If you do not want to defringe, set do_defringe to
                 # False and leave defringe pars alone.
                 do_defringe: False
                 defringe:
@@ -39,7 +39,7 @@ infile:
 
     'ocy802020_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 509  # null values mean to use the default parameters
@@ -50,7 +50,7 @@ infile:
                     b_bkg2: null
                     b_hgt1: null
                     b_hgt2: null
-                # Defringe parameters. If you do not want to defringe, set do_defringe to 
+                # Defringe parameters. If you do not want to defringe, set do_defringe to
                 # False and leave defringe pars alone.
                 do_defringe: False
                 defringe:
@@ -70,7 +70,7 @@ infile:
 
     'ocy803020_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 510  # null values mean to use the default parameters
@@ -81,7 +81,7 @@ infile:
                     b_bkg2: null
                     b_hgt1: null
                     b_hgt2: null
-                # Defringe parameters. If you do not want to defringe, set do_defringe to 
+                # Defringe parameters. If you do not want to defringe, set do_defringe to
                 # False and leave defringe pars alone.
                 do_defringe: False
                 defringe:
@@ -101,7 +101,7 @@ infile:
 
     'ocy804020_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 510  # null values mean to use the default parameters
@@ -112,7 +112,7 @@ infile:
                     b_bkg2: null
                     b_hgt1: null
                     b_hgt2: null
-                # Defringe parameters. If you do not want to defringe, set do_defringe to 
+                # Defringe parameters. If you do not want to defringe, set do_defringe to
                 # False and leave defringe pars alone.
                 do_defringe: False
                 defringe:
@@ -132,7 +132,7 @@ infile:
 
     'ocy805020_crj.fits':
         targets:
-            SZ45:
+            SZ-45:
                 # Extraction parameters. For default values, leave as null
                 x1d:
                     yloc: 510  # null values mean to use the default parameters
@@ -143,7 +143,7 @@ infile:
                     b_bkg2: null
                     b_hgt1: null
                     b_hgt2: null
-                # Defringe parameters. If you do not want to defringe, set do_defringe to 
+                # Defringe parameters. If you do not want to defringe, set do_defringe to
                 # False and leave defringe pars alone.
                 do_defringe: False
                 defringe:

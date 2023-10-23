@@ -1,10 +1,10 @@
-force_dq16: True 
+force_dq16: True
 infile: 'oesp2s020_crj.fits'
 
 targets:
-    SZ98:            
+    SZ-98:            
         x1d:
-            yloc: null 
+            yloc: null
             height: 5
             maxsrch: null
             xoffset: null

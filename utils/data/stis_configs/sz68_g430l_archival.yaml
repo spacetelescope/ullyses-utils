@@ -2,7 +2,7 @@ force_dq16: true
 infile:
   od7g02010_crj.fits:
     targets:
-      sz68:
+      SZ-68:
         do_defringe: false
         x1d:
           b_bkg1: null
