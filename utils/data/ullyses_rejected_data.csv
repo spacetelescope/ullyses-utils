@@ -857,32 +857,173 @@ b010060100000,PGMW-3209,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE
 e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
 a0440102000,4U0532-664,LMCX-4,Initial FUSE data search,Unvetted extra FUSE data
 p203040100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,This is not the correct target. It is actually NGC346-MPG-342/NGC346 W4
-ob6ba3030,EM-LKCA-15,EM-LKCA-15,"Internal Database vetting for STIS exposures ending in ""Q""",Bad ACQ
-ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,"Internal Database vetting for STIS exposures ending in ""Q""",Bad ACQ
-ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc2zqq,RECX-1,RECX-1,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc4ymq,RECX-11,RECX-11,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb9pwq,SZ-102,SZ-102,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b22cwq,TWA-3A,TWA-3A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b22d6q,TWA-3A,TWA-3A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba7z8q,V-AA-TAU,V-AA-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb0toq,V-CE-ANT,V-CE-ANT,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb6r0q,V-CS-CHA,V-CS-CHA,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba8buq,V-DE-TAU,V-DE-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb2y9q,V-DK-TAU,V-DK-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba2ndq,V-DM-TAU,V-DM-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba4ihq,V-DN-TAU,V-DN-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb4g8q,V-DR-TAU,V-DR-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba0r4q,V-FM-TAU,V-FM-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba1w8q,V-GM-AUR,V-GM-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba9qpq,V-HN-TAU,V-HN-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba5e9q,V-IP-TAU,V-IP-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b23b6q,V-MP-MUS,V-MP-MUS,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb5xrq,V-RW-AUR,V-RW-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb1z8q,V-SU-AUR,V-SU-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc6wgq,V-V397-AUR,V-V397-AUR,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba6laq,V-V836-TAU,V-V836-TAU,"Internal Database vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba3030,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
+ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
+ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc2zqq,RECX-1,RECX-1,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc4ymq,RECX-11,RECX-11,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb9pwq,SZ-102,SZ-102,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b22cwq,TWA-3A,TWA-3A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b22d6q,TWA-3A,TWA-3A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba7z8q,V-AA-TAU,V-AA-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb0toq,V-CE-ANT,V-CE-ANT,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb6r0q,V-CS-CHA,V-CS-CHA,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba8buq,V-DE-TAU,V-DE-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb2y9q,V-DK-TAU,V-DK-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba2ndq,V-DM-TAU,V-DM-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba4ihq,V-DN-TAU,V-DN-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb4g8q,V-DR-TAU,V-DR-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba0r4q,V-FM-TAU,V-FM-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba1w8q,V-GM-AUR,V-GM-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba9qpq,V-HN-TAU,V-HN-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba5e9q,V-IP-TAU,V-IP-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b23b6q,V-MP-MUS,V-MP-MUS,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb5xrq,V-RW-AUR,V-RW-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bb1z8q,V-SU-AUR,V-SU-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc6wgq,V-V397-AUR,V-V397-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba6laq,V-V836-TAU,V-V836-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ldmp30u2q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp30u9q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp08kaq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp08khq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp21e3q,2MASS-J16004277M2127380,2MASS-J16004277M2127380,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp21eaq,2MASS-J16004277M2127380,2MASS-J16004277M2127380,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp22ciq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp22cpq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp25ngq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp25nnq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp26paq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp26pqq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp02lvq,2MASS-J16025243M2402226,2MASS-J16025243M2402226,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp02m2q,2MASS-J16025243M2402226,2MASS-J16025243M2402226,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp17dpq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp17dwq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp20p6q,2MASS-J16061254M2036472,2MASS-J16061254M2036472,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp20pdq,2MASS-J16061254M2036472,2MASS-J16061254M2036472,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp09dyq,2MASS-J16081474M1908327,2MASS-J16081474M1908327,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp09e5q,2MASS-J16081474M1908327,2MASS-J16081474M1908327,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp18irq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp18iyq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp15z8q,2MASS-J16130271M2257446,2MASS-J16130271M2257446,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp15zfq,2MASS-J16130271M2257446,2MASS-J16130271M2257446,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp10n5q,2MASS-J16132929M2311075,2MASS-J16132929M2311075,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp10ndq,2MASS-J16132929M2311075,2MASS-J16132929M2311075,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp13kmq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp13ktq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp29brq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp29byq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp23slq,BD-18-4244,BD-18-4244,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp23stq,BD-18-4244,BD-18-4244,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp06g7q,BD-21-4301,BD-21-4301,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp06gfq,BD-21-4301,BD-21-4301,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp04dmq,CD-22-11315,CD-22-11315,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp04dtq,CD-22-11315,CD-22-11315,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp01hzq,CD-25-11113,CD-25-11113,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp01i1q,CD-25-11113,CD-25-11113,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp19j3q,GSC-06208-00834,GSC-06208-00834,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp19jaq,GSC-06208-00834,GSC-06208-00834,Not in vetted directories,Not full coverage. Only COS/1222
+oc2h05020,HD-139614,HD-139614,Not in vetted directories,Bad data
+oc2h05030,HD-139614,HD-139614,Not in vetted directories,Bad data
+o4xn04040,HD-163296,HD-163296,Not in vetted directories,Bad data
+ldhf1aycq,IC1613-BUG-C10,IC1613-BUG-C10,Not in vetted directories,Bad data
+ldhf1bdpq,IC1613-BUG-C10,IC1613-BUG-C10,Not in vetted directories,Bad data
+le4s04dbq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
+le4s04dqq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
+le4s04dsq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
+le4s11eaq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
+le4s11ecq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
+le4s11eeq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
+le5b03n7q,J095927P304457,J095927P304457,Not in vetted directories,Bad data
+ody238010,NGC346-MPG-435,NGC346-MPG-435,Not in vetted directories,Bad data
+ob6bc9030,TWA-2,TWA-2,Not in vetted directories,Not full coverage (no COS)
+lb4p01rtq,TWA-27,TWA-27,Not in vetted directories,Bad data
+lb4p01rvq,TWA-27,TWA-27,Not in vetted directories,Bad data
+lb4p01rxq,TWA-27,TWA-27,Not in vetted directories,Bad data
+lb4p01s1q,TWA-27,TWA-27,Not in vetted directories,Bad data
+ldnj03j8q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj03jbq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj53uiq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj53urq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj02onq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj02oqq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj02ouq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj02oxq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj02p5q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj02p7q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj03jjq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+ldnj53v8q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
+oc0m01010,V-AB-AUR,V-AB-AUR,Not in vetted directories,He/Be
+o5kc01030,V-DF-TAU,V-DF-TAU,Not in vetted directories,unsupported mode
+lbgj02trq,V-RU-LUP,V-RU-LUP,Not in vetted directories,
+lb6b15x8q,V-RW-AUR,V-RW-AUR,Not in vetted directories,
+o5b403020,V-T-CHA,V-T-CHA,Not in vetted directories,He/Be
+o5b403030,V-T-CHA,V-T-CHA,Not in vetted directories,
+o5b403050,V-T-CHA,V-T-CHA,Not in vetted directories,
+ldgx08j2q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgx08j4q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgx08j6q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgx08j8q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9jkq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9jmq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9joq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9jqq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9jsq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9juq,V-T-CRA,V-T-CRA,Not in vetted directories,
+lc2h09tdq,V-T-ORI,V-T-ORI,Not in vetted directories,Herbig/Ae
+lc2h09tfq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09thq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09tjq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09t5q,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09t7q,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09t9q,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09tbq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09tlq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lb6b13qwq,V-UX-TAU-A,V-UX-TAU-A,Not in vetted directories,Bad data
+lb6b53sdq,V-UX-TAU-A,V-UX-TAU-A,Not in vetted directories,Bad data
+lbh208bsq,V-UZ-TAU-E,V-UZ-TAU-E,Not in vetted directories,Bad data
+lbh209u2q,V-UZ-TAU-E,V-UZ-TAU-E,Not in vetted directories,Bad data
+lc2h10nmq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10npq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10nrq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10ntq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10ncq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10neq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10ngq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10niq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10nvq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+ldmp14xkq,V-V1000-SCO,V-V1000-SCO,Not in vetted directories,Bad data
+ldmp14xrq,V-V1000-SCO,V-V1000-SCO,Not in vetted directories,Bad data
+ldmp11xpq,V-V1152-SCO,V-V1152-SCO,Not in vetted directories,BY DRA variable
+ldmp11xwq,V-V1152-SCO,V-V1152-SCO,Not in vetted directories,BY DRA variable
+ldmp12ifq,V-V1156-SCO,V-V1156-SCO,Not in vetted directories,BY DRA variable
+ldmp12imq,V-V1156-SCO,V-V1156-SCO,Not in vetted directories,BY DRA variable
+ob6b20040,V-V2129-OPH,V-V2129-OPH,Not in vetted directories,Bad data
+ob6b20050,V-V2129-OPH,V-V2129-OPH,Not in vetted directories,
+ob6b20030,V-V2129-OPH,V-V2129-OPH,Not in vetted directories,
+ldmp16cuq,V-V2505-OPH,V-V2505-OPH,Not in vetted directories,BY DRA variable
+ldmp16d1q,V-V2505-OPH,V-V2505-OPH,Not in vetted directories,BY DRA variable
+lb3q01k0q,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+lb3q01k2q,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+lb3q01k5q,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+lb3q01k7q,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+lb3q01kbq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+lb3q01laq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+lb3q01mbq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+lb3q01meq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
+o5e309010,V-V819-TAU,V-V819-TAU,Not in vetted directories,Bad data
+o5e309020,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o5e309040,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o5e309050,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o5cf04010,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o5cf04020,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+oc2h01020,V-XY-PER,V-XY-PER,Not in vetted directories,He/Be
+oc2h01030,V-XY-PER,V-XY-PER,Not in vetted directories,He/Be
+le4s12raq,SEXTANS-A-LGN-S022,SEXTANS-A-LGN-S022,Not in vetted directories,Bad data
+le4s18h4q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,Not in vetted directories,Bad data
+le4s18h8q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,Not in vetted directories,Bad data
+odke01020,SZ-102,SZ-102,Not in vetted directories,Bad data
+odke01030,SZ-102,SZ-102,Not in vetted directories,Bad data
