@@ -2,9 +2,8 @@
 # have FUSE data, but data were not used due to data quality issues.
 # It may be possible to address these issues in the future.
 # This list is not used in any way, just kept for informational purposes.
-- PGMW3120
-- AV22
-- AV287
+- PGMW-3120
+- AV-22
+- AV-287
 - SK-69D220
-- AV255 # This target is not "bad", but was withdrawn from the ULLYSES sample (see ULLYSES-631)
-
+- AV-255 # This target is not "bad", but was withdrawn from the ULLYSES sample (see ULLYSES-631)
