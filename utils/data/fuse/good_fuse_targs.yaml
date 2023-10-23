@@ -2,7 +2,6 @@
 # data quality issues and were not included in the DR.
 DR2:
 #- 'PGMW3120',
-#- 'NGC346-MPG-368',
 #- 'AV22',
 - AV-207
 - SK-71D19
@@ -82,8 +81,6 @@ DR2:
 - AV-327
 - AV-18
 DR3:
-#- 'AV287',
-#- 'SK-69D220',
 - AV-490
 - SK-67D166
 - SK-66D51
@@ -163,7 +160,13 @@ DR7:
 - AV-506
 - BI-128
 - AV-238
-- N11-ELS-048
 - SK-68D137
-- NGC346-MPG-368
 - SK-65D2
+- AV-461
+- SK-68D145
+- SK-66D97
+- HD-35517
+- HD-36156
+- HD-36521
+- HD-37026
+- HD-37248
