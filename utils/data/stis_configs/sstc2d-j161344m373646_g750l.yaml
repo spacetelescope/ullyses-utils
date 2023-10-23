@@ -2,7 +2,7 @@ force_dq16: True
 infile: 'oeiq2s020_crj.fits'
 
 targets:
-    SSTc2dJ161344.1-373646:            
+    SSTC2D-J161344M373646:
         x1d:
             yloc: null # null values mean to use the default parameters
             height: null

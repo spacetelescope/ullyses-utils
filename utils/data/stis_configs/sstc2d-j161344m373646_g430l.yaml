@@ -2,9 +2,9 @@ force_dq16: True
 infile: 'oeiq2s060_crj.fits'
 
 targets:
-    SSTc2dJ161344.1-373646:            
+    SSTC2D-J161344M373646:
         x1d:
-            yloc: null 
+            yloc: null
             height: null
             maxsrch: null
             xoffset: null
