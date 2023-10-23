@@ -156,8 +156,14 @@ DR6:
 - LH114-7
 - AV83
 - BI272
-# The FUSE data for the targets below was ready for DR6, but HST data was not acquired.
-#DR7:
-#- NGC346-MPG-435
-#- N11-ELS-032
-#- BI13
+DR7:
+- NGC346-MPG-435
+- N11-ELS-032
+- BI13
+- AV506
+- BI128
+- AV238
+- N11-ELS-048
+- SK-68D137
+- NGC346-MPG-368
+- SK-65D2
