@@ -1,8 +1,8 @@
 infile: 'oeso1s010_flt.fits'
-force_dq16: False 
+force_dq16: False
 
 targets:
-     RXJ1556.1-3655:
+     RX-J1556M3655:
         # Extraction parameters. For default values, leave as null
         x1d:
             yloc: null # null values mean to use the default parameters

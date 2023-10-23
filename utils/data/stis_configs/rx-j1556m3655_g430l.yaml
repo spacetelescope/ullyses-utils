@@ -2,9 +2,9 @@ force_dq16: True
 infile: 'oeso1s020_crj.fits'
 
 targets:
-    RXJ1556.1-3655:            
+    RX-J1556M3655:
         x1d:
-            yloc: null 
+            yloc: null
             height: null
             maxsrch: null
             xoffset: null

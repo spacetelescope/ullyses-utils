@@ -1,8 +1,8 @@
-force_dq16: True 
+force_dq16: True
 infile: 'oeso1s030_crj.fits'
 
 targets:
-    RXJ1556.1-3655:            
+    RX-J1556M3655:
         x1d:
             yloc: null # null values mean to use the default parameters
             height: null

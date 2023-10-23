@@ -2,16 +2,16 @@
 infile: 'oepk1s030_crj.fits'
 
 # First define all detector-wide corrections
-# Set force_dq16 to True if you want to manually calculate DQ=16 even when 
+# Set force_dq16 to True if you want to manually calculate DQ=16 even when
 # less than 6% of detector is flagged as so
 # This can be True for CCD, but should be False for MAMA
-force_dq16: True 
+force_dq16: True
 
 # Now define all target-specific corrections and parameters.
 # First the science target- replace 'ullyses_name' with the target name.
 # YOU MUST USE THE OFFICIAL ULLYSES NAME BELOW.
 targets:
-    RXJ0438.6+1546:
+    RX-J0438P1546:
         # Extraction parameters. For default values, leave as null
         x1d:
             yloc: null #values mean to use the default parameters
