@@ -11,7 +11,7 @@ infile:
           b_hgt2: null
           height: null
           maxsrch: null
-          xoffset: 2.88
+          xoffset: null
           yloc: null
   ob6bd9010_crj.fits:
     targets:
@@ -24,5 +24,5 @@ infile:
           b_hgt2: null
           height: null
           maxsrch: 10
-          xoffset: 2.88
+          xoffset: null
           yloc: 510.0
