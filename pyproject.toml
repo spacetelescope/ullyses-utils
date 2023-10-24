@@ -1,0 +1,56 @@
+[project]
+name = "ullyses_utils"
+description = "ULLYSES utility files and scripts"
+authors = [
+    { name = "ULLYSES STScI Team" },
+]
+keywords = [
+    "astronomy",
+    "jwst",
+    "simulations",
+    "etc",
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "numpy",
+    "astropy",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = [
+    "setuptools>=61.2",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "ullyses_utils",
+]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+ullyses_utils = "utils"
+
+[tool.setuptools.package-data]
+ullyses_utils = [
+    "data/cos_shifts/*",
+    "data/lcogt_catalogs/*",
+    "data/lcogt_photometry/*",
+    "data/ref_files/*",
+    "data/stis_configs/*",
+    "data/target_metadata/*",
+    "data/vignette_scaling/*",
+    "data/fuse/*",
+    "data/timeseries/*",
+]
+
+[tool.setuptools_scm]
