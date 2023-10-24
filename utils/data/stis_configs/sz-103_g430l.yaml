@@ -1,0 +1,24 @@
+# The input filename. For CCD this will be a CRJ, for MAMA, an FLT.
+infile: 'oesu1s070_crj.fits'
+
+# First define all detector-wide corrections
+# Set force_dq16 to True if you want to manually calculate DQ=16 even when
+# less than 6% of detector is flagged as so
+# This can be True for CCD, but should be False for MAMA
+force_dq16: True
+
+# Now define all target-specific corrections and parameters.
+# First the science target- replace 'ullyses_name' with the target name.
+# YOU MUST USE THE OFFICIAL ULLYSES NAME BELOW.
+targets:
+    SZ-103:
+        # Extraction parameters. For default values, leave as null
+        x1d:
+            yloc: null #values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null

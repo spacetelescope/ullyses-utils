@@ -1,0 +1,14 @@
+force_dq16: True
+infile:
+  'oesu2s020_crj.fits':
+    targets:
+      SZ-110:
+        x1d:
+          yloc: null
+          height: 5
+          maxsrch: null
+          xoffset: null
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null

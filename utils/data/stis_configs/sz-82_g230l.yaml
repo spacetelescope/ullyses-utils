@@ -1,0 +1,15 @@
+infile: 'oeso2s010_flt.fits'
+force_dq16: False
+
+targets:
+     SZ-82:
+        # Extraction parameters. For default values, leave as null
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null

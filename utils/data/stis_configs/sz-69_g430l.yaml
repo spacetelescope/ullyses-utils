@@ -1,0 +1,23 @@
+# The input filename
+infile: 'oeimbs020_crj.fits'
+
+# First define all detector-wide corrections
+# Set force_dq16 to True if you want to manually calculate DQ=16 even when
+# less than 6% of detector is flagged as so
+# This can be True for CCD, but should be False for MAMA
+force_dq16: True
+
+# Now define all target-specific corrections and parameters
+# First the science target. YOU MUST USE THE OFFICIAL ULLYSES NAME BELOW.
+targets:
+    SZ-69:            
+        # Extraction parameters. For default values, leave as null
+        x1d:
+            yloc: 510.9 # null values mean to use the default parameters
+            height: 5
+            maxsrch: 0
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null

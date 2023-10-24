@@ -1,0 +1,29 @@
+force_dq16: True
+infile: 'oeso2s030_crj.fits'
+
+targets:
+    SZ-82:            
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: null
+            maxsrch: null
+            xoffset: null
+            b_bkg1: null
+            b_bkg2: null
+            b_hgt1: null
+            b_hgt2: null
+        do_defringe: True
+        defringe:
+            fringeflat: 'oeso2s040_raw.fits'
+            do_shift: True
+            beg_shift: -0.5
+            end_shift: 1.5
+            shift_step: 0.1
+            do_scale: true
+            beg_scale: 0.8
+            end_scale: 1.5
+            scale_step: 0.04
+            opti_spreg: null
+            rms_region: null
+            extrloc: null
+            extrsize: null
