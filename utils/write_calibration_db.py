@@ -144,16 +144,14 @@ def populate_coadd(info, exp_tss, rootname, ins, grating, coadd_list):
         else:
             # if it is not in that list, it won't be coadded
             coadd = False
-        #elif ins == 'WFC3':
-        ##  FUSE should be coadded & WFC3 should not
-    elif ins == 'FUV': #or ins == 'WFC3': # FUSE & WFC3
-        # no coadds (cspec) files for FUSE and no coadds for WFC3 images
+    elif ins == 'WFC3':
+        # WFC3 images should not be coadded
         coadd = False
     elif grating == 'MIRVIS':
         # there's a special case where we took one confirmation image
        coadd = False
     else:
-        # Otherwise, it should be coadded
+        # Otherwise, it should be coadded; FUSE is fudged a bit to make a cspec
         coadd = True
 
     info['coadd'].append(coadd)
