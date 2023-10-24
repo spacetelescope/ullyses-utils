@@ -1,0 +1,28 @@
+force_dq16: true
+infile:
+  o5e310030_crj.fits:
+    targets:
+      v-v836-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  ob6ba6010_crj.fits:
+    targets:
+      v-v836-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: 5
+          maxsrch: null
+          xoffset: null
+          yloc: null

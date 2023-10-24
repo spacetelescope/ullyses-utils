@@ -1,0 +1,42 @@
+# The input filename. For CCD this will be a CRJ, for MAMA, an FLT.
+infile: 'oeil1s020_crj.fits'
+
+# First define all detector-wide corrections
+# Set force_dq16 to True if you want to manually calculate DQ=16 even when
+# less than 6% of detector is flagged as so
+# This can be True for CCD, but should be False for MAMA
+force_dq16: True
+
+# Now define all target-specific corrections and parameters.
+# First the science target- replace 'ullyses_name' with the target name.
+# YOU MUST USE THE OFFICIAL ULLYSES NAME BELOW.
+targets:
+    2MASS-J11432669M7804454:
+        # Extraction parameters. For default values, leave as null
+        x1d:
+            yloc: null # null values mean to use the default parameters
+            height: 5
+            maxsrch: null
+            xoffset: null
+            b_bkg1: 150
+            b_bkg2: 811
+            b_hgt1: null
+            b_hgt2: null
+    # If there are companion sources in the slit, use the lines below, if not delete.
+    # IMPORTANT!!! Companion coordinates need to be manually specified.
+    # Replace 'comp_name' with the companion's name- if you don't know it
+    # use a placeholder of formula ullyses_name_companion1, e.g. CVSO-109-companion1
+    GAIA-DR3-5200232636905785728:
+        coords:
+            ra: 175.8459327084387
+            dec: -78.08212047819815
+        # Extraction parameters. For default values, leave as null
+        x1d:
+            yloc: 226 # null values mean to use the default parameters
+            height: 5
+            maxsrch: 20
+            xoffset: 8.90725
+            b_bkg1: 150
+            b_bkg2: 811
+            b_hgt1: null
+            b_hgt2: null

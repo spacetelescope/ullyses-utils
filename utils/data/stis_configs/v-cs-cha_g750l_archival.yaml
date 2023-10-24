@@ -1,0 +1,29 @@
+force_dq16: true
+infile:
+  oclv01010_crj.fits:
+    targets:
+      v-cs-cha:
+        do_defringe: True
+        defringe:
+          beg_scale: 0.8
+          beg_shift: -0.5
+          do_scale: true
+          do_shift: true
+          end_scale: 1.2
+          end_shift: 0.5
+          extrloc: null
+          extrsize: null
+          fringeflat: oclv01020_raw.fits
+          opti_spreg: null
+          rms_region: null
+          scale_step: 0.04
+          shift_step: 0.1
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null

@@ -1,0 +1,106 @@
+force_dq16: false
+infile:
+  obic01020_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  obic01030_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  obic01040_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  obic01050_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: 10
+          xoffset: null
+          yloc: 384
+  obic01060_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: 10
+          xoffset: null
+          yloc: 384
+  oc0n01020_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: 10
+          xoffset: null
+          yloc: 386
+  oc0n01030_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: 10
+          xoffset: null
+          yloc: 403
+  oc0n01040_flt.fits:
+    targets:
+      v-dg-tau:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: 10
+          xoffset: null
+          yloc: 425

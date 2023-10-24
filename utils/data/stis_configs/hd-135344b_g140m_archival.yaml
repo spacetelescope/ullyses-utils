@@ -1,0 +1,28 @@
+force_dq16: false
+infile:
+  oc0m04010_flt.fits:
+    targets:
+      hd-135344b:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  oc0m04020_flt.fits:
+    targets:
+      hd-135344b:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
