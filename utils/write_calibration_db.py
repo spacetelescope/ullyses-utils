@@ -24,7 +24,7 @@ def make_galaxy_dict():
         for galaxy, cluster, target in zip(df['host_galaxy_name'], df['host_cluster_name'], df['target_name_ullyses']):
             # get the ULLYSES hlsp name to properly map]
             if target == 'Sextans-A':
-                # there is an alias for a star named 'SEXTANS-A'
+                # there is an alias for a star (SEXTANS-A-LGN-S029) named 'SEXTANS-A'
                 hlsp_targ = 'SEXTANS-A'
             else:
                 hlsp_targ = match_aliases(target)
@@ -131,7 +131,8 @@ def populate_coadd(info, exp_tss, rootname, ins, grating, coadd_list):
     '''This function fills in the "coadd" function as True/False which will be
        use to create coadd products. All COS & STIS is coadded unless the file
        is made into a timeseries instead. Certain files will still have a coadd
-       spectrum. Those can be found in the file `data/ullyses_custom_coadd.csv`.
+       spectrum. Those can be found in the file
+       `data/calibration_metadata/ullyses_custom_coadd.csv`.
     '''
 
     # check if the file was made into a timeseries
@@ -143,8 +144,10 @@ def populate_coadd(info, exp_tss, rootname, ins, grating, coadd_list):
         else:
             # if it is not in that list, it won't be coadded
             coadd = False
-    elif ins == 'FUV': # FUSE
-        # no coadds (cspec) files for FUSE
+        #elif ins == 'WFC3':
+        ##  FUSE should be coadded & WFC3 should not
+    elif ins == 'FUV': #or ins == 'WFC3': # FUSE & WFC3
+        # no coadds (cspec) files for FUSE and no coadds for WFC3 images
         coadd = False
     elif grating == 'MIRVIS':
         # there's a special case where we took one confirmation image
@@ -159,7 +162,7 @@ def populate_coadd(info, exp_tss, rootname, ins, grating, coadd_list):
 
 #-------------------------------------------------------------------------------
 
-def check_custom_cal(hlsp_targ, grating, rootname):
+def check_custom_cal(hlsp_targ, grating, rootname, blaze_roots):
     '''This function checks the different types of custom calibration
        possibilities when creating HLSPs. Each option has a specific custom
        configuration file of sorts that exists in the data directory.
@@ -169,7 +172,10 @@ def check_custom_cal(hlsp_targ, grating, rootname):
          The directory `cos_shifts` is where these configuration files exist.
        - FUSE: If a custom FUSE flux rescaling is performed, "FUSE" is returned.
          The directory `fuse` contains notebooks for these custom calibrations.
-       There should be no instances of overlap between these three calibration
+       - BLAZEFIX: If the STIS blaze fix should be performed on echelle data,
+         this flag will be set. There are no echelle datasets that have STIS
+         custom extraction, so there should be no overlap.
+       There should be no instances of overlap between these four calibration
        options, so there is nothing currently built in to handle that. If no
        special calibration is performed, None is returned.
     '''
@@ -181,7 +187,7 @@ def check_custom_cal(hlsp_targ, grating, rootname):
     # rootname is stripped of last "000" for the FUSE notebook names
     fuse_nb = f'data/fuse/{hlsp_targ.lower()}_{rootname[:-3]}.ipynb'
 
-    if os.path.exists(stis_yaml): # check for stis, first
+    if os.path.exists(stis_yaml): # check for stis custom cal, first
         data = read_config(stis_yaml)
         try:
             # read in the STIS configuration file and get the filename
@@ -196,6 +202,7 @@ def check_custom_cal(hlsp_targ, grating, rootname):
             if stis_root == rootname:
                 # return a custom calibration of 'STIS' if the rootname matches
                 return 'STIS'
+
 
     # a separate "if" b/c there could be a stis_yaml file that matches for a
     #   COS rootname still because it is based on target and grating (e.g. G140L)
@@ -212,6 +219,10 @@ def check_custom_cal(hlsp_targ, grating, rootname):
         # the FUSE targets that are custom calibrated will have a delivered notebook
         return 'FUSE'
 
+    elif rootname in blaze_roots:
+        # check to see if the rootname has the STIS blaze fix applied to it
+        return 'BLAZEFIX'
+
     else:
         # otherwise, no special calibration is performed for this exposure
         return None
@@ -221,8 +232,8 @@ def check_custom_cal(hlsp_targ, grating, rootname):
 def check_quality_comm(qual_df, rootname):
     '''This function checks to see if a special quality comment should be added
        to the header of a file. These comments are specified in a csv file in
-       the data directory: `data/ullyses_quality_comments.csv`. If there is no
-       quality comment, a blank string is returned.
+       the data directory: `data/calibration_metadata/ullyses_quality_comments.csv`.
+       If there is no quality comment, a blank string is returned.
     '''
 
     # check to see if the rootname is in the quality comment file
@@ -275,7 +286,7 @@ def populate_archival_status(info, ins, file_pid, ar_pids, ull_pids):
 #-------------------------------------------------------------------------------
 
 def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids,
-                  off_targs, coadd_list, qual_df):
+                  off_targs, coadd_list, qual_df, blaze_roots):
     '''This is the main function that fills in the database. It first checks
        it is not a calibration exposure (ACQ, WAVE, etc.). It then moves in to
        use the header to fill in exposure information. It then fills in the
@@ -331,7 +342,7 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids,
     info = populate_coadd(info, exp_tss, rootname, ins, grating, coadd_list)
 
     # check the custom calibration column based on config files
-    custom = check_custom_cal(hlsp_targ, grating, rootname)
+    custom = check_custom_cal(hlsp_targ, grating, rootname, blaze_roots)
     info['custom_cal'].append(custom) # STIS, WAVE, FUSE, or None
 
     # check if there is anything special to add as a quality comment to the header
@@ -408,16 +419,20 @@ def main(data_dir, save_dir='data', save_file='ullyses_calibration_db.csv'):
     offset_targs = list(offset_df['offset_targ'])
 
     ## read in the rejected datasets and do not include in the final df
-    rejected_df = pd.read_csv('data/ullyses_rejected_data.csv')
+    rejected_df = pd.read_csv('data/calibration_metadata/ullyses_rejected_data.csv')
     rejected_roots = list(rejected_df['dataset_name'])
 
     ## read in the custom coadd datasets
-    coadd_df = pd.read_csv('data/ullyses_custom_coadd.csv')
+    coadd_df = pd.read_csv('data/calibration_metadata/ullyses_custom_coadd.csv')
     coadd_list = list(coadd_df['dataset_name'])
 
     ## read in the quality comments to add to the database for certain datasets
     # we need both the quality comment and the rootname from this dataframe
-    qual_df = pd.read_csv('data/ullyses_quality_comments.csv')
+    qual_df = pd.read_csv('data/calibration_metadata/ullyses_quality_comments.csv')
+
+    ## read in the rootnames that should be used for applying the STIS blaze fix
+    sbf_df = pd.read_csv('data/calibration_metadata/ullyses_stisblazefix.csv')
+    blaze_roots = list(sbf_df['dataset_name'])
 
     ## fill in the dictionary for each file
     for targ_dir in np.sort(glob.glob(os.path.join(data_dir, '*'))):
@@ -447,7 +462,7 @@ def main(data_dir, save_dir='data', save_file='ullyses_calibration_db.csv'):
             # otherwise, fill in all of the columns!
             info = populate_info(info, kw_dict, rawf, galaxy_dict,
                                  pids_dict['ARCHIVAL'], pids_dict['ULLYSES'],
-                                 offset_targs, coadd_list, qual_df)
+                                 offset_targs, coadd_list, qual_df, blaze_roots)
 
     ## save out the information
     internal_df = pd.DataFrame.from_dict(info)
@@ -462,8 +477,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--indir", type=str, default=".",
                         help="Top level directory to search for files")
-    parser.add_argument("-o", "--outdir", type=str, default='data',
-                        help="Directory to save the outputs. The default behavior is to save to the data directory")
+    parser.add_argument("-o", "--outdir", type=str, default='data/calibration_metadata',
+                        help="Directory to save the outputs. \
+                              The default behavior is to save to the \
+                              data/calibration_metadata directory")
     parser.add_argument("-f", "--outfile", type=str, default='ullyses_calibration_db.csv',
                         help="Output filename. The default name is ullyses_calibration_db.csv")
     args = parser.parse_args()
