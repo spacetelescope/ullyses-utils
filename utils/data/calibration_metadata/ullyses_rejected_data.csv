@@ -856,7 +856,6 @@ e511310200000,SK-71D26,SK-71D26,Initial FUSE data search,Unvetted extra FUSE dat
 b010060100000,PGMW-3209,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
 e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
 a0440102000,4U0532-664,LMCX-4,Initial FUSE data search,Unvetted extra FUSE data
-p203040100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,This is not the correct target. It is actually NGC346-MPG-342/NGC346 W4
 ob6ba3030,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
 ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
 ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
