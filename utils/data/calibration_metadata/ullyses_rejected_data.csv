@@ -943,18 +943,6 @@ lb4p01rtq,TWA-27,TWA-27,Not in vetted directories,Bad data
 lb4p01rvq,TWA-27,TWA-27,Not in vetted directories,Bad data
 lb4p01rxq,TWA-27,TWA-27,Not in vetted directories,Bad data
 lb4p01s1q,TWA-27,TWA-27,Not in vetted directories,Bad data
-ldnj03j8q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj03jbq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj53uiq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj53urq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj02onq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj02oqq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj02ouq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj02oxq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj02p5q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj02p7q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj03jjq,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
-ldnj53v8q,UVQSJ101124.51-044215.5,UVQSJ101124.51-044215.5,Not in vetted directories,QSO. Find why this is in data directory and remove in future
 oc0m01010,V-AB-AUR,V-AB-AUR,Not in vetted directories,He/Be
 o5kc01030,V-DF-TAU,V-DF-TAU,Not in vetted directories,unsupported mode
 lbgj02trq,V-RU-LUP,V-RU-LUP,Not in vetted directories,
@@ -1091,3 +1079,10 @@ oe7b06030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival da
 oe7b07010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
 oe7b07020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
 oe7b07030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o5b403010,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b403040,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b404010,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b404020,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b404030,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o675030b0,NGC346-LR,NGC346-LR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o675030c0,NGC346-LR,NGC346-LR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
