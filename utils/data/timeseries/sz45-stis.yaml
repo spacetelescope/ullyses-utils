@@ -1,17 +1,21 @@
 # The name of this file should be the *ULLYSES DP TARGET NAME IN LOWERCASE*!!!
-# E.g. for TW Hydra the file name should be v-tw-hya.yaml
+# plus the instrument used for this data *also in lowercase*!
+# E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
 
-# Should sub-exposure timeseries be created?
-sub_exp_tss: True
-# Should exposure timeseries be created?
+# True if sub-exposure timeseries be created
+sub_exp_tss: False
+# True if exposure timeseries be created
 exp_tss: True
 
 # Provide the observing configuration
 observatory: hst # This is a single value
-instrument: cos # This is a single value
+instrument: stis # This is a single value
 gratings: # This is a list
-    - g160m
+    - g140l
     - g230l
+    - g430l
+    - g750l
+
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
 # bins: null
@@ -19,25 +23,7 @@ gratings: # This is a list
 # If subexposure TSS are being created, specify the time and wavelength binning. 
 # Separated by IPPP identifiers so different bins can be used for different
 # epochs
-bins:
-    leit:
-        g160m:
-            time: 30 # exptime is 220s
-            wave: 6
-            min_exptime: 20
-        g230l:
-            time: 10 # exptime is 30s
-            wave: 1
-            min_exptime: 8
-    leph:
-        g160m:
-            time: 30 # exptime is 220s
-            wave: 6
-            min_exptime: 20
-        g230l:
-            time: 10 # exptime is 30s
-            wave: 1
-            min_exptime: 8
+bins: null
 
 # We have two ways of indicating which exact exposures should be turned into a
 # timeseries: we can either specify which files to use, or which files *NOT*
@@ -50,20 +36,38 @@ bins:
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
-good_files: null
+good_files:
+    - ocy801050
+    - ocy802050
+    - ocy803050
+    - ocy804050
+    - ocy805050
+    - ocy801030
+    - ocy802030
+    - ocy803030
+    - ocy804030
+    - ocy805030
+    - oein2s010
+    - ocy801010
+    - ocy802010
+    - ocy803010
+    - ocy804010
+    - ocy805010
+    - oein2s020
+    - ocy801020
+    - ocy802020
+    - ocy803020
+    - ocy804020
+    - ocy805020
+    - oein2s030
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
 # bad_files: null
 #
-# You may specify either IPPPSS or IPPPSSOOT identifiers.      
+# You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
-bad_files:
-    - leit1d
-    - leitad
-    - leit1l
-    - leph1d
-    - leph1e
+bad_files: null
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.
