@@ -30,16 +30,16 @@ bins: null
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - ob3r08010
-    - o6cv03010
-    - oclv03030
-    - ob3r09010
     - ob3r07010
-    - o59d01010
-    - ob3r08020
-    - oclv03010
-    - ob3r09020
+    - ob3r08010
+    - ob3r09010
     - ob3r07020
+    - ob3r08020
+    - ob3r09020
+    - oclv03010
+    - oclv03030
+    - o59d01010
+    - o6cv03010
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
