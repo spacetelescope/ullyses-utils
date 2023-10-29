@@ -1,0 +1,41 @@
+force_dq16: false
+infile:
+  od6101010_flt.fits:
+    targets:
+      hd-163296:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  od6102010_flt.fits:
+    targets:
+      hd-163296:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  od6103010_flt.fits:
+    targets:
+      hd-163296:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null

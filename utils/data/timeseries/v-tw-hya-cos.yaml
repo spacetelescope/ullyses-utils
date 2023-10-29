@@ -3,22 +3,22 @@
 # E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
 
 # True if sub-exposure timeseries be created
-sub_exp_tss: False
+sub_exp_tss: True
 # True if exposure timeseries be created
 exp_tss: True
 
 # Provide the observing configuration
 observatory: hst # This is a single value
-instrument: stis # This is a single value
+instrument: cos # This is a single value
 gratings: # This is a list
-    - g140l
+    - g160m
     - g230l
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
 # bins: null
 #
-# If subexposure TSS are being created, specify the time and wavelength binning. 
+# If subexposure TSS are being created, specify the time and wavelength binning.
 # Separated by IPPP identifiers so different bins can be used for different
 # epochs
 bins:
@@ -53,17 +53,27 @@ bins:
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - oeqj1s010
-    - oeqj1s020
-    - oeqj1s030
-    - oeqj1s040
-    - oeqj1s050
-    - oeqj1t010
-    - oeqj1t020
-    - oeqj1t030
-    - oeqj1u010
-    - oeqj1u020
-    - oeqj1u030
+    - le9d1c
+    - le9d1d
+    - le9d1e
+    - le9d1f
+    - le9d1g
+    - le9d1h
+    - le9d1i
+    - le9d1j
+    - le9d1l
+    - le9d1m
+    - le9d1n
+    - lepc1c
+    - lepc1e
+    - lepc1f
+    - lepc1i
+    - lepc1j
+    - lepc1k
+    - lepc1l
+    - lepc1m
+    - lepc1n
+    - lepcag
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
@@ -72,13 +82,12 @@ good_files:
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 bad_files:
-    - le9d1k
-    - lepc1d
-    - lepc1g # exptime=0
-    - lepc1h
-    - lepcad
-    - lepcah # exptime=0
-
+    - le9d1k  # Failed TA, target well outside aperture. Failed visit
+    - lepc1d  # Bad TA, shutter open, bad data
+    - lepc1g  # Bad TA, shutter closed, no data
+    - lepc1h  # Bad TA, shutter closed, no data
+    - lepcad  # Bad TA, shutter closed, no data
+    - lepcah  # Bad TA, shutter closed, no data
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.

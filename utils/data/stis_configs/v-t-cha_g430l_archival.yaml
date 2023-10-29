@@ -1,0 +1,80 @@
+force_dq16: true
+infile:
+  odk71a010_crj.fits:
+    targets:
+      v-t-cha: 
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  odk71a040_crj.fits:
+    targets:
+      v-t-cha: 
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  odk72a010_crj.fits:
+    targets:
+      v-t-cha: 
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  odk72a040_crj.fits:
+    targets:
+      v-t-cha: 
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  odk73a010_crj.fits:
+    targets:
+      v-t-cha: 
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  odk73a040_crj.fits:
+    targets:
+      v-t-cha: 
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
