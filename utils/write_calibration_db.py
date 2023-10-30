@@ -106,7 +106,7 @@ def populate_target_info(info, targname, ins, galaxy_dict):
 
 #-------------------------------------------------------------------------------
 
-def check_timeseries_yaml(hlsp_targname):
+def check_timeseries_yaml(hlsp_targname, ins):
     '''This function reads in the timeseries configuration files in the data
        directory to determine if a specific target is made into a time series
        HLSP and/or a sub exposure time series HLSP. If no configuration file
@@ -114,7 +114,9 @@ def check_timeseries_yaml(hlsp_targname):
        timeseries HLSP is created.
     '''
 
-    yaml_file = f'data/timeseries/{hlsp_targname.lower()}.yaml'
+    # the format for the name of the files is fixed
+    yaml_file = f'data/timeseries/{hlsp_targname.lower()}-{ins.lower()}.yaml'
+
     if os.path.exists(yaml_file):
         # if the configuration yaml file exists for this target, read it in
         #   to determine if an exposure or subexposure timeseries is created
@@ -332,7 +334,7 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids,
 
     ## Check for the different calibration steps now
     # check the time series
-    exp_tss, sub_exp_tss = check_timeseries_yaml(hlsp_targ)
+    exp_tss, sub_exp_tss = check_timeseries_yaml(hlsp_targ, ins)
     info['exp_timeseries'].append(exp_tss)
     info['subexp_timeseries'].append(sub_exp_tss)
 
