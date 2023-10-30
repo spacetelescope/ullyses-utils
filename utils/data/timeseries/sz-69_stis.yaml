@@ -54,4 +54,4 @@ bad_files:
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.
 # If no files require a shift, you can set wavelength_shift to None by using:
- wavelength_shift: null
+wavelength_shift: null
