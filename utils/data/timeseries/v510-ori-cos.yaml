@@ -1,5 +1,6 @@
 # The name of this file should be the *ULLYSES DP TARGET NAME IN LOWERCASE*!!!
-# E.g. for TW Hydra the file name should be v-tw-hya.yaml
+# plus the instrument used for this data *also in lowercase*!
+# E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
 
 # True if sub-exposure timeseries be created
 sub_exp_tss: False
@@ -8,12 +9,10 @@ exp_tss: True
 
 # Provide the observing configuration
 observatory: hst # This is a single value
-instrument: stis # This is a single value
+instrument: cos # This is a single value
 gratings: # This is a list
-    - g140l
-    - g230l
-    - g430l
-    - g750l
+    - g130m
+    - g160m
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
@@ -36,29 +35,12 @@ bins: null
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - ocy801050
-    - ocy802050
-    - ocy803050
-    - ocy804050
-    - ocy805050
-    - ocy801030
-    - ocy802030
-    - ocy803030
-    - ocy804030
-    - ocy805030
-    - oein2s010
-    - ocy801010
-    - ocy802010
-    - ocy803010
-    - ocy804010
-    - ocy805010
-    - oein2s020
-    - ocy801020
-    - ocy802020
-    - ocy803020
-    - ocy804020
-    - ocy805020
-    - oein2s030
+    - le9idcewq
+    - le9idcfdq
+    - le9idcfiq
+    - le9iddfmq
+    - le9iddfoq
+    - le9iddfqq
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
@@ -66,7 +48,14 @@ good_files:
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
-bad_files: null
+bad_files:
+    - le9i4cchq   # Failed acquisition for 4c and 4d
+    - le9i4ccnq
+    - le9i4ccpq
+    - le9i4dqiq
+    - le9i4dqvq
+    - le9i4dr1q
+
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.

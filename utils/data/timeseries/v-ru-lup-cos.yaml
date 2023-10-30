@@ -3,15 +3,15 @@
 # E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
 
 # True if sub-exposure timeseries be created
-sub_exp_tss: False
+sub_exp_tss: True
 # True if exposure timeseries be created
 exp_tss: True
 
 # Provide the observing configuration
 observatory: hst # This is a single value
-instrument: stis # This is a single value
+instrument: cos # This is a single value
 gratings: # This is a list
-    - g140l
+    - g160m
     - g230l
 
 # If no subexposure TSS are being created, you may leave the section below
@@ -22,19 +22,19 @@ gratings: # This is a list
 # Separated by IPPP identifiers so different bins can be used for different
 # epochs
 bins:
-    le9d:
+    leit:
         g160m:
-            time: 30 # exptime is 300s
-            wave: 3
+            time: 30 # exptime is 220s
+            wave: 6
             min_exptime: 20
         g230l:
             time: 10 # exptime is 30s
             wave: 1
             min_exptime: 8
-    lepc:
+    leph:
         g160m:
-            time: 30 # exptime is 300s
-            wave: 3
+            time: 30 # exptime is 220s
+            wave: 6
             min_exptime: 20
         g230l:
             time: 10 # exptime is 30s
@@ -53,37 +53,44 @@ bins:
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - oeqj1s010
-    - oeqj1s020
-    - oeqj1s030
-    - oeqj1s040
-    - oeqj1s050
-    - oeqj1t010
-    - oeqj1t020
-    - oeqj1t030
-    - oeqj1u010
-    - oeqj1u020
-    - oeqj1u030
+    - leit1c
+    - leit1e
+    - leit1f
+    - leit1g
+    - leit1h
+    - leit1i
+    - leit1j
+    - leit1k
+    - leit1m
+    - leit1n
+    - leph1c
+    - leit1f
+    - leit1g
+    - leit1h
+    - leit1i
+    - leit1j
+    - leit1k
+    - leit1l
+    - leit1m
+    - leit1n
+    - leitad
+    - leitae
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
 # bad_files: null
 #
-# You may specify either IPPPSS or IPPPSSOOT identifiers.
+# You may specify either IPPPSS or IPPPSSOOT identifiers.      
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 bad_files:
-    - le9d1k
-    - lepc1d
-    - lepc1g # exptime=0
-    - lepc1h
-    - lepcad
-    - lepcah # exptime=0
-
+    - leit1d  # Failed ACQ, shutter open for observation, but data bad
+    - leitad  # Failed ACQ, shutter closed for observations, no data
+    - leit1l  # Failed ACQ, shutter closed for observations, no data
+    - leph1d  # Failed TA, target off-centered, bad data
+    - leph1e  # Failed TA, shutter closed for observations, no data
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.
 # If no files require a shift, you can set wavelength_shift to None by using:
 # wavelength_shift: null
-wavelength_shift:
-    le9d1c: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
-    le9d1g: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
+wavelength_shift: null
