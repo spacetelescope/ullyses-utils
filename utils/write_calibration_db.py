@@ -115,7 +115,7 @@ def check_timeseries_yaml(hlsp_targname, ins):
     '''
 
     # the format for the name of the files is fixed
-    yaml_file = f'data/timeseries/{hlsp_targname.lower()}-{ins.lower()}.yaml'
+    yaml_file = f'data/timeseries/{hlsp_targname.lower()}_{ins.lower()}.yaml'
 
     if os.path.exists(yaml_file):
         # if the configuration yaml file exists for this target, read it in
