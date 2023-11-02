@@ -11,6 +11,7 @@ exp_tss: True
 observatory: hst # This is a single value
 instrument: cos # This is a single value
 gratings: # This is a list
+    - g130m
     - g160m
     - g230l
 
@@ -82,6 +83,14 @@ good_files:
     - lepd1m
     - lepd1n
     - lepdag
+    - lbgj01zjq
+    - lbgj01zmq
+    - lbgj01zrq
+    - lbgj01zuq
+    - lbgj01z5q
+    - lbgj01z7q
+    - lbgj01zbq
+    - lbgj01zdq
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using

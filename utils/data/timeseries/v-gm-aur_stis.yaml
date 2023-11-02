@@ -12,8 +12,7 @@ exp_tss: True
 observatory: hst # This is a single value
 instrument: stis # This is a single value
 gratings: # This is a list
-    - e140h
-    - e140m
+    - g140l
     - g230l
     - g430l
     - g750l
@@ -33,30 +32,32 @@ bins: null
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - ob3r07010
-    - ob3r08010
-    - ob3r09010
-    - ob3r07020
-    - ob3r08020
-    - ob3r09020
-    - oclv03010
-    - oclv03030
-    - o59d01010
-    - o6cv03010
-    - ob3r07040
-    - ob3r08040
-    - ob3r09040
-    - oclv03040
-    - o6cv03020
-    - o6cv03030
-    - ob3r07050
-    - ob3r07060
-    - ob3r08050
-    - ob3r08060
-    - ob3r09050
-    - ob3r09060
-    - oclv03050
-    - oclv03060
+    - ob3r04040
+    - ob3r05040
+    - ob3r06040
+    - ocsn01040
+    - ocsn02040
+    - odkd01040
+    - odkd02040
+    - odkd03040
+    - ocsn01020
+    - ocsn02020
+    - odkd01020
+    - odkd02020
+    - odkd03020
+    - ob3r04050
+    - ob3r05050
+    - ob3r06050
+    - ocsn01050
+    - ocsn02050
+    - odkd01050
+    - odkd02050
+    - odkd03050
+    - ocsn01010
+    - ocsn02010
+    - odkd01010
+    - odkd02010
+    - odkd03010
 
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
