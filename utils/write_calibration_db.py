@@ -182,26 +182,29 @@ def check_custom_cal(hlsp_targ, grating, rootname, blaze_roots):
 
     # Create paths for the STIS, wavelength shift, or FUSE configuration files
     #   for a specific target/grating configuration
-    stis_yaml = f'data/stis_configs/{hlsp_targ.lower()}_{grating.lower()}.yaml'
+    # the STIS yaml files can have an "archival" on the end of the file, too
+    stis_yaml = glob.glob(f'data/stis_configs/{hlsp_targ.lower()}_{grating.lower()}*.yaml')
     wave_txt = f'data/cos_shifts/{hlsp_targ.lower()}_shifts.txt'
     # rootname is stripped of last "000" for the FUSE notebook names
     fuse_nb = f'data/fuse/{hlsp_targ.lower()}_{rootname[:-3]}.ipynb'
 
-    if os.path.exists(stis_yaml): # check for stis custom cal, first
-        data = read_config(stis_yaml)
-        try:
-            # read in the STIS configuration file and get the filename
-            stis_roots = [data['infile'].split('_')[0]]
-        except AttributeError:
-            # this means that there's more than one data file in the yaml file
-            # Instead, we need to get all of the rootnames as a list
-            stis_roots = [s.split('_')[0] for s in data['infile'].keys()]
+    if len(stis_yaml) > 0: # check for stis custom cal, first
+        for syaml in stis_yaml:
+            # there may be more than 1 yaml file for both archival & ullyses observed
+            data = read_config(syaml)
+            try:
+                # read in the STIS configuration file and get the filename
+                stis_roots = [data['infile'].split('_')[0]]
+            except AttributeError:
+                # this means that there's more than one data file in the yaml file
+                # Instead, we need to get all of the rootnames as a list
+                stis_roots = [s.split('_')[0] for s in data['infile'].keys()]
 
-        # loop over all of the rootnames in the config file to find a match
-        for stis_root in stis_roots:
-            if stis_root == rootname:
-                # return a custom calibration of 'STIS' if the rootname matches
-                return 'STIS'
+            # loop over all of the rootnames in the config file to find a match
+            for stis_root in stis_roots:
+                if stis_root == rootname:
+                    # return a custom calibration of 'STIS' if the rootname matches
+                    return 'STIS'
 
 
     # a separate "if" b/c there could be a stis_yaml file that matches for a
