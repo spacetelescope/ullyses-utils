@@ -640,6 +640,10 @@ o6md07020,THA15-28,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 ob6bb9pwq,SZ-102,SZ-102,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 ob6bd9010,SZ-102,SZ-102,stis tts tickets,Failed ACQ
 ob6bd9020,SZ-102,SZ-102,Not in vetted directories,bad data
+oczb01010,SZ-102,SZ-102,CR-Split=1,
+oczb01020,SZ-102,SZ-102,CR-Split=1,
+oczb01030,SZ-102,SZ-102,CR-Split=1,
+oczb01040,SZ-102,SZ-102,CR-Split=1,
 oczb01biq,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke01010,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke01020,SZ-102,SZ-102,Not in vetted directories,Bad data
@@ -653,9 +657,18 @@ odke02060,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke02070,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke02080,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke02090,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke52010,SZ-102,SZ-102,CR-Split=1,
+odke52020,SZ-102,SZ-102,CR-Split=1,
+odke52030,SZ-102,SZ-102,CR-Split=1,
 odke56010,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke56020,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke56030,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke57010,SZ-102,SZ-102,CR-Split=1,
+odke57020,SZ-102,SZ-102,CR-Split=1,
+odke57030,SZ-102,SZ-102,CR-Split=1,
+odke58010,SZ-102,SZ-102,CR-Split=1,
+odke58020,SZ-102,SZ-102,CR-Split=1,
+odke58030,SZ-102,SZ-102,CR-Split=1,
 let62ce1q,SZ104,SZ-104,tech team spreadsheet,Failed TA - exposure shuttered
 lesr1cths,SZ114,SZ-114,tech team spreadsheet,repeated in AC
 lesr1ctjq,SZ114,SZ-114,tech team spreadsheet,repeated in AC
@@ -908,6 +921,7 @@ leph1exiq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for
 leph1exkq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for observations, no data - repeated under HOPR 92307"
 leph1exmq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for observations, no data - repeated under HOPR 92307"
 leph1exoq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for observations, no data - repeated under HOPR 92307"
+o5e305030,V-RU-LUP,V-RU-LUP,stis tts tickets,eds custom CR rejection
 o62n04010,HD142560,V-RU-LUP,check for missing data from archive,
 lb6b15x8q,V-RW-AUR,V-RW-AUR,Not in vetted directories,
 o62n03010,HD240764,V-RW-AUR,check for missing data from archive,only G230M in this program/MJD
