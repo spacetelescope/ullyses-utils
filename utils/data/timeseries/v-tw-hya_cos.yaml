@@ -13,6 +13,7 @@ instrument: cos # This is a single value
 gratings: # This is a list
     - g160m
     - g230l
+    - g285m
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
@@ -74,6 +75,47 @@ good_files:
     - lepc1m
     - lepc1n
     - lepcag
+    - lbl201pwq
+    - lbl201pyq
+    - lbl201q0q
+    - lbl201q4q
+    - lbl201q6q
+    - lbl201q8q
+    - lbl201qcq
+    - lbl201qeq
+    - lbl201qgq
+    - lbl202nrq
+    - lbl202ntq
+    - lbl202nvq
+    - lbl203ouq
+    - lbl203owq
+    - lbl203oyq
+    - lbl204zwq
+    - lbl204a5q
+    - lbl204a8q
+    - lbl205fyq
+    - lbl205g0q
+    - lbl205g2q
+    - lbl206l0q
+    - lbl206l2q
+    - lbl206l4q
+    - lbl207coq
+    - lbl207cyq
+    - lbl207d0q
+    - lbl208xaq
+    - lbl208xdq
+    - lbl208xfq
+    - lbl201puq
+    - lbl201q2q
+    - lbl201qaq
+    - lbl202npq
+    - lbl203osq
+    - lbl204zuq
+    - lbl205fvq
+    - lbl206kyq
+    - lbl207cmq
+    - lbl208x0q
+
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using

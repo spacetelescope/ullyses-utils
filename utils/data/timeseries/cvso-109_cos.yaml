@@ -10,13 +10,9 @@ exp_tss: True
 
 # Provide the observing configuration
 observatory: hst # This is a single value
-instrument: stis # This is a single value
+instrument: cos # This is a single value
 gratings: # This is a list
-    - e140h
-    - e140m
-    - g230l
-    - g430l
-    - g750l
+    - g160m
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
@@ -33,31 +29,8 @@ bins: null
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - ob3r07010
-    - ob3r08010
-    - ob3r09010
-    - ob3r07020
-    - ob3r08020
-    - ob3r09020
-    - oclv03010
-    - oclv03030
-    - o59d01010
-    - o6cv03010
-    - ob3r07040
-    - ob3r08040
-    - ob3r09040
-    - oclv03040
-    - o6cv03020
-    - o6cv03030
-    - ob3r07050
-    - ob3r07060
-    - ob3r08050
-    - ob3r08060
-    - ob3r09050
-    - ob3r09060
-    - oclv03050
-    - oclv03060
-
+    - lccp03010
+    - le9k2c020
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
