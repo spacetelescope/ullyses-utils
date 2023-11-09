@@ -2,21 +2,21 @@
 # DQ=1 (Worm)
 # DQ=2 (Poor photometric quality)
 # DQ=4 (Rescaled flux)
-AV232:
+AV-232:
   minwl:
   - 1141
   maxwl:
   - -1
   dq:
   - 1
-AV15:
+AV-15:
   minwl:
   - 1179.9
   maxwl:
   - -1
   dq:
   - 1
-AV16:
+AV-16:
   minwl:
   - 1076
   maxwl:
@@ -33,7 +33,7 @@ SK-69D104:
   dq:
   - 2
   - 2
-AV18:
+AV-18:
   minwl:
   - 1179.9
   maxwl:
@@ -50,7 +50,7 @@ N11-ELS-013:
   dq:
   - 2
   - 2
-AV321:
+AV-321:
   minwl:
   - 1179.9
   maxwl:
@@ -64,7 +64,7 @@ SK-70D79:
   - 1164
   dq:
   - 1
-AV69:
+AV-69:
   minwl:
   - 1179.9
   maxwl:
@@ -85,7 +85,7 @@ SK-68D135:
   - -1
   dq:
   - 1
-AV47:
+AV-47:
   minwl:
   - 1179.9
   maxwl:
@@ -99,7 +99,7 @@ SK-69D191:
   - -1
   dq:
   - 1
-NGC346-ELS-07:
+NGC346-ELS-007:
   minwl:
   - 0
   - 1082.5
@@ -109,7 +109,7 @@ NGC346-ELS-07:
   dq:
   - 2
   - 2
-AV332:
+AV-332:
   minwl:
   - 0
   - 1082.5
@@ -143,7 +143,7 @@ SK-71D46:
   dq:
   - 2
   - 2
-AV362:
+AV-362:
   minwl:
   - 1080
   maxwl:
@@ -174,7 +174,7 @@ SK-67D22:
   - -1
   dq:
   - 1
-AV75:
+AV-75:
   minwl:
   - 1179.9
   maxwl:
@@ -195,7 +195,7 @@ SK-67D108:
   - -1
   dq:
   - 1
-NGC346-ELS-26:
+NGC346-ELS-026:
   minwl:
   - 0
   - 1080
@@ -222,7 +222,7 @@ SK-67D105:
   - -1
   dq:
   - 1
-AV210:
+AV-210:
   minwl:
   - 1150
   maxwl:
@@ -249,7 +249,7 @@ SK-69D279:
   dq:
   - 2
   - 1
-AV96:
+AV-96:
   minwl:
   - 1147
   maxwl:
@@ -266,14 +266,14 @@ SK-70D32:
   dq:
   - 2
   - 2
-AV374:
+AV-374:
   minwl:
   - 1150
   maxwl:
   - -1
   dq:
   - 1
-AV14:
+AV-14:
   minwl:
   - 1150
   maxwl:
@@ -304,7 +304,7 @@ NGC346-MPG-342:
   - -1
   dq:
   - 4
-AV267:
+AV-267:
   minwl:
   - 0
   maxwl:
@@ -318,21 +318,21 @@ BAT99-105:
   - -1
   dq:
   - 4
-MOA-J010321.3-720538:
+MOA-J010321M720538:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
   - 4
-AV26:
+AV-26:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
   - 4
-AV235:
+AV-235:
   minwl:
   - 0
   maxwl:
@@ -353,7 +353,7 @@ SK-68D16:
   - -1
   dq:
   - 4
-NGC2004-ELS-26:
+NGC2004-ELS-026:
   minwl:
   - 0
   - 1086
@@ -391,7 +391,7 @@ PGMW-3070:
   - -1
   dq:
   - 4
-AV476:
+AV-476:
   minwl:
   - 0
   maxwl:
@@ -422,7 +422,7 @@ SK-67D168:
   dq:
   - 4
   - 2
-AV39A:
+AV-39A:
   minwl:
   - 0
   - 1086
@@ -441,15 +441,15 @@ AV39A:
   - 1092
   dq:
   - 4
-  - 2 
-AV388:
+  - 2
+AV-388:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
   - 4
-LH114-7:
+LH-114-7:
   minwl:
   - 0
   - 1086
@@ -459,14 +459,45 @@ LH114-7:
   dq:
   - 4
   - 2
-AV83:
+AV-83:
   minwl:
   - 0
   maxwl:
   - -1
   dq:
   - 4
-BI272:
+BI-272:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 4
+SK-68D145:
+  minwl:
+  - 980
+  maxwl:
+  - -1
+  dq: 
+  - 2
+SK-69D106:
+  minwl:
+  - 0
+  - 1079.9
+  maxwl:
+  - 992
+  - 1094.1
+  dq:
+  - 2
+  - 2
+AV-238:
+  minwl:
+  - 0
+  maxwl:
+  - -1
+  dq:
+  - 4
+SK-68D80:
   minwl:
   - 0
   maxwl:

@@ -53,3 +53,5 @@ Updated targets for DR6:
 
 Updated targets for DR7:
 - ngc346-mpg-435_p2030201.ipynb
+- av-238_p1176601.ipynb
+- sk-68d80_c1510107.ipynb
