@@ -208,6 +208,8 @@ leir1cyfq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat
 leir1cyiq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 leir1cylq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 leir1cynq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
+oeir1s020,ECHA-J0844M7833,ECHA-J0844M7833,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
+oeir1s060,ECHA-J0844M7833,ECHA-J0844M7833,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
 ob6ba3010,EM-LKCA-15,EM-LKCA-15,stis tts tickets,Failed ACQ
 ob6ba3030,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
 ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
@@ -629,6 +631,8 @@ let61cd4q,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered
 let61daoq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 let61dbnq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 let61dbrq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
+oet61s020,SZ-100,SZ-100,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
+oet61s060,SZ-100,SZ-100,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
 lb6b19010,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b19020,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b19030,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
@@ -669,6 +673,7 @@ odke57030,SZ-102,SZ-102,CR-Split=1,
 odke58010,SZ-102,SZ-102,CR-Split=1,
 odke58020,SZ-102,SZ-102,CR-Split=1,
 odke58030,SZ-102,SZ-102,CR-Split=1,
+oesu1s020,SZ-103,SZ-103,extra data,Unvetted extra archival data that matches another target in our sample
 let62ce1q,SZ104,SZ-104,tech team spreadsheet,Failed TA - exposure shuttered
 lesr1cths,SZ114,SZ-114,tech team spreadsheet,repeated in AC
 lesr1ctjq,SZ114,SZ-114,tech team spreadsheet,repeated in AC
@@ -692,18 +697,24 @@ lesp1gagq,SZ129,SZ-129,tech team spreadsheet,Bad TA - no counts acquired
 leiqdcm9q,SZ130,SZ-130,tech team spreadsheet,"COS visit had a GS-acq failure alert. ACQ looks okay. Target very faint in G130M (30% of planned SNR). 3 out of 4 G160M exposures failed, the surviving exposure shows CIV (SNR ~ 4.5). HOPR 92054 filed. Calibration check could be useful - JIRA issue: ULLYSES-1350"
 leiqdcmbq,SZ130,SZ-130,tech team spreadsheet,"COS visit had a GS-acq failure alert. ACQ looks okay. Target very faint in G130M (30% of planned SNR). 3 out of 4 G160M exposures failed, the surviving exposure shows CIV (SNR ~ 4.5). HOPR 92054 filed. Calibration check could be useful - JIRA issue: ULLYSES-1350"
 leiqdcmdq,SZ130,SZ-130,tech team spreadsheet,"COS visit had a GS-acq failure alert. ACQ looks okay. Target very faint in G130M (30% of planned SNR). 3 out of 4 G160M exposures failed, the surviving exposure shows CIV (SNR ~ 4.5). HOPR 92054 filed. Calibration check could be useful - JIRA issue: ULLYSES-1350"
+oeiqds020,SZ-130,SZ-130,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
+oeiqds030,SZ-130,SZ-130,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
 leim1caoq,SZ66,SZ-66,tech team spreadsheet,GS ACQ failed; TA failed; no signal from star. Repeat scheduled under HOPR 92021. Data could be useful after calibration check - JIRA issue: ULLYSES-1360
 leim1caqq,SZ66,SZ-66,tech team spreadsheet,GS ACQ failed; TA failed; no signal from star. Repeat scheduled under HOPR 92021
 leim1casq,SZ66,SZ-66,tech team spreadsheet,GS ACQ failed; TA failed; no signal from star. Repeat scheduled under HOPR 92021
 leim1cb1q,SZ66,SZ-66,tech team spreadsheet,GS ACQ failed; TA failed; no signal from star. Repeat scheduled under HOPR 92021
 leimacm3q,SZ66,SZ-66,tech team spreadsheet,"GS-ACQ fail alert for AC, offset star ACQ successful. Exposure shuttered."
 leimacmaq,SZ66,SZ-66,tech team spreadsheet,"GS-ACQ fail alert for AC, offset star ACQ successful. Exposure shuttered."
+oeim1s020,SZ-66,SZ-66,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
+oeim1s030,SZ-66,SZ-66,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
 leim2cm8q,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
 leim2cmaq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
 leim2cmcq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
 leim2dmgq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
 leim2dmiq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
 leim2dmkq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
+oeim2s020,SZ-69,SZ-69,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
+oeim2s030,SZ-69,SZ-69,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
 leim3cjpq,SZ72,SZ-72,tech team spreadsheet,Late GS ACQ alert for 3C; TA appear successful. One G160M/1623 exposure (leim3cjpq) from 3C failed; 63% of planned total exptime with this setting. Total G160M SNR is sufficient. G130M is faint. Observations appear OK but further checks and/or manual recal may be necessary - JIRA issue: ULLYSES - 1299
 leim4cdaq,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
 leim4cddq,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
@@ -718,6 +729,7 @@ leimdcdvq,SZ76,SZ-76,tech team spreadsheet,ACQ failed for DC (shutter closed). B
 oeim4s010,SZ-76,SZ-76,Discovered when trying to create HLSPs,Exposure time is 0s
 oeim4s020,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
 oeim4s030,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
+oet53s020,SZ-97,SZ-97,extra data,Unvetted extra archival data that matches another target in our sample
 o8o602010,T-TAU-1,T-TAU-1,commented low_mass_stars_archive_CJK_JRD_STIS,
 o8o602020,T-TAU-1,T-TAU-1,commented low_mass_stars_archive_CJK_JRD_STIS,
 o8o603010,T-TAU-2,T-TAU-2,commented low_mass_stars_archive_CJK_JRD_STIS,
@@ -852,6 +864,9 @@ lepg1no5q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no7q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 o8e002020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
 o8e002030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ob3r04020,V-GM-AUR,V-GM-AUR,CCD & STIS custom cal check,not vetted
+ob3r05020,V-GM-AUR,V-GM-AUR,CCD & STIS custom cal check,not vetted
+ob3r06020,V-GM-AUR,V-GM-AUR,CCD & STIS custom cal check,not vetted
 ob6ba1w8q,V-GM-AUR,V-GM-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 oe7b01010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
 oe7b01020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
@@ -1114,6 +1129,8 @@ le9i4ccpq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
 le9i4dqiq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
 le9i4dqvq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
 le9i4dr1q,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
+oe9i4s020,V510-ORI,V510-ORI,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
+oe9i4s030,V510-ORI,V510-ORI,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
 ody203010,VFTS180,VFTS-180,in ARCHIVAL_DATA_HIGH_MASS/DR5/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr5,
 oec62c020,VFTS-190,VFTS-190,SNAP data quality check,GSFAIL
 ody211010,VFTS244,VFTS-244,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
