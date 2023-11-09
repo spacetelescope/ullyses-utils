@@ -3,43 +3,28 @@
 # E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
 
 # True if sub-exposure timeseries be created
-sub_exp_tss: True
+sub_exp_tss: False
 # True if exposure timeseries be created
 exp_tss: True
 
 # Provide the observing configuration
 observatory: hst # This is a single value
-instrument: cos # This is a single value
+instrument: stis # This is a single value
 gratings: # This is a list
-    - g160m
+    - g140l
     - g230l
+    - e230m
+    - g430l
+    - g750l
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
 # bins: null
 #
-# If subexposure TSS are being created, specify the time and wavelength binning.
+# If subexposure TSS are being created, specify the time and wavelength binning. 
 # Separated by IPPP identifiers so different bins can be used for different
 # epochs
-bins:
-    le9d:
-        g160m:
-            time: 30 # exptime is 300s
-            wave: 3
-            min_exptime: 20
-        g230l:
-            time: 10 # exptime is 30s
-            wave: 1
-            min_exptime: 8
-    lepc:
-        g160m:
-            time: 30 # exptime is 300s
-            wave: 3
-            min_exptime: 20
-        g230l:
-            time: 10 # exptime is 30s
-            wave: 1
-            min_exptime: 8
+bins: null
 
 # We have two ways of indicating which exact exposures should be turned into a
 # timeseries: we can either specify which files to use, or which files *NOT*
@@ -53,27 +38,13 @@ bins:
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - le9d1c
-    - le9d1d
-    - le9d1e
-    - le9d1f
-    - le9d1g
-    - le9d1h
-    - le9d1i
-    - le9d1j
-    - le9d1l
-    - le9d1m
-    - le9d1n
-    - lepc1c
-    - lepc1e
-    - lepc1f
-    - lepc1i
-    - lepc1j
-    - lepc1k
-    - lepc1l
-    - lepc1m
-    - lepc1n
-    - lepcag
+    - ob6bb6010
+    - ob6bb6030
+    - ob6bb6r0q
+    - oclv01010
+    - oclv01030
+    - oclv01040
+    - oclv01050
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
@@ -81,18 +52,11 @@ good_files:
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
-bad_files:
-    - le9d1k  # Failed TA, target well outside aperture. Failed visit
-    - lepc1d  # Bad TA, shutter open, bad data
-    - lepc1g  # Bad TA, shutter closed, no data
-    - lepc1h  # Bad TA, shutter closed, no data
-    - lepcad  # Bad TA, shutter closed, no data
-    - lepcah  # Bad TA, shutter closed, no data
+bad_files: null
+
 
 # List of IPPPSS identifiers, if any, that require wavelength offset correction,
 # and the accompanying wavelength shift file locations.
 # If no files require a shift, you can set wavelength_shift to None by using:
 # wavelength_shift: null
-wavelength_shift:
-    le9d1c: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
-    le9d1g: "$UTILS_DIR/data/cos_shifts/v-tw-hya_shifts.txt"
+wavelength_shift: null
