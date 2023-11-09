@@ -1,0 +1,28 @@
+force_dq16: true
+infile:
+  oec63w010_crj.fits:
+    targets:
+      sk-67d207:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
+  oec63w020_crj.fits:
+    targets:
+      sk-67d207:
+        do_defringe: false
+        x1d:
+          b_bkg1: null
+          b_bkg2: null
+          b_hgt1: null
+          b_hgt2: null
+          height: null
+          maxsrch: null
+          xoffset: null
+          yloc: null
