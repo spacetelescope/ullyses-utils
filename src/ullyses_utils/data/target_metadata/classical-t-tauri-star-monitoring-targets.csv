@@ -1,0 +1,5 @@
+Target,RA(J2000),DEC(J2000),Mass (M_sun),Radius (R_sun)),Mass Accretion rate (M_sun/yr),Rotational period (days),A_V (mag),SpT,log(dm/dt),V,Target_LINK
+BP Tau,04h19m15.86s,+29d06m27.2s,0.7,2,2.90E-08,8.19,0.51,K7,-7.54,12.12,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=V*+BP+Tau"" target=""_blank"">BP Tau</a>"
+GM Aur,04h55m10.98s,+30d21m59.1s,1.36,1.75,5.00E-09,6.1,0.6,K3,-8.3,13.1,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=V*+GM+Aur"" target=""_blank"">GM Aur</a>"
+TW Hya,11h01m51.95s,-34d42m17.7s,0.7,1,2.00E-09,3.57,0,K7,-8.7,10.5,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=V*+TW+Hya"" target=""_blank"">TW Hya</a>"
+RU Lup,15h56m42.31s,-37d49m15.47s,0.7,1.64,5.00E-08,3.71,0.07,K7,-7.3,9.6,"<a href=""http://simbad.cds.unistra.fr/simbad/sim-id?Ident=V*+RU+Lup"" target=""_blank"">RU Lup</a>"

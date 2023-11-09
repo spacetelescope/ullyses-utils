@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ullyses_utils"
+version = "3.0.0"
+description = "ULLYSES utility files and scripts"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "ULLYSES STScI Team", email = "ullyses_dp@stsci.edu" }]
+keywords = ["astronomy", "jwst", "simulations"]
+classifiers = [
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Development Status :: 1 - Planning',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Astronomy',
+    'Topic :: Scientific/Engineering :: Physics',
+    'Topic :: Software Development :: Libraries :: Python Modules'
+]
+dependencies = [
+    "setuptools",
+    "numpy",
+    "astropy",
+]
+
+[tool.setuptools.package-data]
+"*" = ["**/**/data/**/*.txt", "**/**/data/**/*.yaml", "**/**/data/**/*.json", "**/**/data/**/*.csv", "**/**/data/**/*.fits"]
