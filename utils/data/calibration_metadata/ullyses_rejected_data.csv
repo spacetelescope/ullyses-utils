@@ -1,6 +1,6 @@
 dataset_name,target_name,target_name_hlsp,from where?,comments
-lb4p07esq,0255035-470050,0255035-470050,commented low_mass_stars_archive_CJK_JRD_COS,
 lb4p07010,0255035-470050,0255035-470050,commented low_mass_stars_archive_CJK_JRD_COS,
+lb4p07esq,0255035-470050,0255035-470050,commented low_mass_stars_archive_CJK_JRD_COS,
 lb4p04x6q,1507476-162738,1507476-162738,commented low_mass_stars_archive_CJK_JRD_COS,
 lb4p05010,1507476-162738,1507476-162738,commented low_mass_stars_archive_CJK_JRD_COS,
 lb4p05qeq,1507476-162738,1507476-162738,commented low_mass_stars_archive_CJK_JRD_COS,
@@ -10,6 +10,8 @@ lea21cjlq,2DFS-163,2DFS-163,tech team spreadsheet,
 lea21cjsq,2DFS-163,2DFS-163,tech team spreadsheet,
 lea21cjzq,2DFS-163,2DFS-163,tech team spreadsheet,
 lea21ck5q,2DFS-163,2DFS-163,tech team spreadsheet,
+oec631010,2DFS-163,2DFS-163,SNAP data quality check,GSFAIL
+oec631020,2DFS-163,2DFS-163,SNAP data quality check,GSFAIL
 lehg1crhq,2DFS-2266,2DFS-2266,tech team spreadsheet,Shutter closed
 lehg1crkq,2DFS-2266,2DFS-2266,tech team spreadsheet,Shutter closed
 lehg1crnq,2DFS-2266,2DFS-2266,tech team spreadsheet,Shutter closed
@@ -30,13 +32,13 @@ lehgfcnyq,2DFS-2266,2DFS-2266,tech team spreadsheet,Shutter closed
 lehgfco0q,2DFS-2266,2DFS-2266,tech team spreadsheet,Shutter closed
 lehgfco2q,2DFS-2266,2DFS-2266,tech team spreadsheet,Shutter closed
 letw1dnaq,2DFS-2553,2DFS-2553,tech team spreadsheet,Shutter closed; but decided not to submit HOPR
-leey1czwq,2DFS-3694,2DFS-3694,tech team spreadsheet,"No exception report, but Shutter was closed for TA and flux much lower than expectations"
 leey1ca1q,2DFS-3694,2DFS-3694,tech team spreadsheet,
 leey1ca4q,2DFS-3694,2DFS-3694,tech team spreadsheet,
 leey1ca6q,2DFS-3694,2DFS-3694,tech team spreadsheet,
 leey1cabq,2DFS-3694,2DFS-3694,tech team spreadsheet,
 leey1cafq,2DFS-3694,2DFS-3694,tech team spreadsheet,
 leey1cahq,2DFS-3694,2DFS-3694,tech team spreadsheet,
+leey1czwq,2DFS-3694,2DFS-3694,tech team spreadsheet,"No exception report, but Shutter was closed for TA and flux much lower than expectations"
 lehg2ceeq,2DFS-3954,2DFS-3954,tech team spreadsheet,Shutter closed
 lehg2cegq,2DFS-3954,2DFS-3954,tech team spreadsheet,Shutter closed
 lehg2cejq,2DFS-3954,2DFS-3954,tech team spreadsheet,Shutter closed
@@ -44,13 +46,56 @@ lehg2cepq,2DFS-3954,2DFS-3954,tech team spreadsheet,Shutter closed
 lehg2cevq,2DFS-3954,2DFS-3954,tech team spreadsheet,Shutter closed
 lehg2cf0q,2DFS-3954,2DFS-3954,tech team spreadsheet,Shutter closed
 lehg2cf3q,2DFS-3954,2DFS-3954,tech team spreadsheet,Shutter closed
+ldmp30u2q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp30u9q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp08kaq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp08khq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp21e3q,2MASS-J16004277M2127380,2MASS-J16004277M2127380,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp21eaq,2MASS-J16004277M2127380,2MASS-J16004277M2127380,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp22ciq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp22cpq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp25ngq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp25nnq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp26paq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp26pqq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp02lvq,2MASS-J16025243M2402226,2MASS-J16025243M2402226,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp02m2q,2MASS-J16025243M2402226,2MASS-J16025243M2402226,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp17dpq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp17dwq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp20p6q,2MASS-J16061254M2036472,2MASS-J16061254M2036472,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp20pdq,2MASS-J16061254M2036472,2MASS-J16061254M2036472,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp09dyq,2MASS-J16081474M1908327,2MASS-J16081474M1908327,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp09e5q,2MASS-J16081474M1908327,2MASS-J16081474M1908327,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp18irq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp18iyq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp15z8q,2MASS-J16130271M2257446,2MASS-J16130271M2257446,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp15zfq,2MASS-J16130271M2257446,2MASS-J16130271M2257446,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp10n5q,2MASS-J16132929M2311075,2MASS-J16132929M2311075,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp10ndq,2MASS-J16132929M2311075,2MASS-J16132929M2311075,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp13kmq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp13ktq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp29brq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp29byq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,Not in vetted directories,Not full coverage. Only COS/1222
+oec655020,AV104,AV-104,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+c002010100000,[M2002]_38024,AV-177,Initial FUSE data search,Unvetted extra FUSE data
 lek61dl6q,AV186,AV-186,tech team spreadsheet,
 lek61dl9q,AV186,AV-186,tech team spreadsheet,
 lek61dlfq,AV186,AV-186,tech team spreadsheet,
 lek61dliq,AV186,AV-186,tech team spreadsheet,
 lek6adnoq,AV186,AV-186,tech team spreadsheet,
 lek6adnqq,AV186,AV-186,tech team spreadsheet,Shutter closed
+oec670020,AV210,AV-210,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oec654020,AV215,AV-215,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
 d162070100000,AV22,AV-22,Failed FUSE data check,do not know the pointing well enough to recover
+oec693010,AV22,AV-22,SNAP data quality check,GSFAIL
+oec693020,AV22,AV-22,SNAP data quality check,GSFAIL
+i801080100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
+i812050100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
+i812060100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
+i812090100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
+p203020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
+x020020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
+of2c1s010,AV-238,AV-238,Discovered when trying to create HLSPs,Exposure time is 0s
 of2c1s020,AV238,AV-238,tech team spreadsheet,flux ~20% low (target off-center?)
 of2c1s030,AV238,AV-238,tech team spreadsheet,essentially no flux
 lehg4cr5q,AV251,AV-251,tech team spreadsheet,Shutter closed
@@ -66,6 +111,8 @@ lehg4crzq,AV251,AV-251,tech team spreadsheet,"TA looks OK, but fluxes are only 1
 lehg4cs2q,AV251,AV-251,tech team spreadsheet,"TA looks OK, but fluxes are only 10% of expected, which suggests uncentered or wrong target"
 lehgdcctq,AV251,AV-251,tech team spreadsheet,Shutter closed
 lehgdccwq,AV251,AV-251,tech team spreadsheet,Shutter closed
+e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
+oejv2s010,AV-264,AV-264,Discovered when trying to create HLSPs,Exposure time is 0s
 oejv2s020,AV264,AV-264,tech team spreadsheet,acq failed; no stellar signal
 oejv2s030,AV264,AV-264,tech team spreadsheet,acq failed; spectrum present but possible velocity offset
 b090070100000,Sk101,AV-287,Failed FUSE data check,failed observation
@@ -78,30 +125,83 @@ lemu2cfcq,AV314,AV-314,tech team spreadsheet,The NUV exposured failed due to HST
 lemu2cfeq,AV314,AV-314,tech team spreadsheet,The NUV exposured failed due to HST safing: repeat of NUV exposures scheduled under HOPR-92123
 lemu2cfgq,AV314,AV-314,tech team spreadsheet,The NUV exposured failed due to HST safing: repeat of NUV exposures scheduled under HOPR-92123
 lemubcelq,AV314,AV-314,tech team spreadsheet,"Exception report issued, but data are OK"
+oemu2s010,AV-314,AV-314,Discovered when trying to create HLSPs,Exposure time is 0s
+x015010200000,AV_332,AV-332,Initial FUSE data search,Unvetted extra FUSE data
+oemu3s010,AV-343,AV-343,Discovered when trying to create HLSPs,Exposure time is 0s
+oec689010,AV362,AV-362,SNAP data quality check,GSFAIL
+oec689020,AV362,AV-362,SNAP data quality check,GSFAIL
 le4x02awq,AV435,AV-435,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 le4x02ayq,AV435,AV-435,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 le4x02b0q,AV435,AV-435,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 le4x02b2q,AV435,AV-435,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 le4x02b4q,AV435,AV-435,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 le4x02b6q,AV435,AV-435,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+q107010100000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
+q107010200000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
+q107010300000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
+q107010400000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
+q107010600000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
+e511120100000,AV480,AV-480,Initial FUSE data search,Unvetted extra FUSE data
+p117680100000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
+p117680200000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
+p117680300000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
+d175010200000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
+d175020100000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
+z912240100000,AV506,AV-506,Initial FUSE data search,Unvetted extra FUSE data
+oec643010,AV6,AV-6,SNAP data quality check,GSFAIL
+oec643020,AV6,AV-6,SNAP data quality check,GSFAIL
+a118020300000,AV_70,AV-70,Initial FUSE data search,Unvetted extra FUSE data
+g036010100000,[M2002]_17438,AV-81,Initial FUSE data search,Unvetted extra FUSE data
+g036010300000,[M2002]_17438,AV-81,Initial FUSE data search,Unvetted extra FUSE data
+f907010100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
+f907020100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
+f907040100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
+p115050500000,[M2002]_19650,AV-95,Initial FUSE data search,Unvetted extra FUSE data
+p117180200000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
+p117180300000,MK42,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
+p117180400000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
+ldmp23slq,BD-18-4244,BD-18-4244,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp23stq,BD-18-4244,BD-18-4244,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp06g7q,BD-21-4301,BD-21-4301,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp06gfq,BD-21-4301,BD-21-4301,Not in vetted directories,Not full coverage. Only COS/1222
+oec62s010,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
+oec62s020,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
+p217020100000,BI128,BI-128,Initial FUSE data search,target was removed from the ULLYSES sample in Cycle 28
+e511190100000,[M2002]_15830,BI-13,Initial FUSE data search,Unvetted extra FUSE data
+p117320100000,[M2002]_137610,BI-173,Initial FUSE data search,Unvetted extra FUSE data
+oec62j010,BI184,BI-184,SNAP data quality check,GSFAIL
 leuw1ckqq,BI189,BI-189,tech team spreadsheet,Shutter closed
 leuw1cktq,BI189,BI-189,tech team spreadsheet,Shutter closed
 leuw1ckwq,BI189,BI-189,tech team spreadsheet,Shutter closed
 leuw1ckyq,BI189,BI-189,tech team spreadsheet,Shutter closed
-od7m07010,BI265,BI-265,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
-od7m07020,BI265,BI-265,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
-od7m07030,BI265,BI-265,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 lf2f1cf8q,BI265,BI-265,tech team spreadsheet,TA failed; source off-center; flux and wavelength calibration bad
 lf2f1cfbq,BI265,BI-265,tech team spreadsheet,TA failed; source off-center; flux and wavelength calibration bad
 lf2f1cfeq,BI265,BI-265,tech team spreadsheet,TA failed; source off-center; flux and wavelength calibration bad
 lf2f1cfhq,BI265,BI-265,tech team spreadsheet,TA failed; source off-center; flux and wavelength calibration bad
+od7m07010,BI265,BI-265,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+od7m07020,BI265,BI-265,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+od7m07030,BI265,BI-265,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+p117290100000,BI_272,BI-272,Initial FUSE data search,Unvetted extra FUSE data
 o59z01040,CCDFLAT,CCDFLAT,stis tts tickets,Fringe flats associated with slitless aperture (V-CW-TAU)
 o59z06040,CCDFLAT,CCDFLAT,stis tts tickets,Fringe flats associated with slitless aperture (V-CW-TAU)
+ldmp04dmq,CD-22-11315,CD-22-11315,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp04dtq,CD-22-11315,CD-22-11315,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp01hzq,CD-25-11113,CD-25-11113,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp01i1q,CD-25-11113,CD-25-11113,Not in vetted directories,Not full coverage. Only COS/1222
+o4mp01010,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o4mp01020,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o4mp01030,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o4mp01040,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o4mp01050,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o4mp01060,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o4mp01070,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o4mp01080,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
 lbz403010,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbz403020,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbz403030,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbz403040,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbz403050,V-ET-CHA,ECHA-J0843M7915,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 leir1cxpq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 leir1cy7q,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 leir1cyfq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
@@ -109,9 +209,43 @@ leir1cyiq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat
 leir1cylq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 leir1cynq,ECHA-J0844.2-7833,ECHA-J0844M7833,tech team spreadsheet,Failed: repeat scheduled under HOPR 91993
 ob6ba3010,EM-LKCA-15,EM-LKCA-15,stis tts tickets,Failed ACQ
+ob6ba3030,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
+ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
+ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ldmp19j3q,GSC-06208-00834,GSC-06208-00834,Not in vetted directories,Not full coverage. Only COS/1222
+ldmp19jaq,GSC-06208-00834,GSC-06208-00834,Not in vetted directories,Not full coverage. Only COS/1222
+o6bt01030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
+o6bt03030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
+o6bt04010,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
+ld7i06010,HD139614,HD-139614,check for missing data from archive,only G160M at this epoch
+ld7i06020,HD139614,HD-139614,check for missing data from archive,only G160M at this epoch
 oc2h05010,HD-139614,HD-139614,stis tts tickets,not a complete set with FUV
-obi801020,HD-163296,HD-163296,stis tts tickets,"taken with aperture 52X0.2F1, which places the target behind"
+oc2h05020,HD-139614,HD-139614,Not in vetted directories,Bad data
+oc2h05030,HD-139614,HD-139614,Not in vetted directories,Bad data
+ob4590010,HD141569,HD-141569,check for missing data from archive,only E230H at epoch
+o4xn04040,HD-163296,HD-163296,Not in vetted directories,Bad data
+o57z03010,HD-163296,HD-163296,check for missing data from archive,only G140M at epoch
+o5fo02010,HD-163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
+o5fo02fnq,HD-163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
+o5fo22010,HD163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
+o5fo22b4q,HD163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
 obi801010,HD-163296,HD-163296,stis tts tickets,"taken with aperture 52X0.2F1, which places the target behind"
+obi801020,HD-163296,HD-163296,stis tts tickets,"taken with aperture 52X0.2F1, which places the target behind"
+o57z04010,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
+o57z04ymq,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
+o57z04ynq,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
+p215020100000,HD38029,HD-38029,Initial FUSE data search,Unvetted extra FUSE data
+f049010400000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+f049010600000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+f049010700000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+f049010800000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+f049010900000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+f049011100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+f049011300000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+m717090100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+m717170100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+m717170200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
 o55q01070,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 o55q02070,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 o55q03070,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
@@ -124,22 +258,68 @@ ocax01010,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not 
 ocax01020,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 od3g01010,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 od3g01020,AV229,HD-5980,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+p103010100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+p223010200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+p223010300000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+p223010400000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+p223010500000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+p223010600000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+p223010700000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+p223010800000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+s405710100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+s405710200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+s405710300000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+s405710400000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+x024020200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
+c151010100000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010200000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010300000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010400000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010500000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010600000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010800000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
+c151010900000,HD36521,HD36521,Initial FUSE data search,Unvetted extra FUSE data
+c151011000000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
 le9r1cwkq,HV5622,HV-5622,tech team spreadsheet,Orbit 2 failed
 le9r1cwnq,HV5622,HV-5622,tech team spreadsheet,Orbit 2 failed
 le9r1cwtq,HV5622,HV-5622,tech team spreadsheet,Orbit 2 failed
 le9r1cwwq,HV5622,HV-5622,tech team spreadsheet,Orbit 2 failed
+oec63d010,HV5622,HV-5622,SNAP data quality check,GSFAIL
+oec63d020,HV5622,HV-5622,SNAP data quality check,GSFAIL
+ldhf1aycq,IC1613-BUG-C10,IC1613-BUG-C10,Not in vetted directories,Bad data
+ldhf1bdpq,IC1613-BUG-C10,IC1613-BUG-C10,Not in vetted directories,Bad data
+le4s04dbq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
+le4s04dqq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
+le4s04dsq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
+le4s11eaq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
+le4s11ecq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
+le4s11eeq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
+le5b03n7q,J095927P304457,J095927P304457,Not in vetted directories,Bad data
 lehdacuuq,LMCE055-1,LMCE055-1,tech team spreadsheet,acq failed
 lehdacuzq,LMCE055-1,LMCE055-1,tech team spreadsheet,
 lehdacv3q,LMCE055-1,LMCE055-1,tech team spreadsheet,
 lehdacvcq,LMCE055-1,LMCE055-1,tech team spreadsheet,
 lehdacvhq,LMCE055-1,LMCE055-1,tech team spreadsheet,
 lehdacvnq,LMCE055-1,LMCE055-1,tech team spreadsheet,
+a0440102000,4U0532-664,LMCX-4,Initial FUSE data search,Unvetted extra FUSE data
+oec62h010,LMCX-4,LMCX-4,SNAP data quality check,EXPSHORT; LOCKLOST; TDF-DOWN
+oec62h020,LMCX-4,LMCX-4,SNAP data quality check,EXPSHORT; LOCKLOST; TDF-DOWN
+f321010100000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
+f321010300000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
+f321010400000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
 lf2l1dafq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HOPR
 lf2l1dahq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HOPR
 lf2l1dajq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HOPR
 lf2l1dalq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HOPR
+b010050100000,N11_32,N11-ELS-032,Initial FUSE data search,Unvetted extra FUSE data
 leuw2cayq,N11-ELS-032,N11-ELS-032,tech team spreadsheet,Shutter closed
 leuw2cb2q,N11-ELS-032,N11-ELS-032,tech team spreadsheet,Shutter closed
+b010060100000,PGMW-3209,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
+d030040200000,LH103204,N11-ELS-048,Initial FUSE data search,unreliaunreliable due to contamination
+oec60p010,N11-ELS-060,N11-ELS-060,SNAP data quality check,GSFAIL
+d138020100000,NGC1818-D1,NGC1818-ROB-D1,Initial FUSE data search,Unvetted extra FUSE data
+p117560100000,[MPG]_355,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
+p203050100000,[MPG]_324,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
 le8p2cxlq,NGC346-ELS-28,NGC346-ELS-028,tech team spreadsheet,failed acq; flux levels don't match
 le8p2cxuq,NGC346-ELS-28,NGC346-ELS-028,tech team spreadsheet,failed acq; flux levels don't match
 leig4ch1q,NGC346-ELS-46,NGC346-ELS-046,tech team spreadsheet,
@@ -149,22 +329,73 @@ le8p3cuuq,NGC346-ELS-50,NGC346-ELS-050,tech team spreadsheet,failed acq; flux le
 le8p3cv5q,NGC346-ELS-50,NGC346-ELS-050,tech team spreadsheet,failed acq; flux levels don't match
 le8p3cvfq,NGC346-ELS-50,NGC346-ELS-050,tech team spreadsheet,failed acq; flux levels don't match
 le8p3cvpq,NGC346-ELS-50,NGC346-ELS-050,tech team spreadsheet,failed acq; flux levels don't match
+o675030b0,NGC346-LR,NGC346-LR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o675030c0,NGC346-LR,NGC346-LR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+p117520100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
+p117550100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
+p117570100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
 o4wra2010,NGC346-MPG-435,NGC346-MPG-435,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+ody238010,NGC346-MPG-435,NGC346-MPG-435,Not in vetted directories,Bad data
+oeua1s010,NGC346-MPG-435,NGC346-MPG-435,Discovered when trying to create HLSPs,Exposure time is 0s
 oe9s2s010,LH9-34,PGMW-1363,tech team spreadsheet,acq failed
+oe9s2s020,PGMW-1363,PGMW-1363,Discovered when trying to create HLSPs,Exposure time is 0s
+oe9s2s030,PGMW-1363,PGMW-1363,Discovered when trying to create HLSPs,Exposure time is 0s
+oe9sbs020,PGMW-1363,PGMW-1363,Discovered when trying to create HLSPs,Exposure time is 0s
+d030020100000,[PGMW]_3090,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
+s701130100000,[PGMW]_3090,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
 B0100301000,PGMW 3120,PGMW-3120,Failed FUSE data check,multiple stars in the aperture
+d030030200000,PGMW3120,PGMW-3120,FUSE data quality check,This is actually the star PGMW-3102
+oec61j010,PGMW3120,PGMW-3120,SNAP data quality check,Contaminating star in the slit
+oec61j020,PGMW3120,PGMW-3120,SNAP data quality check,Contaminating star in the slit
+ob6bc2zqq,RECX-1,RECX-1,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bc4ymq,RECX-11,RECX-11,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 lepk1cyhq,RXJ0438.6+1546,RX-J0438P1546,tech team spreadsheet,"Failed ACQ, S/N very low"
 lepk1cyoq,RXJ0438.6+1546,RX-J0438P1546,tech team spreadsheet,"Failed ACQ, S/N very low"
 lepk1czgq,RXJ0438.6+1546,RX-J0438P1546,tech team spreadsheet,"Failed ACQ, S/N very low"
 lepk1czjq,RXJ0438.6+1546,RX-J0438P1546,tech team spreadsheet,"Failed ACQ, S/N very low"
+oepkas010,RX-J0438P1546,RX-J0438P1546,Discovered when trying to create HLSPs,Exposure time is 0s
 oepkas020,RXJ0438.6+1546,RX-J0438P1546,tech team spreadsheet,"Failed ACQ, flux levels low. May be able to use 1S data instead"
 oepkas030,RXJ0438.6+1546,RX-J0438P1546,tech team spreadsheet,"Failed ACQ, flux levels low. May be able to use 1S data instead"
+le4s12raq,SEXTANS-A-LGN-S022,SEXTANS-A-LGN-S022,Not in vetted directories,Bad data
+le4s18h4q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,Not in vetted directories,Bad data
+le4s18h8q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,Not in vetted directories,Bad data
 letn3cbgq,SK187,SK-187,tech team spreadsheet,
 letn3cbiq,SK187,SK-187,tech team spreadsheet,
 letn3cbkq,SK187,SK-187,tech team spreadsheet,
+a123026300000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123026400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123026500000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123026600000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123026700000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123026800000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123026900000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027000000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027200000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027300000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027400000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027500000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027600000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027700000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123027800000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+a123028100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+m114240100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+p103060100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+p103060200000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+p103060300000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+p103060400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
+z912130100000,Sk_-652,SK-65D2,Initial FUSE data search,Unvetted extra FUSE data
 letj1chtq,SK-66D17,SK-66D17,tech team spreadsheet,Shutter closed
 letj1ci2q,SK-66D17,SK-66D17,tech team spreadsheet,Shutter closed
 letj1ci4q,SK-66D17,SK-66D17,tech team spreadsheet,Shutter closed
 letj1ci6q,SK-66D17,SK-66D17,tech team spreadsheet,Shutter closed
+a049010200000,Sk_-6618,SK-66D18,Initial FUSE data search,Unvetted extra FUSE data
+b086030100000,Sk_-6635,SK-66D35,Initial FUSE data search,Unvetted extra FUSE data
+lekh1ca2q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
+lekh1ca4q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
+lekh1ca6q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
+lekh1ca8q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
+lekh1caaq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
 lekh1czjq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
 lekh1czlq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
 lekh1cznq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
@@ -174,12 +405,184 @@ lekh1cztq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
 lekh1czvq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
 lekh1czxq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
 lekh1czzq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
-lekh1ca2q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
-lekh1ca4q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
-lekh1ca6q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
-lekh1ca8q,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
-lekh1caaq,SK-66D50,SK-66D50,tech team spreadsheet,Acq failed; S/N too low
+oec63v020,SK-66D50,SK-66D50,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+h079020100000,HD_33133,SK-66D51,Initial FUSE data search,Unvetted extra FUSE data
+m114220100000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
+m114220200000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
+m114220300000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
+m114220400000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
+oec62g020,SK-67D101,SK-67D101,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+p117340100000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
+p117340200000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
+m112080100000,Sk_-67104,SK-67D104,Initial FUSE data search,Unvetted extra FUSE data
+m112080200000,Sk_-67104,SK-67D104,Initial FUSE data search,Unvetted extra FUSE data
+s405990200000,Sk_-67104,SK-67D104,Initial FUSE data search,Unvetted extra FUSE data
+d153010100000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
+d153010200000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
+d153010300000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
+d153010400000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
+d153010600000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
+e511330100000,[M2002]_135697,SK-67D108,Initial FUSE data search,Unvetted extra FUSE data
+c155020100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020200000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020300000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020400000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020500000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020600000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020700000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020800000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155020900000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155021000000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155021100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155021200000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155021300000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155021400000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155021500000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+c155021600000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+i801090100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+s405540100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+x020010100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+x020010200000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
+m717220100000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
+p117420200000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
+p117420300000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
+s405390100000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
+s405390200000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
+s405390300000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
+a133010100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133010900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133011900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133012900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133013900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133014900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133015900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133016000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133016100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133016200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+a133018000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m112260100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m112260200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114230900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114231000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114231100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m717150100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m998330100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+s405300100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+s405300200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+s405300300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+s405300400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+s405300500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+s505550100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+s505550200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
+m114210100000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
+m727660100000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
+p117190200000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
+p117310200000,Sk_-67191,SK-67D191,Initial FUSE data search,Unvetted extra FUSE data
+p117440200000,[M2002]_25077,SK-67D20,Initial FUSE data search,Unvetted extra FUSE data
+oec63w020,SK-67D207,SK-67D207,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+p117160100000,HD_269810,SK-67D211,Initial FUSE data search,Unvetted extra FUSE data
+i801010500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i801010600000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i801020400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i801021500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040300000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040600000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040700000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040800000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811040900000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041000000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041300000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041600000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041700000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041800000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811041900000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811042000000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i811042100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+i904030200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+m717160200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+p103070400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+s405930100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
+p117170100000,Sk_-6769,SK-67D69,Initial FUSE data search,Unvetted extra FUSE data
 lbp504tlq,SK-68D129,SK-68D129,in ARCHIVAL_DATA_HIGH_MASS/DR4/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr4,
+i801010100000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
+i801010200000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
+e511420100000,[M2002]_170808,SK-68D137,Initial FUSE data search,Unvetted extra FUSE data
+oec62v010,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
+oec62v020,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
+e511210100000,[M2002]_33780,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
+p117410100000,Sk_-6841,SK-68D41,Initial FUSE data search,Unvetted extra FUSE data
+oec63r020,SK-68D8,SK-68D8,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
+oef12s020,SK-68D8,SK-68D8,Discovered when trying to create HLSPs,Exposure time is 0s
+oef1bs010,SK-68D8,SK-68D8,Discovered when trying to create HLSPs,Exposure time is 0s
+p103140200000,SK-68D80,SK-68D80,Initial FUSE data search,Unvetted extra FUSE data
+p103140300000,SK-68D80,SK-68D80,Initial FUSE data search,Unvetted extra FUSE data
 lef13cfxq,SK-69D140,SK-69D140,tech team spreadsheet,GS not aquired; ACQ failed; shutter didn't open
 lef13cgnq,SK-69D140,SK-69D140,tech team spreadsheet,GS not aquired; ACQ failed; shutter didn't open
 lef13cgpq,SK-69D140,SK-69D140,tech team spreadsheet,GS not aquired; ACQ failed; shutter didn't open
@@ -200,49 +603,60 @@ letjccy4q,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 letjccyeq,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 od7m06010,SK-69D212,SK-69D212,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 z9050701000,SK-69D220,SK-69D220,Failed FUSE data check,multiple stars in the aperture
+i812070100000,Sk_-70115,SK-70D115,Initial FUSE data search,Unvetted extra FUSE data
 oejf5s010,SK-70D32,SK-70D32,tech team spreadsheet,"GS acq failure, TA failure, observations failure. Repeated as ES under HOPR-92162"
 oejf5s020,SK-70D32,SK-70D32,tech team spreadsheet,"GS acq failure, TA failure, observations failure. Repeated as ES under HOPR-92162"
 oejf5s030,SK-70D32,SK-70D32,tech team spreadsheet,"GS acq failure, TA failure, observations failure. Repeated as ES under HOPR-92162"
-oehids010,SK-70D60,SK-70D60,tech team spreadsheet,single guide star -- drifting; visit IS pending
-oehids020,SK-70D60,SK-70D60,tech team spreadsheet,single guide star -- drifting; visit IS pending
 oehi4t010,SK-70D60,SK-70D60,tech team spreadsheet,single guide star -- drifting; visit DT pending
 oehi4t020,SK-70D60,SK-70D60,tech team spreadsheet,single guide star -- drifting; visit DT pending
+oehids010,SK-70D60,SK-70D60,tech team spreadsheet,single guide star -- drifting; visit IS pending
+oehids020,SK-70D60,SK-70D60,tech team spreadsheet,single guide star -- drifting; visit IS pending
+e511310200000,SK-71D26,SK-71D26,Initial FUSE data search,Unvetted extra FUSE data
+p103150100000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
+p103150200000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
+p103150400000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
+s405270100000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
+s405270200000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
+a049140200000,Sk_-718,SK-71D8,Initial FUSE data search,Unvetted extra FUSE data
 leiq1crjq,SSTC2DJ160000.6-422158,SSTC2D-J160000M422158,tech team spreadsheet,"COS visit 1C had GS-acq fail alert, 1D did not. ACQ of offset target looks good for both visits. FUV data from both visits look similar and have little/no signal from target at fiducial wavelengths. Observations do not appear to have any obvious techinal problem"
 leiq1crpq,SSTC2DJ160000.6-422158,SSTC2D-J160000M422158,tech team spreadsheet,"COS visit 1C had GS-acq fail alert, 1D did not. ACQ of offset target looks good for both visits. FUV data from both visits look similar and have little/no signal from target at fiducial wavelengths. Observations do not appear to have any obvious techinal problem"
 let51cnoq,SSTC2DJ161243.8-381503,SSTC2D-J161243M381503,tech team spreadsheet,"Exception report for 1C, TA OK, exposure FAILED, check G160M x1Dsum for this visit"
 let51frmq,SSTC2DJ161243.8-381503,SSTC2D-J161243M381503,tech team spreadsheet,"Exception report for visit 1F, TA FAILED, exposure FAILED"
 let51fs0q,SSTC2DJ161243.8-381503,SSTC2D-J161243M381503,tech team spreadsheet,"Exception report for visit 1F, TA FAILED, exposure FAILED"
-let61daoq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
-let61dbnq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
-let61dbrq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 let61cd0q,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 let61cd2q,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 let61cd4q,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
+let61daoq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
+let61dbnq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
+let61dbrq,SZ100,SZ-100,tech team spreadsheet,"Failed TA, 2/3 exposures shuttered - no good - to be repeated under HOPR 92246"
 lb6b19010,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b19020,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b19030,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b19040,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b19050,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b19060,SZ-102,SZ-102,commented low_mass_stars_archive_CJK_JRD_COS,bad data
-o6md07020,THA15-28,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 o6md07010,THA15-28,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
-odke56020,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+o6md07020,THA15-28,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+ob6bb9pwq,SZ-102,SZ-102,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6bd9010,SZ-102,SZ-102,stis tts tickets,Failed ACQ
+ob6bd9020,SZ-102,SZ-102,Not in vetted directories,bad data
 oczb01biq,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke01010,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke01020,SZ-102,SZ-102,Not in vetted directories,Bad data
+odke01030,SZ-102,SZ-102,Not in vetted directories,Bad data
 odke02010,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
-odke02040,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
-odke02070,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
-odke56010,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
-odke56030,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke02020,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
-odke02050,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
-odke02080,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke02030,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke02040,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke02050,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke02060,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke02070,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke02080,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 odke02090,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke56010,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke56020,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
+odke56030,V-V1190-SCO,SZ-102,commented low_mass_stars_archive_CJK_JRD_STIS,
 let62ce1q,SZ104,SZ-104,tech team spreadsheet,Failed TA - exposure shuttered
-oesr1s020,SZ114,SZ-114,tech team spreadsheet,repeated in AS
-oesr1s030,SZ114,SZ-114,tech team spreadsheet,repeated in AS
 lesr1cths,SZ114,SZ-114,tech team spreadsheet,repeated in AC
 lesr1ctjq,SZ114,SZ-114,tech team spreadsheet,repeated in AC
 lesr1ctlq,SZ114,SZ-114,tech team spreadsheet,repeated in AD
@@ -250,8 +664,15 @@ lesr1ctnq,SZ114,SZ-114,tech team spreadsheet,repeated in AD
 lesr1ctpq,SZ114,SZ-114,tech team spreadsheet,repeated in AD
 lesr1ctrq,SZ114,SZ-114,tech team spreadsheet,repeated in AD
 lesr1cttq,SZ114,SZ-114,tech team spreadsheet,repeated in AD
+oesr1s010,SZ-114,SZ-114,Discovered when trying to create HLSPs,Exposure time is 0s
+oesr1s020,SZ114,SZ-114,tech team spreadsheet,repeated in AS
+oesr1s030,SZ114,SZ-114,tech team spreadsheet,repeated in AS
+oesras010,SZ-114,SZ-114,Discovered when trying to create HLSPs,Exposure time is 0s
 oesras020,SZ114,SZ-114,tech team spreadsheet,
 oesras030,SZ114,SZ-114,tech team spreadsheet,
+oesr2t010,SZ-115,SZ-115,Discovered when trying to create HLSPs,Exposure time is 0s
+oesr2t020,SZ-115,SZ-115,Discovered when trying to create HLSPs,Exposure time is 0s
+oesr2t030,SZ-115,SZ-115,Discovered when trying to create HLSPs,Exposure time is 0s
 oesr2t040,SZ115,SZ-115,tech team spreadsheet,"TA failed, only 1.5s exptime, G230L and G140L from 2T were shuttered"
 oesr2t050,SZ115,SZ-115,tech team spreadsheet,"TA failed, only 1.5s exptime, G230L and G140L from 2T were shuttered"
 lesp1gagq,SZ129,SZ-129,tech team spreadsheet,Bad TA - no counts acquired
@@ -271,8 +692,6 @@ leim2dmgq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under
 leim2dmiq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
 leim2dmkq,SZ69,SZ-69,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92005. Data may still be useful otherwise after recalibration/in-depth DQ check -JIRA issue: ULLYSES-1345
 leim3cjpq,SZ72,SZ-72,tech team spreadsheet,Late GS ACQ alert for 3C; TA appear successful. One G160M/1623 exposure (leim3cjpq) from 3C failed; 63% of planned total exptime with this setting. Total G160M SNR is sufficient. G130M is faint. Observations appear OK but further checks and/or manual recal may be necessary - JIRA issue: ULLYSES - 1299
-oeim4s020,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
-oeim4s030,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
 leim4cdaq,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
 leim4cddq,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
 leim4cdqq,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
@@ -283,6 +702,9 @@ leim4dehq,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under
 leim4dejq,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
 leimdcdtq,SZ76,SZ-76,tech team spreadsheet,ACQ failed for DC (shutter closed). Both G160M/1589 exposures failed (shutter closed). Both G130M exposures executed and may show faint signal but calibration check required-JIRA issue: ULLYSES-1359
 leimdcdvq,SZ76,SZ-76,tech team spreadsheet,ACQ failed for DC (shutter closed). Both G160M/1589 exposures failed (shutter closed). Both G130M exposures executed and may show faint signal but calibration check required-JIRA issue: ULLYSES-1359
+oeim4s010,SZ-76,SZ-76,Discovered when trying to create HLSPs,Exposure time is 0s
+oeim4s020,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
+oeim4s030,SZ76,SZ-76,tech team spreadsheet,Failed GS acq: repeat scheduled under HOPR 92006.
 o8o602010,T-TAU-1,T-TAU-1,commented low_mass_stars_archive_CJK_JRD_STIS,
 o8o602020,T-TAU-1,T-TAU-1,commented low_mass_stars_archive_CJK_JRD_STIS,
 o8o603010,T-TAU-2,T-TAU-2,commented low_mass_stars_archive_CJK_JRD_STIS,
@@ -292,33 +714,117 @@ lb6b29020,TWA-2,TWA-2,commented low_mass_stars_archive_CJK_JRD_COS,
 lb6b29030,TWA-2,TWA-2,commented low_mass_stars_archive_CJK_JRD_COS,
 lb6b29040,TWA-2,TWA-2,commented low_mass_stars_archive_CJK_JRD_COS,
 lb6b29050,TWA-2,TWA-2,commented low_mass_stars_archive_CJK_JRD_COS,
-ob6bc9d9q,TWA-2,TWA-2,stis tts tickets,Failed ACQ
 ob6bc9010,TWA-2,TWA-2,stis tts tickets,Failed ACQ
+ob6bc9030,TWA-2,TWA-2,Not in vetted directories,Not full coverage (no COS)
+ob6bc9d9q,TWA-2,TWA-2,stis tts tickets,Failed ACQ
 lb4p01010,1207334-393254-KF,TWA-27,commented low_mass_stars_archive_CJK_JRD_COS,
+lb4p01rtq,TWA-27,TWA-27,Not in vetted directories,Bad data
+lb4p01rvq,TWA-27,TWA-27,Not in vetted directories,Bad data
+lb4p01rxq,TWA-27,TWA-27,Not in vetted directories,Bad data
+lb4p01s1q,TWA-27,TWA-27,Not in vetted directories,Bad data
+ob6b22cwq,TWA-3A,TWA-3A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b22d6q,TWA-3A,TWA-3A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba7z8q,V-AA-TAU,V-AA-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+oec501010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec501020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec501030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec501040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec502040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec503040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec504010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec504020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec505010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec505020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec506010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec506020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec507010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec507030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec508050,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec509050,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec54b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec54b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec55b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec55b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec56b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oec56b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
+oc0m01010,V-AB-AUR,V-AB-AUR,Not in vetted directories,He/Be
+o62n05010,HD152404,V-AK-SCO,check for missing data from archive,Only G230M at this epoch
 lepd1gq9q,V-BP-TAU,V-BP-TAU,tech team spreadsheet,"Failed TA, no data: repeat scheduled as visit AG under HOPR 92407"
 lepd1gqbq,V-BP-TAU,V-BP-TAU,tech team spreadsheet,"Failed TA, no data: repeat scheduled as visit AG under HOPR 92407"
 lepd1gqdq,V-BP-TAU,V-BP-TAU,tech team spreadsheet,"Failed TA, no data: repeat scheduled as visit AG under HOPR 92407"
 lepd1gqfq,V-BP-TAU,V-BP-TAU,tech team spreadsheet,"Failed TA, no data: repeat scheduled as visit AG under HOPR 92407"
 lepd1gqhq,V-BP-TAU,V-BP-TAU,tech team spreadsheet,"Failed TA, no data: repeat scheduled as visit AG under HOPR 92407"
 lepd1gqjq,V-BP-TAU,V-BP-TAU,tech team spreadsheet,"Failed TA, no data: repeat scheduled as visit AG under HOPR 92407"
-ob2l03010,V-CW-TAU,V-CW-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
-ob2la3010,V-CW-TAU,V-CW-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
-ob2lb3010,V-CW-TAU,V-CW-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
+ob6bb0toq,V-CE-ANT,V-CE-ANT,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+oee568010,CE-ANT,V-CE-ANT,check for missing data from archive,Only E230H at this epoch
+ob6bb6r0q,V-CS-CHA,V-CS-CHA,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 o59z01020,V-CW-TAU,V-CW-TAU,stis tts tickets,slitless aperture
 o59z01030,V-CW-TAU,V-CW-TAU,stis tts tickets,slitless aperture
 o59z06020,V-CW-TAU,V-CW-TAU,stis tts tickets,slitless aperture
 o59z06030,V-CW-TAU,V-CW-TAU,stis tts tickets,slitless aperture
+ob2l03010,V-CW-TAU,V-CW-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
+ob2la3010,V-CW-TAU,V-CW-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
+ob2lb3010,V-CW-TAU,V-CW-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
+o62n01010,DE-TAU,V-DE-TAU,check for missing data from archive,only G230M in this program/MJD
+ob6ba8buq,V-DE-TAU,V-DE-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+o59z03020,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z03030,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z08020,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
+o5kc01030,V-DF-TAU,V-DF-TAU,Not in vetted directories,unsupported mode
+ocd844010,HD283654,V-DF-TAU,check for missing data from archive,Only E230H at this epcoh
+o5e307010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
+o5e307020,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
+o5e307040,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
+o5e307050,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
+o5e307060,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
+o6md02010,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
+o6md02030,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
+o6md02040,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
+o6md03010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o8nz11010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
+o8nz11020,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
+ocmi01010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01020,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01030,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01040,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01050,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01060,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01070,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01080,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi01090,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi010a0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi010b0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi010c0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ocmi010d0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ob6bb2y9q,V-DK-TAU,V-DK-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob3r03050,V-DM-TAU,V-DM-TAU,Final vetting for DR7,Offset in wavelength compared to the other 4 spectra
+ob6ba2ndq,V-DM-TAU,V-DM-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba4ihq,V-DN-TAU,V-DN-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 o5cf02010,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o5cf02020,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o5cf02030,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o5cf02040,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o63l04010,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
 o63l04020,DR-TAU,V-DR-TAU,commented low_mass_stars_archive_CJK_JRD_STIS,
+ob6bb4g8q,V-DR-TAU,V-DR-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 lb6b10010,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b10020,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b10030,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b10040,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lb6b10050,V-FM-TAU,V-FM-TAU,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+ob6ba0r4q,V-FM-TAU,V-FM-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+o63l07010,FU-ORI,V-FU-ORI,Final vetting for DR7,not complete coverage
+o63l07020,FU-ORI,V-FU-ORI,Final vetting for DR7,not complete coverage
 lek7akqrq,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"Repeat of failed (due to safing) 1K under HOPR 9999. Failed ACQ, shutter closed for observations, no data."
 lek7akqtq,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"Repeat of failed (due to safing) 1K under HOPR 9999. Failed ACQ, shutter closed for observations, no data."
 lek7akqwq,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"Repeat of failed (due to safing) 1K under HOPR 9999. Failed ACQ, shutter closed for observations, no data."
@@ -331,6 +837,37 @@ lepg1no1q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no3q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no5q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
 lepg1no7q,V-GM-AUR,V-GM-AUR,tech team spreadsheet,"TA Failed, No data"
+o8e002020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o8e002030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ob6ba1w8q,V-GM-AUR,V-GM-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+oe7b01010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b01020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b01030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b03010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b03020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b03030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b04010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b04020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b04030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b05010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b05020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b05030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b06010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b06020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b06030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b07010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b07020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+oe7b07030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+o59z05020,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z05030,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z10020,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+o59z10030,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
+ob2l05010,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
+ob2l05020,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
+ob2l05030,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
+ob6ba9qpq,V-HN-TAU,V-HN-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6ba5e9q,V-IP-TAU,V-IP-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b23b6q,V-MP-MUS,V-MP-MUS,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 lbgj02050,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbgj02060,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbgj02070,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
@@ -340,6 +877,7 @@ lbgj020a0,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad da
 lbgj020b0,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbgj02toq,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
 lbgj02tpq,V-RU-LUPI,V-RU-LUP,commented low_mass_stars_archive_CJK_JRD_COS,bad data
+lbgj02trq,V-RU-LUP,V-RU-LUP,Not in vetted directories,
 leit1do5q,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed ACQ, shutter open for observation but data bad. Visit to be repeated under HOPR 92062"
 leit1do7q,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed ACQ, shutter open for observation but data bad. Visit to be repeated under HOPR 92062"
 leit1do9q,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed ACQ, shutter open for observation but data bad. Visit to be repeated under HOPR 92062"
@@ -370,11 +908,84 @@ leph1exiq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for
 leph1exkq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for observations, no data - repeated under HOPR 92307"
 leph1exmq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for observations, no data - repeated under HOPR 92307"
 leph1exoq,V-RU-LUP,V-RU-LUP,tech team spreadsheet,"Failed TA, shutter closed for observations, no data - repeated under HOPR 92307"
+o62n04010,HD142560,V-RU-LUP,check for missing data from archive,
+lb6b15x8q,V-RW-AUR,V-RW-AUR,Not in vetted directories,
+o62n03010,HD240764,V-RW-AUR,check for missing data from archive,only G230M in this program/MJD
+ob2l01010,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01020,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01030,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01040,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l01050,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02010,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02020,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02030,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob2l02040,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
+ob6bb5xrq,V-RW-AUR,V-RW-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ocd860010,HD240764,V-RW-AUR,check for missing data from archive,only E230H at epoch
+o62n07010,HD283571,V-RY-TAU,check for missing data from archive,only G230M in this program/MJD
 ockf01060,V-RY-TAU,V-RY-TAU,stis tts tickets,no signal
+ocwf01010,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
+ocwf01020,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
+ocwf01030,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
+o6cv02010,V-SU-AUR,V-SU-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ob6bb1z8q,V-SU-AUR,V-SU-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 leqj2clzq,V-SY-CHA,V-SY-CHA,tech team spreadsheet,Bad reacq - no repeat necessary
 leqj2cm1q,V-SY-CHA,V-SY-CHA,tech team spreadsheet,Bad reacq - no repeat necessary
-o6dq01010,TW-HYA,V-TW-HYA,commented low_mass_stars_archive_CJK_JRD_STIS,
-o6dq01020,TW-HYA,V-TW-HYA,commented low_mass_stars_archive_CJK_JRD_STIS,
+o5b403010,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b403020,V-T-CHA,V-T-CHA,Not in vetted directories,He/Be
+o5b403030,V-T-CHA,V-T-CHA,Not in vetted directories,
+o5b403040,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b403050,V-T-CHA,V-T-CHA,Not in vetted directories,
+o5b404010,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b404020,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+o5b404030,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
+odk71a010,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk71a020,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk71a040,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk71a050,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk72a010,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk72a020,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk72a040,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk72a050,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk73a010,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk73a020,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk73a040,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+odk73a050,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
+ldgx08j2q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgx08j4q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgx08j6q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgx08j8q,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgx9u010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgx9u020,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxa9jkq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9jmq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9joq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9jqq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9jsq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxa9juq,V-T-CRA,V-T-CRA,Not in vetted directories,
+ldgxd9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxd9020,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxt8010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+ldgxz8010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+odgx09010,V-T-CRA,V-T-CRA,Not in vetted directories,He/Be. Exclude
+odgxc9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+odgxt9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
+lc2h09t5q,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09t7q,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09t9q,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09tbq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09tdq,V-T-ORI,V-T-ORI,Not in vetted directories,Herbig/Ae
+lc2h09tfq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09thq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09tjq,V-T-ORI,V-T-ORI,Not in vetted directories,
+lc2h09tlq,V-T-ORI,V-T-ORI,Not in vetted directories,
+ldgx10010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
+ldgx12010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
+odgx11010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
+o4gm01010,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
+o4gm01020,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
+o4gm01040,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
+o62n02010,HD284419,V-T-TAU,check for missing data from archive,only G230M in this program/MJD
 le9d1kdbq,V-TW-HYA,V-TW-HYA,tech team spreadsheet,"Failed TA. G230L displaced by 11 pix in cross-dispersion and 29.5 A in wavelength. Total radial offset ~1.85"", target well outside aperture. Failed visit"
 le9d1kddq,V-TW-HYA,V-TW-HYA,tech team spreadsheet,"Failed TA. G230L displaced by 11 pix in cross-dispersion and 29.5 A in wavelength. Total radial offset ~1.85"", target well outside aperture. Failed visit"
 le9d1kdfq,V-TW-HYA,V-TW-HYA,tech team spreadsheet,"Failed TA. G230L displaced by 11 pix in cross-dispersion and 29.5 A in wavelength. Total radial offset ~1.85"", target well outside aperture. Failed visit"
@@ -411,575 +1022,41 @@ lepcahkdq,V-TW-HYA,V-TW-HYA,tech team spreadsheet,"Repeat of 1D under HOPR-92200
 lepcahkfq,V-TW-HYA,V-TW-HYA,tech team spreadsheet,"Repeat of 1D under HOPR-92200, bad TA, shutter closed, no data"
 lepcahklq,V-TW-HYA,V-TW-HYA,tech team spreadsheet,"Repeat of 1D under HOPR-92200, bad TA, shutter closed, no data"
 lepcahknq,V-TW-HYA,V-TW-HYA,tech team spreadsheet,"Repeat of 1D under HOPR-92200, bad TA, shutter closed, no data"
-ob6b34010,V-UX-TAU-A,V-UX-TAU-A,stis tts tickets,
-ob6b20010,V-V2129-OPH,V-V2129-OPH,stis tts tickets,not a complete set with FUV
-ob6b20l3q,V-V2129-OPH,V-V2129-OPH,stis tts tickets,not a complete set with FUV
-o5e309030,V-V819-TAU,V-V819-TAU,stis tts tickets,not a complete set with FUV
-o8ns04010,V-V827-TAU,V-V827-TAU,stis tts tickets,guidestar failure
-lepm2doxq,V-WZ-CHA,V-WZ-CHA,tech team spreadsheet,"Alert (unspecified issue) for 2D, TA OK, G130M/1291/FP-POS 4 (lepm2doxq) shuttered but other G130M exposure (lepm2dp5q) looks OK. Investigation requested via JIRA issue: ULLYSES-1431. 83% of total requested exptime with G130M achieves 72% of expected SNR"
-oc2h01010,V-XY-PER,V-XY-PER,stis tts tickets,not a complete set with FUV
-le9i4cchq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
-le9i4ccnq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
-le9i4ccpq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
-le9i4dqiq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
-le9i4dqvq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
-le9i4dr1q,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
-ody203010,VFTS180,VFTS-180,in ARCHIVAL_DATA_HIGH_MASS/DR5/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr5,
-ody211010,VFTS244,VFTS-244,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
-ody213010,VFTS586,VFTS-586,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
-ody217010,VFTS96,VFTS-96,in ARCHIVAL_DATA_HIGH_MASS/DR3/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr3,
-ob6bd9010,SZ-102,SZ-102,stis tts tickets,Failed ACQ
-oec501020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec501040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec502020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec502040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec503020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec503040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec504020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec505020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec506020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec509040,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec54b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec55b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec56b020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec508050,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec509050,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec507030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec506010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec56b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec509030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec55b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec505010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec54b010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec504010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec501010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec501030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec502010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec502030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec503010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec503030,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec509020,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec507010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-oec509010,V-AA-TAU,V-AA-TAU,check for missing data from archive,From a monitoring campaign that uses different settings
-o57z04010,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
-o57z04ymq,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
-o57z04ynq,HD-31293,HD-31293,check for missing data from archive,Herbig Ae Star
-o62n05010,HD152404,V-AK-SCO,check for missing data from archive,Only G230M at this epoch
-oee568010,CE-ANT,V-CE-ANT,check for missing data from archive,Only E230H at this epoch
-o62n01010,DE-TAU,V-DE-TAU,check for missing data from archive,only G230M in this program/MJD
-o59z03020,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
-o59z03030,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
-o59z08020,DF-TAU,V-DF-TAU,check for missing data from archive,only G750L in this program/MJD
-ocd844010,HD283654,V-DF-TAU,check for missing data from archive,Only E230H at this epcoh
-o6md02030,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
-o6md02040,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
-o6md02010,DG-TAU-B,V-DG-TAU,check for missing data from archive,only G750M in this program
-o6bt01030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
-o6bt04010,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
-o6bt03030,HD-104237,HD-104237,check for missing data from archive,only FUV coverage. Already have all data at different epoch for this star
-ld7i06020,HD139614,HD-139614,check for missing data from archive,only G160M at this epoch
-ld7i06010,HD139614,HD-139614,check for missing data from archive,only G160M at this epoch
-ob4590010,HD141569,HD-141569,check for missing data from archive,only E230H at epoch
-o57z03010,HD-163296,HD-163296,check for missing data from archive,only G140M at epoch
-o5fo02010,HD-163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
-o5fo02fnq,HD-163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
-o5fo22b4q,HD163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
-o5fo22010,HD163296,HD-163296,check for missing data from archive,only G750L in this program/MJD
-o59z05020,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
-o59z05030,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
-o59z10020,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
-o59z10030,HN-TAU,V-HN-TAU,check for missing data from archive,only G750L in this program/MJD
-ob2l05010,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
-ob2l05020,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
-ob2l05030,V-HN-TAU,V-HN-TAU,check for missing data from archive,only E230M at this epoch
-o62n04010,HD142560,V-RU-LUP,check for missing data from archive,
-ocd860010,HD240764,V-RW-AUR,check for missing data from archive,only E230H at epoch
-o62n03010,HD240764,V-RW-AUR,check for missing data from archive,only G230M in this program/MJD
-ob2l01010,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l01020,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l01030,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l02010,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l02020,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l02030,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l01040,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l01050,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-ob2l02040,V-RW-AUR,V-RW-AUR,check for missing data from archive,only E230M at this epoch
-o62n07010,HD283571,V-RY-TAU,check for missing data from archive,only G230M in this program/MJD
-ocwf01010,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
-ocwf01020,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
-ocwf01030,V-RY-TAU,V-RY-TAU,check for missing data from archive,only E230M at this epoch
-ldgx9u010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-ldgx9u020,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-ldgxd9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-ldgxd9020,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-ldgxt8010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-ldgxz8010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-odgxc9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-odgxt9010,V-T-CRA,V-T-CRA,check for missing data from archive,He/Be
-ldgx10010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
-ldgx12010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
-odgx11010,V-T-ORI,V-T-ORI,check for missing data from archive,He/Be
-o62n02010,HD284419,V-T-TAU,check for missing data from archive,only G230M in this program/MJD
-o4gm01010,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
-o4gm01020,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
-o4gm01040,T-TAU,V-T-TAU,check for missing data from archive,only G750L in this program/MJD
-ocd857010,CD-34D7151,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o59d01030,V-TW-HYA,V-TW-HYA,Not in vetted directories,
 o64w57030,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 o64w57040,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 o64w57050,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 o64w57060,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 o64w57070,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 o64w57080,TW-HYDRAE,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+o6dq01010,TW-HYA,V-TW-HYA,commented low_mass_stars_archive_CJK_JRD_STIS,
+o6dq01020,TW-HYA,V-TW-HYA,commented low_mass_stars_archive_CJK_JRD_STIS,
+ob6n01010,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 ob6n01020,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01030,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01040,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01050,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
+ob6n01bdq,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 obi101010,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 obi101020,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 obi102010,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 obi102020,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
-ob6n01010,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
-ob6n01030,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
-ob6n01bdq,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
-ob6n01040,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
-ob6n01050,V-TW-HYA,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
-oec631020,2DFS-163,2DFS-163,SNAP data quality check,GSFAIL
-oec643020,AV6,AV-6,SNAP data quality check,GSFAIL
-oec63d020,HV5622,HV-5622,SNAP data quality check,GSFAIL
-oec62h020,LMCX-4,LMCX-4,SNAP data quality check,EXPSHORT; LOCKLOST; TDF-DOWN
-oec62c020,VFTS-190,VFTS-190,SNAP data quality check,GSFAIL
-oec62v020,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
-oec631010,2DFS-163,2DFS-163,SNAP data quality check,GSFAIL
-oec643010,AV6,AV-6,SNAP data quality check,GSFAIL
-oec693010,AV22,AV-22,SNAP data quality check,GSFAIL
-oec693020,AV22,AV-22,SNAP data quality check,GSFAIL
-oec689010,AV362,AV-362,SNAP data quality check,GSFAIL
-oec689020,AV362,AV-362,SNAP data quality check,GSFAIL
-oec60p010,N11-ELS-060,N11-ELS-060,SNAP data quality check,GSFAIL
-oec63d010,HV5622,HV-5622,SNAP data quality check,GSFAIL
-oec62j010,BI184,BI-184,SNAP data quality check,GSFAIL
-oec62h010,LMCX-4,LMCX-4,SNAP data quality check,EXPSHORT; LOCKLOST; TDF-DOWN
-oec62v010,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
-oec61j010,PGMW3120,PGMW-3120,SNAP data quality check,Contaminating star in the slit
-oec61j020,PGMW3120,PGMW-3120,SNAP data quality check,Contaminating star in the slit
-oec62s020,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
-oec62s010,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
-oec655020,AV104,AV-104,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-oec670020,AV210,AV-210,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-oec654020,AV215,AV-215,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-oec63r020,SK-68D8,SK-68D8,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-oec63v020,SK-66D50,SK-66D50,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-oec62g020,SK-67D101,SK-67D101,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-oec63w020,SK-67D207,SK-67D207,SNAP data quality check,Ok data. We are not using the dataset due to a small velocity offset between the G430L exposures that would affect the coadd
-d030030200000,PGMW3120,PGMW-3120,FUSE data quality check,This is actually the star PGMW-3102
-f049010600000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-m717170200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-s405710200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p223010600000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p223010200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-f049010700000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p103010100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-s405710400000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p223010500000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-f049010400000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-x024020200000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-f049011300000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-m717090100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p223010400000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-s405710100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-f049011100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-f049010900000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-m717170100000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-f049010800000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p223010700000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p223010800000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-p223010300000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-s405710300000,HD5980,HD-5980,Initial FUSE data search,Unvetted extra FUSE data
-m114231100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m112260200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133016000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-s505550100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m998330100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-s505550200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133016200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-s405300200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114231000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133018000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133016100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-s405300400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133012300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014800000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-s405300100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m717150100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013000000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010600000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-s405300500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133015400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133011500000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133010400000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m112260100000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133013200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014900000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-a133014200000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114230700000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-s405300300000,Sk_-67166,SK-67D166,Initial FUSE data search,Unvetted extra FUSE data
-m114240100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060200000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026500000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026600000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026800000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060300000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p103060100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026700000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026300000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027000000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027200000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-p117520100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
-p117570100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
-p117550100000,[MPG]_368,NGC346-MPG-368,Initial FUSE data search,Unvetted extra FUSE data
-i811040300000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811042100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i801020400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041600000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811042000000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040700000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041800000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041700000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i801010600000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040900000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040800000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040600000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-s405930100000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i801010500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041000000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i904030200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-p103070400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041900000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-m717160200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811040400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i801021500000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041300000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041200000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-i811041400000,Sk_-6705,SK-67D5,Initial FUSE data search,Unvetted extra FUSE data
-c155021300000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155021100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020700000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-i801090100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155021200000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020300000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155021000000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020400000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020500000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155021400000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020200000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020600000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020800000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-s405540100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-x020010100000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-x020010200000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155020900000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155021500000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-c155021600000,Sk_-67111,SK-67D111,Initial FUSE data search,Unvetted extra FUSE data
-f321010400000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
-f321010100000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
-f321010300000,H53-47,MOA-J010321.3-720538,Initial FUSE data search,Unvetted extra FUSE data
-a123027700000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027400000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123028100000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027600000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123026900000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027500000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027300000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-a123027800000,[M2002]_83750,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-s405390200000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
-m717220100000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
-p117420200000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
-p117420300000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
-s405390300000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
-s405390100000,Sk_-6714,SK-67D14,Initial FUSE data search,Unvetted extra FUSE data
-p117180200000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
-p117180400000,BAT99_105,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
-b086030100000,Sk_-6635,SK-66D35,Initial FUSE data search,Unvetted extra FUSE data
-d153010300000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010100000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010600000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010400000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-d153010200000,SK-67_105,SK-67D105,Initial FUSE data search,Unvetted extra FUSE data
-e511190100000,[M2002]_15830,BI-13,Initial FUSE data search,Unvetted extra FUSE data
-m727660100000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
-m114210100000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
-p117190200000,[M2002]_152366,SK-67D167,Initial FUSE data search,Unvetted extra FUSE data
-d030020100000,[PGMW]_3090,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-s701130100000,[PGMW]_3090,PGMW-3070,Initial FUSE data search,Unvetted extra FUSE data
-d175020100000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
-d175010200000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
-e511420100000,[M2002]_170808,SK-68D137,Initial FUSE data search,Unvetted extra FUSE data
-p117440200000,[M2002]_25077,SK-67D20,Initial FUSE data search,Unvetted extra FUSE data
-c002010100000,[M2002]_38024,AV-177,Initial FUSE data search,Unvetted extra FUSE data
-p103150400000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
-p103150100000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
-p103150200000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
-s405270200000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
-s405270100000,Sk_-7145,SK-71D45,Initial FUSE data search,Unvetted extra FUSE data
-a118020300000,AV_70,AV-70,Initial FUSE data search,Unvetted extra FUSE data
-m114220400000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
-p117340200000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
-m114220100000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
-p117340100000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
-m114220200000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
-m114220300000,[M2002]_134666,SK-67D101,Initial FUSE data search,Unvetted extra FUSE data
-g036010300000,[M2002]_17438,AV-81,Initial FUSE data search,Unvetted extra FUSE data
-g036010100000,[M2002]_17438,AV-81,Initial FUSE data search,Unvetted extra FUSE data
-s405990200000,Sk_-67104,SK-67D104,Initial FUSE data search,Unvetted extra FUSE data
-m112080200000,Sk_-67104,SK-67D104,Initial FUSE data search,Unvetted extra FUSE data
-m112080100000,Sk_-67104,SK-67D104,Initial FUSE data search,Unvetted extra FUSE data
-p117290100000,BI_272,BI-272,Initial FUSE data search,Unvetted extra FUSE data
-a049140200000,Sk_-718,SK-71D8,Initial FUSE data search,Unvetted extra FUSE data
-i812060100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-p203020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-x020020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-i812090100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-i801080100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-i812050100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-x015010200000,AV_332,AV-332,Initial FUSE data search,Unvetted extra FUSE data
-p117560100000,[MPG]_355,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-z912130100000,Sk_-652,SK-65D2,Initial FUSE data search,Unvetted extra FUSE data
-i812070100000,Sk_-70115,SK-70D115,Initial FUSE data search,Unvetted extra FUSE data
-p215020100000,HD38029,HD-38029,Initial FUSE data search,Unvetted extra FUSE data
-e511330100000,[M2002]_135697,SK-67D108,Initial FUSE data search,Unvetted extra FUSE data
-q107010600000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
-q107010100000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
-q107010300000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
-q107010400000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
-q107010200000,[M2002]_71614,AV-456,Initial FUSE data search,Unvetted extra FUSE data
-d138020100000,NGC1818-D1,NGC1818-ROB-D1,Initial FUSE data search,Unvetted extra FUSE data
-h079020100000,HD_33133,SK-66D51,Initial FUSE data search,Unvetted extra FUSE data
-z912240100000,AV506,AV-506,Initial FUSE data search,Unvetted extra FUSE data
-p117170100000,Sk_-6769,SK-67D69,Initial FUSE data search,Unvetted extra FUSE data
-p117160100000,HD_269810,SK-67D211,Initial FUSE data search,Unvetted extra FUSE data
-b010050100000,N11_32,N11-ELS-032,Initial FUSE data search,Unvetted extra FUSE data
-a049010200000,Sk_-6618,SK-66D18,Initial FUSE data search,Unvetted extra FUSE data
-p117310200000,Sk_-67191,SK-67D191,Initial FUSE data search,Unvetted extra FUSE data
-e511120100000,AV480,AV-480,Initial FUSE data search,Unvetted extra FUSE data
-p117410100000,Sk_-6841,SK-68D41,Initial FUSE data search,Unvetted extra FUSE data
-p203050100000,[MPG]_324,NGC346-ELS-007,Initial FUSE data search,Unvetted extra FUSE data
-e511210100000,[M2002]_33780,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
-i801010200000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
-i801010100000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
-d030040200000,LH103204,N11-ELS-048,Initial FUSE data search,unreliaunreliable due to contamination
-p115050500000,[M2002]_19650,AV-95,Initial FUSE data search,Unvetted extra FUSE data
-f907040100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
-f907020100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
-f907010100000,OGLE_-9999,AV-85,Initial FUSE data search,Unvetted extra FUSE data
-p117680100000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
-p117680300000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
-p117680200000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
-p117320100000,[M2002]_137610,BI-173,Initial FUSE data search,Unvetted extra FUSE data
-c002060200000,VFTS_72,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
-p217020100000,BI128,BI-128,Initial FUSE data search,target was removed from the ULLYSES sample in Cycle 28
-c151010900000,HD36521,HD36521,Initial FUSE data search,Unvetted extra FUSE data
-p103140200000,SK-68D80,SK-68D80,Initial FUSE data search,Unvetted extra FUSE data
-c151010600000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-c151010200000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-c151011000000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-c151010800000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-c151010400000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-c151010100000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-c151010300000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-c151010500000,HD36521,HD36521,Initial FUSE data search,c1510107000 was determined to be the best phase match to our STIS data
-p103140300000,SK-68D80,SK-68D80,Initial FUSE data search,Unvetted extra FUSE data
-p117180300000,MK42,BAT99-105,Initial FUSE data search,Unvetted extra FUSE data
-e511310200000,SK-71D26,SK-71D26,Initial FUSE data search,Unvetted extra FUSE data
-b010060100000,PGMW-3209,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
-e511050100000,AV255,AV-255,Initial FUSE data search,Unvetted extra FUSE data
-a0440102000,4U0532-664,LMCX-4,Initial FUSE data search,Unvetted extra FUSE data
-ob6ba3030,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
-ob6ba3z8q,EM-LKCA-15,EM-LKCA-15,"Calibration db vetting for STIS exposures ending in ""Q""",Bad ACQ
-ob6bb7dhq,ECHA-J0843M7915,ECHA-J0843M7915,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb8zrq,EM-LKCA-19,EM-LKCA-19,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc7xrq,EM-LKCA-4,EM-LKCA-4,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc2zqq,RECX-1,RECX-1,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc4ymq,RECX-11,RECX-11,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb9pwq,SZ-102,SZ-102,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b22cwq,TWA-3A,TWA-3A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b22d6q,TWA-3A,TWA-3A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba7z8q,V-AA-TAU,V-AA-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb0toq,V-CE-ANT,V-CE-ANT,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb6r0q,V-CS-CHA,V-CS-CHA,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba8buq,V-DE-TAU,V-DE-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb2y9q,V-DK-TAU,V-DK-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba2ndq,V-DM-TAU,V-DM-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba4ihq,V-DN-TAU,V-DN-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb4g8q,V-DR-TAU,V-DR-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba0r4q,V-FM-TAU,V-FM-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba1w8q,V-GM-AUR,V-GM-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba9qpq,V-HN-TAU,V-HN-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba5e9q,V-IP-TAU,V-IP-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b23b6q,V-MP-MUS,V-MP-MUS,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb5xrq,V-RW-AUR,V-RW-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bb1z8q,V-SU-AUR,V-SU-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6bc6wgq,V-V397-AUR,V-V397-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ob6ba6laq,V-V836-TAU,V-V836-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
-ldmp30u2q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp30u9q,2MASS-J15580815M2405529,2MASS-J15580815M2405529,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp08kaq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp08khq,2MASS-J15584772M1757595,2MASS-J15584772M1757595,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp21e3q,2MASS-J16004277M2127380,2MASS-J16004277M2127380,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp21eaq,2MASS-J16004277M2127380,2MASS-J16004277M2127380,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp22ciq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp22cpq,2MASS-J16010801M2113184,2MASS-J16010801M2113184,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp25ngq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp25nnq,2MASS-J16023910M2542078,2MASS-J16023910M2542078,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp26paq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp26pqq,2MASS-J16025123M2401574,2MASS-J16025123M2401574,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp02lvq,2MASS-J16025243M2402226,2MASS-J16025243M2402226,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp02m2q,2MASS-J16025243M2402226,2MASS-J16025243M2402226,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp17dpq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp17dwq,2MASS-J16025396M2022480,2MASS-J16025396M2022480,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp20p6q,2MASS-J16061254M2036472,2MASS-J16061254M2036472,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp20pdq,2MASS-J16061254M2036472,2MASS-J16061254M2036472,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp09dyq,2MASS-J16081474M1908327,2MASS-J16081474M1908327,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp09e5q,2MASS-J16081474M1908327,2MASS-J16081474M1908327,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp18irq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp18iyq,2MASS-J16085673M2033460,2MASS-J16085673M2033460,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp15z8q,2MASS-J16130271M2257446,2MASS-J16130271M2257446,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp15zfq,2MASS-J16130271M2257446,2MASS-J16130271M2257446,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp10n5q,2MASS-J16132929M2311075,2MASS-J16132929M2311075,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp10ndq,2MASS-J16132929M2311075,2MASS-J16132929M2311075,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp13kmq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp13ktq,2MASS-J16193396M2228294,2MASS-J16193396M2228294,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp29brq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp29byq,2MASS-J16230783M2300596,2MASS-J16230783M2300596,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp23slq,BD-18-4244,BD-18-4244,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp23stq,BD-18-4244,BD-18-4244,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp06g7q,BD-21-4301,BD-21-4301,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp06gfq,BD-21-4301,BD-21-4301,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp04dmq,CD-22-11315,CD-22-11315,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp04dtq,CD-22-11315,CD-22-11315,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp01hzq,CD-25-11113,CD-25-11113,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp01i1q,CD-25-11113,CD-25-11113,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp19j3q,GSC-06208-00834,GSC-06208-00834,Not in vetted directories,Not full coverage. Only COS/1222
-ldmp19jaq,GSC-06208-00834,GSC-06208-00834,Not in vetted directories,Not full coverage. Only COS/1222
-oc2h05020,HD-139614,HD-139614,Not in vetted directories,Bad data
-oc2h05030,HD-139614,HD-139614,Not in vetted directories,Bad data
-o4xn04040,HD-163296,HD-163296,Not in vetted directories,Bad data
-ldhf1aycq,IC1613-BUG-C10,IC1613-BUG-C10,Not in vetted directories,Bad data
-ldhf1bdpq,IC1613-BUG-C10,IC1613-BUG-C10,Not in vetted directories,Bad data
-le4s04dbq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
-le4s04dqq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
-le4s04dsq,IC1613-GHV-STAR-64066,IC1613-GHV-STAR-64066,Not in vetted directories,Bad data
-le4s11eaq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
-le4s11ecq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
-le4s11eeq,IC1613-GHV-STAR-67559,IC1613-GHV-STAR-67559,Not in vetted directories,Bad data
-le5b03n7q,J095927P304457,J095927P304457,Not in vetted directories,Bad data
-ody238010,NGC346-MPG-435,NGC346-MPG-435,Not in vetted directories,Bad data
-ob6bc9030,TWA-2,TWA-2,Not in vetted directories,Not full coverage (no COS)
-lb4p01rtq,TWA-27,TWA-27,Not in vetted directories,Bad data
-lb4p01rvq,TWA-27,TWA-27,Not in vetted directories,Bad data
-lb4p01rxq,TWA-27,TWA-27,Not in vetted directories,Bad data
-lb4p01s1q,TWA-27,TWA-27,Not in vetted directories,Bad data
-oc0m01010,V-AB-AUR,V-AB-AUR,Not in vetted directories,He/Be
-o5kc01030,V-DF-TAU,V-DF-TAU,Not in vetted directories,unsupported mode
-lbgj02trq,V-RU-LUP,V-RU-LUP,Not in vetted directories,
-lb6b15x8q,V-RW-AUR,V-RW-AUR,Not in vetted directories,
-o5b403020,V-T-CHA,V-T-CHA,Not in vetted directories,He/Be
-o5b403030,V-T-CHA,V-T-CHA,Not in vetted directories,
-o5b403050,V-T-CHA,V-T-CHA,Not in vetted directories,
-ldgx08j2q,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgx08j4q,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgx08j6q,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgx08j8q,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgxa9jkq,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgxa9jmq,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgxa9joq,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgxa9jqq,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgxa9jsq,V-T-CRA,V-T-CRA,Not in vetted directories,
-ldgxa9juq,V-T-CRA,V-T-CRA,Not in vetted directories,
-lc2h09tdq,V-T-ORI,V-T-ORI,Not in vetted directories,Herbig/Ae
-lc2h09tfq,V-T-ORI,V-T-ORI,Not in vetted directories,
-lc2h09thq,V-T-ORI,V-T-ORI,Not in vetted directories,
-lc2h09tjq,V-T-ORI,V-T-ORI,Not in vetted directories,
-lc2h09t5q,V-T-ORI,V-T-ORI,Not in vetted directories,
-lc2h09t7q,V-T-ORI,V-T-ORI,Not in vetted directories,
-lc2h09t9q,V-T-ORI,V-T-ORI,Not in vetted directories,
-lc2h09tbq,V-T-ORI,V-T-ORI,Not in vetted directories,
-lc2h09tlq,V-T-ORI,V-T-ORI,Not in vetted directories,
+ocd857010,CD-34D7151,V-TW-HYA,check for missing data from archive,no complete coverage at these epochs
 lb6b13qwq,V-UX-TAU-A,V-UX-TAU-A,Not in vetted directories,Bad data
 lb6b53sdq,V-UX-TAU-A,V-UX-TAU-A,Not in vetted directories,Bad data
+ob6b34010,V-UX-TAU-A,V-UX-TAU-A,stis tts tickets,
+ob6b34r7q,V-UX-TAU-A,V-UX-TAU-A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+ob6b54spq,V-UX-TAU-A,V-UX-TAU-A,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 lbh208bsq,V-UZ-TAU-E,V-UZ-TAU-E,Not in vetted directories,Bad data
 lbh209u2q,V-UZ-TAU-E,V-UZ-TAU-E,Not in vetted directories,Bad data
-lc2h10nmq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
-lc2h10npq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
-lc2h10nrq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
-lc2h10ntq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
 lc2h10ncq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
 lc2h10neq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
 lc2h10ngq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
 lc2h10niq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10nmq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10npq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10nrq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
+lc2h10ntq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
 lc2h10nvq,V-V-SER,V-V-SER,Not in vetted directories,B star eclisping binary
 ldmp14xkq,V-V1000-SCO,V-V1000-SCO,Not in vetted directories,Bad data
 ldmp14xrq,V-V1000-SCO,V-V1000-SCO,Not in vetted directories,Bad data
@@ -987,11 +1064,14 @@ ldmp11xpq,V-V1152-SCO,V-V1152-SCO,Not in vetted directories,BY DRA variable
 ldmp11xwq,V-V1152-SCO,V-V1152-SCO,Not in vetted directories,BY DRA variable
 ldmp12ifq,V-V1156-SCO,V-V1156-SCO,Not in vetted directories,BY DRA variable
 ldmp12imq,V-V1156-SCO,V-V1156-SCO,Not in vetted directories,BY DRA variable
+ob6b20010,V-V2129-OPH,V-V2129-OPH,stis tts tickets,not a complete set with FUV
+ob6b20030,V-V2129-OPH,V-V2129-OPH,Not in vetted directories,
 ob6b20040,V-V2129-OPH,V-V2129-OPH,Not in vetted directories,Bad data
 ob6b20050,V-V2129-OPH,V-V2129-OPH,Not in vetted directories,
-ob6b20030,V-V2129-OPH,V-V2129-OPH,Not in vetted directories,
+ob6b20l3q,V-V2129-OPH,V-V2129-OPH,stis tts tickets,not a complete set with FUV
 ldmp16cuq,V-V2505-OPH,V-V2505-OPH,Not in vetted directories,BY DRA variable
 ldmp16d1q,V-V2505-OPH,V-V2505-OPH,Not in vetted directories,BY DRA variable
+ob6bc6wgq,V-V397-AUR,V-V397-AUR,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
 lb3q01k0q,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
 lb3q01k2q,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
 lb3q01k5q,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
@@ -1000,109 +1080,29 @@ lb3q01kbq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectr
 lb3q01laq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
 lb3q01mbq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
 lb3q01meq,V-V4046-SGR,V-V4046-SGR,Not in vetted directories,main sequence spectroscopic binary.
-o5e309010,V-V819-TAU,V-V819-TAU,Not in vetted directories,Bad data
-o5e309020,V-V819-TAU,V-V819-TAU,Not in vetted directories,
-o5e309040,V-V819-TAU,V-V819-TAU,Not in vetted directories,
-o5e309050,V-V819-TAU,V-V819-TAU,Not in vetted directories,
 o5cf04010,V-V819-TAU,V-V819-TAU,Not in vetted directories,
 o5cf04020,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o5e309010,V-V819-TAU,V-V819-TAU,Not in vetted directories,Bad data
+o5e309020,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o5e309030,V-V819-TAU,V-V819-TAU,stis tts tickets,not a complete set with FUV
+o5e309040,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o5e309050,V-V819-TAU,V-V819-TAU,Not in vetted directories,
+o8ns04010,V-V827-TAU,V-V827-TAU,stis tts tickets,guidestar failure
+o8ns04020,V-V827-TAU,V-V827-TAU,Discovered when trying to create HLSPs,Exposure time is 0s
+ob6ba6laq,V-V836-TAU,V-V836-TAU,"Calibration db vetting for STIS exposures ending in ""Q""","Does not have an association b/c wavecal=no. Should be able to extract, but no time to make custom cal"
+lepm2doxq,V-WZ-CHA,V-WZ-CHA,tech team spreadsheet,"Alert (unspecified issue) for 2D, TA OK, G130M/1291/FP-POS 4 (lepm2doxq) shuttered but other G130M exposure (lepm2dp5q) looks OK. Investigation requested via JIRA issue: ULLYSES-1431. 83% of total requested exptime with G130M achieves 72% of expected SNR"
+oc2h01010,V-XY-PER,V-XY-PER,stis tts tickets,not a complete set with FUV
 oc2h01020,V-XY-PER,V-XY-PER,Not in vetted directories,He/Be
 oc2h01030,V-XY-PER,V-XY-PER,Not in vetted directories,He/Be
-le4s12raq,SEXTANS-A-LGN-S022,SEXTANS-A-LGN-S022,Not in vetted directories,Bad data
-le4s18h4q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,Not in vetted directories,Bad data
-le4s18h8q,SEXTANS-A-LGN-S050,SEXTANS-A-LGN-S050,Not in vetted directories,Bad data
-odke01020,SZ-102,SZ-102,Not in vetted directories,Bad data
-odke01030,SZ-102,SZ-102,Not in vetted directories,Bad data
-o5e307010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
-o5e307020,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
-o5e307040,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
-o5e307050,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
-o5e307060,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
-o8nz11010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
-o8nz11020,V-DG-TAU,V-DG-TAU,Not in vetted directories,Bad data
-odgx09010,V-T-CRA,V-T-CRA,Not in vetted directories,He/Be. Exclude
-ob6bd9020,SZ-102,SZ-102,Not in vetted directories,bad data
-o59d01030,V-TW-HYA,V-TW-HYA,Not in vetted directories,
-ocmi01070,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01080,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01090,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi010a0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o6cv02010,V-SU-AUR,V-SU-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk71a010,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk71a040,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk72a010,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk72a040,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk73a010,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk73a040,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01020,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01030,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi010b0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi010c0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi010d0,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk71a020,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk71a050,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk72a020,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk72a050,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk73a020,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-odk73a050,V-T-CHA,V-T-CHA,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01010,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01020,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01030,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01040,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01050,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01060,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01070,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o4mp01080,DGTAU,DGTAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o6md03010,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01040,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01050,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ocmi01060,V-DG-TAU,V-DG-TAU,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o8e002020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o8e002030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b01010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b01020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b01030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b03010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b03020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b03030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b04010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b04020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b04030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b05010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b05020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b05030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b06010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b06020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b06030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b07010,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b07020,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-oe7b07030,V-GM-AUR,V-GM-AUR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o5b403010,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
-o5b403040,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
-o5b404010,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
-o5b404020,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
-o5b404030,T-CHA,V-T-CHA,commented in low_mass_stars_archive_CJK_JRD_STIS.csv,
-o675030b0,NGC346-LR,NGC346-LR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-o675030c0,NGC346-LR,NGC346-LR,Not in vetted directories,Unvetted extra archival data that matches another target in our sample
-ob3r03050,V-DM-TAU,V-DM-TAU,Final vetting for DR7,Offset in wavelength compared to the other 4 spectra
-oef1bs010,SK-68D8,SK-68D8,Discovered when trying to create HLSPs,Exposure time is 0s
-oef12s020,SK-68D8,SK-68D8,Discovered when trying to create HLSPs,Exposure time is 0s
-oesras010,SZ-114,SZ-114,Discovered when trying to create HLSPs,Exposure time is 0s
-oesr1s010,SZ-114,SZ-114,Discovered when trying to create HLSPs,Exposure time is 0s
-oepkas010,RX-J0438P1546,RX-J0438P1546,Discovered when trying to create HLSPs,Exposure time is 0s
-oesr2t030,SZ-115,SZ-115,Discovered when trying to create HLSPs,Exposure time is 0s
-oesr2t010,SZ-115,SZ-115,Discovered when trying to create HLSPs,Exposure time is 0s
-oesr2t020,SZ-115,SZ-115,Discovered when trying to create HLSPs,Exposure time is 0s
-oe9s2s030,PGMW-1363,PGMW-1363,Discovered when trying to create HLSPs,Exposure time is 0s
-oe9sbs020,PGMW-1363,PGMW-1363,Discovered when trying to create HLSPs,Exposure time is 0s
-oe9s2s020,PGMW-1363,PGMW-1363,Discovered when trying to create HLSPs,Exposure time is 0s
-oeim4s010,SZ-76,SZ-76,Discovered when trying to create HLSPs,Exposure time is 0s
-oemu3s010,AV-343,AV-343,Discovered when trying to create HLSPs,Exposure time is 0s
-oejv2s010,AV-264,AV-264,Discovered when trying to create HLSPs,Exposure time is 0s
-of2c1s010,AV-238,AV-238,Discovered when trying to create HLSPs,Exposure time is 0s
-oeua1s010,NGC346-MPG-435,NGC346-MPG-435,Discovered when trying to create HLSPs,Exposure time is 0s
-oemu2s010,AV-314,AV-314,Discovered when trying to create HLSPs,Exposure time is 0s
-o8ns04020,V-V827-TAU,V-V827-TAU,Discovered when trying to create HLSPs,Exposure time is 0s
-o63l07010,FU-ORI,V-FU-ORI,Final vetting for DR7,not complete coverage
-o63l07020,FU-ORI,V-FU-ORI,Final vetting for DR7,not complete coverage
+le9i4cchq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
+le9i4ccnq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
+le9i4ccpq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
+le9i4dqiq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
+le9i4dqvq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
+le9i4dr1q,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
+ody203010,VFTS180,VFTS-180,in ARCHIVAL_DATA_HIGH_MASS/DR5/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr5,
+oec62c020,VFTS-190,VFTS-190,SNAP data quality check,GSFAIL
+ody211010,VFTS244,VFTS-244,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+ody213010,VFTS586,VFTS-586,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
+c002060200000,VFTS_72,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
+ody217010,VFTS96,VFTS-96,in ARCHIVAL_DATA_HIGH_MASS/DR3/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr3,
