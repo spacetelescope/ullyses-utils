@@ -1,7 +1,7 @@
 infile: oe9k1s020_flt.fits
 force_dq16: False 
 targets:
-  GAIA-DR3-3217634157789741952:
+  HARO-5-64B:
     coords:
       ra: 83.02660499856
       dec: -1.18336721131
