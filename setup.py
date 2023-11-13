@@ -28,6 +28,7 @@ setup(
 								      "data/target_metadata/*",
 								      "data/vignette_scaling/*",
 								      "data/fuse/*",
+								      "data/calibration_metadata/*",
 								      "data/timeseries/*"
 									]},
     install_requires = ["setuptools",

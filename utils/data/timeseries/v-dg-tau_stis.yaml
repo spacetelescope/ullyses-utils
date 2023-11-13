@@ -13,7 +13,7 @@ observatory: hst # This is a single value
 instrument: stis # This is a single value
 gratings: # This is a list
     - g430l
-    - g750l
+    - g750m
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:

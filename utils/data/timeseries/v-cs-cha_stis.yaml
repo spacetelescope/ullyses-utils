@@ -11,11 +11,7 @@ exp_tss: True
 observatory: hst # This is a single value
 instrument: stis # This is a single value
 gratings: # This is a list
-    - g140l
-    - g230l
-    - e230m
     - g430l
-    - g750l
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
@@ -39,12 +35,7 @@ bins: null
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
     - ob6bb6010
-    - ob6bb6030
-    - ob6bb6r0q
-    - oclv01010
     - oclv01030
-    - oclv01040
-    - oclv01050
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
