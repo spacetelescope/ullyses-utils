@@ -49,8 +49,8 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, singl
 
     all_regions = ["smc-extra", "smc", "lmc-extra", "lmc", "lowz-extra", "lowz-image",
                    "lowz", "monitoring_tts", "cha i", "cra", "eps cha", "eta cha",
-                   "lupus", "ori ob", "sigma ori", "taurus", "twa", "lower centaurus",
-                   "upper scorpius", "other"]
+                   "lambda ori", "lupus", "ori ob", "sigma ori", "taurus", "twa",
+                   "lower centaurus", "upper scorpius", "other"]
 
 
     ## establish which of the regions should be searched over based on inputs
@@ -70,8 +70,8 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, singl
 
         # TTS?
         if tts is True:
-            search_regions.extend(["cha i", "cra", "eps cha", "eta cha", "lupus",
-                                   "ori ob", "sigma ori", "taurus", "twa",
+            search_regions.extend(["cha i", "cra", "eps cha", "eta cha", "lambda ori",
+                                   "lupus", "ori ob", "sigma ori", "taurus", "twa",
                                    "lower centaurus", "upper scorpius", "other"])
             # Monitoring TTS?
             if monitoring is True:
@@ -112,7 +112,7 @@ def select_pids(selected_region, single_list=True):
             "lowz-extra", "lowz-image", "lowz",
             "monitoring_tts",
             "cha i", "cra", "eps cha", "eta cha", "lupus", "ori ob", "sigma ori",
-              "taurus", "twa", "lower centaurus", "upper scorpius", "other"
+              "taurus", "twa", "lower centaurus", "upper scorpius", "other", "lambda ori"
     single_list : Boolean
       True by default. If true, a list of pids for the specified region is returned.
       If false, two lists of pids are returned; one is only the ULLYSES observed
@@ -134,7 +134,7 @@ def select_pids(selected_region, single_list=True):
 
     if "smc-extra" in selected_region:
         ar_pids = ['7437', '9116', '9412', '11625', '12978', '13778', '15629',
-                   '15837'] # archival
+                   '15837', '16647'] # archival
         ull_pids = [] # ULLYSES
     elif "smc" in selected_region:
         ar_pids = ['7437', '7480', '8145', '8566', '9094', '9116', '9383', '9434',
@@ -148,7 +148,8 @@ def select_pids(selected_region, single_list=True):
                     '16805', '16806', '16807', '16808', '16809', '17295'] # ULLYSES
     elif "lmc-extra" in selected_region:
         ar_pids = ['7299', '9434', '11692', '12581', '13806', '13780', '13781',
-                   '14081', '14675', '14683', '15629', '16272', '17074'] # archival
+                   '14081', '14246', '14675', '14683', '14712', '15629', '16272',
+                   '17074', '17279'] # archival
         ull_pids = [] # ULLYSES
     elif "lmc" in selected_region:
         ar_pids = ['7299', '7392', '8320', '8662', '9434', '9757', '12218', '12581',
@@ -169,8 +170,8 @@ def select_pids(selected_region, single_list=True):
         ar_pids = [] # archival
         ull_pids = ['16511', '16930'] # ULLYSES
     elif "monitoring_tts" in selected_region:
-        ar_pids = ['8157', '9374', '11608', '11616', '13775', '14048', '15165',
-                   '16010'] # archival
+        ar_pids = ['8157', '9081', '9374', '11608', '11616', '12315', '13775',
+                   '14048', '15204', '15165', '16010'] # archival
         ull_pids = ['16107', '16108', '16109', '16110', '16478', '16589',
                     '16590', '16591', '16592'] # ULLYSES
     elif selected_region == 'cha i':
@@ -180,7 +181,7 @@ def select_pids(selected_region, single_list=True):
         ar_pids = [] # archival
         ull_pids = ['16859'] # ULLYSES
     elif selected_region == 'eps cha':
-        ar_pids = ['9241', '11616'] # archival
+        ar_pids = ['9241', '15128', '11616'] # archival
         ull_pids = ['16599'] # ULLYSES
     elif selected_region == 'eta cha':
         ar_pids = ['11616', '12876'] # archival
@@ -197,9 +198,10 @@ def select_pids(selected_region, single_list=True):
         ar_pids = [] # archival
         ull_pids = ['16113', '16594'] # ULLYSES
     elif selected_region == 'taurus':
-        ar_pids = ['7718', '8206', '8157', '8238', '8627', '9081', '9093', '9374',
-                   '9435', '9790', '11533', '11608', '11616', '11660', '12036',
-                   '12161', '12199', '12876', '12907', '13714', '13766', '15070'] # archival
+        ar_pids = ['7718', '8206', '8157', '8238', '8316', '8317', '8627', '9081',
+                   '9093', '9374', '9435', '9785', '9790', '11533', '11608', '11616',
+                   '11660', '12036', '12161', '12199', '12876', '12907', '13714',
+                   '13766', '15070', '17176'] # archival
         ull_pids = ['16593'] # ULLYSES
     elif selected_region == 'twa':
         ar_pids = ['8041', '9093', '9841', '11608', '11531', '11616', '15204'] # archival
@@ -208,10 +210,13 @@ def select_pids(selected_region, single_list=True):
         ar_pids = ['11616'] # archival
         ull_pids = [] # ULLYSES
     elif selected_region == 'upper scorpius':
-        ar_pids = ['15310'] # archival
+        ar_pids = ['13372', '15310', '16290'] # archival
+        ull_pids = [] # ULLYSES
+    elif selected_region == 'lambda ori':
+        ar_pids = ['8317', '12996', '15070'] # archival
         ull_pids = [] # ULLYSES
     elif selected_region == 'other':
-        ar_pids = ['12996', '13032'] # archival
+        ar_pids = ['7565', '8801', '11828', '12996', '13032', '14690'] # archival
         ull_pids = [] # ULLYSES
     else:
         print('Region not recognized:', selected_region)
