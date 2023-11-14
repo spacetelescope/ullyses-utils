@@ -1,6 +1,7 @@
-# The name of this file should be the *ULLYSES DP TARGET NAME IN LOWERCASE*!!!
+# The name of this file should be the *ULLYSES HLSP TARGET NAME IN LOWERCASE*!!!
 # plus the instrument used for this data *also in lowercase*!
-# E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
+# It should follow the format {targname}_{instrument}.yaml
+# E.g. for the TW Hydra COS data, the file name should be v-tw-hya_cos.yaml
 
 # True if sub-exposure timeseries be created
 sub_exp_tss: False
@@ -41,14 +42,8 @@ bins:
             wave: 1
             min_exptime: 8
 
-# We have two ways of indicating which exact exposures should be turned into a
-# timeseries: we can either specify which files to use, or which files *NOT*
-# to use. For monitoring stars, it's easier to do the latter, but for
-# serendipitous TSS, it's easier to do the former.
-#
-# If you want to specify the list of exposure *TO USE*, list them below with the
-# good_files variable. Otherwise set good_files to None by using:
-# good_files: null
+# You *MUST* specify all files to be included in the timeseries for the 
+# gratings listed above.
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
@@ -68,15 +63,16 @@ good_files:
 # If you want to specify the list of exposures *NOT TO USE*, list them below
 # with the bad_files variable. Otherwise set bad_files to None by using
 # bad_files: null
+# Please list in a comment after the identifier why the file(s) should not be used.
 #
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 bad_files:
-    - le9d1k
-    - lepc1d
+    - le9d1k # failed target acq
+    - lepc1d # failed target acq
     - lepc1g # exptime=0
-    - lepc1h
-    - lepcad
+    - lepc1h # failed target acq
+    - lepcad # failed target acq
     - lepcah # exptime=0
 
 

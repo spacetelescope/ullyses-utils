@@ -1,0 +1,77 @@
+# The name of this file should be the *ULLYSES HLSP TARGET NAME IN LOWERCASE*!!!
+# plus the instrument used for this data *also in lowercase*!
+# It should follow the format {targname}_{instrument}.yaml
+# E.g. for the TW Hydra COS data, the file name should be v-tw-hya_cos.yaml
+
+# True if sub-exposure timeseries be created
+sub_exp_tss: False
+# True if exposure timeseries be created
+exp_tss: True
+
+# Provide the observing configuration
+observatory: hst # This is a single value
+instrument: stis # This is a single value
+gratings: # This is a list
+    - g140l
+    - g230l
+    - g430l
+    - g750l
+
+# If no subexposure TSS are being created, you may leave the section below
+# with default values or you may set bins equal to None by using:
+# bins: null
+#
+# If subexposure TSS are being created, specify the time and wavelength binning. 
+# Separated by IPPP identifiers so different bins can be used for different
+# epochs
+bins: null
+
+# You *MUST* specify all files to be included in the timeseries for the 
+# gratings listed above.
+#
+# You may specify either IPPPSS or IPPPSSOOT identifiers.
+# You MUST use a dash+space, which tells yaml the value is actually part of a list.
+good_files:
+    - ob3r04040
+    - ob3r05040
+    - ob3r06040
+    - ocsn01040
+    - ocsn02040
+    - odkd01040
+    - odkd02040
+    - odkd03040
+    - ocsn01020
+    - ocsn02020
+    - odkd01020
+    - odkd02020
+    - odkd03020
+    - ob3r04050
+    - ob3r05050
+    - ob3r06050
+    - ocsn01050
+    - ocsn02050
+    - odkd01050
+    - odkd02050
+    - odkd03050
+    - ocsn01010
+    - ocsn02010
+    - odkd01010
+    - odkd02010
+    - odkd03010
+
+
+# If you want to specify the list of exposures *NOT TO USE*, list them below
+# with the bad_files variable. Otherwise set bad_files to None by using
+# bad_files: null
+# Please list in a comment after the identifier why the file(s) should not be used.
+#
+# You may specify either IPPPSS or IPPPSSOOT identifiers.
+# You MUST use a dash+space, which tells yaml the value is actually part of a list.
+bad_files: null
+
+
+# List of IPPPSS identifiers, if any, that require wavelength offset correction,
+# and the accompanying wavelength shift file locations.
+# If no files require a shift, you can set wavelength_shift to None by using:
+# wavelength_shift: null
+wavelength_shift: null

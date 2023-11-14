@@ -1,0 +1,109 @@
+# The name of this file should be the *ULLYSES DP TARGET NAME IN LOWERCASE*!!!
+# plus the instrument used for this data *also in lowercase*!
+# E.g. for the TW Hydra COS data, the file name should be v-tw-hya-cos.yaml
+
+# True if sub-exposure timeseries be created
+sub_exp_tss: True
+# True if exposure timeseries be created
+exp_tss: True
+
+# Provide the observing configuration
+observatory: hst # This is a single value
+instrument: cos # This is a single value
+gratings: # This is a list
+    - g130m
+    - g160m
+    - g230l
+
+# If no subexposure TSS are being created, you may leave the section below
+# with default values or you may set bins equal to None by using:
+# bins: null
+#
+# If subexposure TSS are being created, specify the time and wavelength binning. 
+# Separated by IPPP identifiers so different bins can be used for different
+# epochs
+bins:
+    lejp:
+        g160m:
+            time: 30 # exptime is 128s
+            wave: 6
+            min_exptime: 20
+        g230l:
+            time: 10 # exptime is 196s
+            wave: 1
+            min_exptime: 8
+    lepd:
+        g160m:
+            time: 30 # exptime is 128s
+            wave: 6
+            min_exptime: 20
+        g230l:
+            time: 10 # exptime is 196s
+            wave: 1
+            min_exptime: 8
+
+
+# We have two ways of indicating which exact exposures should be turned into a
+# timeseries: we can either specify which files to use, or which files *NOT*
+# to use. For monitoring stars, it's easier to do the latter, but for
+# serendipitous TSS, it's easier to do the former.
+#
+# If you want to specify the list of exposure *TO USE*, list them below with the
+# good_files variable. Otherwise set good_files to None by using:
+# good_files: null
+#
+# You may specify either IPPPSS or IPPPSSOOT identifiers.
+# You MUST use a dash+space, which tells yaml the value is actually part of a list.
+good_files:
+    - lejp1c
+    - lejp1d
+    - lejp1e
+    - lejp1f
+    - lejp1g
+    - lejp1h
+    - lejp1i
+    - lejp1j
+    - lejp1k
+    - lejp1l
+    - lejp1m
+    - lejp1n
+    - lepd1c
+    - lepd1d
+    - lepd1e
+    - lepd1f
+    - lepd1ha1q
+    - lepd1hzqq
+    - lepd1hzwq
+    - lepd1ha4q
+    - lepd1hzyq
+    - lepd1i
+    - lepd1j
+    - lepd1k
+    - lepd1l
+    - lepd1m
+    - lepd1n
+    - lepdag
+    - lbgj01zjq
+    - lbgj01zmq
+    - lbgj01zrq
+    - lbgj01zuq
+    - lbgj01z5q
+    - lbgj01z7q
+    - lbgj01zbq
+    - lbgj01zdq
+
+# If you want to specify the list of exposures *NOT TO USE*, list them below
+# with the bad_files variable. Otherwise set bad_files to None by using
+# bad_files: null
+#
+# You may specify either IPPPSS or IPPPSSOOT identifiers.      
+# You MUST use a dash+space, which tells yaml the value is actually part of a list.
+bad_files:
+    - lepd1g     # Failed TA, no data
+    - lepd1hzsq  # Failed TA, but observations appear successful; this exp has a large wavelength shift so excluding
+
+# List of IPPPSS identifiers, if any, that require wavelength offset correction,
+# and the accompanying wavelength shift file locations.
+# If no files require a shift, you can set wavelength_shift to None by using:
+# wavelength_shift: null
+wavelength_shift: null 
