@@ -160,8 +160,8 @@ def select_pids(selected_region, single_list=True):
                     '16817', '16818', '16819', '16820', '16821', '16822', '16823',
                     '16824', '16825', '16826', '17296'] # ULLYSES
     elif "lowz-extra" in selected_region:
-        ar_pids = ['8662', '12587', '12867', '14245', '15156', '15880', '15921',
-                   '15967', '16717', '16767', '16920'] # archival
+        ar_pids = ['8662', '12587', '12867', '14245', '15156', '15824', '15880',
+                   '15921', '15967', '16717', '16767', '16920'] # archival
         ull_pids = [] # ULLYSES
     elif "lowz-image" in selected_region:
         ar_pids = [] # archival
@@ -176,7 +176,7 @@ def select_pids(selected_region, single_list=True):
                     '16590', '16591', '16592'] # ULLYSES
     elif selected_region == 'cha i':
         ar_pids = ['11616', '16478', '13775', '14193'] # archival
-        ull_pids = ['16481', '16482', '16597', '16598'] # ULLYSES
+        ull_pids = ['16481', '16482', '16596', '16597', '16598'] # ULLYSES
     elif selected_region == 'cra':
         ar_pids = [] # archival
         ull_pids = ['16859'] # ULLYSES
