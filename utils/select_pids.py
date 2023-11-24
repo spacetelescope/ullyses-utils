@@ -148,8 +148,8 @@ def select_pids(selected_region, single_list=True):
                     '16805', '16806', '16807', '16808', '16809', '17295'] # ULLYSES
     elif "lmc-extra" in selected_region:
         ar_pids = ['7299', '9434', '11692', '12581', '13806', '13780', '13781',
-                   '14081', '14246', '14675', '14683', '14712', '15629', '16272',
-                   '17074', '17279'] # archival
+                   '14081', '14246', '14675', '14683', '14712', '15629', '15824',
+                   '16272', '17074', '17279'] # archival
         ull_pids = [] # ULLYSES
     elif "lmc" in selected_region:
         ar_pids = ['7299', '7392', '8320', '8662', '9434', '9757', '12218', '12581',
@@ -160,8 +160,8 @@ def select_pids(selected_region, single_list=True):
                     '16817', '16818', '16819', '16820', '16821', '16822', '16823',
                     '16824', '16825', '16826', '17296'] # ULLYSES
     elif "lowz-extra" in selected_region:
-        ar_pids = ['8662', '12587', '12867', '14245', '15156', '15824', '15880',
-                   '15921', '15967', '16717', '16767', '16920'] # archival
+        ar_pids = ['8662', '12587', '12867', '14245', '15156', '15880', '15921',
+                   '15967', '16717', '16767', '16920'] # archival
         ull_pids = [] # ULLYSES
     elif "lowz-image" in selected_region:
         ar_pids = [] # archival
