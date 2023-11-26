@@ -21,10 +21,19 @@ where `<version>` is the version of the ullyses-utils package you desire.
 
 ## Usage
 
-To use the utility scripts, the module need only be imported and run:
+### Utility Scripts
+This repo houses several utility scripts that are needed to creates ULLYSES HLSPs. Most are specific to this purpose, but some may be generally useful: specific functions in such scripts are described below.
+
+**`match_aliases.match_aliases`**
+
+Given an input target name, an attempt is made to match it to any aliases in the ULLYSES sample.
+
 ```
-from ullyses_utils import ullyses_config
+from match_aliases import match_aliases
+match_aliases("BAT99 105")
 ```
+
+### Utility data files
 
 To use the utility data files, the package should be imported and then relative paths can be determined from your local installation.
 For example, if you wish to reference the ULLYSES target alias file, you would do so like this:
