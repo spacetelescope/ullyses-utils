@@ -2,7 +2,7 @@ force_dq16: true
 infile:
   o8ns09010_crj.fits:
     targets:
-      v-v1154-sco-a:
+      v-v1154-sco:
         do_defringe: false
         x1d:
           b_bkg1: null
