@@ -13,16 +13,3 @@ infile:
           maxsrch: null
           xoffset: null
           yloc: null
-  ob6bd9010_crj.fits:
-    targets:
-      SZ-102:
-        do_defringe: false
-        x1d:
-          b_bkg1: null
-          b_bkg2: null
-          b_hgt1: null
-          b_hgt2: null
-          height: null
-          maxsrch: 10
-          xoffset: null
-          yloc: 510.0
