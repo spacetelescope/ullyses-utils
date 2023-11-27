@@ -27,10 +27,13 @@ This repo houses several utility scripts that are needed to creates ULLYSES HLSP
 **`match_aliases.match_aliases`**
 
 Given an input target name, an attempt is made to match it to any aliases in the ULLYSES sample.
+By default, this returns the matched HLSP name, which is the target name used in ULLYSES products. You may alternatively specify that the ULLYSES name (generally recognized target name, with special characters) or the SIMBAD name (target name resolvable by SIMBAD) be returned instead.
 
 ```
 from match_aliases import match_aliases
 match_aliases("BAT99 105")
+match_aliases("BAT99 105", return_name="target_name_ullyses")
+match_aliases("BAT99 105", return_name="target_name_simbad")
 ```
 
 ### Utility data files
