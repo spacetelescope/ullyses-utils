@@ -1122,3 +1122,5 @@ ody211010,VFTS244,VFTS-244,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and n
 ody213010,VFTS586,VFTS-586,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 c002060200000,VFTS_72,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
 ody217010,VFTS96,VFTS-96,in ARCHIVAL_DATA_HIGH_MASS/DR3/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr3,
+ob6bd9010,SZ102,SZ-102,CCD & STIS custom cal check,GS failure led to ACQ failure
+lepd1hzsq,V-BP-TAU,V-BP-TAU,Data checks,Possible bad target centering
