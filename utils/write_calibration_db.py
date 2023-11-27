@@ -245,7 +245,7 @@ def check_quality_comm(qual_df, rootname):
     if len(qual_comm) >= 1:
         # for a sanity check, make sure that there is only one entry per rootname
         if len(qual_comm) > 1:
-            print(f'{rootname} repeated rootname')
+            print(f'Quality Comment: {rootname} repeated rootname; combining comments')
             # if there is more than one, combine the comments
             # b/c each comment starts with the rootname, strip that off and add
             #   it only at the end instead.
