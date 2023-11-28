@@ -148,8 +148,8 @@ def select_pids(selected_region, single_list=True):
                     '16805', '16806', '16807', '16808', '16809', '17295'] # ULLYSES
     elif "lmc-extra" in selected_region:
         ar_pids = ['7299', '9434', '11692', '12581', '13806', '13780', '13781',
-                   '14081', '14246', '14675', '14683', '14712', '15629', '16272',
-                   '17074', '17279'] # archival
+                   '14081', '14246', '14675', '14683', '14712', '15629', '15824',
+                   '16272', '17074', '17279'] # archival
         ull_pids = [] # ULLYSES
     elif "lmc" in selected_region:
         ar_pids = ['7299', '7392', '8320', '8662', '9434', '9757', '12218', '12581',
@@ -176,7 +176,7 @@ def select_pids(selected_region, single_list=True):
                     '16590', '16591', '16592'] # ULLYSES
     elif selected_region == 'cha i':
         ar_pids = ['11616', '16478', '13775', '14193'] # archival
-        ull_pids = ['16481', '16482', '16597', '16598'] # ULLYSES
+        ull_pids = ['16481', '16482', '16596', '16597', '16598'] # ULLYSES
     elif selected_region == 'cra':
         ar_pids = [] # archival
         ull_pids = ['16859'] # ULLYSES
