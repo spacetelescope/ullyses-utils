@@ -1,0 +1,12 @@
+name: publish
+
+on:
+  release:
+
+jobs:
+  publish:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/publish.yml@v1
+    with:
+      upload_to_pypi: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    secrets:
+      pypi_token: ${{ secrets.PYPI_PASSWORD_STSCI_MAINTAINER }}
