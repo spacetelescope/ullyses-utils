@@ -1,0 +1,10 @@
+Galaxy,star,RA(J2000),DEC(J2000),SpT,V,E(B-V),catalog,Target,COS,STIS,WFC3,F225W,F275W,F336W,F475W,F814W,Target_LINK
+Sextans A,s2,10h10m58.59s,-04d43m28.9s,O3-5Vz,20.8,0.22,2019MNRAS.484..422G,Sextans A GHN s2,1,0,0,18.49,18.84,19.41,20.47,20.08,"<a href=""https://simbad.u-strasbg.fr/simbad/sim-id?Ident=LGGS+J101058.59-044328.9"" target=""_blank"">LGGS J101058.59-044328.9</a>"
+Sextans A,s4,10h10m57.89s,-04d43m10.2s,O6z,20.9,0.05,2019MNRAS.484..422G,Sextans A GHN s4,1,0,0,18.05,18.45,19.17,20.37,22.38,"<a href=""https://simbad.u-strasbg.fr/simbad/sim-id?Ident=LGGS+J101057.89-044310.2"" target=""_blank"">LGGS J101057.89-044310.2</a>"
+Sextans A,s8,10h11m05.69s,-04d42m13.6s,B0 I,19.7,0.05,"Garcia, priv. comm.",Sextans A GHN s8,1,0,0,17.38,17.71,18.3,19.28,21.16,"<a href=""https://simbad.u-strasbg.fr/simbad/sim-id?Ident=LGGS+J101105.69-044213.6"" target=""_blank"">LGGS J101105.69-044213.6</a>"
+NGC3109,7,10h02m54.69s,-26d08m59.64s,B0-1Ia,18.69,0.09,2007ApJ...659.1198E,NGC-3109 EBU 07,1,0,0,16.24701519,16.62087901,17.23385545,18.26886679,20.12477129,"<a href=""https://simbad.u-strasbg.fr/simbad/sim-id?Ident=[EBU2007]+7"" target=""_blank"">[EBU2007] 7</a>"
+NGC3109,20,10h03m03.22s,-26d09m21.41s,O8I,19.33,0.17,2007ApJ...659.1198E,NGC-3109 EBU 20,1,0,0,17.03747472,17.34868397,17.90436731,18.91433808,20.6681637,"<a href=""https://simbad.u-strasbg.fr/simbad/sim-id?Ident=[EBU2007]+20"" target=""_blank"">[EBU2007] 20</a>"
+NGC3109,34,10h03m14.24s,-26d09m16.96s,O8I(f),19.61,0.1,2007ApJ...659.1198E,NGC 3109 EBU 34,1,0,0,16.99243073,17.39693692,18.02510458,19.16463618,21.06855961,"<a href=""https://simbad.u-strasbg.fr/simbad/sim-id?Ident=[EBU2007]+34"" target=""_blank"">[EBU2007] 34</a>"
+NGC3109,,,,,,,,NGC-3109-V01,0,0,1,,,,,,
+NGC3109,,,,,,,,NGC-3109-V02,0,0,1,,,,,,
+Sextans A,,,,,,,,SEXTANS-A,0,0,1,,,,,,
