@@ -10,7 +10,7 @@ pro lcogt_dr5
   lcogt_phot,'/astro/ullyses/lcogt_data/V-RU-LUP/','V* RU Lup'
   lcogt_phot,'/astro/ullyses/lcogt_data/V-BP-TAU/','V* BP Tau'
   lcogt_phot,'/astro/ullyses/lcogt_data/V-GM-AUR/','V* GM Aur'
-  lcogt_phot,'/astro/ullyses/lcogt_data/RXJ0438.6+1546/','RX J0438.6+1546'
+  lcogt_phot,'/astro/ullyses/lcogt_data/RX-J0438P1546/','RX J0438.6+1546'
   lcogt_phot,'/astro/ullyses/lcogt_data/V505-ORI/','V505 Ori'
   lcogt_phot,'/astro/ullyses/lcogt_data/RECX-5/','RECX 5'
   lcogt_phot,'/astro/ullyses/lcogt_data/RECX-6/','RECX 6'
