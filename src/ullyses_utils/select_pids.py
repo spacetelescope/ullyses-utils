@@ -49,7 +49,7 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, singl
 
     all_regions = ["smc-extra", "smc", "lmc-extra", "lmc", "lowz-extra", "lowz-image",
                    "lowz", "monitoring_tts", "cha i", "cra", "eps cha", "eta cha",
-                   "lambda ori", "lupus", "ori ob", "sigma ori", "taurus", "twa",
+                   "lambda orionis", "lupus", "ori ob", "sigma ori", "taurus", "twa",
                    "lower centaurus", "upper scorpius", "other"]
 
 
@@ -70,7 +70,7 @@ def select_all_pids(massive=False, tts=False, extra=True, monitoring=True, singl
 
         # TTS?
         if tts is True:
-            search_regions.extend(["cha i", "cra", "eps cha", "eta cha", "lambda ori",
+            search_regions.extend(["cha i", "cra", "eps cha", "eta cha", "lambda orionis",
                                    "lupus", "ori ob", "sigma ori", "taurus", "twa",
                                    "lower centaurus", "upper scorpius", "other"])
             # Monitoring TTS?
@@ -112,7 +112,7 @@ def select_pids(selected_region, single_list=True):
             "lowz-extra", "lowz-image", "lowz",
             "monitoring_tts",
             "cha i", "cra", "eps cha", "eta cha", "lupus", "ori ob", "sigma ori",
-              "taurus", "twa", "lower centaurus", "upper scorpius", "other", "lambda ori"
+              "taurus", "twa", "lower centaurus", "upper scorpius", "other", "lambda orionis"
     single_list : Boolean
       True by default. If true, a list of pids for the specified region is returned.
       If false, two lists of pids are returned; one is only the ULLYSES observed
@@ -212,7 +212,7 @@ def select_pids(selected_region, single_list=True):
     elif selected_region == 'upper scorpius':
         ar_pids = ['13372', '15310', '16290'] # archival
         ull_pids = [] # ULLYSES
-    elif selected_region == 'lambda ori':
+    elif selected_region == 'lambda orionis':
         ar_pids = ['8317', '12996', '15070'] # archival
         ull_pids = [] # ULLYSES
     elif selected_region == 'other':
