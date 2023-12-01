@@ -134,7 +134,7 @@ def select_pids(selected_region, single_list=True):
 
     if "smc-extra" in selected_region:
         ar_pids = ['7437', '9116', '9412', '11625', '12978', '13778', '15629',
-                   '15837', '16647'] # archival
+                   '15837'] # archival
         ull_pids = [] # ULLYSES
     elif "smc" in selected_region:
         ar_pids = ['7437', '7480', '8145', '8566', '9094', '9116', '9383', '9434',
@@ -161,7 +161,7 @@ def select_pids(selected_region, single_list=True):
                     '16824', '16825', '16826', '17296'] # ULLYSES
     elif "lowz-extra" in selected_region:
         ar_pids = ['8662', '12587', '12867', '14245', '15156', '15880', '15921',
-                   '15967', '16717', '16767', '16920'] # archival
+                   '15967', '16647', '16717', '16767', '16920'] # archival
         ull_pids = [] # ULLYSES
     elif "lowz-image" in selected_region:
         ar_pids = [] # archival
