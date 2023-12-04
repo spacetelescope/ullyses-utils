@@ -210,13 +210,13 @@ def select_pids(selected_region, single_list=True):
         ar_pids = ['11616'] # archival
         ull_pids = [] # ULLYSES
     elif selected_region == 'upper scorpius':
-        ar_pids = ['13372', '15310', '16290'] # archival
+        ar_pids = ['9790', '13372', '15310', '16290'] # archival
         ull_pids = [] # ULLYSES
     elif selected_region == 'lambda orionis':
         ar_pids = ['8317', '12996', '15070'] # archival
         ull_pids = [] # ULLYSES
     elif selected_region == 'other':
-        ar_pids = ['7565', '8801', '11828', '12996', '13032', '14690'] # archival
+        ar_pids = ['7565', '8317', '8801', '11828', '12996', '13032', '14690'] # archival
         ull_pids = [] # ULLYSES
     else:
         print('Region not recognized:', selected_region)
