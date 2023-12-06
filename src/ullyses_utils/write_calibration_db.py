@@ -106,26 +106,39 @@ def populate_target_info(info, targname, ins, galaxy_dict):
 
 #-------------------------------------------------------------------------------
 
-def check_timeseries_yaml(hlsp_targname, ins):
+def check_timeseries_yaml(hlsp_targname, ins, grating):
     '''This function reads in the timeseries configuration files in the data
-       directory to determine if a specific target is made into a time series
-       HLSP and/or a sub exposure time series HLSP. If no configuration file
-       exists, then it is assumed neither a time series nor sub exposure
-       timeseries HLSP is created.
+       directory to determine if a specific target & grating combination is made
+       into a time series HLSP and/or a sub exposure time series HLSP. If no
+       configuration file exists, then it is assumed neither a time series nor
+       sub exposure timeseries HLSP is created. If a file does exist, then the
+       configuration file is read to determine if the grating matches any of the
+       gratings in the file. It is assumed that all files for that target with
+       that grating are made into a time series product.
     '''
 
     # the format for the name of the files is fixed
     yaml_file = f'data/timeseries/{hlsp_targname.lower()}_{ins.lower()}.yaml'
 
+    exp_tss = False
+    sub_exp_tss = False
+
     if os.path.exists(yaml_file):
         # if the configuration yaml file exists for this target, read it in
         #   to determine if an exposure or subexposure timeseries is created
         data = read_config(yaml_file)
-        # There are rows in the file indicating True/False for timeseries & sub exposure
-        return data['exp_tss'], data['sub_exp_tss']
-    else:
-        # if the configuration file doesn't exist, no timeseries HLSPs are created
-        return False, False
+
+        # There are rows in the file indicating True/False for exposure & sub
+        # exposure level time series.
+        if data['exp_tss'] == True and grating.lower() in data['gratings']:
+            exp_tss = True
+
+        # sub exposure level time series
+        if data['sub_exp_tss'] == True and grating.lower() in data['gratings']:
+            sub_exp_tss = True
+
+    # if the configuration file doesn't exist, no timeseries HLSPs are created
+    return exp_tss, sub_exp_tss
 
 #-------------------------------------------------------------------------------
 
@@ -337,7 +350,7 @@ def populate_info(info, kw_dict, filename, galaxy_dict, ar_pids, ull_pids,
 
     ## Check for the different calibration steps now
     # check the time series
-    exp_tss, sub_exp_tss = check_timeseries_yaml(hlsp_targ, ins)
+    exp_tss, sub_exp_tss = check_timeseries_yaml(hlsp_targ, ins, grating)
     info['exp_timeseries'].append(exp_tss)
     info['subexp_timeseries'].append(sub_exp_tss)
 
