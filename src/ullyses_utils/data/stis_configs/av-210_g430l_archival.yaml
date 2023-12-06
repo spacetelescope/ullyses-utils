@@ -13,16 +13,3 @@ infile:
           maxsrch: null
           xoffset: null
           yloc: null
-  oec670020_crj.fits:
-    targets:
-      av-210:
-        do_defringe: false
-        x1d:
-          b_bkg1: null
-          b_bkg2: null
-          b_hgt1: null
-          b_hgt2: null
-          height: null
-          maxsrch: null
-          xoffset: null
-          yloc: null
