@@ -600,7 +600,6 @@ letjccy0q,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 letjccy2q,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 letjccy4q,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
 letjccyeq,SK-69D178,SK-69D178,tech team spreadsheet,Shutter did not open
-od7m06010,SK-69D212,SK-69D212,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 z9050701000,SK-69D220,SK-69D220,Failed FUSE data check,multiple stars in the aperture
 i812070100000,Sk_-70115,SK-70D115,Initial FUSE data search,Unvetted extra FUSE data
 oejf5s010,SK-70D32,SK-70D32,tech team spreadsheet,"GS acq failure, TA failure, observations failure. Repeated as ES under HOPR-92162"
@@ -1113,9 +1112,7 @@ le9i4dqvq,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
 le9i4dr1q,V510-ORI,V510-ORI,tech team spreadsheet,Failed ACQ
 oe9i4s020,V510-ORI,V510-ORI,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
 oe9i4s030,V510-ORI,V510-ORI,CCD & STIS custom cal check,ullyses observations without STIS config files; good data
-ody203010,VFTS180,VFTS-180,in ARCHIVAL_DATA_HIGH_MASS/DR5/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr5,
 oec62c020,VFTS-190,VFTS-190,SNAP data quality check,GSFAIL
-ody211010,VFTS244,VFTS-244,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 ody213010,VFTS586,VFTS-586,in ARCHIVAL_DATA_HIGH_MASS/DR2/ULLYSES_AR_DATA/ and not in all_vetted_data_dr2,
 c002060200000,VFTS_72,VFTS-72,Initial FUSE data search,Unvetted extra FUSE data
 ody217010,VFTS96,VFTS-96,in ARCHIVAL_DATA_HIGH_MASS/DR3/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr3,
