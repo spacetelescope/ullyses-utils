@@ -12,7 +12,6 @@ exp_tss: True
 observatory: hst # This is a single value
 instrument: stis # This is a single value
 gratings: # This is a list
-    - g230l
     - g140l
 
 # If no subexposure TSS are being created, you may leave the section below
@@ -30,7 +29,6 @@ bins: null
 # You may specify either IPPPSS or IPPPSSOOT identifiers.
 # You MUST use a dash+space, which tells yaml the value is actually part of a list.
 good_files:
-    - o8e001010
     - o8e001020
     - o8e001030
     - o8e001040

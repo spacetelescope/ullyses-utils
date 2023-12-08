@@ -13,7 +13,6 @@ instrument: stis # This is a single value
 gratings: # This is a list
     - g140l
     - g230l
-    - g430l
 
 # If no subexposure TSS are being created, you may leave the section below
 # with default values or you may set bins equal to None by using:
@@ -39,7 +38,6 @@ good_files:
     - oeqj1s010
     - oeqj1s020
     - oeqj1s030
-    - oeqj1s040
     - oeqj1s050
     - oeqj1t010
     - oeqj1t020
