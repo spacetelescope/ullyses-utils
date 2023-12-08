@@ -34,8 +34,8 @@ def make_galaxy_dict():
             else:
                 if target == 'NGC3109':
                     # manually add in these because they had to be separated in the HLSPs
-                    galaxy_dict['NGC-3109-V01'] = galaxy
-                    galaxy_dict['NGC-3109-V02'] = galaxy
+                    galaxy_dict['NGC3109-01'] = galaxy
+                    galaxy_dict['NGC3109-02'] = galaxy
                 else:
                     # high mass stars
                     galaxy_dict[hlsp_targ] = galaxy
@@ -85,9 +85,15 @@ def populate_target_info(info, targname, ins, galaxy_dict):
     hlsp_targ = match_aliases(targname)
 
     # Do something special for our pre-imaging
-    if ins == 'WFC3' and targname == 'SEXTANS-A':
-        # there is an alias for a star named 'SEXTANS-A'
-        hlsp_targ = 'SEXTANS-A'
+    if ins == 'WFC3':
+        if targname == 'SEXTANS-A':
+            # there is an alias for a star named 'SEXTANS-A'
+            hlsp_targ = 'SEXTANS-A'
+        # Header targnames for NGC3109 images are different than adopted HLSP names
+        elif targname == "NGC-3109-V01":
+            hlsp_targ = "NGC3109-01"
+        elif targname == "NGC-3109-V02":
+            hlsp_targ = "NGC3109-02"
 
     info['target_name_hlsp'].append(hlsp_targ) # add the HLSP name to the db
 
