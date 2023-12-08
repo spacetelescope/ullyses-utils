@@ -11,6 +11,7 @@ exp_tss: True
 observatory: hst # This is a single value
 instrument: cos # This is a single value
 gratings: # This is a list
+    - g130m
     - g160m
     - g230l
 
