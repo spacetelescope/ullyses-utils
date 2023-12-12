@@ -93,7 +93,6 @@ i801080100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 i812050100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 i812060100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 i812090100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
-p203020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 x020020100000,NGC346_1,AV-232,Initial FUSE data search,Unvetted extra FUSE data
 of2c1s010,AV-238,AV-238,Discovered when trying to create HLSPs,Exposure time is 0s
 of2c1s020,AV238,AV-238,tech team spreadsheet,flux ~20% low (target off-center?)
@@ -147,7 +146,6 @@ p117680200000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
 p117680300000,Sk_159,AV-488,Initial FUSE data search,Unvetted extra FUSE data
 d175010200000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
 d175020100000,[M2002]_77458,AV-490,Initial FUSE data search,Unvetted extra FUSE data
-z912240100000,AV506,AV-506,Initial FUSE data search,Unvetted extra FUSE data
 oec643010,AV6,AV-6,SNAP data quality check,GSFAIL
 oec643020,AV6,AV-6,SNAP data quality check,GSFAIL
 a118020300000,AV_70,AV-70,Initial FUSE data search,Unvetted extra FUSE data
@@ -167,7 +165,6 @@ ldmp06gfq,BD-21-4301,BD-21-4301,Not in vetted directories,Not full coverage. Onl
 oec62s010,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
 oec62s020,BI128,BI-128,SNAP data quality check,target was removed from the ULLYSES sample in Cycle 28
 p217020100000,BI128,BI-128,Initial FUSE data search,target was removed from the ULLYSES sample in Cycle 28
-e511190100000,[M2002]_15830,BI-13,Initial FUSE data search,Unvetted extra FUSE data
 p117320100000,[M2002]_137610,BI-173,Initial FUSE data search,Unvetted extra FUSE data
 oec62j010,BI184,BI-184,SNAP data quality check,GSFAIL
 leuw1ckqq,BI189,BI-189,tech team spreadsheet,Shutter closed
@@ -310,7 +307,6 @@ lf2l1dafq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HO
 lf2l1dahq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HOPR
 lf2l1dajq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HOPR
 lf2l1dalq,N11-ELS-026,N11-ELS-026,tech team spreadsheet,Decided not to file a HOPR
-b010050100000,N11_32,N11-ELS-032,Initial FUSE data search,Unvetted extra FUSE data
 leuw2cayq,N11-ELS-032,N11-ELS-032,tech team spreadsheet,Shutter closed
 leuw2cb2q,N11-ELS-032,N11-ELS-032,tech team spreadsheet,Shutter closed
 b010060100000,PGMW-3209,N11-ELS-048,Initial FUSE data search,Unvetted extra FUSE data
@@ -383,7 +379,6 @@ p103060100000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p103060200000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p103060300000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
 p103060400000,W_21,SK-188,Initial FUSE data search,Unvetted extra FUSE data
-z912130100000,Sk_-652,SK-65D2,Initial FUSE data search,Unvetted extra FUSE data
 letj1chtq,SK-66D17,SK-66D17,tech team spreadsheet,Shutter closed
 letj1ci2q,SK-66D17,SK-66D17,tech team spreadsheet,Shutter closed
 letj1ci4q,SK-66D17,SK-66D17,tech team spreadsheet,Shutter closed
@@ -572,7 +567,6 @@ p117170100000,Sk_-6769,SK-67D69,Initial FUSE data search,Unvetted extra FUSE dat
 lbp504tlq,SK-68D129,SK-68D129,in ARCHIVAL_DATA_HIGH_MASS/DR4/ULLYSES_AR_EXTRA_DATA/ and not in all_vetted_data_dr4,
 i801010100000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
 i801010200000,Sk_-68135,SK-68D135,Initial FUSE data search,Unvetted extra FUSE data
-e511420100000,[M2002]_170808,SK-68D137,Initial FUSE data search,Unvetted extra FUSE data
 oec62v010,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
 oec62v020,SK-68D140,SK-68D140,SNAP data quality check,GSFAIL
 e511210100000,[M2002]_33780,SK-68D15,Initial FUSE data search,Unvetted extra FUSE data
