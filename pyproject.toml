@@ -21,7 +21,6 @@ classifiers = [
     'Topic :: Software Development :: Libraries :: Python Modules'
 ]
 dependencies = [
-    "setuptools",
     "numpy",
     "astropy",
 ]
