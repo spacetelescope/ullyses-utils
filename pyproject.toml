@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ullyses_utils"
-version = "3.0.0"
+version = "3.1.0"
 description = "ULLYSES utility files and scripts"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -21,7 +21,6 @@ classifiers = [
     'Topic :: Software Development :: Libraries :: Python Modules'
 ]
 dependencies = [
-    "setuptools",
     "numpy",
     "astropy",
 ]
