@@ -58,6 +58,10 @@ good_files:
     - odkd01010
     - odkd02010
     - odkd03010
+    - ob6ba1010
+    - ob3r04010
+    - ob3r05010
+    - ob3r06010
 
 
 # If you want to specify the list of exposures *NOT TO USE*, list them below
