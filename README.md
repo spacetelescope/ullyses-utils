@@ -81,11 +81,21 @@ ullyses_mon_pids, archival_mon_pids = select_pids("monitoring_tts", single_list=
 
 ### Utility data files
 
+All data files related to the calibration and creation of the HLSPs are in the "calibration_metadata" folder. All data files related to the scientific parameters of the targets in the HLSPs are in the "target_metadata" folder. The parameters used in the special calibration of the STIS targets are in the "stis_configs" folder, and similarly the parameters used in the special calibration for the time series products are in the "timeseries" folder. Jupyter notebooks to modify the FUSE data are in the "fuse" folder. LCO photometry measurements are in the "lcogt_photometry folder" and the catalogs used in the "lcogt_catalogs" folder. Finally, there are several folders related to special calibrations to COS data used by the HLSP creation code: "cos_shifts", "ref_files", "vignette_scaling". 
+
+Files of particular interest include:
+- `data/target_metadata/pd_all_aliases.csv`
+- `data/target_metadata/highmass_star_db_metadata.csv`
+- `data/target_metadata/lowmass_star_db_metadata.csv`
+- `data/target_metadata/classical-t-tauri-star-monitoring-targets.csv`
+- `data/target_metadata/lowz_galaxy_db_metadata.csv`
+- `data/calibration_metadata/ullyses_calibration_db.csv`
+
 To use the utility data files, the package should be imported and then relative paths can be determined from your local installation.
 For example, if you wish to reference the ULLYSES target alias file, you would do so like this:
 ```
 import os
 import ullyses_utils
 local_dir = ullyses_utils.__path__[0]
-alias_file = os.path.join(local_dir, "data/target_metadata/pd_all_aliases.json")
+alias_file = os.path.join(local_dir, "data/target_metadata/pd_all_aliases.csv")
 ```
